@@ -1,10 +1,10 @@
 # Wave 6 Roadmap Table Visual Inspection
 
-Status: working sim-75 pass; clean-source recheck pending
+Status: clean-source sim-75 pass
 
 ## Method
 
-The automated PDF gate inspected all 534 working-proof pages for collisions,
+The automated PDF gate inspected all 534 clean-source proof pages for collisions,
 out-of-bounds content, embedded fonts, and searchable text. In addition, the
 canonical opening page of every roadmap Table was located from its Orientation
 text and visually inspected at rendered-page resolution. This is an internal
@@ -55,5 +55,5 @@ author inspection, not external reader evidence.
 - Orientation, Sense table, and Root factorization hierarchy is consistent;
 - no visual defect requires a content or stylesheet change.
 
-The clean-source sim-75 page numbers and results must be rechecked after the
-implementation commit; any pagination change supersedes this working record.
+The final clean-source render from commit `602a7e1` retained these page
+numbers and results. Its exact digest is frozen in the round-two packet.

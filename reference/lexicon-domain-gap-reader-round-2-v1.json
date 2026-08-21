@@ -1,0 +1,33 @@
+{
+  "contract": "lexicon-domain-gap-reader-round-2-v1",
+  "date": "2026-08-21",
+  "status": "frozen-round-two-recruitment-pending",
+  "protocol": "reference/lexicon-domain-gap-reader-protocol-v1.json",
+  "task_and_acceptable_owner_map": "reference/lexicon-roadmap-ordinary-language-tasks-v1.json",
+  "proof": {
+    "edition": "sim-75",
+    "source_commit": "602a7e168991c36c7f5b50f5c6db9d7e08a93bbd",
+    "workspace_dirty": false,
+    "pdf": "target/proof-set-sim-75/Lexicon-book-proof-sim-75.pdf",
+    "pdf_sha256": "0574f89e115578ce30068d551a9b518db1fc0c414021e0f203969d6878e7f893",
+    "pdf_bytes": 14909299,
+    "pdf_pages": 534,
+    "embedded_fonts": 15,
+    "text_characters": 1712401,
+    "collision_pages": 0,
+    "out_of_bounds_pages": 0,
+    "site_sha256": "888a7adce8bdf3896aed2f1547a84e72bce55230dcb0e8432015a6b76b76cd35"
+  },
+  "participants": {
+    "eligible_target_min": 8,
+    "eligible_target_max": 12,
+    "observed": 0
+  },
+  "acceptance": {
+    "owner_success_fraction": 0.8,
+    "time_seconds": 180,
+    "median_confidence": 4
+  },
+  "results": "pending-external-participants",
+  "claim_boundary": "Deterministic rehearsal and author inspection are internal evidence only; no participant outcome is inferred or fabricated."
+}

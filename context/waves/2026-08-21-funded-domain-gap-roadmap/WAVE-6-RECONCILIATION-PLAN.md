@@ -39,5 +39,5 @@ internal validation into reader-outcome evidence.
 - relation review: pending;
 - ordinary-language and navigation checks: pending;
 - 32-Table visual inspection: pending;
-- `.roles` fixed point and final clean-source proof: pending;
+- `.roles` fixed point and final clean-source proof: passed;
 - external participant results: pending external execution.

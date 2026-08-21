@@ -25,6 +25,7 @@ pre-authoring hold.
 - [Wave 5 result](WAVE-5-LANGUAGE-CULTURE-ARTS-AESTHETICS-RESULT.md)
 - [Wave 6 plan](WAVE-6-RECONCILIATION-PLAN.md)
 - [Wave 6 result](WAVE-6-RECONCILIATION-RESULT.md)
+- [Internal closeout](LEXICON-FUNDED-DOMAIN-GAP-ROADMAP-CLOSEOUT.md)
 
 ## Boundary
 

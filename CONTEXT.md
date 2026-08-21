@@ -31,10 +31,11 @@ completed wave is
 `context/waves/2026-08-21-editorial-domain-expansion/WAVE.md`.
 
 `sim-75` is the current internally validated reconciliation projection: 133
-canonical Tables, 270 pointer-index records, and zero duplicate sense
-identities or missing site targets. Working-PDF and clean-source verification
-follow the reconciliation commit. It is worthy of controlled external reader
-testing, not public R5 release. See
+canonical Tables, 846 senses, 1,419 factors, 270 pointer-index records, and
+zero duplicate sense identities or missing site targets. Its clean-source
+534-page proof from commit `602a7e1` passes all PDF gates. External round-two
+reader observations remain pending, so it is worthy of controlled external
+reader testing, not public R5 release. See
 `context/waves/2026-08-21-funded-domain-gap-roadmap/WAVE-6-RECONCILIATION-RESULT.md`.
 
 The repaired `sim-67` PDF is a clean-source, internally validated book
