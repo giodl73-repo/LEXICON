@@ -381,6 +381,59 @@
   font-size: 0.78rem;
 }
 
+.dictionary-book__proof-status {
+  color: var(--proof-accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.dictionary-book__front-matter {
+  display: grid;
+  gap: 1rem 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1.5rem auto 0;
+  max-width: 62rem;
+  text-align: left;
+}
+
+.dictionary-book__front-matter h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  margin: 0 0 0.45rem;
+}
+
+.dictionary-book__front-matter ol {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.dictionary-book__front-matter dl {
+  margin: 0;
+}
+
+.dictionary-book__front-matter dl > div {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: minmax(8rem, 0.8fr) minmax(0, 1.2fr);
+  padding-block: 0.18rem;
+}
+
+.dictionary-book__front-matter dt {
+  font-weight: 800;
+}
+
+.dictionary-book__front-matter dd {
+  margin: 0;
+}
+
+.dictionary-book__print-body,
+.dictionary-book__print-pointer-index,
+.dictionary-book__colophon {
+  display: none;
+}
+
 .dictionary-book__reader {
   min-width: 0;
 }
@@ -684,8 +737,33 @@
 
 @media print {
   @page {
-    margin: 0.55in;
+    margin: 0.7in 0.62in 0.68in;
     size: letter;
+
+    @bottom-center {
+      color: #5c5950;
+      content: "Lexicon · " counter(page);
+      font-family: "Segoe UI", sans-serif;
+      font-size: 8pt;
+    }
+  }
+
+  @page lexicon-tables {
+    @top-right {
+      color: #5c5950;
+      content: "Canonical Tables";
+      font-family: "Segoe UI", sans-serif;
+      font-size: 8pt;
+    }
+  }
+
+  @page lexicon-pointers {
+    @top-right {
+      color: #5c5950;
+      content: "Pointer index";
+      font-family: "Segoe UI", sans-serif;
+      font-size: 8pt;
+    }
   }
 
   .dictionary-sequence,
@@ -711,52 +789,162 @@
     break-after: page;
   }
 
-  .dictionary-book__entries {
-    block-size: auto;
+  .dictionary-book__front-matter {
+    display: grid;
+    font-size: 9pt;
+  }
+
+  .dictionary-book__reader {
+    display: none !important;
+  }
+
+  .dictionary-book__print-body,
+  .dictionary-book__print-pointer-index,
+  .dictionary-book__colophon {
+    display: block;
+  }
+
+  .dictionary-book__print-body {
+    page: lexicon-tables;
+  }
+
+  .dictionary-book__print-pointer-index {
+    break-before: page;
+    page: lexicon-pointers;
+  }
+
+  .dictionary-book__print-section-heading,
+  .dictionary-book__colophon {
+    break-after: page;
+    padding-top: 1.1in;
+    text-align: center;
+  }
+
+  .dictionary-book__print-section-heading > p:first-child {
+    color: var(--proof-accent);
+    font-size: 9pt;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .dictionary-book__print-section-heading h2,
+  .dictionary-book__colophon h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28pt;
+  }
+
+  .dictionary-book__print-section-heading > p:last-child,
+  .dictionary-book__colophon p {
+    line-height: 1.5;
+    margin-inline: auto;
+    max-width: 6.2in;
+  }
+
+  .dictionary-book__print-table-item {
+    break-before: page;
+    min-width: 0;
+  }
+
+  .dictionary-book__print-table-item .dictionary-book__content {
+    display: block;
+    font-size: 9.2pt;
+    line-height: 1.4;
+    overflow: visible;
+  }
+
+  .dictionary-book__print-table-item .dictionary-book__content h2 {
+    border-top: 3px double var(--proof-rule);
+    font-size: 20pt;
+    margin-top: 0;
+    padding-top: 0.12in;
+  }
+
+  .dictionary-book__print-table-item .dictionary-book__content h3 {
+    break-after: avoid;
+    font-size: 13pt;
+  }
+
+  .dictionary-book__print-table-item .dictionary-book__content table {
+    border-collapse: collapse;
+    contain: none;
+    display: table;
+    font-size: 8.4pt;
+    inline-size: 100%;
+    max-block-size: none;
+    max-inline-size: 100%;
+    overflow: hidden !important;
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .dictionary-book__print-table-item .dictionary-book__content th,
+  .dictionary-book__print-table-item .dictionary-book__content td {
+    overflow-wrap: anywhere;
+    padding: 0.05in 0.065in;
+    vertical-align: top;
+  }
+
+  .dictionary-book__print-table-item .dictionary-book__content pre {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 8pt;
+    max-block-size: none;
+    max-inline-size: 100%;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+  }
+
+  .dictionary-book__print-table-item .dictionary-book__content :not(pre) > code {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 0.94em;
+    font-weight: 600;
+  }
+
+  .dictionary-book__print-provenance {
+    border-top: 1px solid var(--proof-rule);
+    color: var(--proof-ink-soft);
+    font-size: 8.2pt;
+    margin-top: 0.16in;
+    padding-top: 0.1in;
+  }
+
+  .dictionary-book__print-provenance h3 {
+    color: var(--proof-ink);
+  }
+
+  .dictionary-book__print-pointer-columns {
     column-count: 2;
     column-fill: auto;
     column-gap: 0.35in;
     column-rule: 1px solid #bbb;
+  }
+
+  .dictionary-book__print-pointer-item {
+    break-inside: avoid;
     display: block;
-    overflow: visible;
+    margin-bottom: 0.14in;
   }
 
-  .dictionary-book__item {
-    break-inside: auto;
-    display: contents;
-    margin-bottom: 0.18in;
+  .dictionary-book__print-pointer-item .dictionary-book__content {
+    display: block;
+    font-size: 8.6pt;
+    line-height: 1.35;
   }
 
-  .dictionary-book__content {
-    display: contents;
-  }
-
-  .dictionary-book__content table {
-    contain: none;
-    display: table;
-    max-block-size: none;
-    overflow: visible !important;
-    width: 100%;
-  }
-
-  .dictionary-book__content pre {
-    max-block-size: none;
-    overflow: visible;
-  }
-
-  .dictionary-book__content > h2:first-child {
+  .dictionary-book__print-pointer-item .dictionary-book__content h2 {
     border-top: 1px solid var(--proof-rule);
-    margin-top: 0.18in;
-    padding-top: 0.08in;
+    font-size: 14pt;
+    margin: 0;
+    padding-top: 0.06in;
   }
 
-  .dictionary-book__supplement {
-    display: none !important;
+  .dictionary-book__print-pointer-item .dictionary-book__pointer-parents li {
+    font-size: 7.8pt;
   }
 
-  .dictionary-book__page-controls,
-  .dictionary-book__page-hint {
-    display: none !important;
+  .dictionary-book__colophon {
+    break-before: page;
   }
 
   .dictionary-book__edition a::after {

@@ -1224,6 +1224,7 @@ for ($index = 0; $index -lt $sources.Count; $index++) {
 $quickstartHeading = $headingBySource[$quickstart]
 $sourceCommit = (git -C $workspace rev-parse HEAD).Trim()
 $sourceCommitShort = $sourceCommit.Substring(0, 8)
+$sourceCommitDate = (git -C $workspace show -s --format=%cs HEAD).Trim()
 $rootPublicationStatus = if ($editionNumber -ge 66) {
     "Edition <a href=`"manifest.json`">$Edition</a> · internally validated projection, not reader-outcome evidence · <a href=`"https://github.com/giodl73-repo/$repositoryName/tree/$sourceCommit`">source $sourceCommitShort</a> · <a href=`"https://github.com/giodl73-repo/$repositoryName/blob/main/LICENSE`">software: MIT</a>"
 }
@@ -2594,7 +2595,7 @@ if ($editionNumber -ge 7) {
             throw "Composition Lab requires six unique reviewed relations"
         }
         $compositionLabPayload = [ordered]@{
-            schema = "factorium-composition-lab-payload-v0"
+            schema = if ($lexiconIdentity) { "lexicon-composition-lab-payload-v0" } else { "factorium-composition-lab-payload-v0" }
             referenceSha256 = (Get-FileHash -LiteralPath $referenceManifestPath -Algorithm SHA256).Hash.ToLowerInvariant()
             relationsSha256 = (Get-FileHash -LiteralPath $relationManifestPath -Algorithm SHA256).Hash.ToLowerInvariant()
             relations = $labRelations
@@ -2731,7 +2732,7 @@ if ($editionNumber -ge 7) {
                 throw "Composition reading requires 12 endpoint and 6 scope bindings"
             }
             $compositionReadingPayload = [ordered]@{
-                schema = "factorium-composition-reading-payload-v0"
+                schema = if ($lexiconIdentity) { "lexicon-composition-reading-payload-v0" } else { "factorium-composition-reading-payload-v0" }
                 referenceSha256 = $compositionLabPayload.referenceSha256
                 relationsSha256 = $compositionLabPayload.relationsSha256
                 bindings = $readingBindings
@@ -2831,7 +2832,7 @@ if ($editionNumber -ge 7) {
                 $compositionViewsChecks = [ordered]@{
                     profiles = @("compact", "abbreviated", "book", "full")
                     default_profile = "book"
-                    shared_preference_key = "factorium-reader-profile"
+                    shared_preference_key = if ($lexiconIdentity) { "lexicon-reader-profile" } else { "factorium-reader-profile" }
                     profile_inputs_to_closure = 0
                     hidden_query_controls = 0
                     exact_metadata_retained = $true
@@ -2967,7 +2968,7 @@ if ($editionNumber -ge 7) {
                     throw "Composition starter trace/state coverage mismatch"
                 }
                 $compositionStartersPayload = [ordered]@{
-                    schema = "factorium-composition-starters-v0"
+                    schema = if ($lexiconIdentity) { "lexicon-composition-starters-v0" } else { "factorium-composition-starters-v0" }
                     referenceSha256 = $compositionLabPayload.referenceSha256
                     relationsSha256 = $compositionLabPayload.relationsSha256
                     starters = $starterRecords
@@ -3091,7 +3092,7 @@ if ($editionNumber -ge 7) {
                     [System.Text.UTF8Encoding]::new($false)
                 )
                 $compositionGuideChecks = [ordered]@{
-                    schema = "factorium-composition-guide-skeleton-v0"
+                    schema = if ($lexiconIdentity) { "lexicon-composition-guide-skeleton-v0" } else { "factorium-composition-guide-skeleton-v0" }
                     projection_input = "identified local result plus digest-bound lab and reading payloads"
                     placement = "after closure map and before canonical reading route"
                     required_missing_work_records = 8
@@ -3112,7 +3113,7 @@ if ($editionNumber -ge 7) {
                     [System.Text.UTF8Encoding]::new($false)
                 )
                 $compositionEvaluationChecks = [ordered]@{
-                    schema = "factorium-composition-evaluation-record-v0"
+                    schema = if ($lexiconIdentity) { "lexicon-composition-evaluation-record-v0" } else { "factorium-composition-evaluation-record-v0" }
                     projection_input = "identified local result plus explicit user-declared check records"
                     outcomes = @("pass", "fail", "unresolved")
                     evidence_status = "user-declared-unverified"
@@ -4004,6 +4005,8 @@ $(if ($editionNumber -ge 66) { '<script src="assets/dictionary-stream.js"></scri
             sources_provenance = 0
         }
         $dictionaryBookItems = [System.Text.StringBuilder]::new()
+        $dictionaryBookTableItems = [System.Text.StringBuilder]::new()
+        $dictionaryBookPointerItems = [System.Text.StringBuilder]::new()
         for ($bookIndex = 0; $bookIndex -lt $dictionaryRecords.Count; $bookIndex++) {
             $bookRecord = $dictionaryRecords[$bookIndex]
             $bookPosition = $bookIndex + 1
@@ -4112,6 +4115,39 @@ $(if ($editionNumber -ge 66) { '<script src="assets/dictionary-stream.js"></scri
 <div class="dictionary-book__content">$bookContent</div>
 </article>
 "@)
+            if ($bookRecord.kind -eq "pointer") {
+                [void]$dictionaryBookPointerItems.AppendLine(@"
+<article class="dictionary-book__print-pointer-item" data-print-pointer="$($bookRecord.slug)">
+<div class="dictionary-book__content">$bookContent</div>
+</article>
+"@)
+            }
+            else {
+                $printBookContent = [regex]::Replace(
+                    $bookContent,
+                    '(?is)<details class="dictionary-book__supplement" data-book-supplement="([^"]+)"><summary id="([^"]+)">(.*?)</summary><div>(.*?)</div></details>',
+                    {
+                        param($match)
+
+                        if ($match.Groups[1].Value -ne "sources_provenance") {
+                            return ""
+                        }
+                        return '<section class="dictionary-book__print-provenance" aria-labelledby="print-' +
+                            $match.Groups[2].Value + '"><h3 id="print-' +
+                            $match.Groups[2].Value + '">' + $match.Groups[3].Value +
+                            '</h3>' + $match.Groups[4].Value + '</section>'
+                    }
+                )
+                $printBookContent = $printBookContent.Replace(
+                    'class="dictionary-book__maturity"',
+                    'class="dictionary-book__print-maturity"'
+                )
+                [void]$dictionaryBookTableItems.AppendLine(@"
+<article class="dictionary-book__print-table-item" data-print-table-position="$bookPosition" data-print-table-title="$encodedBookTitle">
+<div class="dictionary-book__content">$printBookContent</div>
+</article>
+"@)
+            }
         }
         $dictionaryBookHtml = @"
 <!doctype html>
@@ -4119,7 +4155,8 @@ $(if ($editionNumber -ge 66) { '<script src="assets/dictionary-stream.js"></scri
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="A condensed two-column book view of the Formarium mixed dictionary.">
+<meta name="author" content="Gio Della-Libera">
+<meta name="description" content="An internal proof of the Formarium canonical Tables with a subordinate pointer index.">
 <title>The Formarium</title>
 <link rel="stylesheet" href="assets/site.css">
 </head>
@@ -4137,7 +4174,12 @@ $(if ($editionNumber -ge 66) { '<script src="assets/dictionary-stream.js"></scri
 <p>Formarium Tables</p>
 <h1>The Formarium</h1>
 <p>Start with a familiar word. See where its meanings separate, what structures each sense requires, and which Tables carry it further.</p>
-<p class="dictionary-book__edition">Edition <a href="https://giodl73-repo.github.io/$repositoryName/manifest.json">$Edition</a> · $($dictionaryRecords.Count) entries: $tablesIndexPointerCount pointers + $tablesIndexCanonicalCount Tables · source <a href="https://github.com/giodl73-repo/$repositoryName/tree/$sourceCommit">$sourceCommitShort</a> · full online supplements at <a href="https://giodl73-repo.github.io/$repositoryName/book.html">the published book</a></p>
+<p class="dictionary-book__proof-status">Internal proof · internally validated projection · not reader-outcome evidence</p>
+<p class="dictionary-book__edition">Edition <a href="https://giodl73-repo.github.io/$repositoryName/manifest.json">$Edition</a> · $tablesIndexCanonicalCount canonical Tables · $tablesIndexPointerCount pointer-index records · source <a href="https://github.com/giodl73-repo/$repositoryName/tree/$sourceCommit">$sourceCommitShort</a> ($sourceCommitDate) · online companion at <a href="https://giodl73-repo.github.io/$repositoryName/book.html">the Lexicon book</a></p>
+<div class="dictionary-book__front-matter">
+<section aria-labelledby="book-use-heading"><h2 id="book-use-heading">How to use this proof</h2><ol><li>Look up a familiar concept and select the intended sense.</li><li>Compare the available factorizations, decisive distinctions, and failure signs.</li><li>Follow named factors through the pointer index or the online graph.</li></ol></section>
+<section aria-labelledby="book-inventory-heading"><h2 id="book-inventory-heading">Edition inventory</h2><dl><div><dt>Canonical body</dt><dd>$tablesIndexCanonicalCount Tables</dd></div><div><dt>Navigation appendix</dt><dd>$tablesIndexPointerCount pointer records</dd></div><div><dt>Detailed online supplements</dt><dd>$($bookSupplementCounts.specialized) specialized sections and $($bookSupplementCounts.reference_delta) Reference Deltas</dd></div><div><dt>Evidence boundary</dt><dd>Internal mechanics and editorial validation only</dd></div></dl></section>
+</div>
 </header>
 <section class="dictionary-book__reader" aria-label="Paged condensed dictionary">
 <nav class="dictionary-book__page-controls" aria-label="Book pages">
@@ -4148,6 +4190,20 @@ $(if ($editionNumber -ge 66) { '<script src="assets/dictionary-stream.js"></scri
 </nav>
 <div class="dictionary-book__entries" data-book-pages tabindex="0">$dictionaryBookItems</div>
 <p class="dictionary-book__page-hint">Read down the left column, then down the right. Use the page buttons or horizontal scrollbar to continue.</p>
+</section>
+<section class="dictionary-book__print-body" aria-labelledby="print-canonical-heading">
+<header class="dictionary-book__print-section-heading"><p>Part I</p><h2 id="print-canonical-heading">Canonical Tables</h2><p>These $tablesIndexCanonicalCount Tables are the substantive Lexicon reference. Each retains its governing questions, competing structures, constraints, failure signs, and minimum source custody.</p></header>
+$dictionaryBookTableItems
+</section>
+<section class="dictionary-book__print-pointer-index" aria-labelledby="print-pointer-heading">
+<header class="dictionary-book__print-section-heading"><p>Part II</p><h2 id="print-pointer-heading">Pointer index</h2><p>These $tablesIndexPointerCount navigation records are not additional canonical Tables. They route reusable labels to their owning Tables without asserting a new semantic relation.</p></header>
+<div class="dictionary-book__print-pointer-columns">$dictionaryBookPointerItems</div>
+</section>
+<section class="dictionary-book__colophon" aria-labelledby="book-colophon-heading">
+<h2 id="book-colophon-heading">Colophon</h2>
+<p><strong>Edition:</strong> $Edition · <strong>Source:</strong> $sourceCommit · <strong>Source date:</strong> $sourceCommitDate.</p>
+<p>This is an internal proof, not reader-outcome evidence and not authorization for public R5 release. Canonical authority remains in the repository Markdown and Lexicon reference contracts. Detailed specialized views, Reference Deltas, cross-references, and complete provenance remain available in the edition-specific online companion and manifest.</p>
+<p><strong>Content:</strong> Copyright 2026 Gio Della-Libera, licensed CC BY-NC 4.0. <strong>Software:</strong> MIT.</p>
 </section>
 </main>
 <footer class="site-footer">Condensed A-Z projection of Formarium Tables · pointer and canonical authority labels remain explicit · $rootPublicationStatus$contentLicenseNotice</footer>
@@ -5693,7 +5749,10 @@ $identityPreviewStyle
             $siteChecks.dictionary_book_columns = 2
             $siteChecks.dictionary_book_screen_flow = "bounded-horizontal-pages"
             $siteChecks.dictionary_book_mobile_flow = "single-column-vertical"
-            $siteChecks.dictionary_book_print_flow = "two-column-paged"
+            $siteChecks.dictionary_book_print_flow = "full-width-canonical-tables-then-two-column-pointer-index"
+            $siteChecks.dictionary_book_print_canonical_tables = $tablesIndexCanonicalCount
+            $siteChecks.dictionary_book_print_pointer_records = $tablesIndexPointerCount
+            $siteChecks.dictionary_book_print_provenance_sections = $bookSupplementCounts.sources_provenance
             $siteChecks.dictionary_book_supplements = ($bookSupplementCounts.Values | Measure-Object -Sum).Sum
             $siteChecks.dictionary_book_specialized_sections = $bookSupplementCounts.specialized
             $siteChecks.dictionary_book_reference_delta_sections = $bookSupplementCounts.reference_delta
@@ -5836,6 +5895,16 @@ $manifestRecord = [ordered]@{
         path = "$artifactName.html"
         sha256 = (Get-FileHash -LiteralPath $html -Algorithm SHA256).Hash.ToLowerInvariant()
         bytes = (Get-Item -LiteralPath $html).Length
+    }
+}
+if ($lexiconIdentity) {
+    $manifestRecord.active_contracts = [ordered]@{
+        composition_lab_payload = "lexicon-composition-lab-payload-v0"
+        composition_reading_payload = "lexicon-composition-reading-payload-v0"
+        composition_starters = "lexicon-composition-starters-v0"
+        reader_profile_preference = "lexicon-reader-profile"
+        composition_guide_skeleton = "lexicon-composition-guide-skeleton-v0"
+        composition_evaluation_record = "lexicon-composition-evaluation-record-v0"
     }
 }
 if ($editionNumber -ge 16) {

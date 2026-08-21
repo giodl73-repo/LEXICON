@@ -4,10 +4,11 @@ Work is organized into small waves and pulses.
 
 ## Active wave
 
-- none
+- `2026-08-21-book-proof-repair`
 
 ## Completed waves
 
+- `2026-08-21-book-proof-review`
 - `2026-08-13-method-foundation`
 - `2026-08-13-role-and-ambiguity`
 - `2026-08-13-factorium-vision`

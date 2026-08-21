@@ -158,6 +158,14 @@ node tools\check_lexicon_canonical.js
 .\tools\render_book_proof_pdf.ps1 -Edition sim-67
 ```
 
+For a release-candidate proof, require a clean source tree and then verify the
+PDF metadata, embedded fonts, searchable text, source binding, and page layout:
+
+```powershell
+.\tools\render_book_proof_pdf.ps1 -Edition sim-67 -RequireCleanSource
+.\tools\check_book_proof_pdf.ps1 -Edition sim-67 -RequireCleanSource
+```
+
 ## Origins
 
 The repository began as **FACTOR**, a hardware-neutral investigation of

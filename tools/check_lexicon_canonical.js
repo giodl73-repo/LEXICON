@@ -40,8 +40,11 @@ assert.equal(
 );
 assert.equal(
   manifest.site_checks.dictionary_book_print_flow,
-  "two-column-paged",
+  "full-width-canonical-tables-then-two-column-pointer-index",
 );
+assert.equal(manifest.site_checks.dictionary_book_print_canonical_tables, 54);
+assert.equal(manifest.site_checks.dictionary_book_print_pointer_records, 250);
+assert.equal(manifest.site_checks.dictionary_book_print_provenance_sections, 54);
 assert.equal(manifest.site_checks.reader_route_additional_records, 157);
 assert.equal(manifest.site_checks.candidate_start_targets, 0);
 assert.equal(
@@ -52,6 +55,30 @@ assert.equal(manifest.rendering_checks.repository_source_links, 98);
 assert.equal(
   manifest.site_checks.product_authority,
   "Lexicon canonical; Reader and Factor Guides are linked projections",
+);
+assert.equal(
+  manifest.active_contracts.composition_lab_payload,
+  "lexicon-composition-lab-payload-v0",
+);
+assert.equal(
+  manifest.active_contracts.composition_reading_payload,
+  "lexicon-composition-reading-payload-v0",
+);
+assert.equal(
+  manifest.active_contracts.reader_profile_preference,
+  "lexicon-reader-profile",
+);
+assert.equal(
+  manifest.active_contracts.composition_starters,
+  "lexicon-composition-starters-v0",
+);
+assert.equal(
+  manifest.active_contracts.composition_guide_skeleton,
+  "lexicon-composition-guide-skeleton-v0",
+);
+assert.equal(
+  manifest.active_contracts.composition_evaluation_record,
+  "lexicon-composition-evaluation-record-v0",
 );
 
 const sourcePaths = new Set(manifest.sources.map((source) => source.path));
@@ -149,6 +176,7 @@ const reader = fs.readFileSync(path.join(site, "reader.html"), "utf8");
 const tables = fs.readFileSync(path.join(site, "tables.html"), "utf8");
 const dictionary = fs.readFileSync(path.join(site, "dictionary.html"), "utf8");
 const book = fs.readFileSync(path.join(site, "book.html"), "utf8");
+const screenBook = book.split('<section class="dictionary-book__print-body"')[0];
 const siteSearchRecords = JSON.parse(
   fs.readFileSync(path.join(site, "search-index.json"), "utf8"),
 );
@@ -232,7 +260,28 @@ assert.match(book, /<title>Lexicon<\/title>/);
 assert.match(book, /<h1>Lexicon<\/h1>/);
 assert.doesNotMatch(book, /The Lexicon Dictionary/);
 assert.match(book, /Start with a familiar word\./);
-assert.match(book, /304 entries: 250 pointers \+ 54 Tables/);
+assert.match(book, /54 canonical Tables · 250 pointer-index records/);
+assert.match(book, /Internal proof · internally validated projection · not reader-outcome evidence/);
+assert.match(book, /<h2 id="book-use-heading">How to use this proof<\/h2>/);
+assert.match(book, /<h2 id="print-canonical-heading">Canonical Tables<\/h2>/);
+assert.match(book, /<h2 id="print-pointer-heading">Pointer index<\/h2>/);
+assert.match(book, /<h2 id="book-colophon-heading">Colophon<\/h2>/);
+assert.equal(
+  (book.match(/class="dictionary-book__print-table-item"/g) || []).length,
+  54,
+);
+assert.equal(
+  (book.match(/class="dictionary-book__print-pointer-item"/g) || []).length,
+  250,
+);
+assert.equal(
+  (book.match(/class="dictionary-book__print-provenance"/g) || []).length,
+  54,
+);
+assert.equal(
+  (book.match(/class="dictionary-book__print-maturity"/g) || []).length,
+  54,
+);
 assert.equal(
   (book.match(/class="dictionary-book__maturity"/g) || []).length,
   54,
@@ -264,11 +313,11 @@ assert.equal(
   54,
 );
 assert.equal(
-  (book.match(/class="dictionary-book__pointer-parents"/g) || []).length,
+  (screenBook.match(/class="dictionary-book__pointer-parents"/g) || []).length,
   250,
 );
 assert.equal(
-  [...book.matchAll(/<div class="dictionary-book__pointer-parents">([\s\S]*?)<\/div>/g)]
+  [...screenBook.matchAll(/<div class="dictionary-book__pointer-parents">([\s\S]*?)<\/div>/g)]
     .reduce((total, match) => total + (match[1].match(/<a /g) || []).length, 0),
   2118,
 );
@@ -334,7 +383,15 @@ assert.doesNotMatch(
 );
 assert.match(
   siteCss,
-  /@media print\s*\{[\s\S]*?\.dictionary-book__entries\s*\{[\s\S]*?block-size:\s*auto;[\s\S]*?column-count:\s*2;/,
+  /@media print\s*\{[\s\S]*?\.dictionary-book__reader\s*\{[\s\S]*?display:\s*none !important;/,
+);
+assert.match(
+  siteCss,
+  /\.dictionary-book__print-table-item \.dictionary-book__content table\s*\{[\s\S]*?table-layout:\s*fixed;/,
+);
+assert.match(
+  siteCss,
+  /\.dictionary-book__print-pointer-columns\s*\{[\s\S]*?column-count:\s*2;/,
 );
 assert.match(
   siteCss,
