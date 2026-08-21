@@ -1,6 +1,6 @@
 # Wave 1 Social-Normative Result
 
-Status: admission and working proof pass; clean-source proof pending commit
+Status: fixed point; clean-source proof pass
 
 ## Outcome
 
@@ -19,12 +19,14 @@ assurance records. Views remain 100, relations remain 11, and pointers remain
 - roadmap admission checker: pass for 6 Tables and 31 senses;
 - `sim-70`: 315 site pages, 23 chapters, 244 indexed entry/view pages, 4,147
   internal links, and zero missing targets;
-- working PDF: 452 pages, zero collisions, and 12,784,932 bytes.
+- clean-source PDF: 452 pages, zero collisions, zero out-of-bounds pages, and
+  12,784,931 bytes.
 
 The working PDF SHA-256 is
-`66e02e7c82877290d025f217b66666a2f3a0189efbc251a7eab181b2fa51be55`.
-Its clean-source status is intentionally not claimed until the batch commit is
-made and the proof is rebuilt with `-RequireCleanSource`.
+`200d10863c0c6c72b3c77930d61b3503d20268f533a0051a1ba4d4eea639ba85`.
+It binds to clean source commit
+`72b08943a6e54002ad2b883b24a7c5d56c1742ee` and passes the independent PDF
+check with 15 embedded fonts and 1,492,508 searchable text characters.
 
 ## Dispositions
 
