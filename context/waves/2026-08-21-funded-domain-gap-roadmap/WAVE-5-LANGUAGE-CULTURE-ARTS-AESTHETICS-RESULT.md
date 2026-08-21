@@ -1,6 +1,6 @@
 # Wave 5 Language, Culture, Arts, and Aesthetics Result
 
-Status: admission and working proof pass; clean-source proof pending commit
+Status: fixed point; admission and clean-source proof pass
 
 ## Outcome
 
@@ -16,13 +16,14 @@ roadmap has admitted 32 Tables, inside its 30-36 capacity envelope.
   methodological tiers; four high-risk claims controlled;
 - roles: six roles, 18 closed findings, no unresolved critical or major issue;
 - cumulative roadmap check: 32 Tables and 166 senses pass;
-- `sim-74`: 353 site pages, 27 chapters, 270 indexed entry/view pages, 4,603
+- `sim-74`: 353 site pages, 27 chapters, 270 indexed entry/view pages, 4,635
   internal links, and zero missing targets;
-- working PDF: 533 pages, 14,915,720 bytes, 15 embedded fonts, 1,711,571
-  extracted characters, and zero collision or out-of-bounds pages.
+- clean-source PDF: 533 pages, 14,915,730 bytes, 15 embedded fonts, 1,711,571
+  extracted characters, and zero collision or out-of-bounds pages;
+- source commit: `3d2f19cdf47d22c475e0617c1141ab9c6343fb53`, with a clean workspace.
 
-Working PDF SHA-256:
-`9d65b12033cfa0004f436ddd665a6db2ac771f894afe8b9abaa50ea9c194d1c0`.
+Clean-source PDF SHA-256:
+`22ba5055407a62994076a6735d2fac05042c9dfc55c46b52ac05a5ed8cee2243`.
 
 ## Boundary and continuation
 

@@ -30,10 +30,10 @@ The active wave is
 completed wave is
 `context/waves/2026-08-21-editorial-domain-expansion/WAVE.md`.
 
-`sim-74` is the current internally validated working book projection: 133
+`sim-74` is the current clean-source, internally validated book projection: 133
 canonical Tables, 270 pointer-index records, 533 pages, and no detected
-collision or out-of-bounds pages. Clean-source verification follows commit.
-It is worthy of controlled external reader testing, not public R5 release. See
+collision or out-of-bounds pages. It is worthy of controlled external reader
+testing, not public R5 release. See
 `context/waves/2026-08-21-funded-domain-gap-roadmap/WAVE-5-LANGUAGE-CULTURE-ARTS-AESTHETICS-RESULT.md`.
 
 The repaired `sim-67` PDF is a clean-source, internally validated book
