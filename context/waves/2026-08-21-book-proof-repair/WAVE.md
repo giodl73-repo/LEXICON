@@ -1,6 +1,6 @@
 # Lexicon Book Proof Repair
 
-Status: active
+Status: complete; fixed-point pass
 
 ## Decision
 
@@ -12,12 +12,11 @@ binding, and the absence of PDF-specific acceptance checks.
 ## Records
 
 - [Plan](LEXICON-BOOK-PROOF-REPAIR-PLAN.md)
-- Result: pending
-- Role review: pending
+- [Result](LEXICON-BOOK-PROOF-REPAIR-RESULT.md)
+- [Role review](LEXICON-BOOK-PROOF-REPAIR-ROLE-REVIEW.md)
 
 ## Boundary
 
 This wave changes publication mechanics, generated metadata, and validation.
 It does not add or admit entries, senses, factors, views, relations, claims, or
 reader evidence.
-

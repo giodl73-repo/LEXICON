@@ -1,6 +1,6 @@
 # Lexicon Book Proof Repair Plan
 
-Status: active
+Status: complete
 
 ## Problem
 
@@ -36,4 +36,3 @@ artifact names a dirty pre-commit source state.
 - zero text-box collisions in the PDF;
 - targeted visual review of former failure pages and representative formulas;
 - `git diff --check` and fixed-point Lexicon role review.
-

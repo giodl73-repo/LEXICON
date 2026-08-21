@@ -25,16 +25,15 @@ evidence and one tested Lexicon domain.
 
 ## Current wave
 
-The active wave is
-`context/waves/2026-08-21-book-proof-repair/WAVE.md`. The latest completed
-wave is `context/waves/2026-08-21-book-proof-review/WAVE.md`.
+No wave is active. The latest completed wave is
+`context/waves/2026-08-21-book-proof-repair/WAVE.md`.
 
-The `sim-67` PDF is a credible internal book projection but is not release
-ready. The 2026-08-21 review found eight pages with table/column collisions,
-a dirty pre-commit source binding, and missing print-navigation and offline
-custody elements. Lexicon itself remains worthy of continued development and
-external reader testing; the PDF requires one bounded repair wave first. See
-`context/waves/2026-08-21-book-proof-review/LEXICON-BOOK-PROOF-REVIEW-RESULT.md`.
+The repaired `sim-67` PDF is a clean-source, internally validated book
+projection with full-width canonical Tables, a subordinate pointer index,
+print navigation, custody, and automated PDF acceptance. It passes for
+controlled external R4 reader testing, not reader-outcome claims or public R5
+release. See
+`context/waves/2026-08-21-book-proof-repair/LEXICON-BOOK-PROOF-REPAIR-RESULT.md`.
 
 The noncanonical corpus is at a practical fixed point under the completed
 comparison controls: 37 candidate entries, 37 briefs, and 205 proposed senses.
