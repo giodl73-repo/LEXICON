@@ -80,7 +80,8 @@ labels their kinds; ranking does not change authority.
 | other files under `guides/` | bounded Factor Guides |
 | `sim-30` | frozen pre-split Reader-oriented candidate baseline |
 | `sim-31` | frozen two-book front-door simulation |
-| `sim-67` | current Lexicon-native canonical projection |
+| `sim-67` | repaired 54-Table Lexicon-native book projection |
+| `sim-68` | current 91-Table Lexicon-native canonical projection |
 
 ## Claim boundary
 

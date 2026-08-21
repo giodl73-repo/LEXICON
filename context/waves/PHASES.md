@@ -4,7 +4,7 @@ Work is organized into small waves and pulses.
 
 ## Active wave
 
-- none
+- `2026-08-21-candidate-canonical-merge`
 
 ## Completed waves
 

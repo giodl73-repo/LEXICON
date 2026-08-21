@@ -1,0 +1,27 @@
+{
+  "contract": "lexicon-pointer-admissions-v2",
+  "date": "2026-08-21",
+  "base": "lexicon-pointer-registry-v1",
+  "pointers": [
+    { "slug": "agent", "label": "Agent", "orientation": "a structural label for a participant treated as initiating, carrying, or being attributed an action" },
+    { "slug": "alignment", "label": "Alignment", "orientation": "a structural label for the degree or rule by which purposes, incentives, representations, or axes correspond" },
+    { "slug": "attribution", "label": "Attribution", "orientation": "a structural label for assigning a source, cause, stance, responsibility, or authorship under stated evidence and rules" },
+    { "slug": "audience", "label": "Audience", "orientation": "a structural label for the intended, addressed, reached, or interpreting participants of a communication or presentation" },
+    { "slug": "cardinality", "label": "Cardinality", "orientation": "a structural label for the number of members, links, values, or allowed participants under a declared counting rule" },
+    { "slug": "community", "label": "Community", "orientation": "a structural label for a bounded group sharing practices, resources, language, governance, or evaluative expectations" },
+    { "slug": "completeness", "label": "Completeness", "orientation": "a structural label for whether a declared set, account, partition, or record satisfies its stated coverage contract" },
+    { "slug": "dependence", "label": "Dependence", "orientation": "a structural label for variation, availability, meaning, or outcome that is conditioned on another declared factor" },
+    { "slug": "detection", "label": "Detection", "orientation": "a structural label for the method, threshold, observer, and time by which a condition or event becomes identified" },
+    { "slug": "expression", "label": "Expression", "orientation": "a structural label for an observable form that realizes, communicates, or records content under a medium and convention" },
+    { "slug": "history", "label": "History", "orientation": "a structural label for prior states, events, selections, transformations, or custody that constrain present interpretation" },
+    { "slug": "language", "label": "Language", "orientation": "a structural label for the named linguistic system, variety, vocabulary, or convention governing an expression" },
+    { "slug": "medium", "label": "Medium", "orientation": "a structural label for the material, channel, format, or mode through which content is realized or conveyed" },
+    { "slug": "participation", "label": "Participation", "orientation": "a structural label for entry, contribution, involvement, response, or withdrawal under declared conditions" },
+    { "slug": "performance", "label": "Performance", "orientation": "a structural label for realized behavior or execution assessed under a declared task, criterion, context, and evidence" },
+    { "slug": "persistence", "label": "Persistence", "orientation": "a structural label for continued identity, condition, effect, or availability across a declared interval and change rule" },
+    { "slug": "propagation", "label": "Propagation", "orientation": "a structural label for how a change, signal, effect, constraint, or failure travels across connected participants" },
+    { "slug": "reporting", "label": "Reporting", "orientation": "a structural label for the authority, content, timing, audience, and limitations of a communicated record" },
+    { "slug": "scheme", "label": "Scheme", "orientation": "a structural label for a named system of categories, identifiers, rules, scales, or evaluation conventions" },
+    { "slug": "variation", "label": "Variation", "orientation": "a structural label for differences across subjects, forms, contexts, time, or observations under a declared comparison basis" }
+  ]
+}

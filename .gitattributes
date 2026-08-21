@@ -6,6 +6,7 @@ fixtures/composition/*.lexicon-query text eol=lf
 reference/*.factorium text eol=lf
 reference/*.formarium text eol=lf
 reference/*.lexicon text eol=lf
+reference/*.json text eol=lf
 specs/FORMARIUM-ENTRY-GRAPH.md text eol=lf
 specs/LEXICON-ENTRY-GRAPH.md text eol=lf
 tables/**/*.md text eol=lf

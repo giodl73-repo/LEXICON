@@ -1,5 +1,5 @@
 ﻿param(
-    [ValidateSet("sim-01", "sim-02", "sim-03", "sim-04", "sim-05", "sim-06", "sim-07", "sim-08", "sim-09", "sim-10", "sim-11", "sim-12", "sim-13", "sim-14", "sim-15", "sim-16", "sim-17", "sim-18", "sim-19", "sim-20", "sim-21", "sim-22", "sim-23", "sim-24", "sim-25", "sim-26", "sim-27", "sim-28", "sim-29", "sim-30", "sim-31", "sim-32", "sim-33", "sim-34", "sim-35", "sim-36", "sim-37", "sim-38", "sim-39", "sim-40", "sim-41", "sim-42", "sim-43", "sim-44", "sim-45", "sim-46", "sim-47", "sim-48", "sim-49", "sim-50", "sim-51", "sim-52", "sim-53", "sim-54", "sim-55", "sim-56", "sim-57", "sim-58", "sim-59", "sim-60", "sim-61", "sim-62", "sim-63", "sim-64", "sim-65", "sim-66", "sim-67")]
+    [ValidateSet("sim-01", "sim-02", "sim-03", "sim-04", "sim-05", "sim-06", "sim-07", "sim-08", "sim-09", "sim-10", "sim-11", "sim-12", "sim-13", "sim-14", "sim-15", "sim-16", "sim-17", "sim-18", "sim-19", "sim-20", "sim-21", "sim-22", "sim-23", "sim-24", "sim-25", "sim-26", "sim-27", "sim-28", "sim-29", "sim-30", "sim-31", "sim-32", "sim-33", "sim-34", "sim-35", "sim-36", "sim-37", "sim-38", "sim-39", "sim-40", "sim-41", "sim-42", "sim-43", "sim-44", "sim-45", "sim-46", "sim-47", "sim-48", "sim-49", "sim-50", "sim-51", "sim-52", "sim-53", "sim-54", "sim-55", "sim-56", "sim-57", "sim-58", "sim-59", "sim-60", "sim-61", "sim-62", "sim-63", "sim-64", "sim-65", "sim-66", "sim-67", "sim-68")]
     [string]$Edition = "sim-01",
     [string]$OutputDirectory = ""
 )
@@ -32,12 +32,13 @@ function Get-PointerRegistryRows {
         "factorium-pointer-registry-delta-v0" { "end-factorium-pointer-registry" }
         "formarium-pointer-registry-v1" { "end-formarium-pointer-registry" }
         "lexicon-pointer-registry-v1" { "end-lexicon-pointer-registry" }
+        "lexicon-pointer-registry-v2" { "end-lexicon-pointer-registry" }
         default { throw "Invalid pointer registry header: $resolvedRegistry" }
     }
     if ($registryLines[-1] -ne $expectedEnd) {
         throw "Invalid pointer registry envelope: $resolvedRegistry"
     }
-    if ($registryLines[0] -in @("formarium-pointer-registry-v1", "lexicon-pointer-registry-v1")) {
+    if ($registryLines[0] -in @("formarium-pointer-registry-v1", "lexicon-pointer-registry-v1", "lexicon-pointer-registry-v2")) {
         return @($registryLines[1..($registryLines.Count - 2)])
     }
     if ($registryLines[0] -eq "factorium-pointer-registry-v0") {
@@ -67,6 +68,9 @@ $v1Rubric = Join-Path $workspace "volumes\01-structure-quantity-choice\GPC-09-V1
 $v2Supplement = Join-Path $workspace "volumes\01-structure-quantity-choice\V2-ROLLING-SIM-SUPPLEMENT.md"
 $v2Tasks = Join-Path $workspace "volumes\01-structure-quantity-choice\V2-ROLLING-SIM-TASKS.md"
 $v2Rubric = Join-Path $workspace "volumes\01-structure-quantity-choice\V2-ROLLING-SIM-RUBRIC.md"
+$candidateAdmissionSupplement = Join-Path $workspace "volumes\01-structure-quantity-choice\LEXICON-CANDIDATE-ADMISSION-SUPPLEMENT.md"
+$candidateAdmissionTasks = Join-Path $workspace "volumes\01-structure-quantity-choice\LEXICON-CANDIDATE-ADMISSION-TASKS.md"
+$candidateAdmissionRubric = Join-Path $workspace "volumes\01-structure-quantity-choice\LEXICON-CANDIDATE-ADMISSION-RUBRIC.md"
 $pointerRegistryV0 = Join-Path $workspace "volumes\01-structure-quantity-choice\proof-set-pointer-registry.factorium"
 $pointerRegistryV1 = Join-Path $workspace "volumes\01-structure-quantity-choice\proof-set-pointer-registry-v1.factorium"
 $pointerRegistryV2 = Join-Path $workspace "volumes\01-structure-quantity-choice\proof-set-pointer-registry-v2.factorium"
@@ -82,7 +86,11 @@ $pointerRegistryV11 = Join-Path $workspace "volumes\01-structure-quantity-choice
 $pointerRegistryV12 = Join-Path $workspace "volumes\01-structure-quantity-choice\proof-set-pointer-registry-v12.factorium"
 $formariumPointerRegistryV1 = Join-Path $workspace "volumes\01-structure-quantity-choice\formarium-pointer-registry-v1.formarium"
 $lexiconPointerRegistryV1 = Join-Path $workspace "volumes\01-structure-quantity-choice\lexicon-pointer-registry-v1.lexicon"
-$pointerRegistry = if ($editionNumber -ge 67) {
+$lexiconPointerRegistryV2 = Join-Path $workspace "volumes\01-structure-quantity-choice\lexicon-pointer-registry-v2.lexicon"
+$pointerRegistry = if ($editionNumber -ge 68) {
+    $lexiconPointerRegistryV2
+}
+elseif ($editionNumber -ge 67) {
     $lexiconPointerRegistryV1
 }
 elseif ($editionNumber -ge 66) {
@@ -127,7 +135,7 @@ elseif ($editionNumber -ge 53) {
 else {
     $pointerRegistryV0
 }
-$expectedPointerCount = if ($editionNumber -ge 64) { 250 } elseif ($editionNumber -ge 63) { 240 } elseif ($editionNumber -ge 62) { 220 } elseif ($editionNumber -ge 61) { 200 } elseif ($editionNumber -ge 60) { 180 } elseif ($editionNumber -ge 59) { 160 } elseif ($editionNumber -ge 58) { 140 } elseif ($editionNumber -ge 57) { 120 } elseif ($editionNumber -ge 56) { 100 } elseif ($editionNumber -ge 55) { 80 } elseif ($editionNumber -ge 54) { 60 } elseif ($editionNumber -ge 53) { 40 } else { 20 }
+$expectedPointerCount = if ($editionNumber -ge 68) { 270 } elseif ($editionNumber -ge 64) { 250 } elseif ($editionNumber -ge 63) { 240 } elseif ($editionNumber -ge 62) { 220 } elseif ($editionNumber -ge 61) { 200 } elseif ($editionNumber -ge 60) { 180 } elseif ($editionNumber -ge 59) { 160 } elseif ($editionNumber -ge 58) { 140 } elseif ($editionNumber -ge 57) { 120 } elseif ($editionNumber -ge 56) { 100 } elseif ($editionNumber -ge 55) { 80 } elseif ($editionNumber -ge 54) { 60 } elseif ($editionNumber -ge 53) { 40 } else { 20 }
 $factorForgeTasks = Join-Path $workspace "volumes\01-structure-quantity-choice\FACTOR-FORGE-SIM-TASKS.md"
 $factorForgeRubric = Join-Path $workspace "volumes\01-structure-quantity-choice\FACTOR-FORGE-SIM-RUBRIC.md"
 $quickstart = Join-Path $workspace "volumes\01-structure-quantity-choice\PROOF-SET-SIM-QUICKSTART.md"
@@ -911,6 +919,12 @@ if ($Edition -ne "sim-01") {
             [void]$supplementPaths.Add($v2Path)
         }
     }
+    if ($editionNumber -ge 68) {
+        $candidateAdmissionPaths = Get-WorkspaceMarkdownPathSet $candidateAdmissionSupplement
+        foreach ($candidateAdmissionPath in $candidateAdmissionPaths) {
+            [void]$supplementPaths.Add($candidateAdmissionPath)
+        }
+    }
     if ($editionNumber -ge 67) {
         foreach ($rename in @(
             @("tables/entries/factorium-entry-publication.md", "tables/entries/lexicon-entry-publication.md"),
@@ -988,12 +1002,18 @@ if ($Edition -ne "sim-01") {
                 [void]$taskCoverage.Add($_.Groups[1].Value)
             }
         }
+        if ($editionNumber -ge 68) {
+            $candidateAdmissionRubricText = Get-Content -LiteralPath $candidateAdmissionRubric -Raw
+            [regex]::Matches($candidateAdmissionRubricText, '`(tables/[^`]+\.md)`') | ForEach-Object {
+                [void]$taskCoverage.Add($_.Groups[1].Value)
+            }
+        }
         $missingTaskCoverage = @($expectedDelta | Where-Object { -not $taskCoverage.Contains($_) })
         $extraTaskCoverage = @($taskCoverage | Where-Object { -not $expectedDelta.Contains($_) })
         if ($missingTaskCoverage.Count -ne 0 -or $extraTaskCoverage.Count -ne 0) {
             throw "Factor Forge task coverage mismatch: missing=$($missingTaskCoverage -join ',') extra=$($extraTaskCoverage -join ',')"
         }
-        $selectionChecks.task_count = if ($editionNumber -ge 50) { 59 } elseif ($editionNumber -ge 49) { 56 } else { 53 }
+        $selectionChecks.task_count = if ($editionNumber -ge 68) { 67 } elseif ($editionNumber -ge 50) { 59 } elseif ($editionNumber -ge 49) { 56 } else { 53 }
         $selectionChecks.task_coverage_records = $taskCoverage.Count
         $selectionChecks.missing_task_coverage_paths = $missingTaskCoverage.Count
         $selectionChecks.extra_task_coverage_paths = $extraTaskCoverage.Count
@@ -1025,6 +1045,11 @@ if ($editionNumber -ge 50) {
     Add-ProofSource $v2Supplement
     $selectionDocuments.Add($v2Supplement)
     Add-ProofSource $v2Tasks
+}
+if ($editionNumber -ge 68) {
+    Add-ProofSource $candidateAdmissionSupplement
+    $selectionDocuments.Add($candidateAdmissionSupplement)
+    Add-ProofSource $candidateAdmissionTasks
 }
 if ($editionNumber -ge 3) {
     Add-ProofSource $factorForgeTasks
@@ -1408,6 +1433,9 @@ if ($editionNumber -ge 4) {
         if ($editionNumber -ge 50) {
             Get-NumberedSelections $v2Supplement
         }
+        if ($editionNumber -ge 68) {
+            Get-NumberedSelections $candidateAdmissionSupplement
+        }
     )
     if ($editionNumber -ge 67) {
         $selectionRenames = @{
@@ -1478,7 +1506,7 @@ if ($editionNumber -ge 4) {
     else {
         2
     }
-    $expectedNumberedCount = if ($editionNumber -ge 50) { 181 } elseif ($editionNumber -ge 49) { 178 } else { 175 }
+    $expectedNumberedCount = if ($editionNumber -ge 68) { 218 } elseif ($editionNumber -ge 50) { 181 } elseif ($editionNumber -ge 49) { 178 } else { 175 }
     if ($numberedSelections.Count -ne $expectedNumberedCount -or $guideSelections.Count -ne $expectedGuideCount) {
         throw "Search selection mismatch: numbered=$($numberedSelections.Count) guides=$($guideSelections.Count)"
     }
@@ -2286,6 +2314,9 @@ if ($editionNumber -ge 7) {
     if ($editionNumber -ge 50) {
         $selectedSiteChapters += @(Get-SiteChapterSelections $v2Supplement)
     }
+    if ($editionNumber -ge 68) {
+        $selectedSiteChapters += @(Get-SiteChapterSelections $candidateAdmissionSupplement)
+    }
     if ($editionNumber -ge 66) {
         foreach ($chapter in $selectedSiteChapters) {
             $chapter.paths = @($chapter.paths | ForEach-Object {
@@ -2340,7 +2371,7 @@ if ($editionNumber -ge 7) {
             $chapterBySearchPath[$chapterRelativePath] = $chapter
         }
     }
-    $expectedSiteChapterCount = if ($editionNumber -ge 50) { 20 } elseif ($editionNumber -ge 49) { 19 } else { 18 }
+    $expectedSiteChapterCount = if ($editionNumber -ge 68) { 21 } elseif ($editionNumber -ge 50) { 20 } elseif ($editionNumber -ge 49) { 19 } else { 18 }
     if ($siteChapters.Count -ne $expectedSiteChapterCount -or $chapterBySearchPath.Count -ne $searchRecords.Count) {
         throw "Site chapter coverage mismatch: chapters=$($siteChapters.Count) records=$($chapterBySearchPath.Count)"
     }
@@ -5701,7 +5732,7 @@ $identityPreviewStyle
         $siteChecks.table_family_contents_semantics = "exact-publication-ownership-only"
     }
     if ($editionNumber -ge 35) {
-        $expectedCanonicalCount = if ($editionNumber -ge 49) { 54 } else { 53 }
+        $expectedCanonicalCount = if ($editionNumber -ge 68) { 91 } elseif ($editionNumber -ge 49) { 54 } else { 53 }
         $expectedOwnedViewCount = if ($editionNumber -ge 50) { 100 } elseif ($editionNumber -ge 49) { 97 } else { 95 }
         if ($tablesIndexCanonicalCount -ne $expectedCanonicalCount -or
             $tablesIndexCuratedCount -ne 27 -or

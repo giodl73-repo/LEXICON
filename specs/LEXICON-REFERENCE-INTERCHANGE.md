@@ -8,16 +8,16 @@ Status: current canonical contract
 - `reference/lexicon-relations-v2.lexicon`
 - `reference/lexicon-assurance-v4.lexicon`
 - `fixtures/composition/*.lexicon-query`
-- `volumes/01-structure-quantity-choice/lexicon-pointer-registry-v1.lexicon`
+- `volumes/01-structure-quantity-choice/lexicon-pointer-registry-v2.lexicon`
 
 The canonical headers are `lexicon-reference-v4`,
 `lexicon-relations-v2`, `lexicon-assurance-v4`,
-`lexicon-composition-query-v2`, and `lexicon-pointer-registry-v1`.
+`lexicon-composition-query-v2`, and `lexicon-pointer-registry-v2`.
 
-`tools/build_lexicon_contracts.js` deterministically derives the initial
-Lexicon contracts from the last reviewed Factorium artifacts. The migration
-changes namespace and the publication-entry owner only; it does not add
-semantic records, relations, review claims, or pointer labels.
+`tools/build_lexicon_contracts.js` deterministically derives the Lexicon
+contracts from the last reviewed Factorium artifacts plus the explicit
+Lexicon admission manifests. The 2026-08-21 admission adds 37 entry records at
+candidate maturity and 20 noncanonical pointer labels; it adds no relation.
 
 ## Legacy imports
 

@@ -1,4 +1,26 @@
 lexicon-reference-v4
+entry abstract-work-notational-specification-performance-instance-compliance-condition-autographic-allographic | Abstract Work, Notational Specification, Performance Instance, Compliance Condition, and Autographic/Allographic Distinction | reference | candidate | tables/entries/abstract-work-notational-specification-performance-instance-compliance-condition-autographic-allographic.md | This candidate maps a bounded work/notation/performance analysis useful for cataloging and cultural-heritage description. It rejects ownership of aesthetic object, aesthetic experience, and interpretation. Medium remains a factor unless a future disjoint governing question is demonstrated.
+sense abstract-work-account | abstract work account
+sense notational-specification | notational specification
+sense performance-instance | performance instance
+sense work-compliance-condition | work compliance condition
+sense autographic-allographic-distinction | autographic allographic distinction
+factor account | account
+factor work | work
+factor notation | notation
+factor inscription | inscription
+factor performance | performance
+factor agent | agent
+factor time | time
+factor venue | venue,
+factor compliance-condition | compliance condition
+factor production-history | production history
+factor version | version
+factor medium | medium
+factor provenance | provenance
+factor and | and
+factor evidence | evidence
+end-entry
 entry access-permission-authorization-entitlement | Access, Permission, Authorization, and Entitlement | governance | candidate | tables/entries/access-permission-authorization-entitlement.md | Access is an attempted or realized interaction; permission is an allowed subject-operation-resource relation; authorization is a contextual decision; entitlement is a governed grant. Authentication evidence, organizational authority, decision, and enforcement remain distinct.
 sense access | access
 sense permission | permission
@@ -14,6 +36,24 @@ factor environmental-attributes-time-location-device-and-risk | environmental at
 factor decision-reason-obligations-and-unresolved-facts | decision, reason, obligations, and unresolved facts
 factor enforcement-failure-revocation-and-propagation | enforcement point, failure behavior, revocation, and propagation
 factor event-provenance-review-and-privacy | event, provenance, review, and privacy limits
+end-entry
+entry adaptation-fitness-selection-exaptation | Adaptation, Fitness, Selection, and Exaptation | science | candidate | tables/entries/adaptation-fitness-selection-exaptation.md | An adaptation is a trait whose historical origin is explained by natural selection for a function. Fitness compares reproductive success, propensity, or another explicitly selected evolutionary measure among variants in a stated population, environment, and time. Natural selection is differential survival or reproduction among heritable variants through interaction with the environment. An exaptation is a trait co-opted for a current role rather than selected for that role at its origin.
+sense adaptation | adaptation
+sense fitness | fitness
+sense natural-selection | natural selection
+sense exaptation | exaptation
+factor lineage-population-and-focal-trait-or-variant | lineage, population, and focal trait or variant
+factor trait-grain-homology-and-inheritance-basis | trait grain, homology, and inheritance basis
+factor current-function-or-performance-claim | current function or performance claim
+factor selective-environment-its-axes-and-their-change-across-generations | selective environment, its axes, and their change across generations,
+factor fitness-definition-measure-reference-class-and-time | fitness definition, measure, reference class, and time
+factor selection-regime-strength-direction-and-frequency-dependence | selection regime, strength, direction, and frequency dependence
+factor mutation-migration-recombination-and-drift-alternatives | mutation, migration, recombination, and drift alternatives
+factor developmental-production-bias-and-constraint | developmental production bias and constraint
+factor historical-origin-and-current-utility-evidence | historical origin and current utility evidence
+factor exaptation-or-co-option-history | exaptation or co-option history
+factor organism-driven-environmental-modification-as-an-input-to-selection-with | organism-driven environmental modification as an input to selection, with
+factor model-data-uncertainty-and-scope-limits | model, data, uncertainty, and scope limits
 end-entry
 entry amount-concentration-composition | Amount, Concentration, and Composition | science | candidate | tables/entries/amount-concentration-composition.md | Count, amount of substance, concentration, composition, and molar mass answer different quantity questions. Count enumerates specified entities; amount scales count in moles; concentration normalizes a component by volume; composition fractions compare a component with a like-kind total; molar mass bridges mass and amount for a specified material.
 sense entity-count | entity count
@@ -39,6 +79,24 @@ factor conversion-direction-component-set-and-weighting-basis | conversion direc
 factor unit-and-display-scale | unit and display scale
 factor uncertainty | uncertainty
 end-entry
+entry appraisal-emotion-episode-phenomenal-feeling | Appraisal, Emotion Episode, and Phenomenal Feeling | reference | candidate | tables/entries/appraisal-emotion-episode-phenomenal-feeling.md | This candidate separates an evaluative relation, an episode-level emotion account, and subjective phenomenal feeling. It does not universalize emotion categories or own affect as an umbrella, enduring mood, causal mechanism, or clinical diagnosis.
+sense affective-appraisal | affective appraisal
+sense emotion-episode | emotion episode
+sense phenomenal-feeling | phenomenal feeling
+factor subject | subject
+factor situation | situation
+factor concern | concern
+factor appraisal-dimensions | appraisal dimensions
+factor temporal-extent | temporal extent,
+factor physiology | physiology
+factor expression | expression
+factor action-tendency | action tendency
+factor report | report
+factor culture | culture
+factor context | context
+factor and | and
+factor evidence | evidence
+end-entry
 entry assurance-assessment-audit-certification | Assurance, Assessment, Audit, Certification, and Accreditation | governance | candidate | tables/entries/assurance-assessment-audit-certification.md | Assurance is a confidence-oriented claim supported for a purpose; assessment evaluates a subject against criteria; audit is a mandate-governed examination; certification is scoped third-party attestation; accreditation recognizes an assessment body's competence for a scope. None is universal proof.
 sense assurance | assurance
 sense assessment | assessment
@@ -55,6 +113,25 @@ factor findings-nonconformities-severity-and-disposition | findings, nonconformi
 factor review-decision-attestation-scope-issue-expiry-and-surveillance | review, decision, attestation, scope, issue, expiry, and surveillance
 factor corrective-action-appeal-suspension-withdrawal-and-supersession | corrective action, appeal, suspension, withdrawal, and supersession
 factor provenance-custody-confidentiality-and-public-representation | provenance, custody, confidentiality, and public representation
+end-entry
+entry cardinality-ordinality-rank-index-relationship-cardinality-ordinal-scale-value | Cardinality, Ordinality, Rank, Index, Relationship Cardinality, and Ordinal Scale Value | quantities | candidate | tables/entries/cardinality-ordinality-rank-index-relationship-cardinality-ordinal-scale-value.md | This candidate separates mathematical size and order type, positional lookup, relationship multiplicity, and ordered measurement values. It does not merge these into comparative quantity, evaluation score, or database schema design.
+sense set-cardinality | set cardinality
+sense order-ordinality | order ordinality
+sense relational-rank | relational rank
+sense positional-index | positional index
+sense relationship-cardinality | relationship cardinality
+sense ordinal-scale-value | ordinal scale value
+factor collection-or-domain | collection or domain
+factor equivalence-criterion | equivalence criterion
+factor ordering-relation | ordering relation
+factor tie-rule | tie rule,
+factor index-base | index base
+factor sequence | sequence
+factor relation-ends | relation ends
+factor multiplicity-constraint | multiplicity constraint
+factor scale | scale
+factor coding | coding,
+factor and-admissible-operations | and admissible operations
 end-entry
 entry causal-reasoning | Association, Causal Effect, Influence, Mechanism, Intervention, and Attribution | reference | candidate | tables/entries/causal-reasoning.md | Association describes observed dependence; a causal effect compares outcomes under specified alternatives; influence is a contextual contribution claim; a mechanism describes how change is produced; an intervention is an action or assignment; attribution asks what caused one realized outcome. These questions require different evidence and assumptions.
 sense association | association
@@ -176,6 +253,54 @@ factor reviewer-and-revision | reviewer and revision
 factor measurement-model-procedure-and-system | measurement model, procedure, and system
 factor inference-rule-and-assumptions | inference rule and assumptions
 end-entry
+entry clinical-sign-symptom-syndrome-diagnosis-differential-diagnosis-prognosis | Clinical Sign, Symptom, Syndrome, Diagnosis, Differential Diagnosis, and Prognosis | science | candidate | tables/entries/clinical-sign-symptom-syndrome-diagnosis-differential-diagnosis-prognosis.md | This descriptive candidate maps concepts used in clinical classification and reasoning. It is not medical advice, diagnosis, triage, treatment, or a substitute for a classification authority. Every classification claim requires an authority, version, context, and evidence.
+sense clinical-sign | clinical sign
+sense clinical-symptom | clinical symptom
+sense clinical-syndrome | clinical syndrome
+sense clinical-diagnosis | clinical diagnosis
+sense clinical-differential-diagnosis | clinical differential diagnosis
+sense clinical-prognosis | clinical prognosis
+factor person-or-population | person or population
+factor encounter-context | encounter context
+factor source | source
+factor observer | observer
+factor finding | finding
+factor report | report
+factor method | method
+factor classification-authority-or-version | classification authority/version
+factor criteria | criteria
+factor alternatives | alternatives,
+factor evidence | evidence
+factor uncertainty | uncertainty
+factor horizon | horizon
+factor update-time | update time
+end-entry
+entry collection-identity-membership-arrangement-completeness | Collection Identity, Membership, Arrangement, and Completeness | reference | candidate | tables/entries/collection-identity-membership-arrangement-completeness.md | A collection here is a separately identified aggregate governed by a stated organizing principle and membership rule. It can remain the same collection through member change, rearrangement, and incomplete holdings. This is not a mathematical set, a mereological sum, a system, or a generic classification.
+sense named-collection | named collection
+sense membership-rule | membership rule
+sense collection-arrangement | collection arrangement
+sense collection-completeness | collection completeness
+factor named-collection-organizing-principle-purpose-and-identity-basis | named collection, organizing principle, purpose, and identity basis
+factor membership-rule-declared-scope-current-members-and-typed-membership-assertions | membership rule, declared scope, current members, and typed membership assertions
+factor boundary-as-output-of-the-membership-rule | boundary as output of the membership rule
+factor arrangement-scheme-order-or-grouping-and-unordered-state-where-applicable | arrangement scheme, order/grouping, and unordered state where applicable
+factor completeness-basis-expected-holdings-current-holdings-and-known-gaps | completeness basis, expected holdings, current holdings, and known gaps
+factor lifecycle-stage-member-provenance-custody-access-rights-authority-evidence-and-revision | lifecycle stage, member provenance, custody, access rights, authority, evidence, and revision
+end-entry
+entry collective-action-provision-and-appropriation-shortfalls | Collective Action Provision and Appropriation Shortfalls | economics | candidate | tables/entries/collective-action-provision-and-appropriation-shortfalls.md | This family describes two structural shortfalls in which individually rational choices can leave a group worse off. A provision-shortfall concerns too little contribution to a shared benefit; an appropriation-shortfall concerns too much extraction from a shared stock. Neither conclusion follows from a resource label alone, and neither is inevitable: the applicable payoff structure, access conditions, observation, and governing arrangement must be stated.
+sense provision-shortfall | provision shortfall
+sense appropriation-shortfall | appropriation shortfall
+factor affected-group-boundary-and-collective-criterion | affected group, boundary, and collective criterion
+factor shared-benefit-or-resource-system-resource-units-and-stock-flow-basis | shared benefit or resource system, resource units, and stock-flow basis
+factor excludability-cost-and-rivalry-intensity | excludability cost and rivalry intensity
+factor public-common-pool-club-or-private-label-where-useful-as-an-example | public, common-pool, club, or private label where useful as an example
+factor contribution-or-extraction-action-actor-set-group-size-and-heterogeneity | contribution or extraction action, actor set, group size, and heterogeneity
+factor individual-and-collective-payoff-structure-and-benefit-production-function | individual and collective payoff structure and benefit-production function
+factor access-conditions-and-free-rider-condition-where-present | access conditions and free-rider condition where present
+factor observability-monitoring-communication-repetition-and-time-horizon | observability, monitoring, communication, repetition, and time horizon
+factor existing-institution-governance-mechanism-and-sanctioning-arrangement | existing institution, governance mechanism, and sanctioning arrangement
+factor provision-gap-or-appropriation-or-depletion-rate-evidence-uncertainty-and-revision | provision gap or appropriation/depletion rate, evidence, uncertainty, and revision
+end-entry
 entry comparative-quantity | Comparative Quantity | quantities | candidate | tables/entries/comparative-quantity.md | Ratios, fractions, rates, proportions, and percentages compare quantities under different role contracts. A fraction is a bounded part-whole ratio only when its nonnegative numerator belongs to its declared whole; closure additionally requires an exhaustive mutually exclusive partition.
 sense ratio | ratio
 sense fraction | fraction
@@ -197,6 +322,26 @@ factor original-and-new-state-when-changing | original and new state when changi
 factor sign-and-direction-convention | sign and direction convention
 factor zero-denominator-policy | zero-denominator policy
 factor display-scale | display scale
+end-entry
+entry consent-assent-refusal-withdrawal-revocation | Consent, Assent, Refusal, Withdrawal, and Revocation | governance | candidate | tables/entries/consent-assent-refusal-withdrawal-revocation.md | Consent is a normative act performed by the affected party over an act described in a particular way: a capacitated, informed, voluntary agent agrees that another party may do a specified thing, within a stated scope and time. When its validity conditions hold and the applicable basis so provides, that act may make the described act permissible. Consent is therefore not permission itself. Permission is a held status owned by access and authorization; consent is one act that can produce it, and a valid consent can still leave an act impermissible when authority, policy, or another basis withholds it.
+sense consent | consent
+sense assent | assent
+sense proxy-consent | proxy consent
+sense refusal | refusal
+sense dissent | dissent
+sense withdrawal | withdrawal
+sense revocation | revocation
+factor consenting-party-capacity-and-representative | consenting party, capacity, and representative
+factor requesting-or-acting-party-and-authority | requesting or acting party and authority
+factor act-description-scope-granularity-and-alternatives | act description, scope, granularity, and alternatives
+factor disclosure-to-the-consenting-party-comprehension-deliberation-and | disclosure to the consenting party, comprehension, deliberation, and
+factor voluntariness-pressure-dependence-inducement-and-alternatives | voluntariness, pressure, dependence, inducement, and alternatives
+factor basis-jurisdiction-domain-norms-and-effective-time | basis, jurisdiction, domain norms, and effective time
+factor culture-community-family-and-collective-decision-expectations | culture, community, family, and collective decision expectations
+factor expression-record-receipt-and-evidence | expression, record, receipt, and evidence
+factor refusal-dissent-non-response-and-default-treatment | refusal, dissent, non-response, and default treatment
+factor withdrawal-from-participation-revocation-of-consent-effective-moment | withdrawal from participation, revocation of consent, effective moment,
+factor consequences-remedy-re-consent-review-and-supersession | consequences, remedy, re-consent, review, and supersession
 end-entry
 entry control-monitoring-response | Objective, Control, Monitoring, and Response | systems | candidate | tables/entries/control-monitoring-response.md | Objectives state desired results; set points reference controlled variables; controllers issue commands; actuators influence processes; monitoring observes; indicators summarize; thresholds classify; alerts communicate; service-level objectives bind scoped indicators to targets and windows; outcomes record wider effects. Target, mechanism, measurement, commitment, and outcome remain distinct.
 sense objective | objective
@@ -310,6 +455,26 @@ factor projection-loss-inverse-and-round-trip-limits | projection loss, inverse,
 factor counterexamples-alternate-decompositions-and-sensitivity | counterexamples, alternate decompositions, and sensitivity
 factor provenance-version-review-and-revision | provenance, version, review, and revision
 end-entry
+entry deontic-obligation-permission-prohibition-optionality-waiver-exemption | Deontic Obligation, Permission, Prohibition, Optionality, Waiver, and Exemption | governance | candidate | tables/entries/deontic-obligation-permission-prohibition-optionality-waiver-exemption.md | This candidate describes source-relative modal positions in a formal system or bounded normative account. It leaves domain governance, access authorization, and enforcement with their current owners and does not turn deontic notation into legal advice.
+sense deontic-obligation | deontic obligation
+sense deontic-permission | deontic permission
+sense deontic-prohibition | deontic prohibition
+sense deontic-optionality | deontic optionality
+sense deontic-waiver | deontic waiver
+sense deontic-exemption | deontic exemption
+factor source | source
+factor system | system
+factor subject | subject
+factor content | content
+factor scope | scope
+factor time | time
+factor priority | priority
+factor exception | exception,
+factor holder | holder
+factor authority | authority
+factor interpretation | interpretation
+factor evidence | evidence
+end-entry
 entry dependability-reliability-availability-resilience | Reliability, Availability, Maintainability, Resilience, and Recovery | systems | candidate | tables/entries/dependability-reliability-availability-resilience.md | Reliability concerns continuity without specified failure; availability concerns usable state when required; maintainability concerns restoration support; resilience concerns maintaining and recovering required capability under adversity; recovery is a bounded restoration process or outcome. Every claim retains subject, conditions, and time.
 sense reliability | reliability
 sense availability | availability
@@ -325,6 +490,91 @@ factor maintenance-resources-diagnostics-repair-logistics-and-access | maintenan
 factor adversity-essential-capability-adaptation-degradation-and-recovery | adversity, essential capability, adaptation, degradation, and recovery
 factor restoration-point-time-data-objectives-and-residual-loss | restoration point/time/data objectives and residual loss
 factor evidence-uncertainty-exclusions-authority-and-version | evidence, uncertainty, exclusions, authority, and version
+end-entry
+entry descent-kinship-pedigree-genealogy | Descent, Kinship, Pedigree, and Genealogy | reference | candidate | tables/entries/descent-kinship-pedigree-genealogy.md | Descent is the ancestor-to-descendant derivation relation between individuals or populations. Kinship is relatedness as a recognition system defines it, which includes biological, legal, and social ties. A pedigree is the recorded set of individuals and parent-offspring links, drawn or encoded under a standard. A genealogy is a sourced reconstruction of ancestry for named individuals under a stated proof standard.
+sense descent | descent
+sense kinship | kinship
+sense pedigree | pedigree
+sense genealogy | genealogy
+factor subject-individuals-or-populations-identity-rule-and-decision-use | subject individuals or populations, identity rule, and decision use
+factor population-delimitation-rule-and-authority-where-the-subject-is-a-population | population delimitation rule and authority where the subject is a population
+factor external-evidence-supplier-for-population-level-claims-cited-not-owned | external evidence supplier for population-level claims, cited not owned
+factor generation-depth-direction-and-time-span | generation depth, direction, and time span
+factor parent-offspring-link-evidence-and-link-type-biological-legal-social | parent-offspring link evidence and link type: biological, legal, social
+factor descent-rule-applied-and-its-stated-system | descent rule applied and its stated system
+factor recognition-system-its-authority-and-its-own-terms | recognition system, its authority, and its own terms
+factor relatedness-measure-definition-and-basis | relatedness measure, definition, and basis
+factor expectation-versus-realized-genomic-sharing | expectation versus realized genomic sharing
+factor record-structure-nomenclature-standard-and-exchange-format | record structure, nomenclature standard, and exchange format
+factor completeness-ascertainment-and-misattributed-parentage-allowance | completeness, ascertainment, and misattributed-parentage allowance
+factor source-citation-conflict-resolution-and-proof-standard | source citation, conflict resolution, and proof standard
+factor confidence-disputed-links-and-unresolved-branches | confidence, disputed links, and unresolved branches
+factor privacy-consent-and-third-party-exposure-of-relatives | privacy, consent, and third-party exposure of relatives
+factor prohibited-inferences-trait-entitlement-race-and-character | prohibited inferences: trait, entitlement, race, and character
+factor model-data-uncertainty-and-scope-limits | model, data, uncertainty, and scope limits
+end-entry
+entry disposition-power-designed-function | Disposition, Power, and Designed Function | reference | candidate | tables/entries/disposition-power-designed-function.md | This entry distinguishes a realizable propensity in a bearer from a function attributed by a design or selected-effect account. Trigger and manifestation describe the propensity; they do not create another sense. The entry does not make every resource, skill, executable, or role a disposition. The question is what kind of realizable explanatory relation is at issue, not whether a system can presently produce an outcome.
+sense realizable-disposition | realizable disposition
+sense designed-function | designed function
+factor bearer | bearer
+factor grounding-basis | grounding basis
+factor trigger | trigger
+factor enabling | enabling
+factor blocking-conditions | blocking conditions,
+factor manifestation | manifestation
+factor time | time
+factor evidence | evidence
+end-entry
+entry distribution-shape-skewness-tail-outlier-extreme-value | Distribution, Shape, Skewness, Tail, Outlier, and Extreme Value | quantities | candidate | tables/entries/distribution-shape-skewness-tail-outlier-extreme-value.md | A distribution assigns probability or observed frequency over the values a variable can take, for a stated population and period. Its shape is the set of features — support, bounds, modality, symmetry, tail weight — that describe that assignment. Skewness reports asymmetry under a chosen definition. A tail is the region beyond a stated cut. An outlier is an observation judged discrepant from an assumed model or the data bulk under a declared rule. An extreme value is a maximum, minimum, or threshold exceedance modeled under an extreme-value limit law.
+sense distribution | distribution
+sense distribution-shape | distribution shape
+sense skewness | skewness
+sense tail | tail
+sense outlier | outlier
+sense extreme-value | extreme value
+factor variable-population-sample-period-and-decision-use | variable, population, sample, period, and decision use
+factor measurement-scale-support-and-bounds | measurement scale, support, and bounds
+factor empirical-fitted-or-predictive-status-and-estimation-method | empirical, fitted, or predictive status and estimation method
+factor density-mass-or-cumulative-representation | density, mass, or cumulative representation
+factor shape-features-modality-symmetry-and-tail-weight | shape features: modality, symmetry, and tail weight
+factor skewness-diagnostic-estimator-owner-and-sample-size-sensitivity | skewness diagnostic, estimator owner, and sample-size sensitivity
+factor kurtosis-and-tail-index-diagnostics-carried-as-tail-factors-read-as-tail | kurtosis and tail-index diagnostics carried as tail factors, read as tail
+factor tail-definition-side-cut-or-quantile-convention-comparison-distribution | tail definition: side, cut or quantile convention, comparison distribution
+factor outlier-rule-pre-declaration-status-and-decision-authority | outlier rule, pre-declaration status, and decision authority
+factor outlier-treatment-retained-flagged-accommodated-or-excluded-with-reason | outlier treatment: retained, flagged, accommodated, or excluded, with reason
+factor analytic-sample-change-recorded-with-the-sampling-owner | analytic-sample change recorded with the sampling owner
+factor extreme-value-approach-block-maxima-or-peaks-over-threshold | extreme-value approach: block maxima or peaks over threshold
+factor block-size-or-threshold-choice-and-sensitivity-analysis | block size or threshold choice and sensitivity analysis
+factor limit-law-family-shape-parameter-and-moment-existence-status | limit-law family, shape parameter, and moment-existence status
+factor return-level-return-period-and-stationarity-assumption | return level, return period, and stationarity assumption
+factor dependence-clustering-and-declustering-treatment | dependence, clustering, and declustering treatment
+factor estimation-uncertainty-extrapolation-range-and-scope-limits | estimation uncertainty, extrapolation range, and scope limits
+end-entry
+entry ecosystem-habitat-niche-food-web-interdependence | Ecosystem, Habitat, Ecological Niche, Food Web, and Ecological Interdependence | science | candidate | tables/entries/ecosystem-habitat-niche-food-web-interdependence.md | An ecosystem is a biotic community together with its abiotic environment, treated as one interacting functional unit over a stated extent and period. A habitat is the place or type of site where a named organism or population occurs; it is referenced to that organism, not to a coordinate system. An ecological niche is the environmental role and resource space a population occupies along stated axes — the conditions and resources it requires, and the conditions and resources it consumes or alters. An ecological community is the set of co-occurring populations in the delimited area and period. A food web is the network of asserted feeding links among nodes at a stated aggregation and sampling effort. Ecological interdependence is a measured or modeled mutual reliance that holds under a stated perturbation.
+sense ecosystem | ecosystem
+sense habitat | habitat
+sense ecological-niche | ecological niche
+sense ecological-community | ecological community
+sense food-web | food web
+sense trophic-level | trophic level
+sense biological-species-interaction | biological species interaction
+sense ecological-interdependence | ecological interdependence
+factor ecosystem-or-community-identity-purpose-and-decision-use | ecosystem or community identity, purpose, and decision use
+factor spatial-extent-boundary-rule-and-habitat-or-ecotope-delimitation | spatial extent, boundary rule, and habitat or ecotope delimitation
+factor temporal-window-seasonality-succession-stage-and-disturbance-history | temporal window, seasonality, succession stage, and disturbance history
+factor taxonomic-and-functional-resolution-and-node-aggregation-rule | taxonomic and functional resolution and node aggregation rule
+factor populations-occurrence-evidence-abundance-and-detectability | populations, occurrence evidence, abundance, and detectability
+factor survey-design-sampling-frame-analytic-sample-and-field-practice | survey design, sampling frame, analytic sample, and field practice
+factor abiotic-conditions-resources-and-limiting-factors | abiotic conditions, resources, and limiting factors
+factor niche-axes-requirement-and-impact-components-and-measurement-basis | niche axes, requirement and impact components, and measurement basis
+factor interaction-kind-sign-direction-strength-and-context-dependence | interaction kind, sign, direction, strength, and context dependence
+factor trophic-link-evidence-diet-resolution-and-sampling-effort | trophic link evidence, diet resolution, and sampling effort
+factor energy-and-material-transfer-efficiency-and-accounting-basis | energy and material transfer, efficiency, and accounting basis
+factor network-structure-connectance-keystone-and-higher-order-effects | network structure, connectance, keystone and higher-order effects
+factor perturbation-removal-response-and-recovery-evidence | perturbation, removal, response, and recovery evidence
+factor disturbance-absorption-regime-persistence-and-observed-state-change | disturbance absorption, regime persistence, and observed state change
+factor human-use-ecosystem-services-and-accounting-classification | human use, ecosystem services, and accounting classification
+factor model-data-uncertainty-scale-dependence-and-scope-limits | model, data, uncertainty, scale dependence, and scope limits
 end-entry
 entry electrical-quantity | Electrical Quantity | science | candidate | tables/entries/electrical-quantity.md | Electrical descriptions span local electric field, charge and current, point-pair potential difference, material resistivity, specimen resistance, configuration capacitance, complex impedance, power, and energy transfer. Each retains its descriptive level, geometry, state, terminals, frequency, and model scope.
 sense electric-charge | electric charge
@@ -401,6 +651,32 @@ factor counterexample-or-change-scenario | counterexample or change scenario
 factor diagnostic-test | diagnostic test
 factor repair-boundary | repair boundary
 factor evidence-and-confidence | evidence and confidence
+end-entry
+entry fault-defect-error-failure-incident-outage | Fault, Defect, Error, Failure, Incident, and Outage | systems | candidate | tables/entries/fault-defect-error-failure-incident-outage.md | In the dependability taxonomy of Avizienis et al., a fault is an adjudged or hypothesized cause, present in or affecting an item, that could produce an error once activation conditions are met; until then it is dormant. A dependability-error is the part of the item's state that deviates from the correct state; it may be detected, latent, or masked. That reading is not universal: standards vocabularies also define fault as the state of inability to perform as required, and error as a discrepancy between an observed, computed, or measured value or condition and the correct one. A defect is a nonconformity attributed to a work product under a criterion; the use-relative reading taken here is the quality-vocabulary one, while software standards define defect against requirements or specifications instead. A failure is the loss of a required function or service against its criterion; that sense is owned by the dependability entry and is referenced here, not redefined. An incident is an occurrence that meets a named source's incident criterion; some operational regimes also require formal declaration under a rule and authority. An outage is a measured interval during which a service or component is unavailable or significantly degraded under a measurement contract; it may be planned or forced, and it does not presuppose a fault, error, or failure.
+sense fault-cause-condition | fault cause condition
+sense fault-inability-state | fault inability state
+sense dependability-error | dependability error
+sense defect | defect
+sense incident | incident
+sense outage | outage
+factor subject-item-boundary-required-service-and-stakeholders | subject, item boundary, required service, and stakeholders
+factor governing-source-edition-and-definitional-reading-selected-for-each-of | governing source, edition, and definitional reading selected for each of
+factor cause-condition-fault-identity-class-design-production-operational | cause-condition fault identity, class (design, production, operational,
+factor inability-state-fault-failed-function-criterion-and-onset | inability-state fault, failed function, criterion, and onset
+factor workload-and-exposure | workload and exposure
+factor error-state-detection-status-latency-masking-and-propagation-path | error state, detection status, latency, masking, and propagation path
+factor defect-criterion-intended-versus-specified-use-work-product-and | defect criterion, intended versus specified use, work product, and
+factor failure-criterion-mode-severity-and-boundary-of-manifestation | failure criterion, mode, severity, and boundary of manifestation
+factor fault-tolerance-redundancy-containment-and-error-handling-barriers | fault tolerance, redundancy, containment, and error-handling barriers
+factor incident-criterion-and-class-safety-security-service-occupational | incident criterion and class (safety, security, service, occupational
+factor declaration-rule-authority-and-declaration-time-where-applicable | declaration rule, authority, and declaration time where applicable
+factor impact-population-function-lost-geographic-and-data-or-security-exposure | impact population, function lost, geographic and data or security exposure
+factor outage-cause-class-planned-or-scheduled-forced-or-unanticipated-and | outage cause class: planned or scheduled, forced or unanticipated, and
+factor outage-start-and-end-determination-measurement-contract-exclusions-and | outage start and end determination, measurement contract, exclusions, and
+factor detection-triage-mitigation-workaround-resolution-and-closure-states | detection, triage, mitigation, workaround, resolution, and closure states
+factor problem-record-contributing-causes-known-error-and-corrective-action | problem record, contributing causes, known error, and corrective action,
+factor reporting-obligation-regulator-threshold-and-deadline | reporting obligation, regulator, threshold, and deadline
+factor evidence-uncertainty-revision-and-blame-or-learning-posture | evidence, uncertainty, revision, and blame or learning posture
 end-entry
 entry force | Force | polysemy | candidate | tables/entries/force.md | `Force` names several materially different concepts: physical interaction, coercive compulsion, organized personnel, effective influence, and operative validity. The senses share language about producing effects or overcoming resistance, but they do not share one formula or decomposition.
 alias push or pull
@@ -486,6 +762,39 @@ factor criteria-noncompensatory-limits-authority-and-residual-risk | criteria, n
 factor monitoring-incidents-near-misses-changes-and-learning | monitoring, incidents, near misses, changes, and learning
 factor provenance-version-review-limitations-and-unresolved-hazards | provenance, version, review, limitations, and unresolved hazards
 end-entry
+entry hohfeldian-incidents-claim-liberty-power-immunity | Hohfeldian Claim, Liberty, Power, Immunity, Duty, No-Claim, Liability, and Disability | governance | candidate | tables/entries/hohfeldian-incidents-claim-liberty-power-immunity.md | This is an analytical mapping of correlatives and opposites associated with Hohfeld. It is not legal advice, a statement of law, or a universal doctrine. It helps distinguish positions that ordinary “right” language can collapse.
+sense hohfeld-claim | hohfeld claim
+sense hohfeld-liberty | hohfeld liberty
+sense hohfeld-power | hohfeld power
+sense hohfeld-immunity | hohfeld immunity
+sense hohfeld-duty | hohfeld duty
+sense hohfeld-no-claim | hohfeld no claim
+sense hohfeld-liability | hohfeld liability
+sense hohfeld-disability | hohfeld disability
+factor subject | subject
+factor counterparty | counterparty
+factor act-or-state | act or state
+factor source | source
+factor forum | forum
+factor jurisdiction | jurisdiction
+factor time | time,
+factor recognized-act | recognized act
+factor correlative | correlative
+factor opposite | opposite
+factor evidence | evidence
+factor remedy-context | remedy context
+end-entry
+entry human-action-error-and-recovery | Human Action Error and Recovery | systems | candidate | tables/entries/human-action-error-and-recovery.md | This family distinguishes an action or omission that diverges from the actor's intention, plan, or applicable procedure from the process that detects, corrects, and stabilizes after that divergence. It is descriptive and non-blaming. It neither diagnoses persons nor determines causal attribution, deontic violation, liability, safety acceptability, or the appropriate response.
+sense action-error | action error
+sense error-recovery | error recovery
+factor agent-or-team-task-context-and-attribution-basis | agent or team, task, context, and attribution basis
+factor stated-intention-plan-procedure-and-applicable-deontic-position-where-any | stated intention, plan, procedure, and applicable deontic position where any
+factor action-or-omission-observed-divergence-and-action-cycle-stage | action or omission, observed divergence, and action-cycle stage
+factor divergence-mechanism-slip-lapse-mistake-rule-based-knowledge-based | divergence mechanism: slip, lapse, mistake, rule-based, knowledge-based,
+factor performance-level-workload-interruption-information-interface-and-conditions | performance level, workload, interruption, information, interface, and conditions
+factor detection-source-and-time | detection source and time
+factor correction-stabilization-residual-consequence-evidence-uncertainty-and-revision | correction, stabilization, residual consequence, evidence, uncertainty, and revision
+end-entry
 entry identity-naming-classification-versioning | Identity, Namespace, Naming, Classification, and Versioning | systems | candidate | tables/entries/identity-naming-classification-versioning.md | Identity concerns what remains the same entity; a namespace is a governed identifier interpretation scope; an identifier is a token used within it; a name is a human-facing label; classification and versioning apply purpose-specific schemes. These roles often appear in one string but should not be collapsed.
 sense entity-identity | entity identity
 sense namespace | namespace
@@ -506,6 +815,48 @@ factor versioning-scheme-and-compatibility-contract | versioning scheme and comp
 factor effective-time-and-lifecycle-status | effective time and lifecycle status
 factor redirects-merges-splits-and-supersession | redirects, merges, splits, and supersession
 factor provenance-and-confidence | provenance and confidence
+end-entry
+entry illocutionary-force-speech-acts | Illocutionary Force and Speech Acts | language | candidate | tables/entries/illocutionary-force-speech-acts.md | This candidate identifies what a speaker is doing in uttering content under a bounded conversational and institutional account. It distinguishes force from literal meaning, transport interaction, attitude, and downstream effect.
+sense illocutionary-assertive | illocutionary assertive
+sense illocutionary-question | illocutionary question
+sense illocutionary-directive | illocutionary directive
+sense illocutionary-commissive | illocutionary commissive
+sense illocutionary-expressive | illocutionary expressive
+sense illocutionary-declarative | illocutionary declarative
+factor speaker | speaker
+factor addressee | addressee
+factor content | content
+factor point | point
+factor strength | strength
+factor mode-of-achievement | mode of achievement,
+factor preparatory | preparatory
+factor sincerity-conditions | sincerity conditions
+factor authority | authority
+factor uptake | uptake
+factor context | context
+factor evidence | evidence
+end-entry
+entry incentive-alignment-externality-moral-hazard-adverse-selection | Incentive, Alignment, Externality, Moral Hazard, and Adverse Selection | economics | candidate | tables/entries/incentive-alignment-externality-moral-hazard-adverse-selection.md | This entry advances two conjoined contracts. They are stated separately because each can fail on its own, and the entry should be read as making two claims, not one.
+sense incentive | incentive
+sense incentive-compatibility | incentive compatibility
+sense alignment | alignment
+sense externality | externality
+sense moral-hazard | moral hazard
+sense adverse-selection | adverse selection
+factor principal-designer-or-regulator | principal, designer, or regulator
+factor agent-respondent-or-optimizing-system | agent, respondent, or optimizing system
+factor decision-or-behavior-intended-to-change | decision or behavior intended to change
+factor contingent-consequence-magnitude-basis-timing-and-delivery | contingent consequence, magnitude basis, timing, and delivery
+factor observable-measure-proxy-and-verification-cost | observable, measure, proxy, and verification cost
+factor mechanism-equilibrium-concept-and-demonstration-status | mechanism, equilibrium concept, and demonstration status
+factor information-asymmetry-type-timing-and-direction | information asymmetry type, timing, and direction
+factor marginal-price-incidence-of-consequence-and-exposure-change | marginal price, incidence of consequence, and exposure change
+factor action-space-effort-dimensions-and-multitask-trade-offs | action space, effort dimensions, and multitask trade-offs
+factor participation-self-selection-screening-and-signaling | participation, self-selection, screening, and signaling
+factor decision-boundary-affected-non-parties-effect-sign-and-compensation | decision boundary, affected non-parties, effect sign, and compensation
+factor principal-ends-ends-attribution-basis-agent-pursued-objective-horizon | principal ends, ends-attribution basis, agent pursued objective, horizon,
+factor internalization-monitoring-contract-rule-or-mechanism-instrument | internalization, monitoring, contract, rule, or mechanism instrument
+factor observed-response-gaming-crowding-out-and-revision | observed response, gaming, crowding-out, and revision
 end-entry
 entry information-data-signal-noise | Information, Data, Record, Schema, Signal, and Noise | information | candidate | tables/entries/information-data-signal-noise.md | Information, data, records, schemas, fields, encoding, signals, channels, and noise occupy different layers. Data is representation; records group data under a contract; schemas govern structure and interpretation; fields are schema-relative roles. Shannon measures quantify modeled surprise or dependence rather than meaning.
 sense semantic-information | semantic information
@@ -543,6 +894,47 @@ factor admissible-input-distribution-and-resource-constraints | admissible input
 factor estimator-sample-and-preprocessing | estimator, sample, and preprocessing
 factor rate-normalization-and-channel-use-clock | rate normalization and channel-use clock
 factor coding-regime-error-criterion-and-asymptotic-scope | coding regime, error criterion, and asymptotic scope
+end-entry
+entry inheritance-transmission-succession-bequest | Inheritance, Transmission, Succession, and Bequest | reference | candidate | tables/entries/inheritance-transmission-succession-bequest.md | Inheritance is what passes from a predecessor holder to a successor by virtue of a standing rule rather than a negotiated exchange. Transmission is the process and channel by which something passes from one bearer to another, at a rate and with a fidelity. Succession is the ordered replacement of the occupant of a position, office, role, or holding under a rule and a trigger. A bequest is an item of personal property directed by a testator to a beneficiary in a valid testamentary instrument; the corresponding gift of an interest in real property is a devise, which this entry records as a property-class factor of the same sense rather than as a separate sense.
+sense inheritance | inheritance
+sense transmission | transmission
+sense succession | succession
+sense bequest | bequest
+factor regime-genetic-cultural-epidemiological-legal-organizational-computational | regime: genetic, cultural, epidemiological, legal, organizational, computational
+factor transferred-object-trait-holding-right-obligation-state-or-definition | transferred object: trait, holding, right, obligation, state, or definition
+factor predecessor-holder-successor-and-identity-rules-for-both | predecessor holder, successor, and identity rules for both
+factor standing-rule-authority-and-default-versus-elective-status | standing rule, authority, and default versus elective status
+factor trigger-event-effective-time-and-vesting-or-effect-conditions | trigger event, effective time, and vesting or effect conditions
+factor process-channel-contact-or-contact-equivalent-and-fidelity | process, channel, contact or contact-equivalent, and fidelity
+factor rate-probability-and-loss-or-mutation-during-passing | rate, probability, and loss or mutation during passing
+factor instrument-formalities-validity-conditions-and-revocation | instrument, formalities, validity conditions, and revocation
+factor property-class-of-a-testamentary-gift-personal-property-bequest-or-an | property class of a testamentary gift: personal property (bequest) or an
+factor governing-law-or-governing-scheme-where-transfer-crosses-regimes | governing law or governing scheme where transfer crosses regimes
+factor ordering-rule-eligibility-disqualification-and-contest-path | ordering rule, eligibility, disqualification, and contest path
+factor liabilities-obligations-and-encumbrances-passing-with-the-object | liabilities, obligations, and encumbrances passing with the object
+factor acceptance-disclaimer-and-refusal-options | acceptance, disclaimer, and refusal options
+factor evidence-record-and-dispute-resolution | evidence, record, and dispute resolution
+factor individual-level-versus-population-level-claim-status | individual-level versus population-level claim status
+factor model-data-uncertainty-and-scope-limits | model, data, uncertainty, and scope limits
+end-entry
+entry institution-constitutive-regulative-social-object-status-function-reified-relationship | Institution, Constitutive Norm, Regulative Norm, Social Object, Status Function, and Reified Relationship | governance | candidate | tables/entries/institution-constitutive-regulative-social-object-status-function-reified-relationship.md | This candidate supplies a plural, account-relative vocabulary for institutional facts. It neither assumes a universal social ontology nor replaces organization, role, governance, or relationship records.
+sense institutional-arrangement | institutional arrangement
+sense constitutive-norm | constitutive norm
+sense regulative-norm | regulative norm
+sense social-object-account | social object account
+sense status-function | status function
+sense reified-relationship | reified relationship
+factor community-or-authority | community or authority
+factor recognition | recognition
+factor rule-source | rule source
+factor participants | participants
+factor status | status,
+factor practice | practice
+factor record | record
+factor scope | scope
+factor time | time
+factor contestation | contestation
+factor evidence | evidence
 end-entry
 entry interaction-request-response-correlation | Interaction, Request, Response, Acknowledgment, Notification, and Correlation | systems | candidate | tables/entries/interaction-request-response-correlation.md | An interaction is a bounded exchange among participants; requests, responses, acknowledgments, and notifications play different communication roles; correlation associates records under an explicit identity rule without proving causation or semantic identity.
 sense interaction-exchange | interaction exchange
@@ -671,6 +1063,28 @@ factor probability-target-outcome-definition-evaluation-population-and-bins | pr
 factor uncertainty-budget-diagnostics-acceptance-criteria-and-fitness-for-use | uncertainty budget, diagnostics, acceptance criteria, and fitness for use
 factor provenance-validity-interval-revision-and-limitations | provenance, validity interval, revision, and limitations
 end-entry
+entry metaphor-metonymy-symbol-allegory-allusion | Metaphor, Metonymy, Symbol, Allegory, and Allusion | language | candidate | tables/entries/metaphor-metonymy-symbol-allegory-allusion.md | An expression is used figuratively when its contextual meaning contrasts with, and is understood by reference to, its basic meaning. Metaphor structures understanding of a primary subject through a secondary subject drawn from another domain. Simile makes the comparison explicit with a comparative marker. Metonymy substitutes one entity for an associated entity within a single domain by contiguity, part-whole, or role. A symbol is an item that carries a surplus of meaning beyond its literal reference by convention or context. Allegory sustains a systematic second level of meaning across a whole work or extended passage. Allusion indirectly evokes an identifiable prior text, work, figure, or event.
+sense literal-figurative-status | literal figurative status
+sense metaphor | metaphor
+sense simile | simile
+sense metonymy | metonymy
+sense symbol | symbol
+sense allegory | allegory
+sense allusion | allusion
+sense figurative-inference | figurative inference
+factor expression-passage-image-or-work-identity | expression, passage, image, or work identity
+factor language-medium-genre-period-and-culture | language, medium, genre, period, and culture
+factor basic-meaning-and-contextual-meaning-of-the-target-word-or-image | basic meaning and contextual meaning of the target word or image
+factor primary-subject-and-secondary-subject | primary subject and secondary subject
+factor relation-type-of-mapping-contiguity-convention-parallel-level-or-evocation | relation type of mapping, contiguity, convention, parallel level, or evocation
+factor mapped-correspondences-and-blocked-correspondences | mapped correspondences and blocked correspondences
+factor conventionality-novelty-and-lexicalization-status | conventionality, novelty, and lexicalization status
+factor deliberateness-and-producer-intent-evidence | deliberateness and producer-intent evidence
+factor referenced-prior-text-work-figure-or-event-identification-evidence-and-recognizing-audience | referenced prior text, work, figure, or event, identification evidence, and recognizing audience
+factor scope-of-the-second-level-across-word-passage-or-whole-work | scope of the second level across word, passage, or whole work
+factor projected-and-blocked-correspondences-and-prohibited-conclusions | projected and blocked correspondences and prohibited conclusions
+factor competing-readings-cultural-variation-and-interpretive-authority | competing readings, cultural variation, and interpretive authority
+end-entry
 entry model-representation-simulation | Model, Representation, and Simulation | reference | candidate | tables/entries/model-representation-simulation.md | A model selects aspects of a subject for a purpose; a representation expresses content under an interpretation contract; a simulation executes or evolves a model; a run is one execution and a result is its interpreted output. Subject, model, representation, implementation, run, and result can disagree independently.
 sense model | model
 sense representation | representation
@@ -686,6 +1100,27 @@ factor inputs-parameters-conditions-and-scenarios | inputs, parameters, initial/
 factor run-identity-seed-environment-time-and-provenance | run identity, seed, environment, time, and provenance
 factor outputs-post-processing-uncertainty-and-comparison-evidence | outputs, post-processing, uncertainty, and comparison evidence
 factor verification-validation-sensitivity-and-intended-use-limits | verification, validation, sensitivity, and intended-use limits
+end-entry
+entry morpheme-inflection-derivation-compounding-word-formation | Morpheme, Inflection, Derivation, Compounding, and Word Formation | language | candidate | tables/entries/morpheme-inflection-derivation-compounding-word-formation.md | A lexeme is a vocabulary unit realized by a set of word forms; a word form is the realization of a lexeme in a paradigm cell. A morpheme is a minimal meaningful unit identified by a stated segmentation and identity criterion, and its context-dependent realizations are allomorphs. Inflection realizes a grammatical category value on a word form of the same lexeme. Derivation forms a new lexeme from a base, often with a category or meaning change. Compounding combines two or more lexical bases into one lexeme, usually with a head. Other word-formation processes, such as conversion, reduplication, blending, clipping, and back-formation, form new lexemes without ordinary affixation.
+sense lexeme-word-form | lexeme word form
+sense morpheme | morpheme
+sense inflection | inflection
+sense derivation | derivation
+sense compounding | compounding
+sense word-formation-process | word formation process
+sense productivity | productivity
+factor language-variety-and-period | language, variety, and period
+factor word-form-lexeme-and-paradigm-cell | word form, lexeme, and paradigm cell
+factor segmentation-into-morphs-morphemes-and-allomorphs | segmentation into morphs, morphemes, and allomorphs
+factor root-stem-base-and-affix-identification | root, stem, base, and affix identification
+factor process-type-of-affixation-compounding-conversion-reduplication-blending-or-clipping | process type of affixation, compounding, conversion, reduplication, blending, or clipping
+factor grammatical-categories-features-and-values-realized | grammatical categories, features, and values realized
+factor category-or-meaning-change-relative-to-the-base | category or meaning change relative to the base
+factor head-headedness-and-transparency-for-compounds | head, headedness, and transparency for compounds
+factor productivity-restrictions-blocking-and-gaps | productivity, restrictions, blocking, and gaps
+factor lexicalization-listedness-and-irregularity | lexicalization, listedness, and irregularity
+factor analysis-basis-of-morpheme-based-or-word-and-paradigm-with-evidence | analysis basis of morpheme-based or word-and-paradigm, with evidence
+factor language-sample-data-source-and-glossing-convention | language sample, data source, and glossing convention
 end-entry
 entry motion-measure | Motion Measure | science | candidate | tables/entries/motion-measure.md | Motion measures separate position, path length, displacement, velocity, acceleration, and linear momentum. Momentum combines selected mass and velocity in one frame; impulse changes momentum over an interval; conservation remains scoped to a declared system and external transfer boundary.
 sense position | position
@@ -707,6 +1142,26 @@ factor momentum-aggregation-and-reference-frame | momentum aggregation and refer
 factor impulse-interval-and-external-force-aggregation | impulse interval and external-force aggregation
 factor open-system-transfer-or-fixed-membership-scope | open-system transfer or fixed-membership scope
 factor unit-system | unit system
+end-entry
+entry motive-desire-intention-rationale | Motive, Desire, Intention, and Rationale | reference | candidate | tables/entries/motive-desire-intention-rationale.md | A desire is a pro-attitude toward a state of affairs: the agent favors it or is disposed to pursue it, and holding it imposes no requirement of consistency with other desires. An intention is settled: a prospective intention commits the agent to a future act and is subject to means-end coherence and to the default of not reconsidering, while an intention in action is what makes an act intentional under a particular description. A motive is the further end or concern that explains why the agent wanted or did the thing. A rationale is a recorded justification, addressed to an audience, for a decision, requirement, or design.
+sense desire | desire
+sense motive | motive
+sense intention-prospective | intention prospective
+sense intention-in-action | intention in action
+sense rationale | rationale
+factor agent-group-or-system-attributed-the-state | agent, group, or system attributed the state
+factor attitude-type-desire-motive-or-intention | attitude type: desire, motive, or intention
+factor object-under-a-description-scope-and-horizon | object under a description, scope, and horizon
+factor commitment-strength-settledness-and-reconsideration-trigger | commitment strength, settledness, and reconsideration trigger
+factor means-end-structure-plan-subordinate-ends-and-refinement | means-end structure, plan, subordinate ends, and refinement
+factor pursued-result-vocabulary-goal-language-alias-and-routing-to-objective | pursued-result vocabulary, goal-language alias, and routing to objective
+factor satisfaction-test-partial-attainment-and-abandonment | satisfaction test, partial attainment, and abandonment
+factor motivating-reasons-normative-reasons-and-defeaters | motivating reasons, normative reasons, and defeaters
+factor explanation-vs-justification-audience-and-record | explanation vs. justification, audience, and record
+factor record-binding-decision-requirement-architecture-or-unbound | record binding: decision, requirement, architecture, or unbound
+factor attribution-basis-avowal-behavior-artifact-or-inference | attribution basis: avowal, behavior, artifact, or inference
+factor conflict-ambivalence-competing-ends-and-priority | conflict, ambivalence, competing ends, and priority
+factor revision-failure-and-post-hoc-rationalization | revision, failure, and post-hoc rationalization
 end-entry
 entry operational-resource-capacity-demand | Operational Resource, Capacity, Demand, and Allocation | operations | candidate | tables/entries/operational-resource-capacity-demand.md | Operational resources provide capability or stock for work and outcomes. Capacity, demand, load, utilization, allocation, reservation, commitment, consumption, and shortage retain exact quantity, quality, time, policy, dependency, and evidence roles.
 sense operational-resource | operational resource
@@ -756,6 +1211,66 @@ factor owned-subject-and-stewardship-contract | owned subject and stewardship co
 factor controls-separation-and-escalation | controls, separation, and escalation
 factor effective-time-evidence-and-supersession | effective time, evidence, and supersession
 end-entry
+entry path-dependence-lock-in-switching-cost-increasing-returns-critical-juncture-reactive-sequence | Path Dependence, Lock-In, Switching Cost, Increasing Returns to Adoption, Critical Juncture, and Reactive Sequence | economics | candidate | tables/entries/path-dependence-lock-in-switching-cost-increasing-returns-critical-juncture-reactive-sequence.md | This candidate describes historically sequenced mechanisms under which earlier events condition later options. It rejects generic historical causation and emergence as owned senses, requiring evidence of a bounded mechanism and counterfactual alternatives.
+sense path-dependence-mechanism | path dependence mechanism
+sense lock-in-state | lock in state
+sense switching-cost | switching cost
+sense adoption-increasing-returns | adoption increasing returns
+sense critical-juncture | critical juncture
+sense reactive-sequence | reactive sequence
+factor initial-conditions | initial conditions
+factor alternatives | alternatives
+factor actors | actors
+factor sequence | sequence
+factor mechanism | mechanism
+factor feedback | feedback,
+factor switching-cost | switching cost
+factor time | time
+factor scope | scope
+factor counterfactual | counterfactual
+factor evidence | evidence
+factor boundary | boundary
+end-entry
+entry pattern-regularity-motif-template-pattern-formation | Pattern, Regularity, Motif, Template, and Pattern Formation | reference | candidate | tables/entries/pattern-regularity-motif-template-pattern-formation.md | A regularity is a relation that repeats across two or more individuated instances of a subject, corpus, or space, over a stated extent. Cross-instance plurality is criterial: a single figure that is invariant under a transformation family is a shape question and belongs to the canonical geometric entry, not to this family. A pattern description is the explicit rule, grammar, or specification that generates or recognizes the instances. A motif is the smallest recurring element that persists across occurrences and is identified by an index or catalogue. A template is a reusable prototype instantiated through declared variable slots over a fixed structure. A design pattern is a named unit of context, recurring problem, solution, and consequences. Pattern formation is the mechanism by which a pattern arises from initially uniform or unstructured conditions.
+sense regularity | regularity
+sense pattern-description | pattern description
+sense motif | motif
+sense template | template
+sense design-pattern | design pattern
+sense pattern-formation | pattern formation
+factor subject-corpus-population-medium-or-space | subject, corpus, population, medium, or space
+factor observation-extent-resolution-sampling-and-boundary | observation extent, resolution, sampling, and boundary
+factor repeated-element-or-unit-and-its-individuation-criterion | repeated element or unit and its individuation criterion
+factor repetition-relation-of-translation-reflection-rotation-scaling-sequence-or-co-occurrence | repetition relation of translation, reflection, rotation, scaling, sequence, or co-occurrence
+factor describing-rule-grammar-template-or-specification | describing rule, grammar, template, or specification
+factor variable-slots-invariants-and-admissible-variation | variable slots, invariants, and admissible variation
+factor instance-set-exceptions-and-near-misses | instance set, exceptions, and near-misses
+factor recognition-method-threshold-and-observer-or-detector | recognition method, threshold, and observer or detector
+factor generative-mechanism-or-explanation-if-claimed | generative mechanism or explanation, if claimed
+factor naming-catalogue-index-or-pattern-language-membership | naming, catalogue, index, or pattern-language membership
+factor consequences-tradeoffs-and-misapplication-conditions | consequences, tradeoffs, and misapplication conditions
+factor artifact-risk-from-sampling-multiplicity-and-confirmation | artifact risk from sampling, multiplicity, and confirmation
+end-entry
+entry perception-sensation-appearance-illusion-hallucination | Perception, Sensation, Appearance, Illusion, and Hallucination | reference | candidate | tables/entries/perception-sensation-appearance-illusion-hallucination.md | A stimulus is an environmental or bodily event that impinges on a receptor or sensor. Sensory transduction converts aspects of that event into afferent or neural signals. Perceptual organization groups and segments input; perceptual content or presentation concerns what object, property, or scene is experienced as present. Appearance records how things seem to a subject from a perspective and context. An illusion involves a relevant external stimulus or object that appears other than it is on a selected comparison basis. A hallucination is a perception-like episode without the corresponding external stimulus or object.
+sense stimulus | stimulus
+sense sensation-transduction | sensation transduction
+sense perceptual-organization | perceptual organization
+sense perceptual-content | perceptual content
+sense appearance | appearance
+sense illusion | illusion
+sense hallucination | hallucination
+factor perceiver-or-observer | perceiver or observer
+factor modality-or-bodily-source | modality or bodily source
+factor stimulus-source-medium-and-context | stimulus source, medium, and context
+factor receptor-or-transducer-state | receptor or transducer state
+factor organization-cues-and-conditions | organization cues and conditions
+factor perceptual-content-or-presentation | perceptual content or presentation
+factor appearance-or-seeming | appearance or seeming
+factor comparison-basis-for-accuracy-or-mismatch | comparison basis for accuracy or mismatch
+factor illusion-or-hallucination-classification | illusion or hallucination classification
+factor report-method-time-provenance-and-reviewer | report method, time, provenance, and reviewer
+factor clinical-context-functional-impact-uncertainty-and-exclusions | clinical context, functional impact, uncertainty, and exclusions
+end-entry
 entry periodic-wave-quantity | Periodic and Wave Quantity | science | candidate | tables/entries/periodic-wave-quantity.md | Frequency, period, wavelength, wave number, and phase describe recurrence; oscillation and amplitude describe repeated variation; spectra represent content against spectral coordinates; phase and group velocity separate component and local-envelope propagation under a declared dispersion model.
 sense period | period
 sense frequency | frequency
@@ -785,6 +1300,45 @@ factor dispersion-relation-and-phase-envelope-energy-or-information-target | dis
 factor packet-bandwidth-attenuation-distortion-and-validity-regime | packet bandwidth, attenuation, distortion, and validity regime
 factor requested-temporal-spatial-phase-or-speed-quantity | requested temporal, spatial, phase, or speed quantity
 factor unit-and-uncertainty | unit and uncertainty
+end-entry
+entry persistence-endurance-perdurance-continuity-replacement | Persistence, Endurance, Perdurance, Continuity, and Replacement | reference | candidate | tables/entries/persistence-endurance-perdurance-continuity-replacement.md | This entry records rival ways of accounting for apparent sameness through change, continuity evidence, and replacement. It does not decide the canonical identity of an entity and preserves endurantist and perdurantist disagreement.
+sense persistence-account | persistence account
+sense endurance-account | endurance account
+sense perdurance-account | perdurance account
+sense continuity-evidence | continuity evidence
+sense replacement-account | replacement account
+factor subject | subject
+factor time-interval | time interval
+factor account | account
+factor temporal-relation | temporal relation
+factor material | material
+factor organizational-continuity | organizational continuity
+factor relevant-changes | relevant changes
+factor replacement-scope | replacement scope
+factor authority | authority
+factor and | and
+factor evidence | evidence
+end-entry
+entry persona-self-presentation-mask-disguise-avatar | Persona, Self-Presentation, Mask, Disguise, and Avatar | reference | candidate | tables/entries/persona-self-presentation-mask-disguise-avatar.md | Self-presentation is the situated performance through which an agent gives, and gives off, impressions to an audience. A persona is a constructed public identity adopted by an agent for an audience and a purpose, with its own attributes and its own disclosure status. A design persona is a fictional archetypal user, grounded in research data, that stands in for a real segment during design. A mask is a visible covering or figure that enables assumption of another identity or state within a convention. A disguise conceals or falsifies identity attributes with deceptive intent. An avatar is a digital figure that represents and is controlled by a user in a mediated environment.
+sense self-presentation | self presentation
+sense persona | persona
+sense design-persona | design persona
+sense mask | mask
+sense disguise | disguise
+sense avatar | avatar
+sense conduct-attribution-basis | conduct attribution basis
+factor underlying-agent-or-originator-identity | underlying agent or originator identity
+factor figure-persona-mask-or-avatar-identity | figure, persona, mask, or avatar identity
+factor medium-platform-environment-and-convention | medium, platform, environment, and convention
+factor audience-co-participants-setting-and-front-or-back-region | audience, co-participants, setting, and front or back region
+factor purpose-of-performance-ritual-protection-play-research-proxy-or-deception | purpose of performance, ritual, protection, play, research proxy, or deception
+factor disclosure-status-of-open-pseudonymous-anonymous-or-deceptive | disclosure status of open, pseudonymous, anonymous, or deceptive
+factor controlled-attributes-of-name-appearance-voice-body-and-capabilities | controlled attributes of name, appearance, voice, body, and capabilities
+factor concealed-or-falsified-attributes-and-concealment-intent | concealed or falsified attributes and concealment intent
+factor degree-of-control-coupling-and-real-time-responsiveness | degree of control, coupling, and real-time responsiveness
+factor behavioural-and-perceptual-effects-on-the-agent-and-on-observers | behavioural and perceptual effects on the agent and on observers
+factor declared-attribution-basis-and-its-disclosure-to-the-audience | declared attribution basis and its disclosure to the audience
+factor duration-reversibility-and-multiplicity-of-figures-per-agent | duration, reversibility, and multiplicity of figures per agent
 end-entry
 entry physical-constant | Physical Constant | reference | candidate | tables/entries/physical-constant.md | A physical constant is a quantity used in physical theory or unit definition. Some constants have exact numerical values in specified units because a unit system defines them that way; others are experimentally determined and carry uncertainty. A bare number without quantity, unit, status, authority, and version is not a usable reference value.
 sense defining-constant | defining constant
@@ -823,6 +1377,49 @@ factor enforcement-point-and-action | enforcement point and action
 factor exception-scope-approver-reason-controls-and-expiry | exception scope, approver, reason, controls, and expiry
 factor audit-appeal-and-review | audit, appeal, and review
 end-entry
+entry prediction-forecast-conditional-projection-backtest-skill | Prediction, Forecast, Conditional Projection, Backtest, and Forecast Skill | reference | candidate | tables/entries/prediction-forecast-conditional-projection-backtest-skill.md | A prediction asserts something about a value that has not been observed, from a stated information set. A forecast is a prediction issued at a stated time for a stated future valid time. A conditional projection is the outcome path implied by a stated assumption or input set, with no claim that those assumptions will hold. A backtest replays a method against withheld or historical data under a declared protocol. Forecast skill compares a scored forecast against a declared reference forecast over a stated verification sample.
+sense prediction | prediction
+sense forecast | forecast
+sense conditional-projection | conditional projection
+sense backtest | backtest
+sense forecast-skill | forecast skill
+factor predictand-population-variable-and-decision-use | predictand, population, variable, and decision use
+factor information-set-available-at-assertion-time | information set available at assertion time
+factor issue-time-lead-time-valid-time-and-verification-period | issue time, lead time, valid time, and verification period
+factor conditioning-assumptions-inputs-and-scenario-reference | conditioning assumptions, inputs, and scenario reference
+factor conditionality-declaration-and-likelihood-status | conditionality declaration and likelihood status
+factor uncertainty-form-point-interval-quantile-distribution-or-category | uncertainty form: point, interval, quantile, distribution, or category
+factor method-model-estimation-window-and-parameter-freeze-rule | method, model, estimation window, and parameter freeze rule
+factor data-vintage-revision-status-and-look-ahead-exclusion | data vintage, revision status, and look-ahead exclusion
+factor replay-protocol-window-scheme-and-out-of-sample-boundary | replay protocol, window scheme, and out-of-sample boundary
+factor verifying-observation-and-its-own-measurement-error | verifying observation and its own measurement error
+factor score-propriety-and-case-aggregation | score, propriety, and case aggregation
+factor reference-forecast-identity-and-justification | reference forecast identity and justification
+factor calibration-sharpness-resolution-and-skill-reporting | calibration, sharpness, resolution, and skill reporting
+factor base-rate-rare-event-definition-and-degeneracy-check | base rate, rare-event definition, and degeneracy check
+factor sample-size-dependence-and-accuracy-difference-significance | sample size, dependence, and accuracy-difference significance
+factor limits-regime-change-and-prohibited-generalization | limits, regime change, and prohibited generalization
+end-entry
+entry privacy-confidentiality-secrecy-anonymity-disclosure | Privacy, Confidentiality, Secrecy, Anonymity, and Disclosure | governance | candidate | tables/entries/privacy-confidentiality-secrecy-anonymity-disclosure.md | Privacy concerns whether person-related collection, use, inference, linkage, retention, disclosure, and transfer are appropriate in a stated context. Confidentiality preserves authorized restrictions on access or disclosure. Secrecy intentionally withholds information from a specified audience. Anonymity concerns whether a person can avoid identification within a relevant set; pseudonymity uses a substitute identifier while retaining bounded continuity. Disclosure is the act of making information available to a recipient or audience.
+sense privacy | privacy
+sense confidentiality | confidentiality
+sense secrecy | secrecy
+sense anonymity | anonymity
+sense pseudonymity | pseudonymity
+sense identifiability | identifiability
+sense linkability | linkability
+sense disclosure | disclosure
+factor affected-person-or-group | affected person or group
+factor actor-role-authority-and-relationship | actor, role, authority, and relationship
+factor information-item-category-and-sensitivity | information item, category, and sensitivity
+factor identifiability-pseudonymity-anonymity-set-and-linkability | identifiability, pseudonymity, anonymity set, and linkability
+factor context-norms-expectation-jurisdiction-culture-and-time | context, norms, expectation, jurisdiction, culture, and time
+factor collection-use-inference-disclosure-retention-deletion-and-transfer | collection, use, inference, disclosure, retention, deletion, and transfer
+factor purpose-and-applicable-basis | purpose and applicable basis
+factor recipient-audience-and-onward-transfer-chain | recipient, audience, and onward-transfer chain
+factor confidentiality-restrictions-and-secrecy-obligations | confidentiality restrictions and secrecy obligations
+factor transparency-participation-safeguards-risk-remedy-and-review | transparency, participation, safeguards, risk, remedy, and review
+end-entry
 entry probability-risk-uncertainty | Probability, Risk, and Uncertainty | quantities | candidate | tables/entries/probability-risk-uncertainty.md | Probability varies possible events or data inside a fixed model. Likelihood fixes observed data and compares parameter values under a declared sampling and observation contract. Odds, risk, expected loss, general uncertainty, and measurement uncertainty retain separate roles.
 sense event-probability | event probability
 sense conditional-probability | conditional probability
@@ -849,6 +1446,23 @@ factor uncertainty-representation | uncertainty representation
 factor aggregation-or-decision-policy | aggregation or decision policy
 factor reporting-scale-and-provenance | reporting scale and provenance
 end-entry
+entry process-aspect-state-activity-accomplishment-achievement-semelfactive | Process Aspect: State, Activity, Accomplishment, Achievement, and Semelfactive | language | candidate | tables/entries/process-aspect-state-activity-accomplishment-achievement-semelfactive.md | This candidate classifies how a bounded predication unfolds, not what event, state, process, or lifecycle record exists. It retains the Vendler-style contrast while treating telicity, culmination, duration, iteration, and consequent state as diagnostics or factors unless they independently pass a future governing-question test.
+sense aspectual-state | aspectual state
+sense aspectual-activity | aspectual activity
+sense aspectual-accomplishment | aspectual accomplishment
+sense aspectual-achievement | aspectual achievement
+sense aspectual-semelfactive | aspectual semelfactive
+factor temporal-extent | temporal extent
+factor homogeneity | homogeneity
+factor dynamicity | dynamicity
+factor internal-stages | internal stages
+factor endpoint | endpoint
+factor structure | structure
+factor iteration | iteration
+factor result-description | result description
+factor viewpoint | viewpoint
+factor contextual-coercion | contextual coercion
+end-entry
 entry quantity-value-unit-conversion | Quantity Value, Numerical Value, Unit, Dimension, and Conversion | quantities | candidate | tables/entries/quantity-value-unit-conversion.md | A quantity value combines a number with a reference, usually a measurement unit. Numerical value depends on the selected unit; dimension records base-quantity dependence but does not establish quantity kind. Unit conversion re-expresses a value without creating a new measurement, calibration, or physical-validity claim.
 sense quantity-value | quantity value
 sense numerical-value | numerical value
@@ -868,6 +1482,26 @@ factor exact-or-approximate-factor-status | exact or approximate factor status
 factor measurement-uncertainty-and-covariance | measurement uncertainty and covariance where relevant
 factor numeric-precision-and-rounding-policy | numeric precision and rounding policy
 factor provenance-version-and-intended-use | provenance, version, and intended use
+end-entry
+entry register-style-genre-variety-idiolect | Register, Style, Genre, Variety, and Idiolect | language | candidate | tables/entries/register-style-genre-variety-idiolect.md | A register is the set of lexical and grammatical features that co-occur because of a situation of use, described through field, tenor, and mode, and interpreted by the function those features serve. A genre is a conventional, culturally recognized class of complete texts or works with expected structure, owned by a discourse community. A style is the set of preferential or aesthetic feature choices that distinguish a producer or work within a register. A variety or dialect is user-defined, marking region, social group, or period. An idiolect is the feature set attributable to one individual producer.
+sense register | register
+sense genre | genre
+sense style | style
+sense variety-dialect | variety dialect
+sense formality-level | formality level
+sense idiolect | idiolect
+factor text-utterance-work-or-corpus-identity | text, utterance, work, or corpus identity
+factor producer-audience-and-discourse-community | producer, audience, and discourse community
+factor situation-of-use-with-field-tenor-and-mode | situation of use with field, tenor, and mode
+factor medium-channel-and-mode-of-production | medium, channel, and mode of production
+factor observed-lexical-grammatical-and-formal-features | observed lexical, grammatical, and formal features
+factor co-occurrence-dimensions-and-their-functional-interpretation | co-occurrence dimensions and their functional interpretation
+factor conventional-class-membership-and-expected-structural-moves | conventional class membership and expected structural moves
+factor preferential-choices-attributable-to-producer-or-work | preferential choices attributable to producer or work
+factor user-defined-variety-of-region-social-group-or-period | user-defined variety of region, social group, or period
+factor declared-formality-or-deference-scale-and-its-convention | declared formality or deference scale and its convention
+factor individual-attribution-evidence-and-its-limits | individual attribution evidence and its limits
+factor corpus-sample-population-and-comparison-baseline | corpus, sample, population, and comparison baseline
 end-entry
 entry requirement-specification-verification-validation | Requirement, Specification, Verification, and Validation | systems | candidate | tables/entries/requirement-specification-verification-validation.md | A stakeholder need motivates outcomes; a requirement is a governed evaluable statement; a specification organizes controlled statements; verification evaluates conformity to specified requirements; validation evaluates suitability for intended use; nonconformity is a scoped negative criterion finding.
 sense stakeholder-need | stakeholder need
@@ -935,6 +1569,25 @@ factor feasible-infeasible-conditional-unresolved-or-out-of-scope-result | feasi
 factor sensitivity-alternate-scenarios-residuals-and-stop-reason | sensitivity, alternate scenarios, residuals, and stop reason
 factor authority-provenance-review-revision-and-invalidation | authority, provenance, review, revision, and invalidation
 end-entry
+entry similarity-difference-analogy-equivalence-match | Similarity, Difference, Analogy, Equivalence, and Match | reference | candidate | tables/entries/similarity-difference-analogy-equivalence-match.md | Similarity states that independently identified subjects are alike in declared respects. Difference records where they diverge after a stated alignment. Equivalence treats them as the same under a specified relation, invariant, or purpose without erasing their identities. Analogy maps structure from a source to a target to support a tentative comparison or inference. Matching selects correspondences among candidates under explicit rules. Substitutability asks whether one subject can replace another for a role, direction, and tolerated loss.
+sense similarity | similarity
+sense difference | difference
+sense equivalence | equivalence
+sense analogy | analogy
+sense match | match
+sense substitutability | substitutability
+sense interchangeability | interchangeability
+factor independently-identified-subjects | independently identified subjects
+factor representations-versions-context-and-purpose | representations, versions, context, and purpose
+factor compared-features-relations-functions-or-outputs | compared features, relations, functions, or outputs
+factor alignment-normalization-basis-and-scale | alignment, normalization, basis, and scale
+factor equivalence-criterion-invariant-and-closure-properties | equivalence criterion, invariant, and closure properties
+factor similarity-or-distance-measure-and-direction | similarity or distance measure and direction
+factor analogy-source-target-mapping-and-projected-inference | analogy source, target, mapping, and projected inference
+factor match-candidates-cardinality-constraints-and-unmatched-cases | match candidates, cardinality, constraints, and unmatched cases
+factor substitution-direction-preserved-properties-tolerated-loss-and-reversibility | substitution direction, preserved properties, tolerated loss, and reversibility
+factor remaining-differences-evidence-uncertainty-counterexamples-and-review | remaining differences, evidence, uncertainty, counterexamples, and review
+end-entry
 entry software-module-service-resource | Software Module, Service, and Resource | software | candidate | tables/entries/software-module-service-resource.md | A module groups and scopes software declarations; a service provides access to capabilities through an interface under descriptions, constraints, and policies; a resource is an identified subject exposed or managed under target-system interaction and lifecycle semantics. Files, endpoints, representations, manifests, and deployments remain mechanisms rather than definitions.
 sense module | module
 sense service | service
@@ -997,6 +1650,24 @@ factor route-source-destination-ordered-segments-constraints-and-alternatives | 
 factor network-nodes-edges-direction-capacity-state-and-reachability | network nodes, edges, direction, capacity, state, and reachability
 factor movement-change-history-observation-method-and-provenance | movement/change history, observation method, and provenance
 factor projection-transformation-generalization-loss-and-invalidation | projection, transformation, generalization, loss, and invalidation
+end-entry
+entry stance-tone-voice-mood-atmosphere | Stance, Tone, Voice, Mood, and Atmosphere | language | candidate | tables/entries/stance-tone-voice-mood-atmosphere.md | Stance is the attitude toward a proposition, an addressee, or a subject that an expression explicitly encodes through attitude, engagement, and graduation resources. Tone is the attitude attributed to a producer or to a work toward its subject and audience on cited evidence. Narrative voice concerns who speaks or narrates, at which level and with which relation to the story, as against who perceives. Felt mood is a diffuse, low-intensity, weakly object-directed affective state induced in or ascribed to a receiver. Atmosphere is an affective quality experienced as spatially extended over a scene, place, or setting.
+sense stance | stance
+sense tone | tone
+sense narrative-voice | narrative voice
+sense felt-mood | felt mood
+sense atmosphere | atmosphere
+factor expression-work-utterance-performance-or-place-identity | expression, work, utterance, performance, or place identity
+factor producer-performer-or-designer-position | producer, performer, or designer position
+factor receiver-audience-and-reception-conditions | receiver, audience, and reception conditions
+factor medium-modality-genre-and-register-context | medium, modality, genre, and register context
+factor textual-prosodic-visual-or-spatial-evidence-cited | textual, prosodic, visual, or spatial evidence cited
+factor encoded-stance-resources-of-attitude-engagement-and-graduation | encoded stance resources of attitude, engagement, and graduation
+factor attributed-tone-and-its-target-of-subject-audience-or-self | attributed tone and its target of subject, audience, or self
+factor induced-or-ascribed-mood-its-duration-intensity-and-object-directedness | induced or ascribed mood, its duration, intensity, and object-directedness
+factor atmospheric-quality-its-spatial-extent-and-its-onset-conditions | atmospheric quality, its spatial extent, and its onset conditions
+factor attribution-locus-of-producer-work-receiver-or-convention | attribution locus of producer, work, receiver, or convention
+factor disagreement-alternative-readings-cultural-variation-and-revision | disagreement, alternative readings, cultural variation, and revision
 end-entry
 entry state-event-transition-process-lifecycle | State, Event, Transition, Process, and Lifecycle | systems | candidate | tables/entries/state-event-transition-process-lifecycle.md | A state is a condition or active configuration; an event is an occurrence; a transition changes state when triggers and guards permit; a process organizes activities and flow; a lifecycle selects meaningful stages across an entity's existence. Status lists often mix all five and therefore hide causes, validity, and progression.
 sense state | state
@@ -1147,6 +1818,66 @@ factor initial-state-final-state-process-path-and-constraints | initial state, f
 factor constituents-composition-phase-inventory-and-interfaces | constituents, composition, phase inventory, and interfaces
 factor transition-driver-coexistence-metastability-hysteresis-and-kinetics | transition driver, coexistence, metastability, hysteresis, and kinetics
 factor measurement-conditions-uncertainty-provenance-and-claim-scope | measurement conditions, uncertainty, provenance, and claim scope
+end-entry
+entry tipping-point-critical-transition-cascade-contagion-spillover | Tipping Point, Critical Transition, Cascade, Contagion, and Spillover | systems | candidate | tables/entries/tipping-point-critical-transition-cascade-contagion-spillover.md | A tipping point is the level of a control variable at which a small further change commits a system to a qualitatively different state. A critical transition is that abrupt regime change together with the feedback, bifurcation, or hysteresis structure producing it. A cascade is an ordered propagation of dependent failures or activations through structural couplings. Contagion is unit-to-unit transmission of a state through a population. A spillover is an effect landing on units outside the treated, exposed, or originating set.
+sense tipping-point | tipping point
+sense critical-transition | critical transition
+sense cascade | cascade
+sense contagion | contagion
+sense spillover | spillover
+factor system-unit-set-boundary-and-decision-use | system, unit set, boundary, and decision use
+factor state-variable-control-variable-and-observation-window | state variable, control variable, and observation window
+factor baseline-regime-alternative-regime-and-qualitative-difference | baseline regime, alternative regime, and qualitative difference
+factor feedback-structure-nonlinearity-and-bifurcation-type | feedback structure, nonlinearity, and bifurcation type
+factor hysteresis-reversibility-and-recovery-path | hysteresis, reversibility, and recovery path
+factor commitment-point-location-uncertainty-and-irreversibility-horizon | commitment point, location uncertainty, and irreversibility horizon
+factor coupling-structure-dependency-direction-and-topology | coupling structure, dependency direction, and topology
+factor propagation-order-timing-amplification-and-stopping-condition | propagation order, timing, amplification, and stopping condition
+factor transmission-mechanism-contact-or-exposure-definition-and-rate | transmission mechanism, contact or exposure definition, and rate
+factor unit-activation-or-reinforcement-rule-and-its-model-source | unit activation or reinforcement rule and its model source
+factor population-susceptibility-and-reproduction-number-basis | population, susceptibility, and reproduction-number basis
+factor exposed-set-non-exposed-set-and-interference-structure | exposed set, non-exposed set, and interference structure
+factor channel-of-outside-effect-and-affected-unit-identification | channel of outside effect and affected-unit identification
+factor identification-strategy-confounding-homophily-and-simultaneity-handling | identification strategy, confounding, homophily, and simultaneity handling
+factor early-warning-indicator-detection-method-and-false-signal-rate | early-warning indicator, detection method, and false-signal rate
+factor model-data-uncertainty-and-scope-limits | model, data, uncertainty, and scope limits
+end-entry
+entry trust-credibility-reputation-legitimacy-reliance | Trust, Credibility, Reputation, Legitimacy, and Reliance | governance | candidate | tables/entries/trust-credibility-reputation-legitimacy-reliance.md | Trust is a vulnerability-bearing relation in which a trustor accepts risk based on a positive expectation of a trustee within a domain. Trustworthiness is a property or assessment of whether that trust is apt. Credibility is an audience's current judgment that a source or message is believable. Reputation is a historically accumulated and socially transmitted evaluation. Legitimacy can name either accepted rightfulness or justified rightfulness. Reliance is action or dependence based on expected performance and can occur without trust.
+sense trust | trust
+sense trustworthiness | trustworthiness
+sense credibility | credibility
+sense reputation | reputation
+sense legitimacy-descriptive | legitimacy descriptive
+sense legitimacy-normative | legitimacy normative
+sense reliance | reliance
+factor trustor-audience-evaluator-or-community | trustor, audience, evaluator, or community
+factor trustee-source-institution-system-or-subject | trustee, source, institution, system, or subject
+factor task-claim-domain-procedure-or-role | task, claim, domain, procedure, or role
+factor vulnerability-stakes-downside-alternative-and-fallback | vulnerability, stakes, downside, alternative, and fallback
+factor competence-reliability-motive-benevolence-integrity-and-alignment | competence, reliability, motive, benevolence, integrity, and alignment
+factor evidence-signal-provenance-and-communication-channel | evidence, signal, provenance, and communication channel
+factor reputation-history-third-party-reports-memory-and-update | reputation history, third-party reports, memory, and update
+factor legitimacy-audience-procedure-authority-source-and-justification | legitimacy audience, procedure, authority source, and justification
+factor discretion-monitoring-dependence-action-and-outcome | discretion, monitoring, dependence, action, and outcome
+factor disappointment-betrayal-deception-abuse-repair-and-contestation | disappointment, betrayal, deception, abuse, repair, and contestation
+end-entry
+entry type-token-instantiation-realization-embodiment | Type, Token, Instantiation, Realization, and Embodiment | reference | candidate | tables/entries/type-token-instantiation-realization-embodiment.md | A type is a repeatable kind, universal, or general, individuated by a stated criterion. A token is a particular that instantiates a type under a stated instantiation criterion. Realization is the relation by which a concrete or lower-level arrangement realizes a functional or higher-level kind, and the same kind may be realized by many distinct arrangements. A disposition is displayed under its manifestation conditions and remains present when it is not displayed. Embodiment is the relation by which a body or material bearer sustains a capacity or content, where the bearer constitutes rather than merely houses what it carries.
+sense general-type | general type
+sense token-instantiation | token instantiation
+sense realization | realization
+sense disposition-manifestation | disposition manifestation
+sense embodiment | embodiment
+factor abstract-general-functional-or-latent-item-identity | abstract, general, functional, or latent item identity
+factor particular-occurrence-arrangement-or-bearer-identity | particular, occurrence, arrangement, or bearer identity
+factor individuation-criterion-for-the-type-and-for-the-particular | individuation criterion for the type and for the particular
+factor instantiation-criterion-and-its-evidence | instantiation criterion and its evidence
+factor realizing-level-functional-kind-and-realization-multiplicity | realizing level, functional kind, and realization multiplicity
+factor disposition-stimulus-condition-and-display-or-non-display | disposition, stimulus condition, and display or non-display
+factor bearer-body-medium-and-constitution-or-mere-containment | bearer, body, medium, and constitution or mere containment
+factor context-time-and-persistence-of-the-relation | context, time, and persistence of the relation
+factor competing-metaphysical-accounts-left-visible | competing metaphysical accounts left visible
+factor excluded-homonym-senses-named-explicitly | excluded homonym senses named explicitly
+factor routing-to-classification-representation-appearance-and-projected-identity | routing to classification, representation, appearance, and projected identity
 end-entry
 entry work-energy-power | Work, Energy, and Power | science | candidate | tables/entries/work-energy-power.md | Work, energy, power, and torque are connected but distinct. Work is scalar transfer along displacement; energy is a system quantity; power is transfer rate; torque is an axial turning effect about a declared reference. Shared dimensions or `N m` notation do not make torque energy.
 sense mechanical-work | mechanical work

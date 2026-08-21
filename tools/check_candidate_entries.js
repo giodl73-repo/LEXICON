@@ -10,6 +10,11 @@ const canonicalPath = path.join(
   "reference",
   "lexicon-reference-v4.lexicon",
 );
+const admissionsPath = path.join(
+  repoRoot,
+  "reference",
+  "lexicon-candidate-admissions-v1.json",
+);
 
 const draftHeadings = [
   "## Orientation",
@@ -105,6 +110,11 @@ const legacyBriefsWithoutStandardLimitsHeading = new Set([
 ]);
 const candidateSenses = new Map();
 const linkedBriefs = new Set();
+const admittedCandidatePaths = new Set(
+  JSON.parse(fs.readFileSync(admissionsPath, "utf8")).entries.map((entry) =>
+    path.join("signals", "discover", "candidates", `${entry.id}.md`),
+  ),
+);
 
 for (const draft of drafts) {
   const relativePath = path.join(
@@ -188,9 +198,19 @@ const canonicalSenses = new Set(
   ),
 );
 for (const [sense, owner] of candidateSenses) {
-  if (canonicalSenses.has(sense)) {
+  if (canonicalSenses.has(sense) && !admittedCandidatePaths.has(owner)) {
     fail(`${owner}: sense ${sense} collides with the canonical reference`);
   }
+}
+
+const draftPaths = new Set(
+  drafts.map((draft) => path.join("signals", "discover", "candidates", draft)),
+);
+if (
+  admittedCandidatePaths.size !== draftPaths.size ||
+  [...admittedCandidatePaths].some((candidatePath) => !draftPaths.has(candidatePath))
+) {
+  fail("candidate admission manifest does not cover every historical draft exactly once");
 }
 
 const indexRelativePath = path.join(
@@ -210,5 +230,5 @@ if (JSON.stringify(indexedDrafts.sort()) !== JSON.stringify([...drafts].sort()))
 
 console.log(
   `OK candidate_entries=${drafts.length} briefs=${briefs.length} ` +
-    `senses=${candidateSenses.size} links=resolved`,
+    `senses=${candidateSenses.size} admitted=${admittedCandidatePaths.size} links=resolved`,
 );

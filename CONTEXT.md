@@ -25,8 +25,9 @@ evidence and one tested Lexicon domain.
 
 ## Current wave
 
-No wave is active. The latest completed wave is
-`context/waves/2026-08-21-book-proof-repair/WAVE.md`.
+The active wave is
+`context/waves/2026-08-21-candidate-canonical-merge/WAVE.md`. The latest
+completed wave is `context/waves/2026-08-21-book-proof-repair/WAVE.md`.
 
 The repaired `sim-67` PDF is a clean-source, internally validated book
 projection with full-width canonical Tables, a subordinate pointer index,
@@ -35,22 +36,24 @@ controlled external R4 reader testing, not reader-outcome claims or public R5
 release. See
 `context/waves/2026-08-21-book-proof-repair/LEXICON-BOOK-PROOF-REPAIR-RESULT.md`.
 
-The noncanonical corpus is at a practical fixed point under the completed
-comparison controls: 37 candidate entries, 37 briefs, and 205 proposed senses.
-This does not establish reader demand or canonical admission.
+The discovery corpus is preserved at its practical fixed point: 37 source
+drafts, 37 briefs, and 205 proposed senses. The owner-authorized 2026-08-21
+merge admits those families as canonical entries at candidate maturity. This
+does not establish reader demand or domain outcomes.
 
 The current machine-readable owner is
-`reference/lexicon-reference-v4.lexicon`: 54 entries, 419 senses, 638 factors,
+`reference/lexicon-reference-v4.lexicon`: 91 entries, 624 senses, 1,090 factors,
 and 100 views. Its eleven relations are
-`reference/lexicon-relations-v2.lexicon`; its 165 exact review bindings are
+`reference/lexicon-relations-v2.lexicon`; its 202 exact review bindings are
 `reference/lexicon-assurance-v4.lexicon`. Eleven current Composition Query
-fixtures use `.lexicon-query`, and the flattened 250-label pointer registry
+fixtures use `.lexicon-query`, and the current 270-label pointer registry
 uses `.lexicon`.
 
-`sim-67` is the current Lexicon-native projection. It renders Lexicon and
-Lexicon Reader over the unchanged content, search, Reader sequence, and pointer
-set while using only Lexicon-native active contracts, `LEXICON_` browser
-globals, and `data-lexicon-handoff`. `sim-66` remains the frozen
+`sim-68` is the current Lexicon-native projection. It renders the 91 canonical
+Tables, 100 specialized views, and 270 noncanonical pointer records while
+using only Lexicon-native active contracts, `LEXICON_` browser globals, and
+`data-lexicon-handoff`. `sim-67` remains the repaired 54-Table book projection,
+and `sim-66` remains the frozen
 Formarium-native projection and `sim-65` the earlier public-identity feedback
 snapshot. `sim-64` closes the generated Pointer Entry concordance at 250
 explicit labels, 2,681 exact structural expressions, and 2,118 label-to-owner
@@ -58,8 +61,9 @@ bindings
 while keeping canonical entries, search, the Reader sequence, and interchange
 unchanged. `sim-52` through `sim-63` remain preserved; `sim-64` adds a final
 10-label closeout. `sim-58` introduced same-directory, cycle-checked delta
-composition. Further pointer admission requires a new census and editorial
-trigger. The 250-pointer count is not the R5 canonical Table goal. The owner
+composition. `sim-68` records the next bounded census and admits 20 recurring
+labels without creating semantic relations. The pointer count is not the R5
+canonical Table goal. The owner
 has selected Lexicon as the canonical identity. `sim-64` remains the
 pre-Formarium content fixed point, `sim-51` remains the reversible Tabula Facta
 snapshot, and `sim-50` remains the earlier rolling V2 projection. Frozen
@@ -1304,7 +1308,8 @@ cargo run --quiet -- packet-check artifacts\factor-v1
 cargo run --quiet -- reference-check reference\lexicon-reference-v4.lexicon .
 cargo run --quiet -- reference-sidecar-check reference\lexicon-reference-v4.lexicon reference\lexicon-relations-v2.lexicon reference\lexicon-assurance-v4.lexicon .
 node tools\build_lexicon_contracts.js --check
-.\tools\render_proof_set.ps1 -Edition sim-67
+.\tools\render_proof_set.ps1 -Edition sim-68
+node tools\check_lexicon_candidate_admissions.js
 node tools\check_lexicon_canonical.js
 node tools\check_reference_closure_coverage.js
 node tools\check_decision_evidence_bridge.js

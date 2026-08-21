@@ -1,7 +1,7 @@
 lexicon-composition-query-v2
 query dependency-exclusion-conflict
 problem Can a report generator retain a required service dependency while subtracting its interface contract from the review?
-source a4967f5511e921d9a85739832b743684f19067ae01ba75f08f02052aacf9f351 | c4fdc129701bf4bee822754672d6dd11361c9507beb42f7942346bee4b92d27a
+source 062d9123d4af3923683fd4042024cf647fc5d5d3bccaccb1c0baf57863580355 | c4fdc129701bf4bee822754672d6dd11361c9507beb42f7942346bee4b92d27a
 context synthetic-system-review | boundary=declared-system,reference-frame=not-applicable
 policy direction=forward,follow=evaluative-required,stop=stable-identity
 budget depth=1,edges=1,nodes=3,work=10

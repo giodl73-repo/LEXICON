@@ -1,5 +1,5 @@
 param(
-    [string]$Edition = "sim-67",
+    [string]$Edition = "sim-68",
     [string]$OutputPath = "",
     [switch]$SkipRender,
     [switch]$RequireCleanSource

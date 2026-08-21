@@ -6,7 +6,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const root = path.resolve(__dirname, "..");
-const site = path.join(root, "target", "proof-set-sim-67");
+const site = path.join(root, "target", "proof-set-sim-68");
 const read = (relative) => fs.readFileSync(path.join(root, relative), "utf8");
 const sha256 = (text) =>
   crypto.createHash("sha256").update(text).digest("hex");
@@ -14,21 +14,21 @@ const manifest = JSON.parse(
   fs.readFileSync(path.join(site, "manifest.json"), "utf8"),
 );
 
-assert.equal(manifest.edition, "sim-67");
+assert.equal(manifest.edition, "sim-68");
 assert.equal(manifest.site_checks.missing_local_targets, 0);
-assert.equal(manifest.site_checks.pointer_entry_pages, 250);
-assert.equal(manifest.site_checks.tables_index_pointer_entries, 250);
-assert.equal(manifest.site_checks.dictionary_sequence_pages, 304);
-assert.equal(manifest.site_checks.dictionary_sequence_canonical_entries, 54);
-assert.equal(manifest.site_checks.dictionary_sequence_pointer_entries, 250);
-assert.equal(manifest.site_checks.dictionary_sequence_previous_links, 303);
-assert.equal(manifest.site_checks.dictionary_sequence_next_links, 303);
+assert.equal(manifest.site_checks.pointer_entry_pages, 270);
+assert.equal(manifest.site_checks.tables_index_pointer_entries, 270);
+assert.equal(manifest.site_checks.dictionary_sequence_pages, 361);
+assert.equal(manifest.site_checks.dictionary_sequence_canonical_entries, 91);
+assert.equal(manifest.site_checks.dictionary_sequence_pointer_entries, 270);
+assert.equal(manifest.site_checks.dictionary_sequence_previous_links, 360);
+assert.equal(manifest.site_checks.dictionary_sequence_next_links, 360);
 assert.equal(manifest.site_checks.dictionary_sequence_finish_links, 1);
 assert.equal(manifest.site_checks.dictionary_stream_pages, 1);
-assert.equal(manifest.site_checks.dictionary_stream_records, 304);
+assert.equal(manifest.site_checks.dictionary_stream_records, 361);
 assert.equal(manifest.site_checks.dictionary_stream_batch_size, 4);
 assert.equal(manifest.site_checks.dictionary_book_pages, 1);
-assert.equal(manifest.site_checks.dictionary_book_records, 304);
+assert.equal(manifest.site_checks.dictionary_book_records, 361);
 assert.equal(manifest.site_checks.dictionary_book_columns, 2);
 assert.equal(
   manifest.site_checks.dictionary_book_screen_flow,
@@ -42,16 +42,16 @@ assert.equal(
   manifest.site_checks.dictionary_book_print_flow,
   "full-width-canonical-tables-then-two-column-pointer-index",
 );
-assert.equal(manifest.site_checks.dictionary_book_print_canonical_tables, 54);
-assert.equal(manifest.site_checks.dictionary_book_print_pointer_records, 250);
-assert.equal(manifest.site_checks.dictionary_book_print_provenance_sections, 54);
+assert.equal(manifest.site_checks.dictionary_book_print_canonical_tables, 91);
+assert.equal(manifest.site_checks.dictionary_book_print_pointer_records, 270);
+assert.equal(manifest.site_checks.dictionary_book_print_provenance_sections, 91);
 assert.equal(manifest.site_checks.reader_route_additional_records, 157);
 assert.equal(manifest.site_checks.candidate_start_targets, 0);
 assert.equal(
   manifest.status,
   "internally validated projection; not reader-outcome evidence",
 );
-assert.equal(manifest.rendering_checks.repository_source_links, 98);
+assert.equal(manifest.rendering_checks.repository_source_links, 136);
 assert.equal(
   manifest.site_checks.product_authority,
   "Lexicon canonical; Reader and Factor Guides are linked projections",
@@ -123,13 +123,13 @@ for (const name of queries) {
 }
 
 const pointerRegistry = read(
-  "volumes/01-structure-quantity-choice/lexicon-pointer-registry-v1.lexicon",
+  "volumes/01-structure-quantity-choice/lexicon-pointer-registry-v2.lexicon",
 );
-assert.match(pointerRegistry, /^lexicon-pointer-registry-v1\n/);
+assert.match(pointerRegistry, /^lexicon-pointer-registry-v2\n/);
 assert.equal(
   pointerRegistry.split(/\r?\n/).filter((line) => line.startsWith("pointer "))
     .length,
-  250,
+  270,
 );
 
 const generatedFiles = fs
@@ -228,7 +228,7 @@ assert.doesNotMatch(
   /canonical Tables|bounded|typed closure|factorization|specialized views/i,
 );
 assert.doesNotMatch(home, />Terms<\/a>|not reader evidence or preview-01/);
-assert.match(home, /href="manifest\.json">sim-67<\/a>/);
+assert.match(home, /href="manifest\.json">sim-68<\/a>/);
 assert.match(home, /software: MIT/);
 assert.match(tables, /href="dictionary\.html">Continuous A-Z<\/a>/);
 assert.match(tables, /href="book\.html">Condensed book<\/a>/);
@@ -241,8 +241,15 @@ const streamDataMatch = dictionary.match(
 );
 assert.ok(streamDataMatch);
 const streamRecords = JSON.parse(streamDataMatch[1]);
-assert.equal(streamRecords.length, 304);
+assert.equal(streamRecords.length, 361);
 assert.deepEqual(streamRecords.slice(0, 3), [
+  {
+    title:
+      "Abstract Work, Notational Specification, Performance Instance, Compliance Condition, and Autographic/Allographic Distinction",
+    kind: "table",
+    href:
+      "entries/tables-entries-abstract-work-notational-specification-performance-instance-compliance-condition-autographic-allographic.html",
+  },
   { title: "Access", kind: "pointer", href: "pointers/access.html" },
   {
     title: "Access, Permission, Authorization, and Entitlement",
@@ -250,17 +257,12 @@ assert.deepEqual(streamRecords.slice(0, 3), [
     href:
       "entries/tables-entries-access-permission-authorization-entitlement.html",
   },
-  {
-    title: "Accumulation",
-    kind: "pointer",
-    href: "pointers/accumulation.html",
-  },
 ]);
 assert.match(book, /<title>Lexicon<\/title>/);
 assert.match(book, /<h1>Lexicon<\/h1>/);
 assert.doesNotMatch(book, /The Lexicon Dictionary/);
 assert.match(book, /Start with a familiar word\./);
-assert.match(book, /54 canonical Tables · 250 pointer-index records/);
+assert.match(book, /91 canonical Tables · 270 pointer-index records/);
 assert.match(book, /Internal proof · internally validated projection · not reader-outcome evidence/);
 assert.match(book, /<h2 id="book-use-heading">How to use this proof<\/h2>/);
 assert.match(book, /<h2 id="print-canonical-heading">Canonical Tables<\/h2>/);
@@ -268,23 +270,23 @@ assert.match(book, /<h2 id="print-pointer-heading">Pointer index<\/h2>/);
 assert.match(book, /<h2 id="book-colophon-heading">Colophon<\/h2>/);
 assert.equal(
   (book.match(/class="dictionary-book__print-table-item"/g) || []).length,
-  54,
+  91,
 );
 assert.equal(
   (book.match(/class="dictionary-book__print-pointer-item"/g) || []).length,
-  250,
+  270,
 );
 assert.equal(
   (book.match(/class="dictionary-book__print-provenance"/g) || []).length,
-  54,
+  91,
 );
 assert.equal(
   (book.match(/class="dictionary-book__print-maturity"/g) || []).length,
-  54,
+  91,
 );
 assert.equal(
   (book.match(/class="dictionary-book__maturity"/g) || []).length,
-  54,
+  91,
 );
 assert.doesNotMatch(book, /<p>Status:\s*/);
 assert.match(
@@ -302,30 +304,30 @@ assert.match(book, /LEXICON\/manifest\.json/);
 assert.match(book, /github\.com\/giodl73-repo\/LEXICON\/tree\//);
 assert.equal(
   (book.match(/class="dictionary-book__item"/g) || []).length,
-  304,
+  361,
 );
 assert.equal(
   (book.match(/data-dictionary-kind="pointer"/g) || []).length,
-  250,
+  270,
 );
 assert.equal(
   (book.match(/data-dictionary-kind="table"/g) || []).length,
-  54,
+  91,
 );
 assert.equal(
   (screenBook.match(/class="dictionary-book__pointer-parents"/g) || []).length,
-  250,
+  270,
 );
 assert.equal(
   [...screenBook.matchAll(/<div class="dictionary-book__pointer-parents">([\s\S]*?)<\/div>/g)]
     .reduce((total, match) => total + (match[1].match(/<a /g) || []).length, 0),
-  2118,
+  2740,
 );
 assert.doesNotMatch(book, /class="dictionary-book__(?:item-heading|meta)"/);
 assert.doesNotMatch(book, />Item \d+ · (?:Pointer|Canonical Table)</);
 assert.equal(
   (book.match(/class="dictionary-book__supplement"/g) || []).length,
-  183,
+  294,
 );
 assert.equal(
   (book.match(/data-book-supplement="specialized"/g) || []).length,
@@ -333,15 +335,15 @@ assert.equal(
 );
 assert.equal(
   (book.match(/data-book-supplement="reference_delta"/g) || []).length,
-  34,
+  71,
 );
 assert.equal(
   (book.match(/data-book-supplement="cross_references"/g) || []).length,
-  54,
+  91,
 );
 assert.equal(
   (book.match(/data-book-supplement="sources_provenance"/g) || []).length,
-  54,
+  91,
 );
 assert.doesNotMatch(book, /<details class="dictionary-book__supplement"[^>]*\sopen(?:\s|>)/);
 assert.doesNotMatch(
@@ -350,11 +352,11 @@ assert.doesNotMatch(
 );
 assert.match(
   book,
-  /data-dictionary-position="1"[\s\S]*?<h2 id="book-pointer-access">Access<\/h2>[\s\S]*?<p>Appears in<\/p><ul>[\s\S]*?<a href="entries\//,
+  /data-dictionary-position="2"[\s\S]*?<h2 id="book-pointer-access">Access<\/h2>[\s\S]*?<p>Appears in<\/p><ul>[\s\S]*?<a href="entries\//,
 );
 assert.match(
   book,
-  /data-dictionary-position="1" data-dictionary-title="Access"/,
+  /data-dictionary-position="1" data-dictionary-title="Abstract Work, Notational Specification, Performance Instance, Compliance Condition, and Autographic\/Allographic Distinction"/,
 );
 assert.match(
   book,
@@ -407,14 +409,14 @@ const dictionaryRecords = [
   href: match[3],
   title: match[4],
 }));
-assert.equal(dictionaryRecords.length, 304);
+assert.equal(dictionaryRecords.length, 361);
 assert.equal(
   dictionaryRecords.filter((record) => record.kind === "table").length,
-  54,
+  91,
 );
 assert.equal(
   dictionaryRecords.filter((record) => record.kind === "pointer").length,
-  250,
+  270,
 );
 assert.deepEqual(
   dictionaryRecords.map((record) => record.href),
@@ -432,9 +434,12 @@ assert.deepEqual(
     record.kind,
   ]),
   [
+    [
+      "Abstract Work, Notational Specification, Performance Instance, Compliance Condition, and Autographic/Allographic Distinction",
+      "table",
+    ],
     ["Access", "pointer"],
     ["Access, Permission, Authorization, and Entitlement", "table"],
-    ["Accumulation", "pointer"],
   ],
 );
 assert.equal(
@@ -485,5 +490,5 @@ assert.match(
 );
 
 console.log(
-  `OK sim67=Lexicon-native reference=${referenceSha256} relations=${relationSha256} queries=${queries.length} pointers=250 missing=0`,
+  `OK sim68=Lexicon-native reference=${referenceSha256} relations=${relationSha256} queries=${queries.length} pointers=270 missing=0`,
 );

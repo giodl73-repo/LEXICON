@@ -112,8 +112,116 @@ function sortReferenceRecords(text) {
   return `${header}\n${[...entries, ...views].flat().join("\n")}\n${end}\n`;
 }
 
-const reference = sortReferenceRecords(
-  legacyReference
+function markdownSection(text, heading) {
+  const marker = `${heading}\n`;
+  const start = text.indexOf(marker);
+  if (start < 0) {
+    throw new Error(`missing Markdown section: ${heading}`);
+  }
+  const bodyStart = start + marker.length;
+  const next = text.indexOf("\n## ", bodyStart);
+  return text.slice(bodyStart, next < 0 ? text.length : next).trim();
+}
+
+function plainText(value) {
+  return value
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[`*_]/g, "")
+    .replace(/\s+/g, " ")
+    .replaceAll("|", "/")
+    .trim();
+}
+
+function stableId(value) {
+  return plainText(value)
+    .toLowerCase()
+    .replaceAll("&", " and ")
+    .replaceAll("/", " or ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .replace(/-+/g, "-");
+}
+
+function promotedEntryRecord(admission) {
+  const sourcePath = `tables/entries/${admission.id}.md`;
+  const text = read(sourcePath);
+  const titleMatch = /^# (.+)$/m.exec(text);
+  if (!titleMatch) {
+    throw new Error(`missing title: ${sourcePath}`);
+  }
+  if (!/^Status: candidate anchor entry$/m.test(text)) {
+    throw new Error(`invalid promoted status: ${sourcePath}`);
+  }
+  const orientation = markdownSection(text, "## Orientation");
+  const summary = plainText(orientation.split(/\n\s*\n/)[0]);
+  const senseRows = [
+    ...markdownSection(text, "## Sense table").matchAll(
+      /^\| `([^`]+)` \| ([^|]+) \| ([^|]+) \|$/gm,
+    ),
+  ];
+  if (senseRows.length === 0) {
+    throw new Error(`missing promoted senses: ${sourcePath}`);
+  }
+
+  const factorSection = markdownSection(text, "## Root factorization");
+  const codeMatch = /```text\n([\s\S]*?)\n```/.exec(factorSection);
+  let factorLabels;
+  if (codeMatch) {
+    factorLabels = [];
+    let current = "";
+    for (const line of codeMatch[1].split("\n").slice(1)) {
+      const start = /^\s*(?::=|x)\s+(.+)$/.exec(line);
+      if (start) {
+        if (current) factorLabels.push(plainText(current));
+        current = start[1];
+      }
+    }
+    if (current) factorLabels.push(plainText(current));
+  } else {
+    const firstSentenceLines = [];
+    for (const line of factorSection.split(/\n\s*\n/)[0].split("\n")) {
+      firstSentenceLines.push(line.split(".")[0]);
+      if (line.includes(".")) break;
+    }
+    factorLabels = firstSentenceLines
+      .flatMap((line) =>
+        line.replace(/^Factor\s+/, "").split(/,\s+(?:and\s+)?|\s+and\s+/),
+      )
+      .map(plainText)
+      .map((label) => label.replace(/\s+(?:and|or)$/i, ""))
+      .filter(Boolean);
+  }
+  if (factorLabels.length === 0) {
+    throw new Error(`missing promoted factors: ${sourcePath}`);
+  }
+  const factorIds = new Set();
+  const factors = factorLabels.map((label) => {
+    let id = stableId(label);
+    let suffix = 2;
+    while (factorIds.has(id)) id = `${stableId(label)}-${suffix++}`;
+    factorIds.add(id);
+    return `factor ${id} | ${label}`;
+  });
+  return [
+    `entry ${admission.id} | ${plainText(titleMatch[1])} | ${admission.domain} | candidate | ${sourcePath} | ${summary}`,
+    ...senseRows.map((row) => `sense ${row[1]} | ${row[1].replaceAll("-", " ")}`),
+    ...factors,
+    "end-entry",
+  ].join("\n");
+}
+
+const admissionManifest = JSON.parse(
+  read("reference/lexicon-candidate-admissions-v1.json"),
+);
+if (
+  admissionManifest.contract !== "lexicon-candidate-admissions-v1" ||
+  admissionManifest.entries.length !== 37
+) {
+  throw new Error("invalid Lexicon candidate admission manifest");
+}
+const admissionRecords = admissionManifest.entries.map(promotedEntryRecord);
+
+const migratedReference = legacyReference
   .replace(/^factorium-reference-v2\n/, "lexicon-reference-v4\n")
   .split("\n")
   .map((line) => {
@@ -152,7 +260,12 @@ const reference = sortReferenceRecords(
     }
     return line;
   })
-  .join("\n"),
+  .join("\n");
+const reference = sortReferenceRecords(
+  migratedReference.replace(
+    /\nend-reference\s*$/,
+    `\n${admissionRecords.join("\n")}\nend-reference`,
+  ),
 );
 emit("reference/lexicon-reference-v4.lexicon", reference);
 
@@ -193,6 +306,12 @@ const assuranceLines = read("reference/factorium-assurance-v2.factorium")
             : line,
   )
   .filter((line) => line !== "lexicon-assurance-v4" && line !== "end-assurance" && line !== "")
+  .concat(
+    admissionManifest.entries.map((admission) => {
+      const sourcePath = `tables/entries/${admission.id}.md`;
+      return `review entry:${admission.id} | ${sha256(read(sourcePath))} | ${admissionManifest.admission_review} | fixed-point | ${admissionManifest.date}`;
+    }),
+  )
   .sort();
 const assurance = `lexicon-assurance-v4\n${assuranceLines.join("\n")}\nend-assurance\n`;
 emit("reference/lexicon-assurance-v4.lexicon", assurance);
@@ -254,6 +373,32 @@ emit(
   "volumes/01-structure-quantity-choice/lexicon-pointer-registry-v1.lexicon",
   `lexicon-pointer-registry-v1\n${pointers.join("\n")}\nend-lexicon-pointer-registry\n`,
 );
+const pointerAdmissions = JSON.parse(
+  read("reference/lexicon-pointer-admissions-v2.json"),
+);
+if (
+  pointerAdmissions.contract !== "lexicon-pointer-admissions-v2" ||
+  pointerAdmissions.base !== "lexicon-pointer-registry-v1" ||
+  pointerAdmissions.pointers.length !== 20
+) {
+  throw new Error("invalid Lexicon pointer admission manifest");
+}
+const pointerAdmissionRows = pointerAdmissions.pointers.map((pointer) =>
+  `pointer ${pointer.slug} | ${pointer.label} | ${pointer.orientation}`,
+);
+const pointerV2Rows = [...pointers, ...pointerAdmissionRows];
+if (
+  new Set(pointerV2Rows.map((row) => row.split(" | ")[0])).size !==
+    pointerV2Rows.length ||
+  new Set(pointerV2Rows.map((row) => row.split(" | ")[1].toLowerCase())).size !==
+    pointerV2Rows.length
+) {
+  throw new Error("duplicate Lexicon pointer admission");
+}
+emit(
+  "volumes/01-structure-quantity-choice/lexicon-pointer-registry-v2.lexicon",
+  `lexicon-pointer-registry-v2\n${pointerV2Rows.join("\n")}\nend-lexicon-pointer-registry\n`,
+);
 
 const labAllowlist = read(
   "volumes/01-structure-quantity-choice/proof-set-composition-lab-relations.factorium",
@@ -268,5 +413,5 @@ emit(
 );
 
 console.log(
-  `${check ? "checked" : "generated"}=${outputs.length} reference=${referenceSha256} relations=${relationSha256} pointers=${pointers.length}`,
+  `${check ? "checked" : "generated"}=${outputs.length} reference=${referenceSha256} relations=${relationSha256} pointers=${pointerV2Rows.length}`,
 );
