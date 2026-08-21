@@ -21,7 +21,7 @@ point velocity.
 | `angular-frequency` | How quickly does temporal phase advance? | temporal phase rate | `rad s^-1` |
 | `wavelength` | What spatial interval separates corresponding same-phase points? | spatial period | metre, `m` |
 | `wave-number` | How quickly does phase advance with position? | spatial phase rate | `rad m^-1` |
-| `phase` | Where within the declared cycle is this state relative to a reference? | dimension-one cyclic coordinate | radian, `rad` |
+| `cycle-phase` | Where within the declared cycle is this state relative to a reference? | dimension-one cyclic coordinate | radian, `rad` |
 | `wave-speed` | How quickly does a wave feature or phase propagate? | pattern propagation rate | `m s^-1` |
 | `oscillation` | What quantity varies repeatedly about a declared reference or trajectory? | repeated variation | quantity-dependent |
 | `amplitude` | What declared measure of excursion or component strength is used? | magnitude descriptor | unit of represented quantity |

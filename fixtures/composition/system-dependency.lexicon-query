@@ -1,7 +1,7 @@
 lexicon-composition-query-v2
 query system-dependency-interface
 problem Which dependency and interface concepts are required to review a report generator that relies on a document service?
-source 623b532d5670348b2c556360088e97f4df81f08d27be07985971081e3cbf942e | c4fdc129701bf4bee822754672d6dd11361c9507beb42f7942346bee4b92d27a
+source 38831a85d09812e8f045ce18800fe145f41c68984000675347c4835bcb38d6da | c4fdc129701bf4bee822754672d6dd11361c9507beb42f7942346bee4b92d27a
 context synthetic-system-review | boundary=declared-system,reference-frame=not-applicable
 policy direction=forward,follow=evaluative-required,stop=stable-identity
 budget depth=1,edges=1,nodes=3,work=9

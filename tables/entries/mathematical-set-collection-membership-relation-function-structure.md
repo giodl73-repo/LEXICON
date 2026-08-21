@@ -4,7 +4,7 @@ Status: candidate anchor entry
 
 ## Orientation
 
-A mathematical set is an object determined or governed by membership under a stated set theory. A collection is a plurality or aggregate presented for a mathematical purpose without automatically carrying sethood. Membership is the formal element-of relation. A relation is a set-like or primitive association among tuples under an account. A mathematical function assigns each admitted input exactly one output. A structure consists of a domain together with distinguished relations, functions, operations, or constants under a signature.
+A mathematical set is an object determined or governed by membership under a stated set theory. A collection is a plurality or aggregate presented for a mathematical purpose without automatically carrying sethood. Membership is the formal element-of relation. A relation is a set-like or primitive association among tuples under an account. This Table routes the function level as an exactly-one-output assignment pivot; operational mathematical-function analysis remains with Mathematical Relation Solving. A structure consists of a domain together with distinguished relations, functions, operations, or constants under a signature.
 
 ## Sense table
 
@@ -14,7 +14,7 @@ A mathematical set is an object determined or governed by membership under a sta
 | `mathematical-collection` | Which plurality is being considered without what commitment to sethood, order, or identity? | mathematically considered plurality |
 | `set-membership` | Is which object an element of which set under what theory and notation? | formal element-of relation |
 | `mathematical-relation` | Which tuples stand in which relation over which domains under what arity and interpretation? | tuple-association object |
-| `mathematical-function` | Which domain inputs are assigned exactly one output in which codomain by what rule or graph? | single-valued assignment relation |
+| `structural-function-route` | At which set/relation/function/structure level is a single-valued assignment being discussed before operational analysis? | cross-level function router |
 | `mathematical-structure` | Which domain with which signature, relations, functions, operations, and constants is considered? | interpreted mathematical organization |
 
 ## Root factorization
@@ -38,7 +38,7 @@ mathematical-object-level-use
 | Set vs. generic collection | either presents members | formal membership-governed object vs. broader aggregate/plurality |
 | Set vs. sequence | sequences can be encoded as sets | extensional membership vs. ordered indexed positions |
 | Membership vs. inclusion | both relate sets/elements | element-of vs. subset relation |
-| Relation vs. function | functions are single-valued relations under common accounts | arbitrary tuple association vs. exactly-one-output assignment |
+| Relation vs. function route | functions are single-valued relations under common accounts | arbitrary tuple association vs. the cross-level exactly-one-output pivot |
 | Function vs. formula | formulas may define functions | mathematical assignment vs. expression |
 | Structure vs. system | either organizes components | formal domain plus signature interpretations vs. broader interacting whole |
 
@@ -84,4 +84,4 @@ Collection Identity, Mathematical Relation Solving, Model/Representation, system
 2. “Set Theory,” *Stanford Encyclopedia of Philosophy*: https://plato.stanford.edu/archives/fall2013/entries/set-theory/
 3. “Structuralism in the Philosophy of Mathematics,” *Stanford Encyclopedia of Philosophy*: https://plato.stanford.edu/entries/structuralism-mathematics/
 
-This Table routes levels and does not replace the existing collection or solving owners.
+This Table routes levels and does not replace the existing collection or solving owners. The operational mathematical-function sense remains with Mathematical Relation Solving.

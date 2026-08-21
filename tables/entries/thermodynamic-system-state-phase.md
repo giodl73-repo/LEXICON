@@ -28,7 +28,7 @@ changes phase nature or number as conditions vary.
 | `equation-of-state` | What scoped model relates selected state variables? | constitutive relation |
 | `thermodynamic-process` | What change carries the system between states? | change process |
 | `process-path` | What sequence describes how the process occurred? | history description |
-| `phase` | What part is uniform in composition and physical state? | material-state entity |
+| `thermodynamic-phase` | What part is uniform in composition and physical state? | material-state entity |
 | `phase-transition` | What change alters phase nature or count? | material-state change |
 
 ## Conceptual chain

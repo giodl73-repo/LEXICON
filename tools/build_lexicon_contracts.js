@@ -254,10 +254,67 @@ if (new Set(allAdmissions.map(({ id }) => id)).size !== allAdmissions.length) {
 }
 const admissionRecords = allAdmissions.map(promotedEntryRecord);
 
+// Wave 6 assigns globally unique machine identities to historically
+// overloaded senses. The source Tables retain the ordinary-language labels;
+// these scoped IDs prevent two owners from publishing the same sense key.
+const reconciledLegacySenseIds = {
+  "adaptation-fitness-selection-exaptation": {
+    adaptation: "evolutionary-adaptation",
+  },
+  "claim-evidence": {
+    inference: "evidential-inference",
+  },
+  "control-monitoring-response": {
+    indicator: "monitoring-indicator",
+    intervention: "control-intervention",
+  },
+  "meaning-reference-interpretation-use": {
+    translation: "cross-system-meaning-mapping",
+  },
+  "motion-measure": {
+    position: "spatial-position",
+  },
+  "organization-role-authority": {
+    position: "organizational-position",
+  },
+  "periodic-wave-quantity": {
+    phase: "cycle-phase",
+  },
+  "software-transaction-message-contract": {
+    contract: "software-contract",
+    transaction: "software-transaction",
+  },
+  "system-composition-dependency": {
+    environment: "system-environment",
+  },
+  "thermodynamic-system-state-phase": {
+    phase: "thermodynamic-phase",
+  },
+};
+let migratedEntryId = "";
+
 const migratedReference = legacyReference
   .replace(/^factorium-reference-v2\n/, "lexicon-reference-v4\n")
   .split("\n")
   .map((line) => {
+    const entryMatch = /^entry ([^ ]+) \|/.exec(line);
+    if (entryMatch) migratedEntryId = entryMatch[1];
+    const senseMatch = /^sense ([^ ]+) \|/.exec(line);
+    if (senseMatch) {
+      const renamedSense = reconciledLegacySenseIds[migratedEntryId]?.[senseMatch[1]];
+      if (renamedSense) line = line.replace(/^sense [^ ]+ \|/, `sense ${renamedSense} |`);
+    }
+    if (line.startsWith("view ")) {
+      const fields = line.split(" | ");
+      const ownerRenames = reconciledLegacySenseIds[fields[1]];
+      if (ownerRenames) {
+        fields[2] = fields[2]
+          .split(",")
+          .map((senseId) => ownerRenames[senseId] || senseId)
+          .join(",");
+        line = fields.join(" | ");
+      }
+    }
     if (line.startsWith("entry factorium-entry-publication | ")) {
       return line
         .replace(
@@ -300,6 +357,12 @@ const reference = sortReferenceRecords(
     `\n${admissionRecords.join("\n")}\nend-reference`,
   ),
 );
+const referenceSenseIds = [...reference.matchAll(/^sense ([^ ]+) \|/gm)].map(
+  (match) => match[1],
+);
+if (new Set(referenceSenseIds).size !== referenceSenseIds.length) {
+  throw new Error("duplicate Lexicon sense identity after reconciliation");
+}
 emit("reference/lexicon-reference-v4.lexicon", reference);
 
 const legacyRelations = read("reference/factorium-relations-v0.factorium");
@@ -318,8 +381,16 @@ const assuranceLines = read("reference/factorium-assurance-v2.factorium")
     "review entry:lexicon-entry-publication ",
   )
   .split("\n")
-  .map((line) =>
-    line.startsWith("review relation:")
+  .map((line) => {
+    const legacyEntryReview = /^review entry:([^ ]+) \| [a-f0-9]{64} \|/.exec(line);
+    if (legacyEntryReview && reconciledLegacySenseIds[legacyEntryReview[1]]) {
+      const sourcePath = `tables/entries/${legacyEntryReview[1]}.md`;
+      line = line.replace(
+        /^review entry:[^ ]+ \| [a-f0-9]{64} \|/,
+        `review entry:${legacyEntryReview[1]} | ${sha256(read(sourcePath))} |`,
+      );
+    }
+    return line.startsWith("review relation:")
       ? line.replace(` | ${legacyRelationSha256} | `, ` | ${relationSha256} | `)
       : line.startsWith("review entry:lexicon-entry-publication ")
         ? line.replace(
@@ -336,8 +407,8 @@ const assuranceLines = read("reference/factorium-assurance-v2.factorium")
                 /^review view:scale-editorial-maturity \| [a-f0-9]{64} \| /,
                 `review view:scale-editorial-maturity | ${lexiconScaleSourceSha256} | `,
               )
-            : line,
-  )
+            : line;
+  })
   .filter((line) => line !== "lexicon-assurance-v4" && line !== "end-assurance" && line !== "")
   .concat(
     allAdmissions.map((admission) => {

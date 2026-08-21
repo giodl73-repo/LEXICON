@@ -32,6 +32,12 @@ The immutable admission inputs are:
 - `reference/lexicon-roadmap-wave-1-admissions-v1.json` through
   `reference/lexicon-roadmap-wave-5-admissions-v1.json`
 - `reference/lexicon-admission-index-v1.json`
+- `reference/lexicon-roadmap-reconciliation-v1.json`
+
+The reconciliation contract enumerates all 32 roadmap entries and 166 senses,
+records the resolution of 14 previously duplicated sense-ID groups, and binds
+the decision to retain the existing 11-relation set. The contract builder
+rejects any duplicate active sense identity.
 
 ## Legacy imports
 
@@ -51,6 +57,8 @@ node tools\build_lexicon_contracts.js --check
 node tools\check_lexicon_candidate_admissions.js
 node tools\check_lexicon_domain_admissions.js
 node tools\check_lexicon_roadmap_admissions.js
+node tools\build_lexicon_roadmap_reconciliation.js --check
+node tools\check_lexicon_roadmap_ordinary_language.js sim-75
 cargo run --quiet -- reference-check reference\lexicon-reference-v4.lexicon .
 cargo run --quiet -- reference-sidecar-check reference\lexicon-reference-v4.lexicon reference\lexicon-relations-v2.lexicon reference\lexicon-assurance-v4.lexicon .
 ```

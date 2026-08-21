@@ -63,6 +63,8 @@ const totalSenses = (reference.match(/^sense /gm) || []).length;
 const totalFactors = (reference.match(/^factor /gm) || []).length;
 const totalViews = (reference.match(/^view /gm) || []).length;
 const totalReviews = (assurance.match(/^review /gm) || []).length;
+const allSenseIds = [...reference.matchAll(/^sense ([^ ]+) \|/gm)].map((match) => match[1]);
+assert.equal(new Set(allSenseIds).size, allSenseIds.length, "duplicate global sense identity");
 assert.equal(totalEntries, 101 + admitted);
 assert.equal(totalSenses, 680 + senses);
 assert.equal(totalViews, 100);

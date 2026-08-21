@@ -19,7 +19,7 @@ answerability.
 | Sense | Governing question | Role |
 |---|---|---|
 | `organization` | Which coordinated actors, resources, processes, and interfaces form the institution in this view? | coordinated social system |
-| `position` | Which organization-defined bundle of assigned work exists independently of its current incumbent? | work assignment slot |
+| `organizational-position` | Which organization-defined bundle of assigned work exists independently of its current incumbent? | work assignment slot |
 | `organizational-role` | Which expected functions are grouped independently of the current assignee? | context-specific function bundle |
 | `competency` | Which measurable pattern of knowledge, skill, ability, behavior, or other characteristic is needed or demonstrated for work? | work-capability criterion |
 | `responsibility` | Which duty, obligation, or expected result is assigned to an actor? | performance obligation |

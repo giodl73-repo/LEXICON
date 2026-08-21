@@ -17,13 +17,13 @@ measurement, mechanism, communication, and effect layers.
 |---|---|---|
 | `objective` | Which desired result, state, or performance level is being pursued? | target or evaluation reference |
 | `monitoring` | What subject is observed through which method, cadence, window, and quality controls? | ongoing observation process |
-| `indicator` | Which defined measure or signal summarizes relevant condition or performance? | selected observable proxy |
+| `monitoring-indicator` | Which defined measure or signal summarizes relevant condition or performance? | selected observable proxy |
 | `threshold` | Which comparison boundary changes classification, attention, or action? | decision boundary |
 | `alert` | Which significant condition is communicated to whom, at what priority, with what expected response? | routed notification |
 | `feedback-control` | How does observed state influence action intended to affect future state relative to an objective? | closed-loop influence |
 | `governance-control` | Which safeguard, countermeasure, process, policy, or practice modifies risk or supports a requirement? | governed risk/requirement treatment |
 | `feedback` | How do effects return to influence causes or future activity? | reinforcing or balancing loop relation |
-| `intervention` | Which deliberate action changes the subject, process, or environment? | applied response |
+| `control-intervention` | Which deliberate action changes the subject, process, or environment? | applied response |
 | `outcome` | Which intended or unintended effect resulted over the selected horizon? | resulting effect |
 | `set-point` | What reference value or schedule should this controlled variable follow under the current operating mode? | control-loop reference input |
 | `actuator` | Which mechanism accepts a command and converts it into physical or logical action on the selected process? | command-to-process influence mechanism |

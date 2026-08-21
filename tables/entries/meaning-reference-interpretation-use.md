@@ -21,7 +21,7 @@ but none can silently stand for the others.
 | `interpretation-result` | Which reading was reached, with what scope, alternatives, loss, and confidence? | revisable result |
 | `use-context` | How is the expression or practice used by which participants, for which purpose and audience? | situated occurrence |
 | `ambiguity` | Which materially different admissible senses or references remain unresolved? | retained semantic alternatives |
-| `translation` | How is content projected between languages or symbol systems, in which direction and with which loss? | mediated mapping |
+| `cross-system-meaning-mapping` | How is interpreted content related across languages or symbol systems, in which direction and with which loss? | semantic cross-system mapping |
 
 ## Root factorization
 
@@ -50,7 +50,7 @@ meaning-reference-interpretation-use
 | interpretation vs. decoding | both can transform a source | evidence- and convention-governed selection of meaning vs. application of a representation mapping |
 | interpretation vs. inference | either can support the other | assigning or arguing for meaning vs. connecting premises to a conclusion under a rule or model |
 | ambiguity vs. uncertainty | both retain alternatives | multiple admissible senses or references vs. incomplete confidence more generally |
-| translation vs. exact mapping | both relate source and target | directional, mediated projection with possible loss vs. a declared structure-preserving correspondence |
+| cross-system meaning mapping vs. translation activity | both relate source and target | semantic relation and loss vs. producing a target-language expression for a purpose and audience |
 
 ## Dependencies and invalid combinations
 
@@ -84,12 +84,12 @@ and permission retain their existing owners.
 1. Identify the exact expression, sign, act, representation, work, or practice.
 2. Record form, language, version, medium, producer, and relevant context.
 3. State whether the question concerns meaning, reference, interpretation,
-   use, ambiguity, or translation.
+  use, ambiguity, or cross-system meaning mapping.
 4. Name the interpreter, method, conventions, evidence, assumptions, and
    purpose rather than presenting interpretation as an automatic decode.
 5. Retain alternatives, disagreement, failed reference, uncertainty, and
    defeaters.
-6. For translation, record source and target, direction, mediator, chosen
+6. For cross-system mapping, record source and target, direction, mediator, chosen
    correspondence, rejected alternatives, and loss.
 7. Record authority, restrictions, provenance, review, and supersession.
 

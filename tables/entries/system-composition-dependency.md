@@ -29,7 +29,7 @@ not interchangeable.
 | `architecture-description` | Which versioned work product expresses an architecture for declared stakeholders, concerns, viewpoints, and uses? | architecture representation artifact |
 | `capability` | What outcome can the system or element produce, for whom, and under which conditions? | condition-bound ability |
 | `boundary` | What is included, excluded, or treated as crossing in this view? | scope and inclusion decision |
-| `environment` | Which external actors, systems, and circumstances influence or interact with the system? | outside context |
+| `system-environment` | Which external actors, systems, and circumstances influence or interact with the system? | outside context |
 | `interface` | Where and under what contract do elements meet, interact, or exchange? | interaction locus and contract |
 | `dependency` | What does one subject rely on from another, under which condition and consequence? | directional reliance relation |
 

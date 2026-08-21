@@ -16,9 +16,9 @@ request, event, document, or schema label.
 
 | Sense | Governing question | Role |
 |---|---|---|
-| `transaction` | Which operations commit, abort, become visible, retry, or compensate as one governed unit? | effect and visibility boundary |
+| `software-transaction` | Which operations commit, abort, become visible, retry, or compensate as one governed unit? | effect and visibility boundary |
 | `message` | Which bounded communication unit carries which intent or information from which sender to which recipient? | protocol communication unit |
-| `contract` | Which assumptions, obligations, guarantees, constraints, and change rules govern interaction at this boundary? | behavioral agreement |
+| `software-contract` | Which assumptions, obligations, guarantees, constraints, and change rules govern interaction at this boundary? | behavioral agreement |
 
 ## Root factorization
 

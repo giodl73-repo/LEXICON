@@ -24,7 +24,7 @@ remain separate.
 | `provenance` | Where did the evidence come from and how can it be reproduced? | custody metadata |
 | `observation` | What was encountered or detected, by which observer or system, under what method and context? | recorded empirical or documentary encounter |
 | `measurement` | Which quantity was measured through which procedure and system, producing which attributed values and uncertainty? | quantity-obtaining process |
-| `inference` | Which premises, method or model, and assumptions connect evidence or results to a conclusion? | reasoning step |
+| `evidential-inference` | Which premises, method or model, and assumptions connect evidence or results to a conclusion? | evidence-to-claim reasoning step |
 
 Existing sense order is preserved in the canonical interchange; the three F3
 senses are appended identities rather than replacements.

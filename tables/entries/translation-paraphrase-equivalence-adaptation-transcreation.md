@@ -4,7 +4,7 @@ Status: candidate anchor entry
 
 ## Orientation
 
-Translation produces an expression in a target language from a source expression under a declared purpose. Paraphrase produces a differently worded expression, usually within one language, intended to preserve selected content or function. Equivalence is a claimed relation of sameness or adequacy along stated dimensions and thresholds. Adaptation transforms an expression or work for a new medium, audience, setting, purpose, or constraint. Transcreation is a purpose-driven creative transformation, often across languages and cultures, prioritizing selected effects or functions over close formal correspondence.
+Translation produces an expression in a target language from a source expression under a declared purpose. Paraphrase produces a differently worded expression, usually within one language, intended to preserve selected content or function. Translation equivalence is a source-target claim of sameness or adequacy along stated translation-relevant dimensions and thresholds; general equivalence retains its existing owner. Adaptation transforms an expression or work for a new medium, audience, setting, purpose, or constraint. Transcreation is a purpose-driven creative transformation, often across languages and cultures, prioritizing selected effects or functions over close formal correspondence.
 
 ## Sense table
 
@@ -12,7 +12,7 @@ Translation produces an expression in a target language from a source expression
 |---|---|---|
 | `translation` | Which source expression is rendered in which target language for which purpose and audience? | cross-language rendering |
 | `paraphrase` | Which expression is reformulated while preserving which selected content or function? | reformulation |
-| `equivalence` | Which two items are equivalent in which respects, under which criteria and threshold? | declared relation claim |
+| `translation-equivalence` | Which source and target are equivalent in which translation-relevant respects, under which criteria and threshold? | translation-scoped relation claim |
 | `adaptation` | Which source is transformed for which medium, audience, context, purpose, or constraint? | context-changing transformation |
 | `transcreation` | Which intended effects or functions guide which creative cross-language/cultural transformation? | effect-prioritized transformation |
 

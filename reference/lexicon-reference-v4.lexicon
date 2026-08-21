@@ -38,7 +38,7 @@ factor enforcement-failure-revocation-and-propagation | enforcement point, failu
 factor event-provenance-review-and-privacy | event, provenance, review, and privacy limits
 end-entry
 entry adaptation-fitness-selection-exaptation | Adaptation, Fitness, Selection, and Exaptation | science | candidate | tables/entries/adaptation-fitness-selection-exaptation.md | An adaptation is a trait whose historical origin is explained by natural selection for a function. Fitness compares reproductive success, propensity, or another explicitly selected evolutionary measure among variants in a stated population, environment, and time. Natural selection is differential survival or reproduction among heritable variants through interaction with the environment. An exaptation is a trait co-opted for a current role rather than selected for that role at its origin.
-sense adaptation | adaptation
+sense evolutionary-adaptation | evolutionary adaptation
 sense fitness | fitness
 sense natural-selection | natural selection
 sense exaptation | exaptation
@@ -315,7 +315,7 @@ sense confidence | confidence
 sense provenance | provenance
 sense observation | observation
 sense measurement | measurement
-sense inference | inference
+sense evidential-inference | inference
 factor exact-claim | exact claim
 factor subject-population-and-scope | subject, population, and scope
 factor method-and-comparison | method and comparison
@@ -467,13 +467,13 @@ end-entry
 entry control-monitoring-response | Objective, Control, Monitoring, and Response | systems | candidate | tables/entries/control-monitoring-response.md | Objectives state desired results; set points reference controlled variables; controllers issue commands; actuators influence processes; monitoring observes; indicators summarize; thresholds classify; alerts communicate; service-level objectives bind scoped indicators to targets and windows; outcomes record wider effects. Target, mechanism, measurement, commitment, and outcome remain distinct.
 sense objective | objective
 sense monitoring | monitoring
-sense indicator | indicator
+sense monitoring-indicator | indicator
 sense threshold | threshold
 sense alert | alert
 sense feedback-control | feedback control
 sense governance-control | governance control
 sense feedback | feedback
-sense intervention | intervention
+sense control-intervention | intervention
 sense outcome | outcome
 sense set-point | set point
 sense actuator | actuator
@@ -579,11 +579,11 @@ factor interpretation-object-standpoint-method-evidence-alternatives-realization
 factor reception-audience-or-community-access-circulation-response-appropriation-reframing-and-change-over-time | reception audience/community, access, circulation, response, appropriation, reframing, and change over time
 factor source-provenance-rights-or-access-contested-accounts-and-uncertainty | source, provenance, rights/access, contested accounts, and uncertainty
 end-entry
-entry culture-subculture-heritage-tradition-cultural-practice | Culture, Subculture, Heritage, Tradition, and Cultural Practice | social | candidate | tables/entries/culture-subculture-heritage-tradition-cultural-practice.md | Culture is a changing complex of meanings, practices, knowledge, values, forms, and material conditions associated with a society or group under a declared account. A subculture is a situated cultural formation differentiated within or across broader formations, not necessarily subordinate or homogeneous. Heritage is what communities, groups, institutions, or legal regimes recognize, transmit, interpret, and safeguard from the past for present and future significance. Tradition is a pattern represented and transmitted as continuous with a past while remaining open to recreation. A cultural practice is a recurrent or organized way of doing, making, expressing, or participating that carries cultural meaning in context.
+entry culture-subculture-heritage-tradition-cultural-practice | Culture, Subculture, Heritage, Tradition, and Cultural Practice | social | candidate | tables/entries/culture-subculture-heritage-tradition-cultural-practice.md | Culture is a changing complex of meanings, practices, knowledge, values, forms, and material conditions associated with a society or group under a declared account. A subculture is a situated cultural formation differentiated within or across broader formations, not necessarily subordinate or homogeneous. Heritage is what communities, groups, institutions, or legal regimes recognize, transmit, interpret, and safeguard from the past for present and future significance. A cultural tradition is a culturally situated pattern represented and transmitted as continuous with a past while remaining open to recreation; generic social tradition retains its existing owner. A cultural practice is a recurrent or organized way of doing, making, expressing, or participating that carries cultural meaning in context.
 sense culture | culture
 sense subculture | subculture
 sense heritage | heritage
-sense tradition | tradition
+sense cultural-tradition | cultural tradition
 sense cultural-practice | cultural practice
 factor communities-or-groups-or-persons-self-identification-place-time-and-standpoint | communities/groups/persons, self-identification, place, time, and standpoint
 factor meanings-values-knowledge-practices-expressions-objects-spaces-and-institutions | meanings, values, knowledge, practices, expressions, objects, spaces, and institutions
@@ -1356,12 +1356,12 @@ factor iteration-map-initial-state-and-generated-sequence | iteration map, initi
 factor stopping-rule-tolerance-precision-and-resource-limit | stopping rule, tolerance, precision, and resource limit
 factor convergence-target-criterion-rate-basin-and-proof-basis | convergence target, criterion, rate, basin, and proof basis
 end-entry
-entry mathematical-set-collection-membership-relation-function-structure | Mathematical Set, Collection, Membership, Relation, Function, and Structure | reference | candidate | tables/entries/mathematical-set-collection-membership-relation-function-structure.md | A mathematical set is an object determined or governed by membership under a stated set theory. A collection is a plurality or aggregate presented for a mathematical purpose without automatically carrying sethood. Membership is the formal element-of relation. A relation is a set-like or primitive association among tuples under an account. A mathematical function assigns each admitted input exactly one output. A structure consists of a domain together with distinguished relations, functions, operations, or constants under a signature.
+entry mathematical-set-collection-membership-relation-function-structure | Mathematical Set, Collection, Membership, Relation, Function, and Structure | reference | candidate | tables/entries/mathematical-set-collection-membership-relation-function-structure.md | A mathematical set is an object determined or governed by membership under a stated set theory. A collection is a plurality or aggregate presented for a mathematical purpose without automatically carrying sethood. Membership is the formal element-of relation. A relation is a set-like or primitive association among tuples under an account. This Table routes the function level as an exactly-one-output assignment pivot; operational mathematical-function analysis remains with Mathematical Relation Solving. A structure consists of a domain together with distinguished relations, functions, operations, or constants under a signature.
 sense mathematical-set | mathematical set
 sense mathematical-collection | mathematical collection
 sense set-membership | set membership
 sense mathematical-relation | mathematical relation
-sense mathematical-function | mathematical function
+sense structural-function-route | structural function route
 sense mathematical-structure | mathematical structure
 factor formal-theory-language-universe-or-domain-purpose-and-version | formal theory, language, universe or domain, purpose, and version
 factor set-identity-members-construction-extensionality-account-and-size | set identity, members, construction, extensionality account, and size
@@ -1408,7 +1408,7 @@ sense interpretation-act | interpretation act
 sense interpretation-result | interpretation result
 sense use-context | use context
 sense ambiguity | ambiguity
-sense translation | translation
+sense cross-system-meaning-mapping | translation
 factor subject-identity | expression, sign, act, work, or practice identity
 factor source-form-language-version-and-medium | source form, language, version, and medium
 factor candidate-sense-and-reference-domain | candidate sense and reference domain
@@ -1503,7 +1503,7 @@ factor analysis-basis-of-morpheme-based-or-word-and-paradigm-with-evidence | ana
 factor language-sample-data-source-and-glossing-convention | language sample, data source, and glossing convention
 end-entry
 entry motion-measure | Motion Measure | science | candidate | tables/entries/motion-measure.md | Motion measures separate position, path length, displacement, velocity, acceleration, and linear momentum. Momentum combines selected mass and velocity in one frame; impulse changes momentum over an interval; conservation remains scoped to a declared system and external transfer boundary.
-sense position | position
+sense spatial-position | position
 sense distance-traveled | distance traveled
 sense displacement | displacement
 sense speed | speed
@@ -1558,12 +1558,12 @@ factor participants-activity-materials-competence-purpose-and-practice-standards
 factor transmission-reception-lineage-interpretation-change-and-tradition-claim | transmission, reception, lineage, interpretation, change, and tradition claim
 factor authority-evidence-variation-uncertainty-and-provenance | authority, evidence, variation, uncertainty, and provenance
 end-entry
-entry number-numeral-quantity-magnitude-measurement | Number, Numeral, Quantity, Magnitude, and Measurement | quantities | candidate | tables/entries/number-numeral-quantity-magnitude-measurement.md | A number is a mathematical object under a declared number system or structural account. A numeral is an expression denoting a number in a notation. A quantity is a property whose instances can be compared quantitatively under a declared kind. Magnitude is the size or ordering aspect of a number, quantity, vector, or other object under a specified comparison. Measurement is an experimental or computational process that produces quantity values attributed to a measurand under a procedure.
+entry number-numeral-quantity-magnitude-measurement | Number, Numeral, Quantity, Magnitude, and Measurement | quantities | candidate | tables/entries/number-numeral-quantity-magnitude-measurement.md | A number is a mathematical object under a declared number system or structural account. A numeral is an expression denoting a number in a notation. A quantity is a property whose instances can be compared quantitatively under a declared kind. Magnitude is the size or ordering aspect of a number, quantity, vector, or other object under a specified comparison. This Table uses measurement as the cross-level pivot among measurand, quantity, magnitude, value, unit, procedure, and result; the operational measurement sense remains with Claim and Evidence.
 sense number | number
 sense numeral | numeral
 sense quantity | quantity
 sense magnitude | magnitude
-sense measurement | measurement
+sense quantitative-measurement-route | quantitative measurement route
 factor subject-mathematical-or-empirical-domain-purpose-and-time | subject, mathematical or empirical domain, purpose, and time
 factor number-system-object-identity-structural-position-operations-and-order | number system, object identity, structural position, operations, and order
 factor numeral-system-expression-syntax-representation-base-and-denotation | numeral system, expression, syntax, representation base, and denotation
@@ -1616,7 +1616,7 @@ factor uncertainty-alternatives-provenance-time-and-ethical-limits | uncertainty
 end-entry
 entry organization-role-authority | Organization, Position, Role, Competency, Responsibility, Authority, and Accountability | organizations | candidate | tables/entries/organization-role-authority.md | An organization coordinates actors and resources toward purposes. A position is a continuing work assignment; a role groups expected functions; competency is a work-capability criterion. Responsibility, authority, accountability, delegation, ownership, stewardship, and custody remain distinct.
 sense organization | organization
-sense position | position
+sense organizational-position | position
 sense organizational-role | organizational role
 sense competency | competency
 sense responsibility | responsibility
@@ -1703,7 +1703,7 @@ sense frequency | frequency
 sense angular-frequency | angular frequency
 sense wavelength | wavelength
 sense wave-number | wave number
-sense phase | phase
+sense cycle-phase | phase
 sense wave-speed | wave speed
 sense oscillation | oscillation
 sense amplitude | amplitude
@@ -2166,9 +2166,9 @@ factor policy-authorization-and-operational-conditions | policy, authorization, 
 factor compatibility-observation-and-provenance | compatibility, observation, and provenance
 end-entry
 entry software-transaction-message-contract | Software Transaction, Message, and Contract | software | candidate | tables/entries/software-transaction-message-contract.md | A transaction groups work under declared completion, rollback, visibility, and concurrency semantics; a message is a bounded communication unit under a protocol; a contract states obligations, assumptions, guarantees, constraints, and compatibility at a boundary. Requests, events, schemas, acknowledgments, commits, and business completion remain distinct.
-sense transaction | transaction
+sense software-transaction | transaction
 sense message | message
-sense contract | contract
+sense software-contract | contract
 factor participants-system-boundary-and-authority | participants, system boundary, and authority
 factor selected-transaction-message-or-contract-sense | selected transaction, message, or contract sense
 factor identity-correlation-and-version | identity, correlation, and version
@@ -2344,7 +2344,7 @@ sense architecture | architecture
 sense architecture-description | architecture description
 sense capability | capability
 sense boundary | boundary
-sense environment | environment
+sense system-environment | environment
 sense interface | interface
 sense dependency | dependency
 factor system-of-interest-behavior-or-purpose | system of interest, behavior, or purpose
@@ -2411,7 +2411,7 @@ sense extensive-quantity | extensive quantity
 sense equation-of-state | equation of state
 sense thermodynamic-process | thermodynamic process
 sense process-path | process path
-sense phase | phase
+sense thermodynamic-phase | phase
 sense phase-transition | phase transition
 factor selected-matter-region-or-control-volume | selected matter, region, or control volume
 factor surroundings-and-system-boundary | surroundings and system boundary
@@ -2448,10 +2448,10 @@ factor identification-strategy-confounding-homophily-and-simultaneity-handling |
 factor early-warning-indicator-detection-method-and-false-signal-rate | early-warning indicator, detection method, and false-signal rate
 factor model-data-uncertainty-and-scope-limits | model, data, uncertainty, and scope limits
 end-entry
-entry translation-paraphrase-equivalence-adaptation-transcreation | Translation, Paraphrase, Equivalence, Adaptation, and Transcreation | language | candidate | tables/entries/translation-paraphrase-equivalence-adaptation-transcreation.md | Translation produces an expression in a target language from a source expression under a declared purpose. Paraphrase produces a differently worded expression, usually within one language, intended to preserve selected content or function. Equivalence is a claimed relation of sameness or adequacy along stated dimensions and thresholds. Adaptation transforms an expression or work for a new medium, audience, setting, purpose, or constraint. Transcreation is a purpose-driven creative transformation, often across languages and cultures, prioritizing selected effects or functions over close formal correspondence.
+entry translation-paraphrase-equivalence-adaptation-transcreation | Translation, Paraphrase, Equivalence, Adaptation, and Transcreation | language | candidate | tables/entries/translation-paraphrase-equivalence-adaptation-transcreation.md | Translation produces an expression in a target language from a source expression under a declared purpose. Paraphrase produces a differently worded expression, usually within one language, intended to preserve selected content or function. Translation equivalence is a source-target claim of sameness or adequacy along stated translation-relevant dimensions and thresholds; general equivalence retains its existing owner. Adaptation transforms an expression or work for a new medium, audience, setting, purpose, or constraint. Transcreation is a purpose-driven creative transformation, often across languages and cultures, prioritizing selected effects or functions over close formal correspondence.
 sense translation | translation
 sense paraphrase | paraphrase
-sense equivalence | equivalence
+sense translation-equivalence | translation equivalence
 sense adaptation | adaptation
 sense transcreation | transcreation
 factor source-work-or-expression-target-expression-languages-modalities-and-versions | source work/expression, target expression, languages, modalities, and versions
@@ -2548,7 +2548,7 @@ view constraint-feasibility-sufficiency | scenario-assumption-condition-case | e
 end-view
 view constraint-policy-constraints | policy-rule-constraint-decision-exception | constraint,review,appeal | constraint | Policy Constraint Table | tables/constraints/policy-constraints.md | Version, evidence, authority, bounded exceptions, output separation, enforcement, audit, review independence, appeal integrity, and disposition separation remain explicit policy-evaluation invariants.
 end-view
-view constraint-system-composition-integrity | system-composition-dependency | system,system-element,component,architecture,architecture-description,capability,boundary,environment,interface,dependency | constraint | System Composition and Architecture Integrity Constraints | tables/constraints/system-composition-integrity.md | Preserves entity, architecture, description, viewpoint/view, contextual subsystem role, membership, part-whole semantics, capability conditions, interface contracts, dependency direction, environment, and cross-view consistency as distinct obligations.
+view constraint-system-composition-integrity | system-composition-dependency | system,system-element,component,architecture,architecture-description,capability,boundary,system-environment,interface,dependency | constraint | System Composition and Architecture Integrity Constraints | tables/constraints/system-composition-integrity.md | Preserves entity, architecture, description, viewpoint/view, contextual subsystem role, membership, part-whole semantics, capability conditions, interface contracts, dependency direction, environment, and cross-view consistency as distinct obligations.
 end-view
 view decision-alternative-selection | choice-alternative-selection | choice,alternative,decision-criterion,preference,trade-off,recommendation,selection | decision | Alternative Selection Decision Table | tables/decisions/alternative-selection.md | A bounded choice preserves candidate, feasible, excluded, and unresolved alternatives; partial outcome cells; operational criteria; attributed preference; sensitivity; recommendation; and authority-owned final selection without requiring one scoring method.
 end-view
@@ -2562,7 +2562,7 @@ view diagnostic-chemical-reaction-failures | chemical-reaction-stoichiometry-equ
 end-view
 view diagnostic-chemical-substance-classification-failures | chemical-substance-classification | chemical-element,chemical-entity,atom,molecule,ion,chemical-species,chemical-substance,chemical-compound,formula-unit,compound-class,classification-criterion,mixture,chemical-solution | diagnostic | Chemical Classification Failure Diagnostic | tables/diagnostics/chemical-substance-classification-failures.md | Maps level, composition, charge, representation, class-criterion, constituent, phase, and taxonomy-boundary defects to candidate causes and discriminating checks without turning named examples into canonical chemical catalogs.
 end-view
-view diagnostic-control-response-failures | control-monitoring-response | objective,monitoring,indicator,threshold,alert,feedback-control,governance-control,feedback,intervention,outcome,set-point,actuator,service-level-objective | diagnostic | Control and Response Failure Diagnostic | tables/diagnostics/control-response-failures.md | Maps target, command, actuation, monitoring, service-level, agreement, intervention, control, and outcome symptoms to candidate causes and discriminating tests without treating one symptom or status as proof of one diagnosis.
+view diagnostic-control-response-failures | control-monitoring-response | objective,monitoring,monitoring-indicator,threshold,alert,feedback-control,governance-control,feedback,control-intervention,outcome,set-point,actuator,service-level-objective | diagnostic | Control and Response Failure Diagnostic | tables/diagnostics/control-response-failures.md | Maps target, command, actuation, monitoring, service-level, agreement, intervention, control, and outcome symptoms to candidate causes and discriminating tests without treating one symptom or status as proof of one diagnosis.
 end-view
 view diagnostic-coordinated-work-failures | coordinated-work | plan,task,work-milestone,workflow,orchestration,choreography,concurrency,compensation | diagnostic | Coordinated Work Failure Diagnostic | tables/diagnostics/coordinated-work-failures.md | Maps planning, task, milestone, stalls, duplicates, conflicts, and partial-completion effects to candidate coordination causes and discriminating tests without assuming one engine, controller, or recovery mechanism.
 end-view
@@ -2590,7 +2590,7 @@ view diagnostic-model-simulation-failures | model-representation-simulation | mo
 end-view
 view diagnostic-operating-condition-failures | scenario-assumption-condition-case | condition,scenario,case,feasibility | diagnostic | Operating-Condition Composition Failure Diagnostic | tables/diagnostics/operating-condition-failures.md | Maps context mismatch, hidden assumptions, drift, infeasibility, timing, location, resource, interaction, and hazard symptoms to discriminating checks without treating one symptom as proof.
 end-view
-view diagnostic-oscillation-spectrum-dispersion-failures | periodic-wave-quantity | period,frequency,angular-frequency,wavelength,wave-number,phase,wave-speed,oscillation,amplitude,spectrum,phase-velocity,group-velocity | diagnostic | Oscillation, Spectrum, and Dispersion Failure Diagnostic | tables/diagnostics/oscillation-spectrum-dispersion-failures.md | Maps amplitude-reference, detrending, sampling, aliasing, transform, spectral-interpretation, and phase/group-velocity symptoms to discriminating checks without treating a peak, band name, or envelope speed as proof of a mode, source, or transport claim.
+view diagnostic-oscillation-spectrum-dispersion-failures | periodic-wave-quantity | period,frequency,angular-frequency,wavelength,wave-number,cycle-phase,wave-speed,oscillation,amplitude,spectrum,phase-velocity,group-velocity | diagnostic | Oscillation, Spectrum, and Dispersion Failure Diagnostic | tables/diagnostics/oscillation-spectrum-dispersion-failures.md | Maps amplitude-reference, detrending, sampling, aliasing, transform, spectral-interpretation, and phase/group-velocity symptoms to discriminating checks without treating a peak, band name, or envelope speed as proof of a mode, source, or transport claim.
 end-view
 view diagnostic-sampling-generalization-failures | sampling-generalization | target-population,sampling-frame,sample,analytic-sample,estimand,estimator,estimate,generalization,transport | diagnostic | Sampling and Generalization Failure Diagnostic | tables/diagnostics/sampling-generalization-failures.md | Maps coverage, selection, attrition, estimation, precision, leakage, and source-to-target symptoms to candidate causes and discriminating tests without treating sample size or representativeness as proof.
 end-view
@@ -2598,7 +2598,7 @@ view diagnostic-statistical-summary-interval-failures | statistical-summary-inte
 end-view
 view diagnostic-stock-flow-balance-failures | stock-flow-balance | stock,flow,accumulation,balance,conservation | diagnostic | Stock-Flow Balance Failure Diagnostic | tables/diagnostics/stock-flow-balance-failures.md | Maps nonclosure, suspicious closure, amount-rate confusion, hidden gross flows, compartment errors, drift, and residuals to candidate causes and discriminating tests without treating arithmetic balance as conservation proof.
 end-view
-view diagnostic-thermodynamic-system-state-phase-failures | thermodynamic-system-state-phase | thermodynamic-system,thermodynamic-surroundings,thermodynamic-boundary,open-system,closed-system,isolated-system,thermodynamic-state,state-variable,intensive-quantity,extensive-quantity,equation-of-state,thermodynamic-process,process-path,phase,phase-transition | diagnostic | Thermodynamic System and Phase Failure Diagnostic | tables/diagnostics/thermodynamic-system-state-phase-failures.md | Maps boundary, exchange, state, scaling, path, phase, transition, and taxonomy-boundary symptoms to discriminating checks without treating a container, steady reading, or familiar phase name as proof.
+view diagnostic-thermodynamic-system-state-phase-failures | thermodynamic-system-state-phase | thermodynamic-system,thermodynamic-surroundings,thermodynamic-boundary,open-system,closed-system,isolated-system,thermodynamic-state,state-variable,intensive-quantity,extensive-quantity,equation-of-state,thermodynamic-process,process-path,thermodynamic-phase,phase-transition | diagnostic | Thermodynamic System and Phase Failure Diagnostic | tables/diagnostics/thermodynamic-system-state-phase-failures.md | Maps boundary, exchange, state, scaling, path, phase, transition, and taxonomy-boundary symptoms to discriminating checks without treating a container, steady reading, or familiar phase name as proof.
 end-view
 view diagnostic-uncertainty-source-failures | probability-risk-uncertainty | uncertainty,measurement-uncertainty,risk | diagnostic | Uncertainty Source Failure Diagnostic | tables/diagnostics/uncertainty-source-failures.md | Separates source, representation, propagation, dependence, and interpretation failures without treating one source taxonomy or narrower interval as universal certainty.
 end-view
@@ -2608,9 +2608,9 @@ view evidence-causal-claim | causal-reasoning | association,causal-effect,influe
 end-view
 view evidence-change-lineage | identity-naming-classification-versioning | entity-identity,version | evidence | History, Revision, Provenance, Lineage, and Change Evidence | tables/evidence/change-lineage.md | Reconstructs identity, versions, events, agents, authority, derivation, supersession, correspondence, and evidence while preserving forks, merges, gaps, and uncertainty.
 end-view
-view evidence-contribution-credit-priority-legacy | claim-evidence | claim,evidence-item,result,limitation,confidence,provenance,observation,measurement,inference | evidence | Contribution, Credit, Priority, and Legacy Evidence | tables/evidence/contribution-credit-priority-legacy.md | Reconstructs contribution, priority, credit, causal boundaries, counterclaims, reception, legacy, and revision without allocating credit, ranking people, or settling history.
+view evidence-contribution-credit-priority-legacy | claim-evidence | claim,evidence-item,result,limitation,confidence,provenance,observation,measurement,evidential-inference | evidence | Contribution, Credit, Priority, and Legacy Evidence | tables/evidence/contribution-credit-priority-legacy.md | Reconstructs contribution, priority, credit, causal boundaries, counterclaims, reception, legacy, and revision without allocating credit, ranking people, or settling history.
 end-view
-view evidence-epistemic-standing-inquiry-warrant | claim-evidence | claim,evidence-item,result,limitation,confidence,provenance,observation,measurement,inference | evidence | Epistemic Standing, Inquiry, and Warrant | tables/evidence/epistemic-standing-inquiry-warrant.md | Records what a named subject takes to be the case through which inquiry, grounds, warrant, defeaters, standing, confidence, limitation, provenance, and review without certifying truth.
+view evidence-epistemic-standing-inquiry-warrant | claim-evidence | claim,evidence-item,result,limitation,confidence,provenance,observation,measurement,evidential-inference | evidence | Epistemic Standing, Inquiry, and Warrant | tables/evidence/epistemic-standing-inquiry-warrant.md | Records what a named subject takes to be the case through which inquiry, grounds, warrant, defeaters, standing, confidence, limitation, provenance, and review without certifying truth.
 end-view
 view evidence-evaluation-applicability | evaluation-measure-scale-criterion | evaluation-frame,evaluation-result,indicator,score | evidence | Evaluation Applicability Evidence Table | tables/evidence/evaluation-applicability.md | Binds subject, population, measure, proxy, rule, implementation, comparator, criteria, derivation, applicability, result, and disposition to exact evidence and prohibited generalizations.
 end-view
@@ -2620,13 +2620,13 @@ view evidence-founding-factor-evidence | claim-evidence | claim,evidence-item,re
 end-view
 view evidence-mechanism-path | causal-reasoning | causal-mechanism,causal-effect,influence,intervention,causal-attribution | evidence | Mechanism Path Evidence Table | tables/evidence/mechanism-path.md | Binds evidence and competing explanations to proposed pathway entities, activities, states, order, propagation, and outcome without identifying an effect or assigning responsibility.
 end-view
-view evidence-observation-inference-chain | claim-evidence | claim,evidence-item,result,limitation,confidence,provenance,observation,measurement,inference | evidence | Observation-to-Inference Evidence Chain | tables/evidence/observation-inference-chain.md | Preserves source, activity, observation or measurement, result, inference, claim implication, limitation, confidence, and provenance as separate stages in a traceable evidence chain.
+view evidence-observation-inference-chain | claim-evidence | claim,evidence-item,result,limitation,confidence,provenance,observation,measurement,evidential-inference | evidence | Observation-to-Inference Evidence Chain | tables/evidence/observation-inference-chain.md | Preserves source, activity, observation or measurement, result, inference, claim implication, limitation, confidence, and provenance as separate stages in a traceable evidence chain.
 end-view
 view evidence-requirement-verification-validation | requirement-specification-verification-validation | stakeholder-need,requirement,specification,verification,validation,nonconformity | evidence | Requirement Verification and Validation Evidence Table | tables/evidence/requirement-verification-validation.md | Keeps requirements, specifications, product configurations, criteria, methods, evidence, verification, intended-use validation, nonconformity, exceptions, and limitations separately traceable.
 end-view
 view evidence-scenario-applicability | scenario-assumption-condition-case | assumption,condition,scenario,case,feasibility | evidence | Scenario Evidence, Confidence, and Applicability Table | tables/evidence/scenario-applicability.md | Binds cases, assumptions, conditions, scenarios, comparisons, requirements, resources, dependencies, and conditional feasibility to exact evidence status, uncertainty, applicability, limitations, and prohibited generalizations.
 end-view
-view evidence-source-performance-research-custody | claim-evidence | claim,evidence-item,limitation,provenance,observation,inference | evidence | Source, Performance, and Research Custody | tables/evidence/source-performance-research-custody.md | Separates producer, performer, researcher, translator, archive, authority to share, consent, access, restriction, return, correction, and supersession without converting availability into permission.
+view evidence-source-performance-research-custody | claim-evidence | claim,evidence-item,limitation,provenance,observation,evidential-inference | evidence | Source, Performance, and Research Custody | tables/evidence/source-performance-research-custody.md | Separates producer, performer, researcher, translator, archive, authority to share, consent, access, restriction, return, correction, and supersession without converting availability into permission.
 end-view
 view formula-amount-concentration-composition | amount-concentration-composition | entity-count,amount-of-substance,amount-concentration,mass-concentration,amount-fraction,mass-fraction,volume-fraction,molar-mass | formula | Amount, Concentration, and Composition Relations | tables/formulas/amount-concentration-composition.md | These relations connect count, amount, concentration, composition fraction, molar mass, and mass/amount composition-basis conversions while preserving entity, component set, boundary, unit, weighting, and closure contracts.
 end-view
@@ -2650,7 +2650,7 @@ view formula-general-accounting-balance | stock-flow-balance | stock,flow,accumu
 end-view
 view formula-information-signal-measures | information-data-signal-noise | self-information,shannon-entropy,signal-to-noise-ratio,mutual-information,channel-capacity | formula | Information and Signal Measures | tables/formulas/information-signal-measures.md | These relations quantify modeled surprise, average discrete uncertainty, statistical dependence, a constrained discrete-channel bound, and selected signal-to-noise comparisons. They do not measure semantic meaning, causation, truth, usefulness, achieved throughput, or universal signal quality.
 end-view
-view formula-kinematics-motion-measures | motion-measure | position,distance-traveled,displacement,speed,velocity,acceleration,linear-momentum | formula | Motion and Momentum Measures | tables/formulas/kinematics-motion-measures.md | These relations separate path, endpoint, derivative, and mass-weighted motion quantities; momentum aggregation, impulse, and conservation retain system membership, frame, force interval, and boundary-transfer scope.
+view formula-kinematics-motion-measures | motion-measure | spatial-position,distance-traveled,displacement,speed,velocity,acceleration,linear-momentum | formula | Motion and Momentum Measures | tables/formulas/kinematics-motion-measures.md | These relations separate path, endpoint, derivative, and mass-weighted motion quantities; momentum aggregation, impulse, and conservation retain system membership, frame, force interval, and boundary-transfer scope.
 end-view
 view formula-matter-load-measures | matter-load-measure | mass,weight,mass-density,pressure,stress,gravitational-field | formula | Matter and Load Measures | tables/formulas/matter-load-measures.md | These relations distinguish mass, gravitational force and field, bulk and local density, scalar pressure, traction, and tensor stress under explicit boundary, location, scale, surface orientation, frame, sign, and model contracts.
 end-view
@@ -2660,7 +2660,7 @@ view formula-newtons-method | mathematical-relation-solving | mathematical-funct
 end-view
 view formula-ohms-law | electrical-quantity | electric-current,potential-difference,resistance | formula | Ohm's Law | tables/formulas/ohms-law.md | Ohm's law describes a linear voltage-current relation for an ohmic material or component under the physical conditions for which its resistance remains applicable. Despite its familiar name, it is an empirical relation rather than a universal law of nature.
 end-view
-view formula-periodic-wave-quantities | periodic-wave-quantity | period,frequency,angular-frequency,wavelength,wave-number,phase,wave-speed,oscillation,amplitude,spectrum,phase-velocity,group-velocity | formula | Periodic and Wave Quantities | tables/formulas/periodic-wave-quantities.md | These relations connect recurrence, sinusoidal representation, a finite discrete transform, component phase speed, and local group velocity. Reference, sampling, normalization, propagation sign, medium, mode, dispersion branch, bandwidth, and validity regime remain part of the formula contract.
+view formula-periodic-wave-quantities | periodic-wave-quantity | period,frequency,angular-frequency,wavelength,wave-number,cycle-phase,wave-speed,oscillation,amplitude,spectrum,phase-velocity,group-velocity | formula | Periodic and Wave Quantities | tables/formulas/periodic-wave-quantities.md | These relations connect recurrence, sinusoidal representation, a finite discrete transform, component phase speed, and local group velocity. Reference, sampling, normalization, propagation sign, medium, mode, dispersion branch, bandwidth, and validity regime remain part of the formula contract.
 end-view
 view formula-probability-range | probability-risk-uncertainty | event-probability | formula | Event Probability Range | tables/formulas/probability-range.md | Within a probability model, every event receives a probability between zero and one inclusive. The bound is a mathematical constraint on a probability measure; it does not make every arbitrary score in that interval a calibrated probability.
 end-view
@@ -2688,7 +2688,7 @@ view mapping-hierarchy-granularity | decomposition-modes-combination-contracts |
 end-view
 view mapping-optimization-problem-structure | choice-alternative-selection | choice,alternative,decision-criterion,trade-off,recommendation,selection | mapping | Optimization Problem Structure Mapping | tables/mappings/optimization-problem-structure.md | Maps application questions through variables, data, objectives, constraints, feasibility, optimality support, sensitivity, and a loss-aware decision handoff without making solver output an authorized choice.
 end-view
-view mapping-organizational-assignment-semantics | organization-role-authority | organization,position,organizational-role,competency,responsibility,authority,accountability-answerability,action-accountability,delegation,ownership-stewardship | mapping | Organizational Assignment Semantics | tables/mappings/organizational-assignment-semantics.md | Maps organization, position, role, competency, responsibility, authority, accountability, delegation, ownership, stewardship, and custody to records while preserving contextual, partial, many-to-many semantics and non-equivalence.
+view mapping-organizational-assignment-semantics | organization-role-authority | organization,organizational-position,organizational-role,competency,responsibility,authority,accountability-answerability,action-accountability,delegation,ownership-stewardship | mapping | Organizational Assignment Semantics | tables/mappings/organizational-assignment-semantics.md | Maps organization, position, role, competency, responsibility, authority, accountability, delegation, ownership, stewardship, and custody to records while preserving contextual, partial, many-to-many semantics and non-equivalence.
 end-view
 view mapping-perspective-projection | model-representation-simulation | model,representation,simulation-result | mapping | Perspective and Projection Mapping | tables/mappings/perspective-projection.md | Maps a source subject or model into a purpose-specific view while retaining direction, identity, selection, derivation, loss, reconstruction limits, and source-change invalidation.
 end-view
@@ -2698,7 +2698,7 @@ view mapping-semantic-participant-roles | interaction-request-response-correlati
 end-view
 view mapping-software-architecture-mechanisms | software-module-service-resource | module,service,resource | mapping | Software Architecture Mechanisms | tables/mappings/software-architecture-mechanisms.md | Maps module, service, and resource concepts into bounded language, SOA, HTTP, and Kubernetes mechanisms while preserving namespace, capability-access, resource, representation, state, lifecycle, and non-equivalence distinctions.
 end-view
-view mapping-software-interaction-mechanisms | software-transaction-message-contract | transaction,message,contract | mapping | Software Interaction Mechanisms | tables/mappings/software-interaction-mechanisms.md | Maps transaction, message, and contract concepts into bounded database, HTTP, SOA, API-description, and assertion mechanisms while separating acknowledgment, commit, business completion, event, representation, schema, and behavioral obligations.
+view mapping-software-interaction-mechanisms | software-transaction-message-contract | software-transaction,message,software-contract | mapping | Software Interaction Mechanisms | tables/mappings/software-interaction-mechanisms.md | Maps transaction, message, and contract concepts into bounded database, HTTP, SOA, API-description, and assertion mechanisms while separating acknowledgment, commit, business completion, event, representation, schema, and behavioral obligations.
 end-view
 view mapping-software-program-constructs | software-type-value-function | type,value,function | mapping | Software Program Construct Mechanisms | tables/mappings/software-program-constructs.md | Maps type, value, and function concepts into bounded Rust, Haskell, and PostgreSQL mechanisms without treating classes, variables, representations, signatures, purity, or target syntax as universal definitions.
 end-view

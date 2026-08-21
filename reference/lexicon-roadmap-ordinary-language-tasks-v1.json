@@ -1,0 +1,27 @@
+{
+  "contract": "lexicon-roadmap-ordinary-language-tasks-v1",
+  "date": "2026-08-21",
+  "status": "author-only-structural-rehearsal",
+  "protocol_source": "volumes/01-structure-quantity-choice/LEXICON-DOMAIN-GAP-READER-PROTOCOL.md",
+  "tasks": [
+    { "id": "R2-01", "query": "person role persona organization group", "primary_owner": "person-individual-social-actor-group-community-society", "acceptable_owners": ["person-individual-social-actor-group-community-society"] },
+    { "id": "R2-02", "query": "repeated workplace behavior convention norm custom practice policy regularity", "primary_owner": "norm-convention-custom-practice-tradition", "acceptable_owners": ["norm-convention-custom-practice-tradition"] },
+    { "id": "R2-03", "query": "good in itself benefit person welfare cost utility", "primary_owner": "good-benefit-welfare-harm-flourishing", "acceptable_owners": ["good-benefit-welfare-harm-flourishing"] },
+    { "id": "R2-04", "query": "equal equitable fairness justice desert resource allocation", "primary_owner": "equality-equity-fairness-justice-desert", "acceptable_owners": ["equality-equity-fairness-justice-desert"] },
+    { "id": "R2-05", "query": "causal moral organizational legal responsibility accountability liability blame excuse", "primary_owner": "responsibility-answerability-blame-liability-excuse", "acceptable_owners": ["responsibility-answerability-blame-liability-excuse", "causal-reasoning", "organization-role-authority"] },
+    { "id": "R2-06", "query": "cooperation reciprocity solidarity conflict reconciliation failed joint project", "primary_owner": "cooperation-solidarity-reciprocity-conflict-reconciliation", "acceptable_owners": ["cooperation-solidarity-reciprocity-conflict-reconciliation"] },
+    { "id": "R2-07", "query": "state government administration institution public authority", "primary_owner": "state-government-polity-administration-public-authority", "acceptable_owners": ["state-government-polity-administration-public-authority"] },
+    { "id": "R2-08", "query": "citizenship nationality residency membership political status", "primary_owner": "citizenship-nationality-residency-membership-political-status", "acceptable_owners": ["citizenship-nationality-residency-membership-political-status"] },
+    { "id": "R2-09", "query": "argument inference valid sound proof empirical evidence", "primary_owner": "statement-proposition-premise-conclusion-argument", "acceptable_owners": ["statement-proposition-premise-conclusion-argument", "inference-deduction-induction-abduction-analogy", "validity-soundness-proof-demonstration-refutation", "claim-evidence"] },
+    { "id": "R2-10", "query": "consistency contradiction satisfiability completeness", "primary_owner": "consistency-contradiction-satisfiability-completeness", "acceptable_owners": ["consistency-contradiction-satisfiability-completeness"] },
+    { "id": "R2-11", "query": "health disease impairment disability participation well-being", "primary_owner": "health-disease-disorder-condition-well-being", "acceptable_owners": ["health-disease-disorder-condition-well-being", "function-impairment-activity-limitation-disability-participation"] },
+    { "id": "R2-12", "query": "intervention treatment therapy rehabilitation care service clinical outcome", "primary_owner": "prevention-intervention-treatment-therapy-rehabilitation", "acceptable_owners": ["prevention-intervention-treatment-therapy-rehabilitation", "care-health-service-provider-recipient-pathway-continuity", "clinical-outcome-response-recovery-remission-quality-of-life"] },
+    { "id": "R2-13", "query": "word lexeme phrase clause sentence utterance", "primary_owner": "lexeme-word-phrase-clause-sentence-utterance", "acceptable_owners": ["lexeme-word-phrase-clause-sentence-utterance"] },
+    { "id": "R2-14", "query": "grammar syntax acceptability grammaticality usage", "primary_owner": "syntax-grammar-acceptability-grammaticality-usage", "acceptable_owners": ["syntax-grammar-acceptability-grammaticality-usage"] },
+    { "id": "R2-15", "query": "translation paraphrase equivalence adaptation transcreation", "primary_owner": "translation-paraphrase-equivalence-adaptation-transcreation", "acceptable_owners": ["translation-paraphrase-equivalence-adaptation-transcreation"] },
+    { "id": "R2-16", "query": "culture tradition custom practice ritual ceremony", "primary_owner": "culture-subculture-heritage-tradition-cultural-practice", "acceptable_owners": ["culture-subculture-heritage-tradition-cultural-practice", "norm-convention-custom-practice-tradition", "ritual-ceremony-observance-sacred-practice-symbolic-action"] },
+    { "id": "R2-17", "query": "artwork artifact medium form composition style genre", "primary_owner": "artwork-medium-form-composition-style-genre", "acceptable_owners": ["artwork-medium-form-composition-style-genre", "material-object-artifact-tool-manufacturing-process", "abstract-work-notational-specification-performance-instance-compliance-condition-autographic-allographic"] },
+    { "id": "R2-18", "query": "aesthetic property experience judgment taste value", "primary_owner": "aesthetic-property-experience-judgment-taste-value", "acceptable_owners": ["aesthetic-property-experience-judgment-taste-value"] }
+  ],
+  "claim_boundary": "Passing these deterministic search rehearsals is not external reader evidence."
+}

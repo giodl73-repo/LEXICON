@@ -13,7 +13,7 @@ quantity, not another name for velocity, force, impulse, or kinetic energy.
 
 | Sense | Governing question | Kind | Dimension | Defining evidence |
 |---|---|---|---|---|
-| `position` | Where is it in the chosen frame? | vector or coordinate | `L` | location relative to origin and axes |
+| `spatial-position` | Where is it in the chosen frame? | vector or coordinate | `L` | location relative to origin and axes |
 | `distance-traveled` | How much path length accumulated? | scalar | `L` | complete path |
 | `displacement` | How did final position differ from initial position? | vector | `L` | endpoints and frame |
 | `speed` | How fast is path length accumulating? | scalar | `L T^-1` | distance and elapsed time |

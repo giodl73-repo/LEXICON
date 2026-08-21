@@ -4,7 +4,7 @@ Status: candidate anchor entry
 
 ## Orientation
 
-Culture is a changing complex of meanings, practices, knowledge, values, forms, and material conditions associated with a society or group under a declared account. A subculture is a situated cultural formation differentiated within or across broader formations, not necessarily subordinate or homogeneous. Heritage is what communities, groups, institutions, or legal regimes recognize, transmit, interpret, and safeguard from the past for present and future significance. Tradition is a pattern represented and transmitted as continuous with a past while remaining open to recreation. A cultural practice is a recurrent or organized way of doing, making, expressing, or participating that carries cultural meaning in context.
+Culture is a changing complex of meanings, practices, knowledge, values, forms, and material conditions associated with a society or group under a declared account. A subculture is a situated cultural formation differentiated within or across broader formations, not necessarily subordinate or homogeneous. Heritage is what communities, groups, institutions, or legal regimes recognize, transmit, interpret, and safeguard from the past for present and future significance. A cultural tradition is a culturally situated pattern represented and transmitted as continuous with a past while remaining open to recreation; generic social tradition retains its existing owner. A cultural practice is a recurrent or organized way of doing, making, expressing, or participating that carries cultural meaning in context.
 
 ## Sense table
 
@@ -13,7 +13,7 @@ Culture is a changing complex of meanings, practices, knowledge, values, forms, 
 | `culture` | Which group's meanings, practices, forms, values, and conditions are described under which account? | cultural formation/account |
 | `subculture` | Which formation is differentiated how, by whom, and relative to which broader contexts? | situated differentiated formation |
 | `heritage` | What is recognized as inherited and significant by whom, under which process and authority? | recognized transmitted inheritance |
-| `tradition` | Which pattern is represented and transmitted as continuous with which past, with what recreation? | past-oriented transmission pattern |
+| `cultural-tradition` | Which culturally situated pattern is represented and transmitted as continuous with which past, with what recreation? | cultural past-oriented transmission pattern |
 | `cultural-practice` | Which culturally meaningful activity is performed, maintained, changed, or contested by whom? | meaning-bearing practice |
 
 ## Root factorization

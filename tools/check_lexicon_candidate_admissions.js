@@ -14,7 +14,23 @@ const sha256 = (text) =>
 const admissions = JSON.parse(
   read("reference/lexicon-candidate-admissions-v1.json"),
 );
+const reconciliation = JSON.parse(
+  read("reference/lexicon-roadmap-reconciliation-v1.json"),
+);
+const reconciledLegacyEntries = new Set([
+  "adaptation-fitness-selection-exaptation",
+  "claim-evidence",
+  "control-monitoring-response",
+  "meaning-reference-interpretation-use",
+  "motion-measure",
+  "organization-role-authority",
+  "periodic-wave-quantity",
+  "software-transaction-message-contract",
+  "system-composition-dependency",
+  "thermodynamic-system-state-phase",
+]);
 assert.equal(admissions.contract, "lexicon-candidate-admissions-v1");
+assert.equal(reconciliation.contract, "lexicon-roadmap-reconciliation-v1");
 assert.equal(admissions.entries.length, 37);
 assert.equal(new Set(admissions.entries.map((entry) => entry.id)).size, 37);
 
@@ -58,7 +74,15 @@ for (const admission of admissions.entries) {
   const canonical = read(canonicalPath);
   assert.match(historical, /^Status: noncanonical candidate entry draft/m);
   assert.match(canonical, /^Status: candidate anchor entry$/m);
-  assert.equal(canonical, promotedText(historical), `promotion drift: ${admission.id}`);
+  if (reconciledLegacyEntries.has(admission.id)) {
+    assert.notEqual(
+      canonical,
+      promotedText(historical),
+      `${admission.id}: reconciliation exception is no longer needed`,
+    );
+  } else {
+    assert.equal(canonical, promotedText(historical), `promotion drift: ${admission.id}`);
+  }
   for (const heading of requiredHeadings) {
     assert.ok(canonical.includes(`${heading}\n`), `${admission.id}: missing ${heading}`);
   }
@@ -98,7 +122,7 @@ const pointerRegistry = read(
   "volumes/01-structure-quantity-choice/lexicon-pointer-registry-v2.lexicon",
 );
 assert.equal((pointerRegistry.match(/^pointer /gm) || []).length, 270);
-const site = path.join(root, "target", "proof-set-sim-74");
+const site = path.join(root, "target", "proof-set-sim-75");
 const siteManifest = JSON.parse(fs.readFileSync(path.join(site, "manifest.json")));
 assert.equal(siteManifest.site_checks.pointer_entry_pages, 270);
 for (const pointer of pointerAdmissions.pointers) {

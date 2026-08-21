@@ -1,5 +1,5 @@
 ﻿param(
-    [ValidateSet("sim-01", "sim-02", "sim-03", "sim-04", "sim-05", "sim-06", "sim-07", "sim-08", "sim-09", "sim-10", "sim-11", "sim-12", "sim-13", "sim-14", "sim-15", "sim-16", "sim-17", "sim-18", "sim-19", "sim-20", "sim-21", "sim-22", "sim-23", "sim-24", "sim-25", "sim-26", "sim-27", "sim-28", "sim-29", "sim-30", "sim-31", "sim-32", "sim-33", "sim-34", "sim-35", "sim-36", "sim-37", "sim-38", "sim-39", "sim-40", "sim-41", "sim-42", "sim-43", "sim-44", "sim-45", "sim-46", "sim-47", "sim-48", "sim-49", "sim-50", "sim-51", "sim-52", "sim-53", "sim-54", "sim-55", "sim-56", "sim-57", "sim-58", "sim-59", "sim-60", "sim-61", "sim-62", "sim-63", "sim-64", "sim-65", "sim-66", "sim-67", "sim-68", "sim-69", "sim-70", "sim-71", "sim-72", "sim-73", "sim-74")]
+    [ValidateSet("sim-01", "sim-02", "sim-03", "sim-04", "sim-05", "sim-06", "sim-07", "sim-08", "sim-09", "sim-10", "sim-11", "sim-12", "sim-13", "sim-14", "sim-15", "sim-16", "sim-17", "sim-18", "sim-19", "sim-20", "sim-21", "sim-22", "sim-23", "sim-24", "sim-25", "sim-26", "sim-27", "sim-28", "sim-29", "sim-30", "sim-31", "sim-32", "sim-33", "sim-34", "sim-35", "sim-36", "sim-37", "sim-38", "sim-39", "sim-40", "sim-41", "sim-42", "sim-43", "sim-44", "sim-45", "sim-46", "sim-47", "sim-48", "sim-49", "sim-50", "sim-51", "sim-52", "sim-53", "sim-54", "sim-55", "sim-56", "sim-57", "sim-58", "sim-59", "sim-60", "sim-61", "sim-62", "sim-63", "sim-64", "sim-65", "sim-66", "sim-67", "sim-68", "sim-69", "sim-70", "sim-71", "sim-72", "sim-73", "sim-74", "sim-75")]
     [string]$Edition = "sim-01",
     [string]$OutputDirectory = ""
 )
@@ -359,6 +359,7 @@ $artifactTitle = switch ($Edition) {
     "sim-72" { "Lexicon Formal Reasoning and Mathematics Simulation 72" }
     "sim-73" { "Lexicon Health Disability Treatment and Care Simulation 73" }
     "sim-74" { "Lexicon Language Culture Arts and Aesthetics Simulation 74" }
+    "sim-75" { "Lexicon Funded Domain Reconciliation Simulation 75" }
 }
 
 $tabulaIdentityPreview = $editionNumber -eq 51

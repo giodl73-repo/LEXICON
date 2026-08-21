@@ -30,7 +30,7 @@ context and never restates it. See the cross-reference below.
 
 | Sense | Governing question | Role |
 |---|---|---|
-| `adaptation` | Which trait in which lineage was built by natural selection for which function and environment? | historical selected-effect relation |
+| `evolutionary-adaptation` | Which trait in which lineage was built by natural selection for which function and environment? | historical selected-effect relation |
 | `fitness` | Under which explicit definition does this variant differ from alternatives in this population, environment, and time? | scoped comparative evolutionary measure |
 | `natural-selection` | Which differential survival or reproduction among heritable variants occurs through interaction with the environment? | evolutionary sorting process |
 | `exaptation` | Which currently useful trait was co-opted rather than selected for its current role? | co-opted function relation |

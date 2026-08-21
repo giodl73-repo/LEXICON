@@ -69,7 +69,7 @@ assert.equal((reference.match(/^view /gm) || []).length, 100);
 assert.equal((assurance.match(/^review /gm) || []).length, 244);
 
 const siteManifest = JSON.parse(
-  read("target/proof-set-sim-74/manifest.json"),
+  read("target/proof-set-sim-75/manifest.json"),
 );
 assert.equal(siteManifest.selection_checks.canonical_entries, 133);
 assert.equal(siteManifest.site_checks.dictionary_book_print_canonical_tables, 133);

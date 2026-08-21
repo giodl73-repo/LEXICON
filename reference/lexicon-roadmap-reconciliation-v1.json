@@ -1,0 +1,1898 @@
+{
+  "contract": "lexicon-roadmap-reconciliation-v1",
+  "date": "2026-08-21",
+  "status": "internal-fixed-point",
+  "scope": {
+    "baseline_owner_count": 101,
+    "current_owner_count": 133,
+    "roadmap_entry_count": 32,
+    "roadmap_sense_count": 166,
+    "audit_rule": "each roadmap sense compared against all other current owners; nearest semantic seams named from reviewed cross-references"
+  },
+  "duplicate_identity_resolution": [
+    {
+      "old_id": "adaptation",
+      "outcomes": [
+        "evolutionary-adaptation",
+        "adaptation"
+      ]
+    },
+    {
+      "old_id": "contract",
+      "outcomes": [
+        "contract",
+        "software-contract"
+      ]
+    },
+    {
+      "old_id": "environment",
+      "outcomes": [
+        "environment",
+        "system-environment"
+      ]
+    },
+    {
+      "old_id": "equivalence",
+      "outcomes": [
+        "equivalence",
+        "translation-equivalence"
+      ]
+    },
+    {
+      "old_id": "indicator",
+      "outcomes": [
+        "monitoring-indicator",
+        "indicator"
+      ]
+    },
+    {
+      "old_id": "inference",
+      "outcomes": [
+        "evidential-inference",
+        "inference"
+      ]
+    },
+    {
+      "old_id": "intervention",
+      "outcomes": [
+        "intervention",
+        "control-intervention"
+      ]
+    },
+    {
+      "old_id": "mathematical-function",
+      "outcomes": [
+        "mathematical-function",
+        "structural-function-route"
+      ]
+    },
+    {
+      "old_id": "measurement",
+      "outcomes": [
+        "measurement",
+        "quantitative-measurement-route"
+      ]
+    },
+    {
+      "old_id": "phase",
+      "outcomes": [
+        "cycle-phase",
+        "thermodynamic-phase"
+      ]
+    },
+    {
+      "old_id": "position",
+      "outcomes": [
+        "spatial-position",
+        "organizational-position"
+      ]
+    },
+    {
+      "old_id": "tradition",
+      "outcomes": [
+        "tradition",
+        "cultural-tradition"
+      ]
+    },
+    {
+      "old_id": "transaction",
+      "outcomes": [
+        "transaction",
+        "software-transaction"
+      ]
+    },
+    {
+      "old_id": "translation",
+      "outcomes": [
+        "cross-system-meaning-mapping",
+        "translation"
+      ]
+    }
+  ],
+  "relation_review": {
+    "disposition": "retain-existing-set",
+    "relation_count": 11,
+    "rationale": "No roadmap seam supplied a reviewed typed edge with direction, closure conditions, and evidence beyond existing dependency and cross-reference routing."
+  },
+  "entries": [
+    {
+      "id": "person-individual-social-actor-group-community-society",
+      "wave": 1,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "collection-identity-membership-arrangement-completeness",
+        "institution-constitutive-regulative-social-object-status-function-reified-relationship",
+        "organization-role-authority",
+        "persona-self-presentation-mask-disguise-avatar",
+        "sampling-generalization"
+      ],
+      "senses": [
+        {
+          "id": "individual",
+          "question": "Which one entity is distinguished from others under which counting or identity account?",
+          "role": "separately identified entity",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "person",
+          "question": "Which subject is recognized as a person by which biological, psychological, social, moral, or legal criteria?",
+          "role": "person-recognized subject",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "social-actor",
+          "question": "Which participant is treated as occupying which roles or performing which socially interpreted actions?",
+          "role": "role-bearing social participant",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "social-group",
+          "question": "Which members constitute which group under what membership, interaction, identity, or classification basis?",
+          "role": "plural social formation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "community",
+          "question": "Which participants sustain which relations, belonging, place, practice, or shared concern across time?",
+          "role": "sustained relational collective",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "society",
+          "question": "Which population, institutions, relations, practices, boundaries, and histories compose the large-scale social order in view?",
+          "role": "large-scale social formation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "norm-convention-custom-practice-tradition",
+      "wave": 1,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "deontic-obligation-permission-prohibition-optionality-waiver-exemption",
+        "institution-constitutive-regulative-social-object-status-function-reified-relationship",
+        "policy-rule-constraint-decision-exception",
+        "register-style-genre-variety-idiolect"
+      ],
+      "senses": [
+        {
+          "id": "social-norm",
+          "question": "Which subjects are expected to do or avoid what, on what basis, with which expectations, criticism, or sanctions?",
+          "role": "socially sustained standard",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "convention",
+          "question": "Which regularity among alternatives is sustained by which mutual expectations, coordination, acceptance, or history?",
+          "role": "expectation-dependent regularity",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "custom",
+          "question": "Which established pattern is associated with which community, setting, occasion, and continuity?",
+          "role": "established communal pattern",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "social-practice",
+          "question": "Which participants, activities, materials, competencies, purposes, and standards constitute the organized way of doing?",
+          "role": "organized recurrent activity",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "tradition",
+          "question": "Which practice, belief, account, or form is represented as transmitted, received, interpreted, and changed across which generations?",
+          "role": "historically transmitted formation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "good-benefit-welfare-harm-flourishing",
+      "wave": 1,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "appraisal-emotion-episode-phenomenal-feeling",
+        "cost-price-value-return",
+        "evaluation-measure-scale-criterion",
+        "hazard-exposure-harm-safety"
+      ],
+      "senses": [
+        {
+          "id": "evaluative-good",
+          "question": "What is good, in which respect, for whom or independently of whom, under which evaluative account?",
+          "role": "positively evaluated object or state",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "benefit",
+          "question": "Which change, condition, or contribution improves what for which subject or purpose relative to what baseline?",
+          "role": "subject- or purpose-relative improvement",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "welfare",
+          "question": "How well is which subject faring over which scope and time under which account and evidence?",
+          "role": "subject-relative prudential state",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "prudential-harm",
+          "question": "Which event, condition, or deprivation makes which subject worse off relative to which baseline and welfare account?",
+          "role": "welfare-relative worsening",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "flourishing",
+          "question": "Which activities, relationships, capacities, achievements, or goods constitute doing or living well under which account across time?",
+          "role": "rich account of living or functioning well",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "equality-equity-fairness-justice-desert",
+      "wave": 1,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "collective-action-provision-and-appropriation-shortfalls",
+        "evaluation-measure-scale-criterion",
+        "hohfeldian-incidents-claim-liberty-power-immunity",
+        "policy-rule-constraint-decision-exception"
+      ],
+      "senses": [
+        {
+          "id": "normative-equality",
+          "question": "Which subjects should be equal in which respect, domain, treatment, status, opportunity, or holdings under which account?",
+          "role": "equality requirement",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "equity",
+          "question": "Which relevant differences or disadvantages justify which adjusted attention, resources, process, or remedy under which framework?",
+          "role": "difference-responsive adjustment principle",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "fairness",
+          "question": "Which terms, procedures, interactions, or outcomes are appropriately impartial, reciprocal, consistent, or balanced by which criterion?",
+          "role": "fair-treatment evaluation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "justice",
+          "question": "What is due to whom under which distributive, corrective, procedural, relational, or institutional principles?",
+          "role": "justice evaluation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "desert",
+          "question": "Which subject deserves which treatment or outcome on what basis, with what attribution, proportionality, and scope?",
+          "role": "desert-based claim",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "responsibility-answerability-blame-liability-excuse",
+      "wave": 1,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "causal-reasoning",
+        "deontic-obligation-permission-prohibition-optionality-waiver-exemption",
+        "hohfeldian-incidents-claim-liberty-power-immunity",
+        "human-action-error-and-recovery",
+        "organization-role-authority"
+      ],
+      "senses": [
+        {
+          "id": "moral-responsibility",
+          "question": "Which agent is attributable for which conduct or outcome under what capacity, control, awareness, and normative account?",
+          "role": "morally appraisable attribution",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "answerability",
+          "question": "Who must answer to whom for what by giving which reasons, explanation, justification, or account?",
+          "role": "reason-giving standing or demand",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "blame",
+          "question": "Which negative appraisal or response is directed at whom for what fault or wrongdoing, and when is it appropriate?",
+          "role": "fault-directed normative response",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "normative-liability",
+          "question": "Which subject is exposed to which burden, sanction, remedy, or changed normative position under which framework and conditions?",
+          "role": "exposure to normative consequence",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "excuse",
+          "question": "Which condition reduces or defeats which attribution, fault, blame, or liability without necessarily denying the conduct?",
+          "role": "responsibility-modifying consideration",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "cooperation-solidarity-reciprocity-conflict-reconciliation",
+      "wave": 1,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "collective-action-provision-and-appropriation-shortfalls",
+        "incentive-alignment-externality-moral-hazard-adverse-selection",
+        "possession-ownership-property-interest-agreement-contract-exchange-transaction",
+        "trust-credibility-reputation-legitimacy-reliance"
+      ],
+      "senses": [
+        {
+          "id": "cooperation",
+          "question": "Which participants coordinate which contributions toward what compatible or shared ends under which arrangement?",
+          "role": "coordinated joint contribution",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "solidarity",
+          "question": "Who identifies or stands with whom through which commitments, support, shared fate, or collective action under what adversity?",
+          "role": "identification-and-support relation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "reciprocity",
+          "question": "Which contribution, benefit, burden, or response is linked to which prior or expected act across what relationship and time?",
+          "role": "relational return principle",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "social-conflict",
+          "question": "Which aims, claims, actions, identities, or arrangements are incompatible or contested by which parties and through what process?",
+          "role": "contested social incompatibility",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "reconciliation",
+          "question": "Which damaged relationship is repaired in what respects through which acknowledgment, truth, accountability, restitution, trust, or institutional change?",
+          "role": "relationship-repair process or state",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "state-government-polity-administration-public-authority",
+      "wave": 2,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "governance-obligation-compliance",
+        "institution-constitutive-regulative-social-object-status-function-reified-relationship",
+        "organization-role-authority",
+        "person-individual-social-actor-group-community-society"
+      ],
+      "senses": [
+        {
+          "id": "political-state",
+          "question": "Which persisting institutional order claims which territory, population, sovereignty, and public authority?",
+          "role": "territorial political order",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "government",
+          "question": "Which offices and officeholders direct public institutions under what constitution, term, and competence?",
+          "role": "governing office arrangement",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "polity",
+          "question": "Which organized political community and constitutional order has which membership and decision institutions?",
+          "role": "political community/order",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "public-administration",
+          "question": "Which bodies, officials, processes, and resources implement authorized public functions?",
+          "role": "administrative apparatus",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "public-authority",
+          "question": "Which institution or office may make, apply, or execute which public decisions in which jurisdiction?",
+          "role": "empowered public body",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "citizenship-nationality-residency-membership-political-status",
+      "wave": 2,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "geographic-place-environment-weather-climate-earth-system-environmental-change",
+        "hohfeldian-incidents-claim-liberty-power-immunity",
+        "identity-naming-classification-versioning",
+        "person-individual-social-actor-group-community-society"
+      ],
+      "senses": [
+        {
+          "id": "citizenship",
+          "question": "Who is a citizen of which polity, by what basis, with which incidents and effective time?",
+          "role": "civic-political membership status",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "nationality",
+          "question": "Which legal bond connects which person and state under what law and recognition?",
+          "role": "person-state legal bond",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "residency",
+          "question": "Who resides where under which factual or authorized criteria, duration, and status?",
+          "role": "place-relative residence status",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "political-membership",
+          "question": "Who counts as a member of which polity for which participation, protection, or obligation?",
+          "role": "polity inclusion relation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "political-status",
+          "question": "Which governed position carries which rights, duties, protections, disabilities, or procedures?",
+          "role": "institutional political position",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "political-representation-constituency-mandate-delegation-election",
+      "wave": 2,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "choice-alternative-selection",
+        "communication-conversation-discourse-narrative-dialogue",
+        "institution-constitutive-regulative-social-object-status-function-reified-relationship",
+        "organization-role-authority"
+      ],
+      "senses": [
+        {
+          "id": "political-representation",
+          "question": "Who represents whom or what, before which audience, through what activity and standard?",
+          "role": "political making-present relation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "constituency",
+          "question": "Which persons, territory, interests, or claims constitute the represented body under what rule?",
+          "role": "represented political body",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "political-mandate",
+          "question": "Which authorization or direction is claimed from which source for what action, scope, and term?",
+          "role": "asserted governing authorization",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "political-delegation",
+          "question": "Who entrusts which authority or task to whom under what limits and accountability?",
+          "role": "bounded political entrustment",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "election",
+          "question": "Which offices or options are selected by whom under which franchise, ballot, rule, and procedure?",
+          "role": "governed electoral selection",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "political-power-authority-legitimacy-influence-coercion",
+      "wave": 2,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "causal-reasoning",
+        "consent-assent-refusal-withdrawal-revocation",
+        "equality-equity-fairness-justice-desert",
+        "organization-role-authority"
+      ],
+      "senses": [
+        {
+          "id": "political-power",
+          "question": "Which actor can shape which political conduct, agenda, conditions, or outcomes through what mechanism?",
+          "role": "political outcome-shaping capacity",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "political-authority",
+          "question": "Who has which standing to issue or enforce which public directives over whom?",
+          "role": "directive-issuing political standing",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "political-legitimacy",
+          "question": "Which institution, decision, or exercise of power is accepted or justified under which descriptive or normative account?",
+          "role": "political acceptability/justification status",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "political-influence",
+          "question": "Who alters whose beliefs, preferences, agenda, or conduct through what nonconclusive mechanism?",
+          "role": "political shaping relation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "political-coercion",
+          "question": "Who pressures whom to do or avoid what through which threat, force, or constrained alternative?",
+          "role": "pressure-backed conduct relation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "law-legal-rule-precedent-judgment-remedy-enforcement",
+      "wave": 2,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "deontic-obligation-permission-prohibition-optionality-waiver-exemption",
+        "equality-equity-fairness-justice-desert",
+        "hohfeldian-incidents-claim-liberty-power-immunity",
+        "policy-rule-constraint-decision-exception"
+      ],
+      "senses": [
+        {
+          "id": "law",
+          "question": "Which institutional legal order recognizes which sources, officials, subjects, procedures, and norms?",
+          "role": "jurisdictional legal order",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "legal-rule",
+          "question": "Which source-recognized norm or decisional standard applies to whom under what conditions?",
+          "role": "legal normative standard",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "precedent",
+          "question": "Which prior decision has what binding or persuasive bearing under which doctrine and court relation?",
+          "role": "prior-decision authority relation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "legal-judgment",
+          "question": "Which authorized adjudicator issues which disposition for which matter through what procedure?",
+          "role": "adjudicative legal disposition",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "legal-remedy",
+          "question": "Which authorized response addresses which recognized claim, injury, violation, or risk?",
+          "role": "legally authorized response",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "legal-enforcement",
+          "question": "Which actor uses which process or measure to secure compliance with or effect for which law or decision?",
+          "role": "legal effectuation process",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "public-policy-program-service-regulation-implementation",
+      "wave": 2,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "control-monitoring-response",
+        "evaluation-measure-scale-criterion",
+        "governance-obligation-compliance",
+        "policy-rule-constraint-decision-exception"
+      ],
+      "senses": [
+        {
+          "id": "public-policy",
+          "question": "Which public authority adopts which direction, objective, or course for which problem and population?",
+          "role": "authorized public direction",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "public-program",
+          "question": "Which governed arrangement uses which resources and activities to pursue which public objectives?",
+          "role": "organized public intervention",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "public-service",
+          "question": "Which provider delivers which governed function, benefit, or access to which recipients under what conditions?",
+          "role": "public-facing provision",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "regulation",
+          "question": "Which public instrument shapes which conduct or conditions for what objective under which authority?",
+          "role": "public conduct-shaping instrument",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "policy-implementation",
+          "question": "Which actors translate which authorized design into which operational actions, outputs, and delivery?",
+          "role": "policy-to-operation process",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "statement-proposition-premise-conclusion-argument",
+      "wave": 3,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "claim-evidence",
+        "communication-conversation-discourse-narrative-dialogue",
+        "illocutionary-force-speech-acts",
+        "learning-memory-attention-reasoning-skill"
+      ],
+      "senses": [
+        {
+          "id": "statement",
+          "question": "Which assertoric expression or act occurs in which language, context, and use?",
+          "role": "assertoric expression/act",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "proposition",
+          "question": "Which truth-evaluable content is represented under which identity and semantic account?",
+          "role": "propositionally represented content",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "premise",
+          "question": "Which statement or proposition is assumed or offered in support of what conclusion?",
+          "role": "inferential input role",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "conclusion",
+          "question": "Which content is presented as following or supported by which premises and inference?",
+          "role": "inferential output role",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "argument",
+          "question": "Which premises and conclusion are organized by which asserted inferential relation and purpose?",
+          "role": "premise-conclusion organization",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "inference-deduction-induction-abduction-analogy",
+      "wave": 3,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "causal-reasoning",
+        "claim-evidence",
+        "sampling-generalization",
+        "similarity-difference-analogy-equivalence-match"
+      ],
+      "senses": [
+        {
+          "id": "inference",
+          "question": "Which conclusion is drawn from which inputs under what rule, procedure, or reasoning practice?",
+          "role": "input-to-conclusion transition",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "deduction",
+          "question": "Which conclusion is claimed to follow necessarily under which formal consequence relation?",
+          "role": "consequence-preserving inference",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "induction",
+          "question": "Which unobserved or general conclusion is supported from which observations, sample, or pattern under what method?",
+          "role": "ampliative generalizing inference",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "abduction",
+          "question": "Which hypothesis is advanced because it would explain what, relative to which alternatives and explanatory criteria?",
+          "role": "explanatory hypothesis inference",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "analogical-inference",
+          "question": "Which source-target mapping supports which candidate transfer through what relevant similarities and differences?",
+          "role": "structure-transfer inference",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "validity-soundness-proof-demonstration-refutation",
+      "wave": 3,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "claim-evidence",
+        "evaluation-measure-scale-criterion",
+        "model-representation-simulation",
+        "requirement-specification-verification-validation"
+      ],
+      "senses": [
+        {
+          "id": "formal-validity",
+          "question": "Does the conclusion follow from the premises under which language, logic, semantics, and consequence relation?",
+          "role": "formal consequence status",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "soundness",
+          "question": "Which argument or calculus is sound in which sense, relative to which truth/semantic account?",
+          "role": "truth-and-validity or calculus-preservation status",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "proof",
+          "question": "Which finite or otherwise admitted derivation establishes which target from which axioms under which rules?",
+          "role": "formal derivation object/process",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "demonstration",
+          "question": "Which accepted method establishes or exhibits which result for which audience and domain?",
+          "role": "method-governed establishment",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "refutation",
+          "question": "Which counterexample, contradiction, derivation, or result defeats which target under what standard?",
+          "role": "target-defeating result",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "consistency-contradiction-satisfiability-completeness",
+      "wave": 3,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "collection-identity-membership-arrangement-completeness",
+        "evaluation-measure-scale-criterion",
+        "model-representation-simulation",
+        "policy-rule-constraint-decision-exception"
+      ],
+      "senses": [
+        {
+          "id": "formal-consistency",
+          "question": "Does which theory/formula set avoid which derivational conflict under which calculus?",
+          "role": "syntactic nonconflict status",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "contradiction",
+          "question": "Which formula or contents cannot jointly hold under which logic and interpretation?",
+          "role": "formal incompatibility object/status",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "satisfiability",
+          "question": "Is there an interpretation/model satisfying every formula in which set?",
+          "role": "semantic model-existence status",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "semantic-completeness",
+          "question": "Does which calculus derive every consequence valid under which semantics?",
+          "role": "calculus-to-semantics coverage property",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "theory-completeness",
+          "question": "Does which theory decide every sentence in which language or declared class?",
+          "role": "theory decision-coverage property",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "number-numeral-quantity-magnitude-measurement",
+      "wave": 3,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "cardinality-ordinality-rank-index-relationship-cardinality-ordinal-scale-value",
+        "comparative-quantity",
+        "measurement-quality",
+        "quantity-value-unit-conversion"
+      ],
+      "senses": [
+        {
+          "id": "number",
+          "question": "Which mathematical object in which number system or structure is intended?",
+          "role": "mathematical number object",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "numeral",
+          "question": "Which expression in which notation denotes which number?",
+          "role": "number-denoting expression",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "quantity",
+          "question": "Which quantitatively comparable property of which phenomenon, body, or substance is intended?",
+          "role": "quantitatively comparable property",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "magnitude",
+          "question": "Which size, norm, absolute value, or order aspect is meant under which comparison?",
+          "role": "specified size/order aspect",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "quantitative-measurement-route",
+          "question": "Is the question about the cross-level relation among measurand, quantity, magnitude, value, unit, and attributed result before operational analysis?",
+          "role": "cross-level measurement router",
+          "disposition": "reframed-identity",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "mathematical-set-collection-membership-relation-function-structure",
+      "wave": 3,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "cardinality-ordinality-rank-index-relationship-cardinality-ordinal-scale-value",
+        "collection-identity-membership-arrangement-completeness",
+        "mathematical-relation-solving",
+        "model-representation-simulation"
+      ],
+      "senses": [
+        {
+          "id": "mathematical-set",
+          "question": "Which object has which members under which set theory or construction?",
+          "role": "membership-governed mathematical object",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "mathematical-collection",
+          "question": "Which plurality is being considered without what commitment to sethood, order, or identity?",
+          "role": "mathematically considered plurality",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "set-membership",
+          "question": "Is which object an element of which set under what theory and notation?",
+          "role": "formal element-of relation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "mathematical-relation",
+          "question": "Which tuples stand in which relation over which domains under what arity and interpretation?",
+          "role": "tuple-association object",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "structural-function-route",
+          "question": "At which set/relation/function/structure level is a single-valued assignment being discussed before operational analysis?",
+          "role": "cross-level function router",
+          "disposition": "reframed-identity",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "mathematical-structure",
+          "question": "Which domain with which signature, relations, functions, operations, and constants is considered?",
+          "role": "interpreted mathematical organization",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "health-disease-disorder-condition-well-being",
+      "wave": 4,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "appraisal-emotion-episode-phenomenal-feeling",
+        "clinical-sign-symptom-syndrome-diagnosis-differential-diagnosis-prognosis",
+        "good-benefit-welfare-harm-flourishing",
+        "organism-cell-gene-development-metabolism-disease-mechanism"
+      ],
+      "senses": [
+        {
+          "id": "health",
+          "question": "In which dimensions and under which account is whose health described over what time?",
+          "role": "multidimensional health state/capacity",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "disease",
+          "question": "Which pathological process or state is recognized by which authority and evidence under what criteria?",
+          "role": "medically recognized pathology",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "disorder",
+          "question": "Which disturbance meets which clinical or classification criteria under what system and version?",
+          "role": "classified clinical disturbance",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "health-condition",
+          "question": "Which broad health-related circumstance is in scope under which classification and purpose?",
+          "role": "health-domain status umbrella",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "health-related-well-being",
+          "question": "How well is which person doing or experiencing life in health-related respects under which account?",
+          "role": "health-related evaluative state",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "function-impairment-activity-limitation-disability-participation",
+      "wave": 4,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "access-permission-authorization-entitlement",
+        "disposition-power-designed-function",
+        "health-disease-disorder-condition-well-being",
+        "person-individual-social-actor-group-community-society"
+      ],
+      "senses": [
+        {
+          "id": "health-functioning",
+          "question": "How does which person function across body, activity, and participation domains in which context?",
+          "role": "contextual functioning profile",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "impairment",
+          "question": "Which body function or structure differs or presents a problem under which criteria and assessment?",
+          "role": "body-level functioning difference/problem",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "activity-limitation",
+          "question": "What difficulty does a person have executing which task under which capacity or performance conditions?",
+          "role": "task-execution difficulty",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "disability",
+          "question": "Which negative interaction among health condition, person, activity/participation, and context is described under which account?",
+          "role": "contextual disability umbrella",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "participation",
+          "question": "How and to what extent is a person involved in which life situation, with what facilitators or barriers?",
+          "role": "life-situation involvement",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "prevention-intervention-treatment-therapy-rehabilitation",
+      "wave": 4,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "causal-reasoning",
+        "clinical-sign-symptom-syndrome-diagnosis-differential-diagnosis-prognosis",
+        "consent-assent-refusal-withdrawal-revocation",
+        "function-impairment-activity-limitation-disability-participation"
+      ],
+      "senses": [
+        {
+          "id": "health-prevention",
+          "question": "Which health problem or consequence is intended to be averted or reduced at what stage for which population?",
+          "role": "prevention-stage intervention purpose",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "health-intervention",
+          "question": "Which intentional action targets which health-related mechanism, behavior, exposure, service, or determinant?",
+          "role": "broad intentional health action",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "treatment",
+          "question": "Which intervention targets which recognized condition for which curative, controlling, relieving, or risk-reducing purpose?",
+          "role": "condition-targeted intervention",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "therapy",
+          "question": "Which treatment modality uses which therapeutic method, provider relationship, dose, and course?",
+          "role": "method-governed treatment modality",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "rehabilitation",
+          "question": "Which interventions pursue which functioning goals and reduce which disability in what environment?",
+          "role": "functioning-optimization intervention set",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "care-health-service-provider-recipient-pathway-continuity",
+      "wave": 4,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "access-permission-authorization-entitlement",
+        "coordinated-work",
+        "organization-role-authority",
+        "public-policy-program-service-regulation-implementation"
+      ],
+      "senses": [
+        {
+          "id": "health-care",
+          "question": "Which needs are attended to through what relationship, practical support, and responsibility?",
+          "role": "attentive health-support relationship/practice",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "health-service",
+          "question": "Which organized provision delivers what health-related function to whom under what access conditions?",
+          "role": "organized health provision",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "care-provider",
+          "question": "Which person, team, organization, or system delivers which service under what competence and authority?",
+          "role": "service-delivering party",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "care-recipient",
+          "question": "Which person, family, group, or population receives or is intended to receive which care or service?",
+          "role": "care-receiving party",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "care-pathway",
+          "question": "Which expected sequence and transitions organize care for which need or population under what pathway authority?",
+          "role": "organized care route",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "care-continuity",
+          "question": "How are relationships, management, and information connected across encounters, providers, settings, and time?",
+          "role": "longitudinal care connection",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "clinical-outcome-response-recovery-remission-quality-of-life",
+      "wave": 4,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "causal-reasoning",
+        "control-monitoring-response",
+        "evaluation-measure-scale-criterion",
+        "good-benefit-welfare-harm-flourishing"
+      ],
+      "senses": [
+        {
+          "id": "clinical-outcome",
+          "question": "Which result concerning feeling, functioning, or survival is assessed for whom over what interval?",
+          "role": "person-relevant clinical result",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "treatment-response",
+          "question": "Which defined change from what baseline occurs after which intervention over what time and by which criterion?",
+          "role": "post-intervention change status",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "health-recovery",
+          "question": "Which health, functioning, role, or personal-recovery process/state changes under which account and time horizon?",
+          "role": "regained-state/process account",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "remission",
+          "question": "Which specified manifestations fall below which criterion for what duration, with what ongoing condition status?",
+          "role": "criterion-bounded manifestation reduction",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "quality-of-life",
+          "question": "How does which person perceive their life position across which domains and cultural/value context?",
+          "role": "person-perceived life-quality state",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "phone-phoneme-grapheme-orthography-pronunciation",
+      "wave": 5,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "information-data-signal-noise",
+        "morpheme-inflection-derivation-compounding-word-formation",
+        "register-style-genre-variety-idiolect",
+        "type-token-instantiation-realization-embodiment"
+      ],
+      "senses": [
+        {
+          "id": "phone",
+          "question": "Which speech sound is observed or described by which phonetic dimensions and method?",
+          "role": "phonetic sound event/type",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "phoneme",
+          "question": "Which contrastive sound unit is posited for which language or variety under which analysis?",
+          "role": "phonological contrast unit",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "grapheme",
+          "question": "Which functional writing unit is identified in which script and orthographic analysis?",
+          "role": "writing-system unit",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "orthography",
+          "question": "Which conventions map language to written forms for which community, authority, and purpose?",
+          "role": "conventional writing system",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "pronunciation",
+          "question": "Which spoken realization of which expression occurs or is prescribed in which context?",
+          "role": "spoken form",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "lexeme-word-phrase-clause-sentence-utterance",
+      "wave": 5,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "communication-conversation-discourse-narrative-dialogue",
+        "illocutionary-force-speech-acts",
+        "morpheme-inflection-derivation-compounding-word-formation",
+        "type-token-instantiation-realization-embodiment"
+      ],
+      "senses": [
+        {
+          "id": "lexeme",
+          "question": "Which abstract lexical unit groups which forms and senses under which analysis?",
+          "role": "lexical unit",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "word",
+          "question": "Which unit boundary follows which criteria in which language, representation, and task?",
+          "role": "word-level unit",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "phrase",
+          "question": "Which elements form which constituent under which syntactic analysis?",
+          "role": "nonclausal or intermediate constituent",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "clause",
+          "question": "Which predication and dependents form a clause under which analysis?",
+          "role": "predicative syntactic unit",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "sentence",
+          "question": "Which grammatical or textual boundary identifies a sentence for which task?",
+          "role": "sentence-level unit",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "utterance",
+          "question": "Who produced which situated stretch or act of language, when, where, and to whom?",
+          "role": "contextual use event/product",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "syntax-grammar-acceptability-grammaticality-usage",
+      "wave": 5,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "lexeme-word-phrase-clause-sentence-utterance",
+        "morpheme-inflection-derivation-compounding-word-formation",
+        "norm-convention-custom-practice-tradition",
+        "register-style-genre-variety-idiolect"
+      ],
+      "senses": [
+        {
+          "id": "syntax",
+          "question": "Which structural relations organize which expression under which analysis?",
+          "role": "structural subsystem",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "grammar",
+          "question": "Which system or descriptive account governs which language/variety and levels?",
+          "role": "language-system account",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "acceptability",
+          "question": "Who judges which expression how, under which prompt, context, and conditions?",
+          "role": "response evidence",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "grammaticality",
+          "question": "Does which expression conform to which stated grammar or analysis?",
+          "role": "analysis-relative conformity",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "usage",
+          "question": "Which form or pattern is attested or conventional for which population, register, genre, and time?",
+          "role": "situated language practice",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "translation-paraphrase-equivalence-adaptation-transcreation",
+      "wave": 5,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "abstract-work-notational-specification-performance-instance-compliance-condition-autographic-allographic",
+        "meaning-reference-interpretation-use",
+        "register-style-genre-variety-idiolect",
+        "similarity-difference-analogy-equivalence-match"
+      ],
+      "senses": [
+        {
+          "id": "translation",
+          "question": "Which source expression is rendered in which target language for which purpose and audience?",
+          "role": "cross-language rendering",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "paraphrase",
+          "question": "Which expression is reformulated while preserving which selected content or function?",
+          "role": "reformulation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "translation-equivalence",
+          "question": "Which source and target are equivalent in which translation-relevant respects, under which criteria and threshold?",
+          "role": "translation-scoped relation claim",
+          "disposition": "reframed-identity",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "adaptation",
+          "question": "Which source is transformed for which medium, audience, context, purpose, or constraint?",
+          "role": "context-changing transformation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "transcreation",
+          "question": "Which intended effects or functions guide which creative cross-language/cultural transformation?",
+          "role": "effect-prioritized transformation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "culture-subculture-heritage-tradition-cultural-practice",
+      "wave": 5,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "identity-naming-classification-versioning",
+        "institution-constitutive-regulative-social-object-status-function-reified-relationship",
+        "norm-convention-custom-practice-tradition",
+        "person-individual-social-actor-group-community-society"
+      ],
+      "senses": [
+        {
+          "id": "culture",
+          "question": "Which group's meanings, practices, forms, values, and conditions are described under which account?",
+          "role": "cultural formation/account",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "subculture",
+          "question": "Which formation is differentiated how, by whom, and relative to which broader contexts?",
+          "role": "situated differentiated formation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "heritage",
+          "question": "What is recognized as inherited and significant by whom, under which process and authority?",
+          "role": "recognized transmitted inheritance",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "cultural-tradition",
+          "question": "Which culturally situated pattern is represented and transmitted as continuous with which past, with what recreation?",
+          "role": "cultural past-oriented transmission pattern",
+          "disposition": "reframed-identity",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "cultural-practice",
+          "question": "Which culturally meaningful activity is performed, maintained, changed, or contested by whom?",
+          "role": "meaning-bearing practice",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "ritual-ceremony-observance-sacred-practice-symbolic-action",
+      "wave": 5,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "culture-subculture-heritage-tradition-cultural-practice",
+        "deontic-obligation-permission-prohibition-optionality-waiver-exemption",
+        "metaphor-metonymy-symbol-allegory-allusion",
+        "norm-convention-custom-practice-tradition"
+      ],
+      "senses": [
+        {
+          "id": "ritual",
+          "question": "Which patterned sequence is recognized by whom as carrying what significance in which context?",
+          "role": "conventionally patterned significant action",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "ceremony",
+          "question": "Which formally organized event marks or enacts which occasion, transition, status, or commitment?",
+          "role": "formal occasion event",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "observance",
+          "question": "Which recurring occasion or requirement is kept how, by whom, and under which calendar or norm?",
+          "role": "recurring commemorative/customary enactment",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "sacred-practice",
+          "question": "Which activity is understood by participants as oriented to which sacred relation or obligation?",
+          "role": "participant-recognized sacred activity",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "symbolic-action",
+          "question": "Which act represents, invokes, or communicates what beyond its immediate physical effect?",
+          "role": "representationally significant act",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "artwork-medium-form-composition-style-genre",
+      "wave": 5,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "abstract-work-notational-specification-performance-instance-compliance-condition-autographic-allographic",
+        "material-object-artifact-tool-manufacturing-process",
+        "pattern-regularity-motif-template-pattern-formation",
+        "register-style-genre-variety-idiolect"
+      ],
+      "senses": [
+        {
+          "id": "artwork",
+          "question": "Which work is recognized as art by whom, when, and under which account?",
+          "role": "art-status work",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "art-medium",
+          "question": "Through which material, technical, sensory, symbolic, or performative means is the work realized?",
+          "role": "realization means",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "art-form",
+          "question": "Which organizing configuration constitutes the work under which analysis?",
+          "role": "work organization",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "composition",
+          "question": "How are which elements arranged and related in this work or realization?",
+          "role": "particular arrangement",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "art-style",
+          "question": "Which recurring manner is attributed at which artist, work, period, movement, or community level?",
+          "role": "manner/pattern attribution",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "art-genre",
+          "question": "Which conventional category organizes works and expectations in which history and community?",
+          "role": "historical-conventional category",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "aesthetic-property-experience-judgment-taste-value",
+      "wave": 5,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "appraisal-emotion-episode-phenomenal-feeling",
+        "evaluation-measure-scale-criterion",
+        "good-benefit-welfare-harm-flourishing",
+        "perception-sensation-appearance-illusion-hallucination"
+      ],
+      "senses": [
+        {
+          "id": "aesthetic-property",
+          "question": "Which aesthetic feature is ascribed to what, under which account and evidence?",
+          "role": "aesthetically described feature",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "aesthetic-experience",
+          "question": "Who encounters what as aesthetically salient, with which experiential dimensions and context?",
+          "role": "aesthetic encounter",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "aesthetic-judgment",
+          "question": "Who attributes or evaluates which aesthetic character under which criteria and reasons?",
+          "role": "aesthetic appraisal act/result",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "taste",
+          "question": "Which patterned disposition or cultivated capacity shapes whose aesthetic responses and judgments?",
+          "role": "aesthetic response/judgment disposition",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "aesthetic-value",
+          "question": "What worth is ascribed in which aesthetic respects, by whom, under which account and comparison?",
+          "role": "aesthetic worth claim",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    },
+    {
+      "id": "creation-authorship-performance-interpretation-reception",
+      "wave": 5,
+      "disposition": "admit-reconciled",
+      "compared_against_owner_count": 132,
+      "nearest_owner_ids": [
+        "abstract-work-notational-specification-performance-instance-compliance-condition-autographic-allographic",
+        "coordinated-work",
+        "meaning-reference-interpretation-use",
+        "responsibility-answerability-blame-liability-excuse"
+      ],
+      "senses": [
+        {
+          "id": "creation",
+          "question": "Through which generative activities, constraints, materials, and collaborations did what come about?",
+          "role": "generative process",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "authorship",
+          "question": "Who is attributed which originating or shaping responsibility under which account and evidence?",
+          "role": "attributed originating responsibility",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "art-performance",
+          "question": "Who realizes or presents which work/practice how, where, when, and for whom?",
+          "role": "eventive realization/presentation",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "art-interpretation",
+          "question": "Who makes or realizes which sense of what from which standpoint and evidence?",
+          "role": "sense-making or realization",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        },
+        {
+          "id": "reception",
+          "question": "Which audiences or communities encounter, respond to, circulate, or reframe what over time?",
+          "role": "audience/community uptake",
+          "disposition": "retain",
+          "exact_identity_collision": false,
+          "owner_question_distinct": true
+        }
+      ]
+    }
+  ],
+  "claim_boundary": "This record proves structural coverage and recorded editorial disposition, not independent reader comprehension or domain correctness."
+}

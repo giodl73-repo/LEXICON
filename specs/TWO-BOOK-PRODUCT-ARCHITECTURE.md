@@ -87,7 +87,8 @@ labels their kinds; ranking does not change authority.
 | `sim-71` | 113-Table politics, government, and law projection |
 | `sim-72` | 119-Table formal reasoning and mathematics projection |
 | `sim-73` | 124-Table health, disability, treatment, and care projection |
-| `sim-74` | current 133-Table language, culture, arts, and aesthetics projection |
+| `sim-74` | 133-Table language, culture, arts, and aesthetics projection |
+| `sim-75` | current 133-Table funded-domain reconciliation projection |
 
 ## Claim boundary
 

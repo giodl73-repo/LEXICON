@@ -30,11 +30,12 @@ The active wave is
 completed wave is
 `context/waves/2026-08-21-editorial-domain-expansion/WAVE.md`.
 
-`sim-74` is the current clean-source, internally validated book projection: 133
-canonical Tables, 270 pointer-index records, 533 pages, and no detected
-collision or out-of-bounds pages. It is worthy of controlled external reader
+`sim-75` is the current internally validated reconciliation projection: 133
+canonical Tables, 270 pointer-index records, and zero duplicate sense
+identities or missing site targets. Working-PDF and clean-source verification
+follow the reconciliation commit. It is worthy of controlled external reader
 testing, not public R5 release. See
-`context/waves/2026-08-21-funded-domain-gap-roadmap/WAVE-5-LANGUAGE-CULTURE-ARTS-AESTHETICS-RESULT.md`.
+`context/waves/2026-08-21-funded-domain-gap-roadmap/WAVE-6-RECONCILIATION-RESULT.md`.
 
 The repaired `sim-67` PDF is a clean-source, internally validated book
 projection with full-width canonical Tables, a subordinate pointer index,
@@ -56,10 +57,11 @@ and 100 views. Its eleven relations are
 fixtures use `.lexicon-query`, and the current 270-label pointer registry
 uses `.lexicon`.
 
-`sim-74` is the current Lexicon-native projection. It renders the 133 canonical
+`sim-75` is the current Lexicon-native reconciliation projection. It renders the 133 canonical
 Tables, 100 specialized views, and 270 noncanonical pointer records while
 using only Lexicon-native active contracts, `LEXICON_` browser globals, and
-`data-lexicon-handoff`. `sim-73` remains the 124-Table health, disability,
+`data-lexicon-handoff`. `sim-74` remains the 133-Table language, culture, arts,
+and aesthetics projection, `sim-73` remains the 124-Table health, disability,
 treatment, and care projection, `sim-72` remains the 119-Table formal-reasoning
 projection, `sim-71` remains the 113-Table politics/legal
 projection, `sim-70` remains the 107-Table social-normative
@@ -1321,7 +1323,7 @@ cargo run --quiet -- packet-check artifacts\factor-v1
 cargo run --quiet -- reference-check reference\lexicon-reference-v4.lexicon .
 cargo run --quiet -- reference-sidecar-check reference\lexicon-reference-v4.lexicon reference\lexicon-relations-v2.lexicon reference\lexicon-assurance-v4.lexicon .
 node tools\build_lexicon_contracts.js --check
-.\tools\render_proof_set.ps1 -Edition sim-74
+.\tools\render_proof_set.ps1 -Edition sim-75
 node tools\check_lexicon_candidate_admissions.js
 node tools\check_lexicon_domain_admissions.js
 node tools\check_lexicon_canonical.js

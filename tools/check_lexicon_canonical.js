@@ -6,7 +6,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const root = path.resolve(__dirname, "..");
-const site = path.join(root, "target", "proof-set-sim-74");
+const site = path.join(root, "target", "proof-set-sim-75");
 const read = (relative) => fs.readFileSync(path.join(root, relative), "utf8");
 const sha256 = (text) =>
   crypto.createHash("sha256").update(text).digest("hex");
@@ -14,7 +14,7 @@ const manifest = JSON.parse(
   fs.readFileSync(path.join(site, "manifest.json"), "utf8"),
 );
 
-assert.equal(manifest.edition, "sim-74");
+assert.equal(manifest.edition, "sim-75");
 assert.equal(manifest.site_checks.missing_local_targets, 0);
 assert.equal(manifest.site_checks.pointer_entry_pages, 270);
 assert.equal(manifest.site_checks.tables_index_pointer_entries, 270);
@@ -228,7 +228,7 @@ assert.doesNotMatch(
   /canonical Tables|bounded|typed closure|factorization|specialized views/i,
 );
 assert.doesNotMatch(home, />Terms<\/a>|not reader evidence or preview-01/);
-assert.match(home, /href="manifest\.json">sim-74<\/a>/);
+assert.match(home, /href="manifest\.json">sim-75<\/a>/);
 assert.match(home, /software: MIT/);
 assert.match(tables, /href="dictionary\.html">Continuous A-Z<\/a>/);
 assert.match(tables, /href="book\.html">Condensed book<\/a>/);
@@ -321,7 +321,7 @@ assert.equal(
 assert.equal(
   [...screenBook.matchAll(/<div class="dictionary-book__pointer-parents">([\s\S]*?)<\/div>/g)]
     .reduce((total, match) => total + (match[1].match(/<a /g) || []).length, 0),
-  3590,
+  3587,
 );
 assert.doesNotMatch(book, /class="dictionary-book__(?:item-heading|meta)"/);
 assert.doesNotMatch(book, />Item \d+ · (?:Pointer|Canonical Table)</);
@@ -490,5 +490,5 @@ assert.match(
 );
 
 console.log(
-  `OK sim74=Lexicon-native reference=${referenceSha256} relations=${relationSha256} queries=${queries.length} pointers=270 missing=0`,
+  `OK sim75=Lexicon-native reference=${referenceSha256} relations=${relationSha256} queries=${queries.length} pointers=270 missing=0`,
 );
