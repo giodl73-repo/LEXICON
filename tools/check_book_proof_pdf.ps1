@@ -21,10 +21,18 @@ if (-not (Test-Path -LiteralPath $PdfPath -PathType Leaf)) {
 
 $sourceCommit = (git -C $workspace rev-parse HEAD).Trim()
 if ([string]::IsNullOrWhiteSpace($ExpectedSourceCommit)) {
-    $ExpectedSourceCommit = $sourceCommit
+    $sidecarPath = "$PdfPath.manifest.json"
+    if (Test-Path -LiteralPath $sidecarPath -PathType Leaf) {
+        $sidecar = Get-Content -LiteralPath $sidecarPath -Raw | ConvertFrom-Json
+        $ExpectedSourceCommit = [string]$sidecar.source_commit
+    }
+    if ([string]::IsNullOrWhiteSpace($ExpectedSourceCommit)) {
+        $ExpectedSourceCommit = $sourceCommit
+    }
 }
-if ($ExpectedSourceCommit -ne $sourceCommit) {
-    throw "Expected source commit $ExpectedSourceCommit does not match HEAD $sourceCommit"
+git -C $workspace cat-file -e "$ExpectedSourceCommit`^{commit}" 2>$null
+if ($LASTEXITCODE -ne 0) {
+    throw "Expected source commit is not available in this repository: $ExpectedSourceCommit"
 }
 $gitStatus = @(git -C $workspace status --porcelain --untracked-files=all)
 if ($RequireCleanSource -and $gitStatus.Count -ne 0) {
