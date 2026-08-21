@@ -25,7 +25,9 @@ evidence and one tested Lexicon domain.
 
 ## Current wave
 
-There is no active wave. The latest completed wave is
+The active wave is
+`context/waves/2026-08-21-funded-domain-gap-roadmap/WAVE.md`. The latest
+completed wave is
 `context/waves/2026-08-21-editorial-domain-expansion/WAVE.md`.
 
 The clean-source `sim-69` PDF is the current internally validated book

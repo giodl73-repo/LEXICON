@@ -245,6 +245,13 @@ forward-applied deliberately rather than silently rewriting its evidence.
 ## R5 - First substantial volume
 
 Publish approximately 250 reviewed entries as a coherent reference volume.
+
+The owner-authorized and fully funded next coverage program is recorded in
+[`context/waves/2026-08-21-funded-domain-gap-roadmap/LEXICON-FUNDED-DOMAIN-GAP-ROADMAP.md`](context/waves/2026-08-21-funded-domain-gap-roadmap/LEXICON-FUNDED-DOMAIN-GAP-ROADMAP.md).
+It closes the most visible post-sim-69 domain-anchor gaps through six bounded
+execution waves, with reader validation running in parallel rather than as a
+precondition to begin. Its 30-36 proposed Tables are an editorial capacity
+envelope, not an automatic admission quota.
 The current canonical scale is 101 Tables, 680 senses, 1,170 factors, and 100
 specialized views. The remaining distance is a planning horizon, not a quota;
 new owners still require demonstrated lookup or composition need.

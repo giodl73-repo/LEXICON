@@ -4,7 +4,7 @@ Work is organized into small waves and pulses.
 
 ## Active wave
 
-- None.
+- `2026-08-21-funded-domain-gap-roadmap`
 
 ## Completed waves
 
