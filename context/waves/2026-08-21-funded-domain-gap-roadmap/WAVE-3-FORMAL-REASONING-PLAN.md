@@ -1,6 +1,6 @@
 # Wave 3 Formal Reasoning and Mathematics Plan
 
-Status: authoring in progress
+Status: executed; admission and clean-source publication passed
 
 ## Reader job
 
@@ -19,7 +19,7 @@ is held unless the first four Tables leave an evidenced structural hole.
 ## Gates
 
 - 15-source four-tier literature map: pass;
-- owner collision audit and complete grammar: pending;
-- role fixed point and exact admission: pending;
-- sim-72 and clean-source PDF: pending;
+- owner collision audit and complete grammar: pass;
+- role fixed point and exact admission: pass;
+- sim-72 and clean-source PDF: pass;
 - external reader observations: pending under frozen protocol.

@@ -1,6 +1,6 @@
 # Wave 6 Reconciliation and Reader Proof Plan
 
-Status: reconciliation in progress
+Status: internal reconciliation executed; external reader round pending
 
 ## Reader job
 
@@ -34,10 +34,10 @@ internal validation into reader-outcome evidence.
 
 ## Gates
 
-- global duplicate sense IDs: pending resolution;
-- 32-entry/166-sense reconciliation manifest: pending;
-- relation review: pending;
-- ordinary-language and navigation checks: pending;
-- 32-Table visual inspection: pending;
+- global duplicate sense IDs: pass, zero duplicates;
+- 32-entry/166-sense reconciliation manifest: pass;
+- relation review: pass, retain 11 reviewed relations;
+- ordinary-language and navigation checks: pass;
+- 32-Table visual inspection: pass on the clean-source proof;
 - `.roles` fixed point and final clean-source proof: passed;
 - external participant results: pending external execution.

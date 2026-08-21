@@ -1,6 +1,6 @@
 # Wave 2 Politics, Government, and Law Plan
 
-Status: authoring in progress
+Status: executed; admission and clean-source publication passed
 
 ## Reader job
 
@@ -17,7 +17,7 @@ and contestation. They route concepts and do not give legal or political advice.
 ## Gates
 
 - 15-source literature threshold and contrary coverage: pass;
-- complete Table grammar and ownership audit: pending;
-- domain and role fixed point: pending;
-- immutable admission, sim-71, and clean-source PDF: pending;
+- complete Table grammar and ownership audit: pass;
+- domain and role fixed point: pass;
+- immutable admission, sim-71, and clean-source PDF: pass;
 - external reader observations: pending under the frozen parallel protocol.

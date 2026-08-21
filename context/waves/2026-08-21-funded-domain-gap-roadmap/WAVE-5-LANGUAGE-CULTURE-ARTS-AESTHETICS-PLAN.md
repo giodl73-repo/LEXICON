@@ -1,6 +1,6 @@
 # Wave 5 Language, Culture, Arts, and Aesthetics Plan
 
-Status: authoring in progress
+Status: executed; admission and clean-source publication passed
 
 ## Reader job
 
@@ -30,7 +30,7 @@ capacity envelope.
 ## Gates
 
 - 18-source map with four high-risk claims and explicit controls: pass;
-- full grammar and owner audit: pending;
-- role/domain fixed point: pending;
-- sim-74 and clean-source PDF: pending;
+- full grammar and owner audit: pass;
+- role/domain fixed point: pass;
+- sim-74 and clean-source PDF: pass;
 - external reader observations: pending under frozen protocol.

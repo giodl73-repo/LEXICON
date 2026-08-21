@@ -1,6 +1,6 @@
 # Wave 1 Social-Normative Plan
 
-Status: executed for authoring and admission; publication verification pending
+Status: executed; admission and clean-source publication passed
 
 ## Reader job
 
@@ -34,4 +34,3 @@ tested questions and an extra owner would add an unproven seam.
 | Responsibility responses | admit | Distinct attribution/response question. |
 | Cooperation and reconciliation | admit | Distinct coordinated and damaged-relation question. |
 | Collective identity optional slot | defer | No separate owner is needed for this batch's tasks. |
-

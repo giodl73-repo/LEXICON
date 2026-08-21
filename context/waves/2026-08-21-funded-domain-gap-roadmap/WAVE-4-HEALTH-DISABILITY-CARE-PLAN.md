@@ -1,6 +1,6 @@
 # Wave 4 Health, Disability, Treatment, and Care Plan
 
-Status: authoring in progress
+Status: executed; admission and clean-source publication passed
 
 ## Reader job
 
@@ -17,7 +17,7 @@ and diagnostic testing requires a separate accuracy and authority contract.
 ## Gates
 
 - 15-source map with five high-risk claims and explicit controls: pass;
-- full grammar and owner audit: pending;
-- role/domain fixed point: pending;
-- sim-73 and clean-source PDF: pending;
+- full grammar and owner audit: pass;
+- role/domain fixed point: pass;
+- sim-73 and clean-source PDF: pass;
 - external reader observations: pending under frozen protocol.

@@ -1,6 +1,6 @@
 # Lexicon Funded Domain-Gap Roadmap
 
-Status: approved; fully funded; ready for execution
+Status: internally implemented; fully funded external reader round pending
 
 ## Commitment
 
