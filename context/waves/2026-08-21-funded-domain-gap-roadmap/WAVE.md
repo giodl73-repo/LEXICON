@@ -15,6 +15,7 @@ pre-authoring hold.
 - [Roadmap role review](../../../signals/roles/check/lexicon-funded-domain-gap-roadmap-roles-check-2026-08-21.md)
 - [Wave 1 plan](WAVE-1-SOCIAL-NORMATIVE-PLAN.md)
 - [Wave 1 result](WAVE-1-SOCIAL-NORMATIVE-RESULT.md)
+- [Wave 2 plan](WAVE-2-POLITICS-LAW-PLAN.md)
 - Final reconciliation result: pending
 
 ## Boundary
