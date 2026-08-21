@@ -1,6 +1,6 @@
 # Candidate Canonical Merge
 
-Status: active
+Status: complete
 
 ## Decision
 
@@ -13,8 +13,8 @@ and run a fresh structural-pointer census over the enlarged canonical corpus.
 
 - [Plan](LEXICON-CANDIDATE-CANONICAL-MERGE-PLAN.md)
 - [Plan role review](../../../signals/roles/check/lexicon-candidate-canonical-merge-plan-roles-check-2026-08-21.md)
-- Result: pending
-- Result role review: pending
+- [Result](LEXICON-CANDIDATE-CANONICAL-MERGE-RESULT.md)
+- [Result role review](../../../signals/roles/check/lexicon-candidate-canonical-merge-result-roles-check-2026-08-21.md)
 
 ## Boundary
 

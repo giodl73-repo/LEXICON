@@ -4,10 +4,11 @@ Work is organized into small waves and pulses.
 
 ## Active wave
 
-- `2026-08-21-candidate-canonical-merge`
+- None.
 
 ## Completed waves
 
+- `2026-08-21-candidate-canonical-merge`
 - `2026-08-21-book-proof-repair`
 - `2026-08-21-book-proof-review`
 - `2026-08-13-method-foundation`

@@ -25,9 +25,14 @@ evidence and one tested Lexicon domain.
 
 ## Current wave
 
-The active wave is
-`context/waves/2026-08-21-candidate-canonical-merge/WAVE.md`. The latest
-completed wave is `context/waves/2026-08-21-book-proof-repair/WAVE.md`.
+No wave is active. The latest completed wave is
+`context/waves/2026-08-21-candidate-canonical-merge/WAVE.md`.
+
+The clean-source `sim-68` PDF is the current internally validated book
+projection: 91 canonical Tables, 270 pointer-index records, 377 pages, and no
+detected collision or out-of-bounds pages. It is worthy of controlled external
+reader testing, not public R5 release. See
+`context/waves/2026-08-21-candidate-canonical-merge/LEXICON-CANDIDATE-CANONICAL-MERGE-RESULT.md`.
 
 The repaired `sim-67` PDF is a clean-source, internally validated book
 projection with full-width canonical Tables, a subordinate pointer index,

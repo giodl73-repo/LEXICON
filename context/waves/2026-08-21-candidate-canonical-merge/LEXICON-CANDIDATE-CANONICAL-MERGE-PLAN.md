@@ -1,6 +1,6 @@
 # Lexicon Candidate Canonical Merge Plan
 
-Status: active
+Status: completed
 
 ## Reader and product decision
 
