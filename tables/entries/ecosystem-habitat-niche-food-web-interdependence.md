@@ -220,7 +220,7 @@ Leibold is cited only here.
 - [Hazard, Exposure, Harm, Vulnerability, and Safety](hazard-exposure-harm-safety.md)
 - [Chemical Entity, Substance, Compound Class, Mixture, and Solution](chemical-substance-classification.md)
 - [Cost, Price, Value, and Return](cost-price-value-return.md)
-- [Admission brief](../../signals/discover/literature/ecology-habitat-niche-food-web-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/ecology-habitat-niche-food-web-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 

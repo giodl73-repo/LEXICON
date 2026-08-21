@@ -118,7 +118,7 @@ frameworks.
 - [Governance, Obligation, and Compliance](governance-obligation-compliance.md)
 - [Assurance, Assessment, Audit, Certification, and Accreditation](assurance-assessment-audit-certification.md)
 - [System Composition, Architecture, Capability, Interface, and Dependency](system-composition-dependency.md)
-- [Admission brief](../../signals/discover/literature/trust-reliance-candidate-brief-2026-08-19.md)
+- [Editorial record](../../signals/discover/literature/trust-reliance-candidate-brief-2026-08-19.md)
 
 ## Sources and provenance
 

@@ -108,7 +108,7 @@ taxonomic branch, and for corporate ancestry claims. **No canonical sense owns
 the bare word**, and that evidence view uses it as a concept rather than as a
 sense. Neither this entry nor
 [Descent, Kinship, Pedigree, and Genealogy](descent-kinship-pedigree-genealogy.md)
-admits a `lineage` sense. Where other candidate drafts already use lineage or
+admits a `lineage` sense. Where other canonical Tables already use lineage or
 inheritance inside factor names, those uses are reconciliation inputs for a
 later fixed-point pass, not competing ownership claims. The word must be
 disambiguated before it enters a factor name here.
@@ -183,7 +183,7 @@ and language-specific type-system design.
 - liabilities, encumbrances, or disclaimer options are omitted from a transfer;
 - class inheritance is treated as automatic behavioral substitutability;
 - `lineage` is used as if it were a sense of this entry, or a factor name in
-  another draft is treated as an ownership claim over the bare word.
+  another Table is treated as an ownership claim over the bare word.
 
 ## Cross-references
 
@@ -199,7 +199,7 @@ and language-specific type-system design.
 - [Tipping Point, Critical Transition, Cascade, Contagion, and Spillover](tipping-point-critical-transition-cascade-contagion-spillover.md)
 - [Adaptation, Fitness, Selection, and Exaptation](adaptation-fitness-selection-exaptation.md)
 - [Ecosystem, Habitat, Ecological Niche, Food Web, and Ecological Interdependence](ecosystem-habitat-niche-food-web-interdependence.md)
-- [Admission brief](../../signals/discover/literature/inheritance-transmission-succession-bequest-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/inheritance-transmission-succession-bequest-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 

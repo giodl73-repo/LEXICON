@@ -28,7 +28,7 @@ meteorological atmosphere and the pressure unit; and Genette's narrative
 
 Focalization itself — who perceives, and how much narrative information is
 selected or restricted through that perceiver — is out of scope here and is not
-owned by any current entry or candidate. It is recorded as unowned residue
+owned by any current Table. It is recorded as unowned residue
 rather than as a closed gap, and `narrative-voice` is deliberately restricted to
 who speaks.
 
@@ -159,7 +159,7 @@ measurement instruments, and clinical mood states.
 - [Register, Style, Genre, Variety, and Idiolect](register-style-genre-variety-idiolect.md)
 - [Metaphor, Metonymy, Symbol, Allegory, and Allusion](metaphor-metonymy-symbol-allegory-allusion.md)
 - [Persona, Self-Presentation, Mask, Disguise, and Avatar](persona-self-presentation-mask-disguise-avatar.md)
-- [Admission brief](../../signals/discover/literature/stance-tone-atmosphere-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/stance-tone-atmosphere-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 
@@ -184,5 +184,5 @@ measurement instruments, and clinical mood states.
 10. Griffero, *Atmospheres: Aesthetics of Emotional Spaces*, Routledge, 2014.
 
 Literary, linguistic, narratological, and aesthetic authorities retain their
-scopes. This draft records attributed and reported affect; it does not measure
+scopes. This Table records attributed and reported affect; it does not measure
 affect, score sentiment, or describe clinical mood states.

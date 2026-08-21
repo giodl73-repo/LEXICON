@@ -16,8 +16,17 @@ The canonical headers are `lexicon-reference-v4`,
 
 `tools/build_lexicon_contracts.js` deterministically derives the Lexicon
 contracts from the last reviewed Factorium artifacts plus the explicit
-Lexicon admission manifests. The 2026-08-21 admission adds 37 entry records at
-candidate maturity and 20 noncanonical pointer labels; it adds no relation.
+Lexicon admission manifests. The 2026-08-21 candidate admission adds 37 entry
+records at candidate maturity and 20 noncanonical pointer labels. The domain
+admission adds another 10 candidate-maturity entry records and no pointer
+labels. Neither admission adds a relation. The resulting reference contains
+101 entries, 680 senses, 1,170 factors, and 100 specialized views; assurance
+binds its 101 entries, 100 views, and 11 relations with 212 exact records.
+
+The immutable admission inputs are:
+
+- `reference/lexicon-candidate-admissions-v1.json`
+- `reference/lexicon-domain-admissions-v1.json`
 
 ## Legacy imports
 
@@ -34,6 +43,8 @@ projections, and documentation must use Lexicon headers and extensions.
 
 ```powershell
 node tools\build_lexicon_contracts.js --check
+node tools\check_lexicon_candidate_admissions.js
+node tools\check_lexicon_domain_admissions.js
 cargo run --quiet -- reference-check reference\lexicon-reference-v4.lexicon .
 cargo run --quiet -- reference-sidecar-check reference\lexicon-reference-v4.lexicon reference\lexicon-relations-v2.lexicon reference\lexicon-assurance-v4.lexicon .
 ```

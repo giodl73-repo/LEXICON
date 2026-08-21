@@ -2,11 +2,11 @@
 
 Status: candidate anchor entry
 
-[Admission brief](../../signals/discover/literature/deontic-operators-candidate-brief-2026-08-20.md)
+[Editorial record](../../signals/discover/literature/deontic-operators-candidate-brief-2026-08-20.md)
 
 ## Orientation
 
-This candidate describes source-relative modal positions in a formal system or
+This Table describes source-relative modal positions in a formal system or
 bounded normative account. It leaves domain governance, access authorization,
 and enforcement with their current owners and does not turn deontic notation
 into legal advice.

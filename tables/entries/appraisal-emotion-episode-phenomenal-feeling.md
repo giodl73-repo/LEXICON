@@ -2,11 +2,11 @@
 
 Status: candidate anchor entry
 
-[Admission brief](../../signals/discover/literature/appraisal-emotion-episode-feeling-candidate-brief-2026-08-20.md)
+[Editorial record](../../signals/discover/literature/appraisal-emotion-episode-feeling-candidate-brief-2026-08-20.md)
 
 ## Orientation
 
-This candidate separates an evaluative relation, an episode-level emotion
+This Table separates an evaluative relation, an episode-level emotion
 account, and subjective phenomenal feeling. It does not universalize emotion
 categories or own affect as an umbrella, enduring mood, causal mechanism, or
 clinical diagnosis.

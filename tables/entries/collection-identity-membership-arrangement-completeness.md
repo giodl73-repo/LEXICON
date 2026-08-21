@@ -9,7 +9,7 @@ organizing principle and membership rule. It can remain the same collection
 through member change, rearrangement, and incomplete holdings. This is not a
 mathematical set, a mereological sum, a system, or a generic classification.
 
-The candidate applies across archival, library, museum, specimen, research, and
+The Table applies across archival, library, museum, specimen, research, and
 data contexts without universalizing any one domain's doctrine. A member,
 boundary, and lifecycle stage are factors or routes: membership is typed and
 declared, boundary is an output of the rule, and lifecycle is owned elsewhere.
@@ -103,7 +103,7 @@ collection-identity-use
 - [Decomposition Modes and Combination Contracts](decomposition-modes-combination-contracts.md)
 - [Organization, Position, Role, Competency, Responsibility, Authority, and Accountability](organization-role-authority.md)
 - [State, Event, Transition, Process, and Lifecycle](state-event-transition-process-lifecycle.md)
-- [Admission brief](../../signals/discover/literature/collection-identity-membership-arrangement-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/collection-identity-membership-arrangement-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 

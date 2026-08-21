@@ -58,7 +58,7 @@ action-error-recovery-use
   owners; route causal claims to causal reasoning; route hazard, harm, and safety
   acceptability to their owner; route system failure and recovery to
   [Reliability, Availability, Maintainability, Resilience, and Recovery](dependability-reliability-availability-resilience.md).
-- This candidate provides no diagnosis, causal attribution, blame assignment,
+- This Table provides no diagnosis, causal attribution, blame assignment,
   safety advice, or operational response prescription.
 
 ## Selection procedure
@@ -101,7 +101,7 @@ action-error-recovery-use
 - [Governance, Obligation, and Compliance](governance-obligation-compliance.md)
 - [Association, Causal Effect, Influence, Mechanism, Intervention, and Attribution](causal-reasoning.md)
 - [Objective, Control, Monitoring, and Response](control-monitoring-response.md)
-- [Admission brief](../../signals/discover/literature/human-action-error-recovery-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/human-action-error-recovery-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 

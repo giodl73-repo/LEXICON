@@ -197,7 +197,7 @@ metaphysics of free will and intentionality.
 - [Planned Work Procedure](../procedures/planned-work.md)
 - [System Composition, Architecture, Capability, Interface, and Dependency](system-composition-dependency.md)
 - [Incentive, Alignment, Externality, Moral Hazard, and Adverse Selection](incentive-alignment-externality-moral-hazard-adverse-selection.md)
-- [Admission brief](../../signals/discover/literature/motive-intention-rationale-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/motive-intention-rationale-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 
@@ -240,4 +240,4 @@ These sources support a plural boundary entry. They do not settle whether
 reasons are causes, do not establish one theory of desire, intention, or
 motivation, do not state the doctrine of any jurisdiction, and do not license
 ascribing mental states to organizations or systems without a stated attribution
-basis. This draft is not legal advice.
+basis. This Table is not legal advice.

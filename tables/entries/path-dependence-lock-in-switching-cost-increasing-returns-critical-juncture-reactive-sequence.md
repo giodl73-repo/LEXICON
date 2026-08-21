@@ -2,11 +2,11 @@
 
 Status: candidate anchor entry
 
-[Admission brief](../../signals/discover/literature/path-dependence-lock-in-candidate-brief-2026-08-20.md)
+[Editorial record](../../signals/discover/literature/path-dependence-lock-in-candidate-brief-2026-08-20.md)
 
 ## Orientation
 
-This candidate describes historically sequenced mechanisms under which earlier
+This Table describes historically sequenced mechanisms under which earlier
 events condition later options. It rejects generic historical causation and
 emergence as owned senses, requiring evidence of a bounded mechanism and
 counterfactual alternatives.

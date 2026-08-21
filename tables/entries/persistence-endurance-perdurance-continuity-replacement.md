@@ -2,7 +2,7 @@
 
 Status: candidate anchor entry
 
-[Admission brief](../../signals/discover/literature/persistence-endurance-perdurance-continuity-replacement-candidate-brief-2026-08-20.md)
+[Editorial record](../../signals/discover/literature/persistence-endurance-perdurance-continuity-replacement-candidate-brief-2026-08-20.md)
 
 ## Orientation
 
@@ -68,5 +68,5 @@ See the `entity-identity` sense of
 
 ## Sources and provenance
 
-The admission brief uses philosophical persistence sources and BFO's
+The editorial record uses philosophical persistence sources and BFO's
 continuant/occurrent contrast only as bounded comparative evidence.

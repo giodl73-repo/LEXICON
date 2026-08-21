@@ -117,7 +117,7 @@ diagnostic criteria, causes for an individual, and treatment.
 - [Information, Data, Signal, and Noise](information-data-signal-noise.md)
 - [Meaning, Reference, Interpretation, and Use](meaning-reference-interpretation-use.md)
 - [Error, Bias, Accuracy, Trueness, Precision, Resolution, and Calibration](measurement-quality.md)
-- [Admission brief](../../signals/discover/literature/perception-appearance-candidate-brief-2026-08-19.md)
+- [Editorial record](../../signals/discover/literature/perception-appearance-candidate-brief-2026-08-19.md)
 
 ## Sources and provenance
 
@@ -142,5 +142,5 @@ diagnostic criteria, causes for an individual, and treatment.
    Temperature and Touch*:
    https://www.nobelprize.org/uploads/2021/10/advanced-medicine-2021.pdf
 
-This draft supports descriptive classification only. It does not provide
+This Table supports descriptive classification only. It does not provide
 medical advice, diagnosis, or treatment guidance.

@@ -2,11 +2,11 @@
 
 Status: candidate anchor entry
 
-[Admission brief](../../signals/discover/literature/cardinality-ordinality-rank-index-candidate-brief-2026-08-20.md)
+[Editorial record](../../signals/discover/literature/cardinality-ordinality-rank-index-candidate-brief-2026-08-20.md)
 
 ## Orientation
 
-This candidate separates mathematical size and order type, positional lookup,
+This Table separates mathematical size and order type, positional lookup,
 relationship multiplicity, and ordered measurement values. It does not merge
 these into comparative quantity, evaluation score, or database schema design.
 

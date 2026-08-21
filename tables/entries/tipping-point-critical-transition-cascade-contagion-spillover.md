@@ -207,7 +207,7 @@ metaphorical "viral", "domino", or popular tipping-point usage.
 - [Distribution, Shape, Skewness, Tail, Outlier, and Extreme Value](distribution-shape-skewness-tail-outlier-extreme-value.md)
 - [Prediction, Forecast, Conditional Projection, Backtest, and Forecast Skill](prediction-forecast-conditional-projection-backtest-skill.md)
 - [Inheritance, Transmission, Succession, and Bequest](inheritance-transmission-succession-bequest.md)
-- [Admission brief](../../signals/discover/literature/tipping-point-critical-transition-cascade-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/tipping-point-critical-transition-cascade-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 

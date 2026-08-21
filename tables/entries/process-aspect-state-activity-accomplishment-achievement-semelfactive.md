@@ -2,11 +2,11 @@
 
 Status: candidate anchor entry
 
-[Admission brief](../../signals/discover/literature/process-aspect-state-activity-accomplishment-achievement-semelfactive-candidate-brief-2026-08-20.md)
+[Editorial record](../../signals/discover/literature/process-aspect-state-activity-accomplishment-achievement-semelfactive-candidate-brief-2026-08-20.md)
 
 ## Orientation
 
-This candidate classifies how a bounded predication unfolds, not what event,
+This Table classifies how a bounded predication unfolds, not what event,
 state, process, or lifecycle record exists. It retains the Vendler-style
 contrast while treating telicity, culmination, duration, iteration, and
 consequent state as diagnostics or factors unless they independently pass a

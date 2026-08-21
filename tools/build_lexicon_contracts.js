@@ -219,7 +219,23 @@ if (
 ) {
   throw new Error("invalid Lexicon candidate admission manifest");
 }
-const admissionRecords = admissionManifest.entries.map(promotedEntryRecord);
+const domainAdmissionManifest = JSON.parse(
+  read("reference/lexicon-domain-admissions-v1.json"),
+);
+if (
+  domainAdmissionManifest.contract !== "lexicon-domain-admissions-v1" ||
+  domainAdmissionManifest.entries.length !== 10
+) {
+  throw new Error("invalid Lexicon domain admission manifest");
+}
+const allAdmissionManifests = [admissionManifest, domainAdmissionManifest];
+const allAdmissions = allAdmissionManifests.flatMap((manifest) =>
+  manifest.entries.map((entry) => ({ ...entry, manifest })),
+);
+if (new Set(allAdmissions.map(({ id }) => id)).size !== allAdmissions.length) {
+  throw new Error("duplicate Lexicon admission identity");
+}
+const admissionRecords = allAdmissions.map(promotedEntryRecord);
 
 const migratedReference = legacyReference
   .replace(/^factorium-reference-v2\n/, "lexicon-reference-v4\n")
@@ -307,9 +323,9 @@ const assuranceLines = read("reference/factorium-assurance-v2.factorium")
   )
   .filter((line) => line !== "lexicon-assurance-v4" && line !== "end-assurance" && line !== "")
   .concat(
-    admissionManifest.entries.map((admission) => {
+    allAdmissions.map((admission) => {
       const sourcePath = `tables/entries/${admission.id}.md`;
-      return `review entry:${admission.id} | ${sha256(read(sourcePath))} | ${admissionManifest.admission_review} | fixed-point | ${admissionManifest.date}`;
+      return `review entry:${admission.id} | ${sha256(read(sourcePath))} | ${admission.manifest.admission_review} | fixed-point | ${admission.manifest.date}`;
     }),
   )
   .sort();

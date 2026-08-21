@@ -2,11 +2,11 @@
 
 Status: candidate anchor entry
 
-[Admission brief](../../signals/discover/literature/clinical-reasoning-candidate-brief-2026-08-20.md)
+[Editorial record](../../signals/discover/literature/clinical-reasoning-candidate-brief-2026-08-20.md)
 
 ## Orientation
 
-This descriptive candidate maps concepts used in clinical classification and
+This Table maps concepts used in clinical classification and
 reasoning. It is not medical advice, diagnosis, triage, treatment, or a
 substitute for a classification authority. Every classification claim requires
 an authority, version, context, and evidence.

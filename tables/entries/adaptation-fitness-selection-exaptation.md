@@ -170,7 +170,7 @@ speciation, or macroevolution.
 - [System Composition, Architecture, Capability, Interface, and Dependency](system-composition-dependency.md)
 - [State, Event, Transition, Process, and Lifecycle](state-event-transition-process-lifecycle.md)
 - [Association, Causal Effect, Influence, Mechanism, Intervention, and Attribution](causal-reasoning.md)
-- [Admission brief](../../signals/discover/literature/adaptation-selection-candidate-brief-2026-08-19.md)
+- [Editorial record](../../signals/discover/literature/adaptation-selection-candidate-brief-2026-08-19.md)
 
 ## Sources and provenance
 

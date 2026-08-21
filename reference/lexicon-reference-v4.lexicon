@@ -1,5 +1,5 @@
 lexicon-reference-v4
-entry abstract-work-notational-specification-performance-instance-compliance-condition-autographic-allographic | Abstract Work, Notational Specification, Performance Instance, Compliance Condition, and Autographic/Allographic Distinction | reference | candidate | tables/entries/abstract-work-notational-specification-performance-instance-compliance-condition-autographic-allographic.md | This candidate maps a bounded work/notation/performance analysis useful for cataloging and cultural-heritage description. It rejects ownership of aesthetic object, aesthetic experience, and interpretation. Medium remains a factor unless a future disjoint governing question is demonstrated.
+entry abstract-work-notational-specification-performance-instance-compliance-condition-autographic-allographic | Abstract Work, Notational Specification, Performance Instance, Compliance Condition, and Autographic/Allographic Distinction | reference | candidate | tables/entries/abstract-work-notational-specification-performance-instance-compliance-condition-autographic-allographic.md | This Table maps a bounded work/notation/performance analysis useful for cataloging and cultural-heritage description. It rejects ownership of aesthetic object, aesthetic experience, and interpretation. Medium remains a factor unless a future disjoint governing question is demonstrated.
 sense abstract-work-account | abstract work account
 sense notational-specification | notational specification
 sense performance-instance | performance instance
@@ -79,7 +79,7 @@ factor conversion-direction-component-set-and-weighting-basis | conversion direc
 factor unit-and-display-scale | unit and display scale
 factor uncertainty | uncertainty
 end-entry
-entry appraisal-emotion-episode-phenomenal-feeling | Appraisal, Emotion Episode, and Phenomenal Feeling | reference | candidate | tables/entries/appraisal-emotion-episode-phenomenal-feeling.md | This candidate separates an evaluative relation, an episode-level emotion account, and subjective phenomenal feeling. It does not universalize emotion categories or own affect as an umbrella, enduring mood, causal mechanism, or clinical diagnosis.
+entry appraisal-emotion-episode-phenomenal-feeling | Appraisal, Emotion Episode, and Phenomenal Feeling | reference | candidate | tables/entries/appraisal-emotion-episode-phenomenal-feeling.md | This Table separates an evaluative relation, an episode-level emotion account, and subjective phenomenal feeling. It does not universalize emotion categories or own affect as an umbrella, enduring mood, causal mechanism, or clinical diagnosis.
 sense affective-appraisal | affective appraisal
 sense emotion-episode | emotion episode
 sense phenomenal-feeling | phenomenal feeling
@@ -114,7 +114,22 @@ factor review-decision-attestation-scope-issue-expiry-and-surveillance | review,
 factor corrective-action-appeal-suspension-withdrawal-and-supersession | corrective action, appeal, suspension, withdrawal, and supersession
 factor provenance-custody-confidentiality-and-public-representation | provenance, custody, confidentiality, and public representation
 end-entry
-entry cardinality-ordinality-rank-index-relationship-cardinality-ordinal-scale-value | Cardinality, Ordinality, Rank, Index, Relationship Cardinality, and Ordinal Scale Value | quantities | candidate | tables/entries/cardinality-ordinality-rank-index-relationship-cardinality-ordinal-scale-value.md | This candidate separates mathematical size and order type, positional lookup, relationship multiplicity, and ordered measurement values. It does not merge these into comparative quantity, evaluation score, or database schema design.
+entry authentication-threat-attack-defense-security-control | Authentication, Threat, Attack, Defense, and Security Control | systems | candidate | tables/entries/authentication-threat-attack-defense-security-control.md | Authentication verifies a claimed identity, origin, or control under a protocol. A threat is a circumstance, actor, capability, or event with potential adverse effect; an attack is an attempt or action intended to exploit or compromise; defense is organized prevention, detection, response, recovery, or adaptation; a security control is a selected safeguard or countermeasure under a framework.
+sense authentication | authentication
+sense security-threat | security threat
+sense security-attack | security attack
+sense defense | defense
+sense security-control | security control
+factor subject-claimant-actor-verifier-defender-and-authority | subject, claimant, actor, verifier, defender, and authority
+factor asset-objective-boundary-environment-and-dependencies | asset, objective, boundary, environment, and dependencies
+factor identity-claim-authenticator-protocol-evidence-and-assurance-level | identity claim, authenticator, protocol, evidence, and assurance level
+factor threat-source-capability-intent-opportunity-event-and-consequence | threat source, capability, intent, opportunity, event, and consequence
+factor target-vector-technique-attempt-action-and-observed-effect | target, vector, technique, attempt, action, and observed effect
+factor prevention-protection-detection-response-recovery-and-adaptation | prevention, protection, detection, response, recovery, and adaptation
+factor control-objective-safeguard-framework-implementation-and-assessment | control objective, safeguard, framework, implementation, and assessment
+factor time-intelligence-source-uncertainty-privacy-and-disclosure-limits | time, intelligence source, uncertainty, privacy, and disclosure limits
+end-entry
+entry cardinality-ordinality-rank-index-relationship-cardinality-ordinal-scale-value | Cardinality, Ordinality, Rank, Index, Relationship Cardinality, and Ordinal Scale Value | quantities | candidate | tables/entries/cardinality-ordinality-rank-index-relationship-cardinality-ordinal-scale-value.md | This Table separates mathematical size and order type, positional lookup, relationship multiplicity, and ordered measurement values. It does not merge these into comparative quantity, evaluation score, or database schema design.
 sense set-cardinality | set cardinality
 sense order-ordinality | order ordinality
 sense relational-rank | relational rank
@@ -253,7 +268,7 @@ factor reviewer-and-revision | reviewer and revision
 factor measurement-model-procedure-and-system | measurement model, procedure, and system
 factor inference-rule-and-assumptions | inference rule and assumptions
 end-entry
-entry clinical-sign-symptom-syndrome-diagnosis-differential-diagnosis-prognosis | Clinical Sign, Symptom, Syndrome, Diagnosis, Differential Diagnosis, and Prognosis | science | candidate | tables/entries/clinical-sign-symptom-syndrome-diagnosis-differential-diagnosis-prognosis.md | This descriptive candidate maps concepts used in clinical classification and reasoning. It is not medical advice, diagnosis, triage, treatment, or a substitute for a classification authority. Every classification claim requires an authority, version, context, and evidence.
+entry clinical-sign-symptom-syndrome-diagnosis-differential-diagnosis-prognosis | Clinical Sign, Symptom, Syndrome, Diagnosis, Differential Diagnosis, and Prognosis | science | candidate | tables/entries/clinical-sign-symptom-syndrome-diagnosis-differential-diagnosis-prognosis.md | This Table maps concepts used in clinical classification and reasoning. It is not medical advice, diagnosis, triage, treatment, or a substitute for a classification authority. Every classification claim requires an authority, version, context, and evidence.
 sense clinical-sign | clinical sign
 sense clinical-symptom | clinical symptom
 sense clinical-syndrome | clinical syndrome
@@ -300,6 +315,21 @@ factor access-conditions-and-free-rider-condition-where-present | access conditi
 factor observability-monitoring-communication-repetition-and-time-horizon | observability, monitoring, communication, repetition, and time horizon
 factor existing-institution-governance-mechanism-and-sanctioning-arrangement | existing institution, governance mechanism, and sanctioning arrangement
 factor provision-gap-or-appropriation-or-depletion-rate-evidence-uncertainty-and-revision | provision gap or appropriation/depletion rate, evidence, uncertainty, and revision
+end-entry
+entry communication-conversation-discourse-narrative-dialogue | Communication, Conversation, Discourse, Narrative, and Dialogue | language | candidate | tables/entries/communication-conversation-discourse-narrative-dialogue.md | Communication is a situated process in which participants produce, transmit, receive, interpret, or jointly construct meaning through signs and channels. Conversation is coordinated exchange among participants; discourse is an extended organized use of language or signs in context; narrative organizes events or states into a tellable sequence; dialogue is reciprocal engagement oriented toward response, inquiry, understanding, or coordinated action.
+sense communication | communication
+sense conversation | conversation
+sense discourse | discourse
+sense narrative | narrative
+sense dialogue | dialogue
+factor participants-roles-audience-and-relationship | participants, roles, audience, and relationship
+factor content-referents-signs-language-and-presuppositions | content, referents, signs, language, and presuppositions
+factor medium-channel-setting-timing-and-accessibility | medium, channel, setting, timing, and accessibility
+factor turns-sequence-topic-response-feedback-and-repair | turns, sequence, topic, response, feedback, and repair
+factor context-practice-institution-genre-and-power-conditions | context, practice, institution, genre, and power conditions
+factor events-temporal-order-causal-attribution-narrator-and-perspective | events, temporal order, causal attribution, narrator, and perspective
+factor purpose-uptake-misunderstanding-contestation-and-outcome | purpose, uptake, misunderstanding, contestation, and outcome
+factor record-provenance-privacy-and-interpretation-limits | record, provenance, privacy, and interpretation limits
 end-entry
 entry comparative-quantity | Comparative Quantity | quantities | candidate | tables/entries/comparative-quantity.md | Ratios, fractions, rates, proportions, and percentages compare quantities under different role contracts. A fraction is a bounded part-whole ratio only when its nonnegative numerator belongs to its declared whole; closure additionally requires an exhaustive mutually exclusive partition.
 sense ratio | ratio
@@ -455,7 +485,7 @@ factor projection-loss-inverse-and-round-trip-limits | projection loss, inverse,
 factor counterexamples-alternate-decompositions-and-sensitivity | counterexamples, alternate decompositions, and sensitivity
 factor provenance-version-review-and-revision | provenance, version, review, and revision
 end-entry
-entry deontic-obligation-permission-prohibition-optionality-waiver-exemption | Deontic Obligation, Permission, Prohibition, Optionality, Waiver, and Exemption | governance | candidate | tables/entries/deontic-obligation-permission-prohibition-optionality-waiver-exemption.md | This candidate describes source-relative modal positions in a formal system or bounded normative account. It leaves domain governance, access authorization, and enforcement with their current owners and does not turn deontic notation into legal advice.
+entry deontic-obligation-permission-prohibition-optionality-waiver-exemption | Deontic Obligation, Permission, Prohibition, Optionality, Waiver, and Exemption | governance | candidate | tables/entries/deontic-obligation-permission-prohibition-optionality-waiver-exemption.md | This Table describes source-relative modal positions in a formal system or bounded normative account. It leaves domain governance, access authorization, and enforcement with their current owners and does not turn deontic notation into legal advice.
 sense deontic-obligation | deontic obligation
 sense deontic-permission | deontic permission
 sense deontic-prohibition | deontic prohibition
@@ -576,6 +606,21 @@ factor disturbance-absorption-regime-persistence-and-observed-state-change | dis
 factor human-use-ecosystem-services-and-accounting-classification | human use, ecosystem services, and accounting classification
 factor model-data-uncertainty-scale-dependence-and-scope-limits | model, data, uncertainty, scale dependence, and scope limits
 end-entry
+entry education-instruction-curriculum-learning-objective-educational-assessment | Education, Instruction, Curriculum, Learning Objective, and Educational Assessment | reference | candidate | tables/entries/education-instruction-curriculum-learning-objective-educational-assessment.md | Education is organized provision of opportunities and activities intended to support learning or development. Instruction is deliberate guidance or communication intended to support specified learning. Curriculum is a governed selection and organization of objectives, content, activities, and assessment. A learning objective states an intended learner change or performance. Educational assessment elicits and interprets evidence about learning relative to objectives for a declared purpose.
+sense education | education
+sense instruction | instruction
+sense curriculum | curriculum
+sense learning-objective | learning objective
+sense educational-assessment | educational assessment
+factor learners-population-prior-experience-language-and-accessibility | learners, population, prior experience, language, and accessibility
+factor provider-educator-authority-institution-and-programme | provider, educator, authority, institution, and programme
+factor purpose-learning-objectives-content-competencies-and-progression | purpose, learning objectives, content, competencies, and progression
+factor curriculum-selection-sequence-activities-resources-and-context | curriculum selection, sequence, activities, resources, and context
+factor instruction-method-interaction-practice-feedback-and-support | instruction method, interaction, practice, feedback, and support
+factor assessment-task-evidence-interpretation-criteria-and-uncertainty | assessment task, evidence, interpretation, criteria, and uncertainty
+factor decision-use-stakes-consequences-fairness-privacy-and-appeal | decision use, stakes, consequences, fairness, privacy, and appeal
+factor duration-version-implementation-evaluation-and-provenance | duration, version, implementation, evaluation, and provenance
+end-entry
 entry electrical-quantity | Electrical Quantity | science | candidate | tables/entries/electrical-quantity.md | Electrical descriptions span local electric field, charge and current, point-pair potential difference, material resistivity, specimen resistance, configuration capacitance, complex impedance, power, and energy transfer. Each retains its descriptive level, geometry, state, terminals, frequency, and model scope.
 sense electric-charge | electric charge
 sense electric-current | electric current
@@ -692,6 +737,22 @@ factor magnitude | magnitude
 factor direction | direction
 factor duration | duration
 factor reference-frame | reference frame
+end-entry
+entry geographic-place-environment-weather-climate-earth-system-environmental-change | Geographic Place, Environment, Weather, Climate, Earth System, and Environmental Change | science | candidate | tables/entries/geographic-place-environment-weather-climate-earth-system-environmental-change.md | A geographic place is a named or identified location/region under a spatial and jurisdictional account. Environment is the relevant surrounding physical, biological, social, and built conditions for a subject and question. Weather is atmospheric state over a relatively short interval. Climate is a statistical description of weather or climate-system state over a declared reference period. Earth system is the coupled planetary system of major physical, chemical, biological, and human-influenced components. Environmental change is a measured or attributed change in environmental state over a stated baseline.
+sense geographic-place | geographic place
+sense environment | environment
+sense weather | weather
+sense climate | climate
+sense earth-system | earth system
+sense environmental-change | environmental change
+factor subject-population-place-region-boundary-and-jurisdiction | subject, population, place, region, boundary, and jurisdiction
+factor geometry-coordinate-reference-scale-resolution-and-time | geometry, coordinate reference, scale, resolution, and time
+factor physical-biological-social-and-built-environmental-conditions | physical, biological, social, and built environmental conditions
+factor atmospheric-variables-observations-state-event-and-forecast | atmospheric variables, observations, state, event, and forecast
+factor climate-variables-statistics-variability-extremes-and-reference-period | climate variables, statistics, variability, extremes, and reference period
+factor atmosphere-hydrosphere-cryosphere-lithosphere-biosphere-and-human-systems | atmosphere, hydrosphere, cryosphere, lithosphere, biosphere, and human systems
+factor stocks-flows-interactions-internal-dynamics-external-forcings-and-feedback | stocks, flows, interactions, internal dynamics, external forcings, and feedback
+factor baseline-observed-change-attribution-model-evidence-and-uncertainty | baseline, observed change, attribution, model, evidence, and uncertainty
 end-entry
 entry geometric-measure | Geometric Measure | quantities | candidate | tables/entries/geometric-measure.md | Geometric measure quantifies extent. The first question is not which formula to remember, but whether the desired quantity concerns a boundary or an interior and whether that measured set is one-, two-, or three-dimensional.
 sense perimeter | perimeter
@@ -816,7 +877,7 @@ factor effective-time-and-lifecycle-status | effective time and lifecycle status
 factor redirects-merges-splits-and-supersession | redirects, merges, splits, and supersession
 factor provenance-and-confidence | provenance and confidence
 end-entry
-entry illocutionary-force-speech-acts | Illocutionary Force and Speech Acts | language | candidate | tables/entries/illocutionary-force-speech-acts.md | This candidate identifies what a speaker is doing in uttering content under a bounded conversational and institutional account. It distinguishes force from literal meaning, transport interaction, attitude, and downstream effect.
+entry illocutionary-force-speech-acts | Illocutionary Force and Speech Acts | language | candidate | tables/entries/illocutionary-force-speech-acts.md | This Table identifies what a speaker is doing in uttering content under a bounded conversational and institutional account. It distinguishes force from literal meaning, transport interaction, attitude, and downstream effect.
 sense illocutionary-assertive | illocutionary assertive
 sense illocutionary-question | illocutionary question
 sense illocutionary-directive | illocutionary directive
@@ -917,7 +978,7 @@ factor evidence-record-and-dispute-resolution | evidence, record, and dispute re
 factor individual-level-versus-population-level-claim-status | individual-level versus population-level claim status
 factor model-data-uncertainty-and-scope-limits | model, data, uncertainty, and scope limits
 end-entry
-entry institution-constitutive-regulative-social-object-status-function-reified-relationship | Institution, Constitutive Norm, Regulative Norm, Social Object, Status Function, and Reified Relationship | governance | candidate | tables/entries/institution-constitutive-regulative-social-object-status-function-reified-relationship.md | This candidate supplies a plural, account-relative vocabulary for institutional facts. It neither assumes a universal social ontology nor replaces organization, role, governance, or relationship records.
+entry institution-constitutive-regulative-social-object-status-function-reified-relationship | Institution, Constitutive Norm, Regulative Norm, Social Object, Status Function, and Reified Relationship | governance | candidate | tables/entries/institution-constitutive-regulative-social-object-status-function-reified-relationship.md | This Table supplies a plural, account-relative vocabulary for institutional facts. It neither assumes a universal social ontology nor replaces organization, role, governance, or relationship records.
 sense institutional-arrangement | institutional arrangement
 sense constitutive-norm | constitutive norm
 sense regulative-norm | regulative norm
@@ -955,6 +1016,37 @@ factor order-timing-retries-duplicates-cancellation-and-idempotency | order, tim
 factor state-commitment-queue-location-and-operating-conditions | state, commitment, queue, location, and operating conditions
 factor outcome-evidence-provenance-privacy-retention-and-revision | outcome, evidence, provenance, privacy, retention, and revision
 end-entry
+entry knowledge-belief-justification-doubt-ignorance-understanding | Knowledge, Belief, Justification, Doubt, Ignorance, and Understanding | reference | candidate | tables/entries/knowledge-belief-justification-doubt-ignorance-understanding.md | This Table separates attitudes and epistemic standings that are often treated as one confidence scale. Belief is acceptance or commitment toward content; knowledge is a factive standing under a declared account; justification is the support or warrant relevant to an attitude; doubt withholds or unsettles commitment; ignorance marks an attributed lack; understanding concerns grasp of relations, reasons, or organization rather than possession of isolated facts.
+sense belief | belief
+sense knowledge | knowledge
+sense epistemic-justification | epistemic justification
+sense doubt | doubt
+sense ignorance | ignorance
+sense understanding | understanding
+factor subject-community-or-attributed-knower | subject, community, or attributed knower
+factor proposition-question-object-or-domain | proposition, question, object, or domain
+factor truth-condition-and-world-state-where-applicable | truth condition and world state where applicable
+factor attitude-commitment-confidence-and-suspension | attitude, commitment, confidence, and suspension
+factor evidence-reasons-warrant-and-belief-forming-process | evidence, reasons, warrant, and belief-forming process
+factor epistemic-account-standards-alternatives-and-defeaters | epistemic account, standards, alternatives, and defeaters
+factor relational-model-explanation-use-and-transfer | relational model, explanation, use, and transfer
+factor attribution-source-time-context-and-revision | attribution source, time, context, and revision
+end-entry
+entry learning-memory-attention-reasoning-skill | Learning, Memory, Attention, Reasoning, and Skill | reference | candidate | tables/entries/learning-memory-attention-reasoning-skill.md | Learning is a change in knowledge, understanding, capacity, disposition, or performance attributable to experience, practice, study, or instruction. Memory concerns retention and later availability; attention concerns selective allocation of processing; reasoning connects represented premises or states to a conclusion; skill is a developed capacity for performance under conditions.
+sense learning | learning
+sense memory | memory
+sense attention | attention
+sense reasoning | reasoning
+sense skill | skill
+factor learner-agent-population-or-system | learner, agent, population, or system
+factor content-task-stimulus-premises-and-target-performance | content, task, stimulus, premises, and target performance
+factor prior-state-experience-practice-study-and-instruction | prior state, experience, practice, study, and instruction
+factor attention-allocation-demands-distraction-and-context | attention allocation, demands, distraction, and context
+factor encoding-retention-interval-retrieval-cue-and-reconstruction | encoding, retention interval, retrieval cue, and reconstruction
+factor representation-inference-rule-strategy-and-conclusion | representation, inference rule, strategy, and conclusion
+factor capacity-performance-transfer-retention-and-adaptation | capacity, performance, transfer, retention, and adaptation
+factor method-evidence-uncertainty-and-alternative-explanation | method, evidence, uncertainty, and alternative explanation
+end-entry
 entry lexicon-entry-publication | Lexicon Entry Publication | reference | candidate | tables/entries/lexicon-entry-publication.md | Lexicon publication is the governed progression from a research question to a reviewable canonical entry and specialized views. Publication status, editorial maturity, source authority, and external domain authority are related but separate. A document is not published merely because Markdown exists or automated checks pass.
 sense editorial-workflow | editorial workflow
 sense entry-maturity | entry maturity
@@ -970,6 +1062,37 @@ factor maturity-assessment | maturity assessment
 factor role-findings-and-closure | role findings and closure
 factor validation-evidence | validation evidence
 factor revision-commit-and-publication-state | revision, commit, and publication state
+end-entry
+entry market-competition-production-labor-capital-finance | Market, Competition, Production, Labor, Capital, and Finance | economics | candidate | tables/entries/market-competition-production-labor-capital-finance.md | A market is an institutionally bounded setting or mechanism for offers, exchange, allocation, and price formation. Competition is rivalry or constrained independent action among participants for opportunities or resources. Production transforms inputs into outputs under an account. Labor is human work or service under declared social and statistical scope. Capital is a stock or claim used in production or expected return under a specified account. Finance organizes funding, claims, instruments, intermediation, payment, and risk across time.
+sense market | market
+sense competition | competition
+sense production | production
+sense labor | labor
+sense capital | capital
+sense finance | finance
+factor participants-institutions-sectors-roles-and-boundaries | participants, institutions, sectors, roles, and boundaries
+factor goods-services-resources-assets-liabilities-and-claims | goods, services, resources, assets, liabilities, and claims
+factor offers-demand-supply-exchange-mechanism-and-price-formation | offers, demand, supply, exchange mechanism, and price formation
+factor rivalry-entry-exit-information-power-and-constraints | rivalry, entry, exit, information, power, and constraints
+factor inputs-technology-activities-outputs-residuals-and-account | inputs, technology, activities, outputs, residuals, and account
+factor work-skill-time-conditions-organization-and-compensation | work, skill, time, conditions, organization, and compensation
+factor capital-account-funding-instruments-intermediation-payment-and-risk | capital account, funding, instruments, intermediation, payment, and risk
+factor jurisdiction-period-units-evidence-distribution-and-uncertainty | jurisdiction, period, units, evidence, distribution, and uncertainty
+end-entry
+entry material-object-artifact-tool-manufacturing-process | Material, Object, Artifact, Tool, and Manufacturing Process | systems | candidate | tables/entries/material-object-artifact-tool-manufacturing-process.md | Material is matter characterized for composition, properties, provenance, and use under an account. A physical object is a materially bounded continuant or item under an identity rule. An artifact is an object or feature intentionally made or modified for a role under an account. A tool is an artifact or resource used to act on another subject or process. Manufacturing process is an organized production process that transforms inputs into specified physical outputs.
+sense material | material
+sense physical-object | physical object
+sense artifact | artifact
+sense tool | tool
+sense manufacturing-process | manufacturing process
+factor material-identity-composition-properties-state-and-batch | material identity, composition, properties, state, and batch
+factor object-identity-boundary-parts-condition-and-persistence-rule | object identity, boundary, parts, condition, and persistence rule
+factor maker-modification-design-intended-role-and-actual-use | maker, modification, design, intended role, and actual use
+factor tool-user-operation-workpiece-interface-capability-and-safety | tool user, operation, workpiece, interface, capability, and safety
+factor production-plan-activities-sequence-equipment-and-controls | production plan, activities, sequence, equipment, and controls
+factor inputs-components-consumables-outputs-residuals-and-waste | inputs, components, consumables, outputs, residuals, and waste
+factor requirements-tolerances-verification-provenance-and-custody | requirements, tolerances, verification, provenance, and custody
+factor place-time-environment-uncertainty-and-lifecycle | place, time, environment, uncertainty, and lifecycle
 end-entry
 entry mathematical-relation-solving | Mathematical Function, Variable, Equation, Identity, Solution, Root, Derivative, Iteration, and Convergence | reference | candidate | tables/entries/mathematical-relation-solving.md | A mathematical function assigns admitted inputs to outputs; equations and identities differ by quantification; solutions and roots differ by target; derivatives are local limit-defined objects; iteration generates states while convergence is a separate conditional limiting claim.
 sense mathematical-function | mathematical function
@@ -1188,6 +1311,22 @@ factor bottleneck-dependency-substitution-and-transfer-loss | bottleneck, depend
 factor shortage-deferred-demand-residual-capacity-and-consequence | shortage, deferred demand, residual capacity, and consequence
 factor observation-forecast-plan-actual-reconciliation-and-provenance | observation, forecast, plan, actual, reconciliation, and provenance
 end-entry
+entry organism-cell-gene-development-metabolism-disease-mechanism | Organism, Cell, Gene, Development, Metabolism, and Disease Mechanism | science | candidate | tables/entries/organism-cell-gene-development-metabolism-disease-mechanism.md | An organism is a living individual under a stated biological account; a cell is a bounded living unit within a lifecycle and lineage; a gene is a heritable functional or sequence-associated unit under a declared genetic account. Development is organized biological change across a lifecycle. Metabolism is the network of transformations of matter and energy sustaining biological activity. A disease mechanism is a scoped causal process contributing to a pathological state under an authority and evidence base.
+sense organism | organism
+sense cell | cell
+sense gene | gene
+sense biological-development | biological development
+sense metabolism | metabolism
+sense disease-mechanism | disease mechanism
+factor organism-population-taxon-account-and-environment | organism, population, taxon account, and environment
+factor cell-tissue-compartment-lineage-and-lifecycle-state | cell, tissue, compartment, lineage, and lifecycle state
+factor gene-identity-sequence-product-expression-function-and-variation | gene identity, sequence, product, expression, function, and variation
+factor developmental-stage-transition-regulation-and-morphology | developmental stage, transition, regulation, and morphology
+factor substrates-products-reactions-energy-transport-and-metabolic-context | substrates, products, reactions, energy, transport, and metabolic context
+factor normal-range-pathological-state-mechanism-manifestation-and-outcome | normal range, pathological state, mechanism, manifestation, and outcome
+factor model-organism-assay-classification-authority-version-and-evidence | model organism, assay, classification authority, version, and evidence
+factor uncertainty-alternatives-provenance-time-and-ethical-limits | uncertainty, alternatives, provenance, time, and ethical limits
+end-entry
 entry organization-role-authority | Organization, Position, Role, Competency, Responsibility, Authority, and Accountability | organizations | candidate | tables/entries/organization-role-authority.md | An organization coordinates actors and resources toward purposes. A position is a continuing work assignment; a role groups expected functions; competency is a work-capability criterion. Responsibility, authority, accountability, delegation, ownership, stewardship, and custody remain distinct.
 sense organization | organization
 sense position | position
@@ -1211,7 +1350,7 @@ factor owned-subject-and-stewardship-contract | owned subject and stewardship co
 factor controls-separation-and-escalation | controls, separation, and escalation
 factor effective-time-evidence-and-supersession | effective time, evidence, and supersession
 end-entry
-entry path-dependence-lock-in-switching-cost-increasing-returns-critical-juncture-reactive-sequence | Path Dependence, Lock-In, Switching Cost, Increasing Returns to Adoption, Critical Juncture, and Reactive Sequence | economics | candidate | tables/entries/path-dependence-lock-in-switching-cost-increasing-returns-critical-juncture-reactive-sequence.md | This candidate describes historically sequenced mechanisms under which earlier events condition later options. It rejects generic historical causation and emergence as owned senses, requiring evidence of a bounded mechanism and counterfactual alternatives.
+entry path-dependence-lock-in-switching-cost-increasing-returns-critical-juncture-reactive-sequence | Path Dependence, Lock-In, Switching Cost, Increasing Returns to Adoption, Critical Juncture, and Reactive Sequence | economics | candidate | tables/entries/path-dependence-lock-in-switching-cost-increasing-returns-critical-juncture-reactive-sequence.md | This Table describes historically sequenced mechanisms under which earlier events condition later options. It rejects generic historical causation and emergence as owned senses, requiring evidence of a bounded mechanism and counterfactual alternatives.
 sense path-dependence-mechanism | path dependence mechanism
 sense lock-in-state | lock in state
 sense switching-cost | switching cost
@@ -1377,6 +1516,23 @@ factor enforcement-point-and-action | enforcement point and action
 factor exception-scope-approver-reason-controls-and-expiry | exception scope, approver, reason, controls, and expiry
 factor audit-appeal-and-review | audit, appeal, and review
 end-entry
+entry possession-ownership-property-interest-agreement-contract-exchange-transaction | Possession, Ownership, Property Interest, Agreement, Contract, Exchange, and Transaction | governance | candidate | tables/entries/possession-ownership-property-interest-agreement-contract-exchange-transaction.md | Possession concerns custody or control; ownership is an authority-recognized bundle or status concerning an object or interest; a property interest is a particular right, claim, power, immunity, or encumbrance recognized under a declared system. Agreement records aligned expressions or commitments; contract is an agreement given specified legal or institutional effect; exchange is a reciprocal transfer; transaction is a bounded recorded change among parties, assets, obligations, or statuses.
+sense possession | possession
+sense ownership | ownership
+sense property-interest | property interest
+sense agreement | agreement
+sense contract | contract
+sense exchange | exchange
+sense transaction | transaction
+factor parties-roles-capacity-identity-and-representation | parties, roles, capacity, identity, and representation
+factor subject-matter-asset-service-right-obligation-and-status | subject matter, asset, service, right, obligation, and status
+factor custody-control-title-or-ownership-account-and-property-interests | custody, control, title or ownership account, and property interests
+factor offer-assent-terms-consideration-or-exchange-basis-and-conditions | offer, assent, terms, consideration or exchange basis, and conditions
+factor governing-framework-jurisdiction-authority-version-and-priority | governing framework, jurisdiction, authority, version, and priority
+factor transfer-performance-delivery-acceptance-and-settlement | transfer, performance, delivery, acceptance, and settlement
+factor validity-breach-remedy-termination-revocation-and-dispute | validity, breach, remedy, termination, revocation, and dispute
+factor event-record-provenance-time-valuation-and-uncertainty | event record, provenance, time, valuation, and uncertainty
+end-entry
 entry prediction-forecast-conditional-projection-backtest-skill | Prediction, Forecast, Conditional Projection, Backtest, and Forecast Skill | reference | candidate | tables/entries/prediction-forecast-conditional-projection-backtest-skill.md | A prediction asserts something about a value that has not been observed, from a stated information set. A forecast is a prediction issued at a stated time for a stated future valid time. A conditional projection is the outcome path implied by a stated assumption or input set, with no claim that those assumptions will hold. A backtest replays a method against withheld or historical data under a declared protocol. Forecast skill compares a scored forecast against a declared reference forecast over a stated verification sample.
 sense prediction | prediction
 sense forecast | forecast
@@ -1446,7 +1602,7 @@ factor uncertainty-representation | uncertainty representation
 factor aggregation-or-decision-policy | aggregation or decision policy
 factor reporting-scale-and-provenance | reporting scale and provenance
 end-entry
-entry process-aspect-state-activity-accomplishment-achievement-semelfactive | Process Aspect: State, Activity, Accomplishment, Achievement, and Semelfactive | language | candidate | tables/entries/process-aspect-state-activity-accomplishment-achievement-semelfactive.md | This candidate classifies how a bounded predication unfolds, not what event, state, process, or lifecycle record exists. It retains the Vendler-style contrast while treating telicity, culmination, duration, iteration, and consequent state as diagnostics or factors unless they independently pass a future governing-question test.
+entry process-aspect-state-activity-accomplishment-achievement-semelfactive | Process Aspect: State, Activity, Accomplishment, Achievement, and Semelfactive | language | candidate | tables/entries/process-aspect-state-activity-accomplishment-achievement-semelfactive.md | This Table classifies how a bounded predication unfolds, not what event, state, process, or lifecycle record exists. It retains the Vendler-style contrast while treating telicity, culmination, duration, iteration, and consequent state as diagnostics or factors unless they independently pass a future governing-question test.
 sense aspectual-state | aspectual state
 sense aspectual-activity | aspectual activity
 sense aspectual-accomplishment | aspectual accomplishment

@@ -25,7 +25,9 @@ evidence and one tested Lexicon domain.
 
 ## Current wave
 
-No wave is active. The latest completed wave is
+The active wave is
+`context/waves/2026-08-21-editorial-domain-expansion/WAVE.md`. The latest
+completed wave is
 `context/waves/2026-08-21-candidate-canonical-merge/WAVE.md`.
 
 The clean-source `sim-68` PDF is the current internally validated book
@@ -47,18 +49,19 @@ merge admits those families as canonical entries at candidate maturity. This
 does not establish reader demand or domain outcomes.
 
 The current machine-readable owner is
-`reference/lexicon-reference-v4.lexicon`: 91 entries, 624 senses, 1,090 factors,
+`reference/lexicon-reference-v4.lexicon`: 101 entries, 680 senses, 1,170 factors,
 and 100 views. Its eleven relations are
-`reference/lexicon-relations-v2.lexicon`; its 202 exact review bindings are
+`reference/lexicon-relations-v2.lexicon`; its 212 exact review bindings are
 `reference/lexicon-assurance-v4.lexicon`. Eleven current Composition Query
 fixtures use `.lexicon-query`, and the current 270-label pointer registry
 uses `.lexicon`.
 
-`sim-68` is the current Lexicon-native projection. It renders the 91 canonical
+`sim-69` is the current Lexicon-native projection. It renders the 101 canonical
 Tables, 100 specialized views, and 270 noncanonical pointer records while
 using only Lexicon-native active contracts, `LEXICON_` browser globals, and
-`data-lexicon-handoff`. `sim-67` remains the repaired 54-Table book projection,
-and `sim-66` remains the frozen
+`data-lexicon-handoff`. `sim-68` remains the 91-Table candidate-merge
+projection, `sim-67` remains the repaired 54-Table book projection, and
+`sim-66` remains the frozen
 Formarium-native projection and `sim-65` the earlier public-identity feedback
 snapshot. `sim-64` closes the generated Pointer Entry concordance at 250
 explicit labels, 2,681 exact structural expressions, and 2,118 label-to-owner
@@ -1313,8 +1316,9 @@ cargo run --quiet -- packet-check artifacts\factor-v1
 cargo run --quiet -- reference-check reference\lexicon-reference-v4.lexicon .
 cargo run --quiet -- reference-sidecar-check reference\lexicon-reference-v4.lexicon reference\lexicon-relations-v2.lexicon reference\lexicon-assurance-v4.lexicon .
 node tools\build_lexicon_contracts.js --check
-.\tools\render_proof_set.ps1 -Edition sim-68
+.\tools\render_proof_set.ps1 -Edition sim-69
 node tools\check_lexicon_candidate_admissions.js
+node tools\check_lexicon_domain_admissions.js
 node tools\check_lexicon_canonical.js
 node tools\check_reference_closure_coverage.js
 node tools\check_decision_evidence_bridge.js

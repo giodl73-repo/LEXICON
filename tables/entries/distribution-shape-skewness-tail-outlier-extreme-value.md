@@ -201,7 +201,7 @@ theory, and risk-capital policy.
 - [Hazard, Exposure, Harm, Vulnerability, and Safety](hazard-exposure-harm-safety.md)
 - [Prediction, Forecast, Conditional Projection, Backtest, and Forecast Skill](prediction-forecast-conditional-projection-backtest-skill.md)
 - [Tipping Point, Critical Transition, Cascade, Contagion, and Spillover](tipping-point-critical-transition-cascade-contagion-spillover.md)
-- [Admission brief](../../signals/discover/literature/distribution-shape-tail-extreme-value-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/distribution-shape-tail-extreme-value-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 

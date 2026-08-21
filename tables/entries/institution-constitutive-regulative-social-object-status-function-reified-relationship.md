@@ -2,11 +2,11 @@
 
 Status: candidate anchor entry
 
-[Admission brief](../../signals/discover/literature/institutional-concepts-candidate-brief-2026-08-20.md)
+[Editorial record](../../signals/discover/literature/institutional-concepts-candidate-brief-2026-08-20.md)
 
 ## Orientation
 
-This candidate supplies a plural, account-relative vocabulary for institutional
+This Table supplies a plural, account-relative vocabulary for institutional
 facts. It neither assumes a universal social ontology nor replaces organization,
 role, governance, or relationship records.
 

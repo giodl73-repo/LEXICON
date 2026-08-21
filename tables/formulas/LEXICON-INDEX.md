@@ -2,7 +2,7 @@
 
 Generated from `reference/lexicon-reference-v4.lexicon`. Do not edit by hand.
 
-Corpus identity: `062d9123d4af3923683fd4042024cf647fc5d5d3bccaccb1c0baf57863580355`
+Corpus identity: `cf27e85ee209aab2d96279cf7772975608f7cb5dbe35850ebd8ba908f7913002`
 
 | Formula view | Canonical owner | Sense coverage | Purpose |
 |---|---|---|---|

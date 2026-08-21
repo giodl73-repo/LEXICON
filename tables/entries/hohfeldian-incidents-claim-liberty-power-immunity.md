@@ -2,7 +2,7 @@
 
 Status: candidate anchor entry
 
-[Admission brief](../../signals/discover/literature/hohfeldian-incidents-candidate-brief-2026-08-20.md)
+[Editorial record](../../signals/discover/literature/hohfeldian-incidents-candidate-brief-2026-08-20.md)
 
 ## Orientation
 

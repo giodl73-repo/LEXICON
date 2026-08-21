@@ -311,7 +311,7 @@ thresholds as canonical values; and blame or liability apportionment.
   successive intervals.
 - [Incident Severity](../examples/incident-severity.md)
 - [Dependability Failure Diagnostic](../diagnostics/dependability-failures.md)
-- [Admission brief](../../signals/discover/literature/fault-error-defect-incident-outage-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/fault-error-defect-incident-outage-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 

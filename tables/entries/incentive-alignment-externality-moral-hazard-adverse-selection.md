@@ -276,7 +276,7 @@ technique catalogs.
 - [Quantity Value, Numerical Value, Unit, Dimension, and Conversion](quantity-value-unit-conversion.md)
 - [Motive, Desire, Intention, and Rationale](motive-desire-intention-rationale.md)
 - [Consent, Assent, Refusal, Withdrawal, and Revocation](consent-assent-refusal-withdrawal-revocation.md)
-- [Admission brief](../../signals/discover/literature/incentive-alignment-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/incentive-alignment-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 
@@ -323,4 +323,4 @@ These sources support two bounded contracts. They do not establish that any
 particular incentive works, that an externality warrants intervention, that
 moral hazard implies fault, that one reading of moral hazard displaces the
 other, or that a mechanism is incentive compatible outside the assumptions of
-its demonstration. This draft is not financial, legal, or policy advice.
+its demonstration. This Table is not financial, legal, or policy advice.

@@ -1,0 +1,19 @@
+{
+  "contract": "lexicon-domain-admissions-v1",
+  "date": "2026-08-21",
+  "maturity": "candidate",
+  "admission_review": "signals/roles/check/lexicon-domain-anchor-content-admission-roles-check-2026-08-21.md",
+  "literature_review": "signals/discover/literature/lexicon-domain-anchor-expansion-literature-2026-08-21.md",
+  "entries": [
+    { "id": "authentication-threat-attack-defense-security-control", "domain": "systems" },
+    { "id": "communication-conversation-discourse-narrative-dialogue", "domain": "language" },
+    { "id": "education-instruction-curriculum-learning-objective-educational-assessment", "domain": "reference" },
+    { "id": "geographic-place-environment-weather-climate-earth-system-environmental-change", "domain": "science" },
+    { "id": "knowledge-belief-justification-doubt-ignorance-understanding", "domain": "reference" },
+    { "id": "learning-memory-attention-reasoning-skill", "domain": "reference" },
+    { "id": "market-competition-production-labor-capital-finance", "domain": "economics" },
+    { "id": "material-object-artifact-tool-manufacturing-process", "domain": "systems" },
+    { "id": "organism-cell-gene-development-metabolism-disease-mechanism", "domain": "science" },
+    { "id": "possession-ownership-property-interest-agreement-contract-exchange-transaction", "domain": "governance" }
+  ]
+}

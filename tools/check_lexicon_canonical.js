@@ -6,7 +6,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const root = path.resolve(__dirname, "..");
-const site = path.join(root, "target", "proof-set-sim-68");
+const site = path.join(root, "target", "proof-set-sim-69");
 const read = (relative) => fs.readFileSync(path.join(root, relative), "utf8");
 const sha256 = (text) =>
   crypto.createHash("sha256").update(text).digest("hex");
@@ -14,21 +14,21 @@ const manifest = JSON.parse(
   fs.readFileSync(path.join(site, "manifest.json"), "utf8"),
 );
 
-assert.equal(manifest.edition, "sim-68");
+assert.equal(manifest.edition, "sim-69");
 assert.equal(manifest.site_checks.missing_local_targets, 0);
 assert.equal(manifest.site_checks.pointer_entry_pages, 270);
 assert.equal(manifest.site_checks.tables_index_pointer_entries, 270);
-assert.equal(manifest.site_checks.dictionary_sequence_pages, 361);
-assert.equal(manifest.site_checks.dictionary_sequence_canonical_entries, 91);
+assert.equal(manifest.site_checks.dictionary_sequence_pages, 371);
+assert.equal(manifest.site_checks.dictionary_sequence_canonical_entries, 101);
 assert.equal(manifest.site_checks.dictionary_sequence_pointer_entries, 270);
-assert.equal(manifest.site_checks.dictionary_sequence_previous_links, 360);
-assert.equal(manifest.site_checks.dictionary_sequence_next_links, 360);
+assert.equal(manifest.site_checks.dictionary_sequence_previous_links, 370);
+assert.equal(manifest.site_checks.dictionary_sequence_next_links, 370);
 assert.equal(manifest.site_checks.dictionary_sequence_finish_links, 1);
 assert.equal(manifest.site_checks.dictionary_stream_pages, 1);
-assert.equal(manifest.site_checks.dictionary_stream_records, 361);
+assert.equal(manifest.site_checks.dictionary_stream_records, 371);
 assert.equal(manifest.site_checks.dictionary_stream_batch_size, 4);
 assert.equal(manifest.site_checks.dictionary_book_pages, 1);
-assert.equal(manifest.site_checks.dictionary_book_records, 361);
+assert.equal(manifest.site_checks.dictionary_book_records, 371);
 assert.equal(manifest.site_checks.dictionary_book_columns, 2);
 assert.equal(
   manifest.site_checks.dictionary_book_screen_flow,
@@ -42,10 +42,10 @@ assert.equal(
   manifest.site_checks.dictionary_book_print_flow,
   "full-width-canonical-tables-then-two-column-pointer-index",
 );
-assert.equal(manifest.site_checks.dictionary_book_print_canonical_tables, 91);
+assert.equal(manifest.site_checks.dictionary_book_print_canonical_tables, 101);
 assert.equal(manifest.site_checks.dictionary_book_print_pointer_records, 270);
-assert.equal(manifest.site_checks.dictionary_book_print_provenance_sections, 91);
-assert.equal(manifest.site_checks.reader_route_additional_records, 157);
+assert.equal(manifest.site_checks.dictionary_book_print_provenance_sections, 101);
+assert.equal(manifest.site_checks.reader_route_additional_records, 167);
 assert.equal(manifest.site_checks.candidate_start_targets, 0);
 assert.equal(
   manifest.status,
@@ -204,7 +204,7 @@ assert.match(
   reader,
   /Factorium and Formarium identifiers remain readable historical imports/,
 );
-assert.match(reader, /other 157 records/);
+assert.match(reader, /other 167 records/);
 assert.doesNotMatch(reader, /other 151 records|Factor Tables/);
 assert.doesNotMatch(home, /id="reader" class="site-start site-candidate/);
 assert.equal((home.match(/<nav class="site-nav"[\s\S]*?<\/nav>/) || [""])[0]
@@ -228,7 +228,7 @@ assert.doesNotMatch(
   /canonical Tables|bounded|typed closure|factorization|specialized views/i,
 );
 assert.doesNotMatch(home, />Terms<\/a>|not reader evidence or preview-01/);
-assert.match(home, /href="manifest\.json">sim-68<\/a>/);
+assert.match(home, /href="manifest\.json">sim-69<\/a>/);
 assert.match(home, /software: MIT/);
 assert.match(tables, /href="dictionary\.html">Continuous A-Z<\/a>/);
 assert.match(tables, /href="book\.html">Condensed book<\/a>/);
@@ -241,7 +241,7 @@ const streamDataMatch = dictionary.match(
 );
 assert.ok(streamDataMatch);
 const streamRecords = JSON.parse(streamDataMatch[1]);
-assert.equal(streamRecords.length, 361);
+assert.equal(streamRecords.length, 371);
 assert.deepEqual(streamRecords.slice(0, 3), [
   {
     title:
@@ -262,7 +262,7 @@ assert.match(book, /<title>Lexicon<\/title>/);
 assert.match(book, /<h1>Lexicon<\/h1>/);
 assert.doesNotMatch(book, /The Lexicon Dictionary/);
 assert.match(book, /Start with a familiar word\./);
-assert.match(book, /91 canonical Tables · 270 pointer-index records/);
+assert.match(book, /101 canonical Tables · 270 pointer-index records/);
 assert.match(book, /Internal proof · internally validated projection · not reader-outcome evidence/);
 assert.match(book, /<h2 id="book-use-heading">How to use this proof<\/h2>/);
 assert.match(book, /<h2 id="print-canonical-heading">Canonical Tables<\/h2>/);
@@ -270,7 +270,7 @@ assert.match(book, /<h2 id="print-pointer-heading">Pointer index<\/h2>/);
 assert.match(book, /<h2 id="book-colophon-heading">Colophon<\/h2>/);
 assert.equal(
   (book.match(/class="dictionary-book__print-table-item"/g) || []).length,
-  91,
+  101,
 );
 assert.equal(
   (book.match(/class="dictionary-book__print-pointer-item"/g) || []).length,
@@ -278,15 +278,15 @@ assert.equal(
 );
 assert.equal(
   (book.match(/class="dictionary-book__print-provenance"/g) || []).length,
-  91,
+  101,
 );
 assert.equal(
   (book.match(/class="dictionary-book__print-maturity"/g) || []).length,
-  91,
+  101,
 );
 assert.equal(
   (book.match(/class="dictionary-book__maturity"/g) || []).length,
-  91,
+  101,
 );
 assert.doesNotMatch(book, /<p>Status:\s*/);
 assert.match(
@@ -304,7 +304,7 @@ assert.match(book, /LEXICON\/manifest\.json/);
 assert.match(book, /github\.com\/giodl73-repo\/LEXICON\/tree\//);
 assert.equal(
   (book.match(/class="dictionary-book__item"/g) || []).length,
-  361,
+  371,
 );
 assert.equal(
   (book.match(/data-dictionary-kind="pointer"/g) || []).length,
@@ -312,7 +312,7 @@ assert.equal(
 );
 assert.equal(
   (book.match(/data-dictionary-kind="table"/g) || []).length,
-  91,
+  101,
 );
 assert.equal(
   (screenBook.match(/class="dictionary-book__pointer-parents"/g) || []).length,
@@ -321,13 +321,13 @@ assert.equal(
 assert.equal(
   [...screenBook.matchAll(/<div class="dictionary-book__pointer-parents">([\s\S]*?)<\/div>/g)]
     .reduce((total, match) => total + (match[1].match(/<a /g) || []).length, 0),
-  2740,
+  2927,
 );
 assert.doesNotMatch(book, /class="dictionary-book__(?:item-heading|meta)"/);
 assert.doesNotMatch(book, />Item \d+ · (?:Pointer|Canonical Table)</);
 assert.equal(
   (book.match(/class="dictionary-book__supplement"/g) || []).length,
-  294,
+  324,
 );
 assert.equal(
   (book.match(/data-book-supplement="specialized"/g) || []).length,
@@ -335,15 +335,15 @@ assert.equal(
 );
 assert.equal(
   (book.match(/data-book-supplement="reference_delta"/g) || []).length,
-  71,
+  81,
 );
 assert.equal(
   (book.match(/data-book-supplement="cross_references"/g) || []).length,
-  91,
+  101,
 );
 assert.equal(
   (book.match(/data-book-supplement="sources_provenance"/g) || []).length,
-  91,
+  101,
 );
 assert.doesNotMatch(book, /<details class="dictionary-book__supplement"[^>]*\sopen(?:\s|>)/);
 assert.doesNotMatch(
@@ -409,10 +409,10 @@ const dictionaryRecords = [
   href: match[3],
   title: match[4],
 }));
-assert.equal(dictionaryRecords.length, 361);
+assert.equal(dictionaryRecords.length, 371);
 assert.equal(
   dictionaryRecords.filter((record) => record.kind === "table").length,
-  91,
+  101,
 );
 assert.equal(
   dictionaryRecords.filter((record) => record.kind === "pointer").length,
@@ -490,5 +490,5 @@ assert.match(
 );
 
 console.log(
-  `OK sim68=Lexicon-native reference=${referenceSha256} relations=${relationSha256} queries=${queries.length} pointers=270 missing=0`,
+  `OK sim69=Lexicon-native reference=${referenceSha256} relations=${relationSha256} queries=${queries.length} pointers=270 missing=0`,
 );

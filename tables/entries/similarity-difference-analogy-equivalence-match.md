@@ -120,7 +120,7 @@ collections.
 - [Meaning, Reference, Interpretation, and Use](meaning-reference-interpretation-use.md)
 - [Model, Representation, and Simulation](model-representation-simulation.md)
 - [Compatibility and Substitution Mapping](../mappings/compatibility-substitution.md)
-- [Admission brief](../../signals/discover/literature/similarity-comparison-candidate-brief-2026-08-19.md)
+- [Editorial record](../../signals/discover/literature/similarity-comparison-candidate-brief-2026-08-19.md)
 
 ## Sources and provenance
 

@@ -122,7 +122,7 @@ technologies.
 - [Governance, Obligation, and Compliance](governance-obligation-compliance.md)
 - [Policy, Rule, Constraint, Decision, and Exception](policy-rule-constraint-decision-exception.md)
 - [Identity, Naming, Classification, and Versioning](identity-naming-classification-versioning.md)
-- [Admission brief](../../signals/discover/literature/privacy-disclosure-candidate-brief-2026-08-19.md)
+- [Editorial record](../../signals/discover/literature/privacy-disclosure-candidate-brief-2026-08-19.md)
 
 ## Sources and provenance
 
@@ -141,5 +141,5 @@ technologies.
 7. Georg Simmel, "The Sociology of Secrecy and of Secret Societies":
    https://doi.org/10.1086/211418
 
-Legal and cultural authorities retain their scopes. This draft does not grant
+Legal and cultural authorities retain their scopes. This Table does not grant
 permission, establish compliance, or provide legal advice.

@@ -158,7 +158,7 @@ aesthetic quality judgments, and the correctness of any particular reading.
 - [Similarity, Difference, Analogy, Equivalence, and Match](similarity-difference-analogy-equivalence-match.md)
 - [Pattern, Regularity, Motif, Template, and Pattern Formation](pattern-regularity-motif-template-pattern-formation.md)
 - [Stance, Tone, Voice, Mood, and Atmosphere](stance-tone-voice-mood-atmosphere.md)
-- [Admission brief](../../signals/discover/literature/figuration-metaphor-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/figuration-metaphor-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 
@@ -183,5 +183,5 @@ aesthetic quality judgments, and the correctness of any particular reading.
     in *Fundamentals of Language*, 1956.
 
 Literary, rhetorical, semiotic, and linguistic authorities retain their scopes.
-This draft records how an expression signifies indirectly; it does not select,
+This Table records how an expression signifies indirectly; it does not select,
 validate, or rank any reading.

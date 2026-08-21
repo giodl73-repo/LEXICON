@@ -163,7 +163,7 @@ scores.
 - [Metaphor, Metonymy, Symbol, Allegory, and Allusion](metaphor-metonymy-symbol-allegory-allusion.md)
 - [Pattern, Regularity, Motif, Template, and Pattern Formation](pattern-regularity-motif-template-pattern-formation.md)
 - [Morpheme, Inflection, Derivation, Compounding, and Word Formation](morpheme-inflection-derivation-compounding-word-formation.md)
-- [Admission brief](../../signals/discover/literature/register-style-genre-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/register-style-genre-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 
@@ -185,5 +185,5 @@ scores.
    Perspectives on Register*, Oxford University Press, 1994.
 
 Linguistic, sociolinguistic, and stylistic authorities retain their scopes.
-This draft describes variation; it does not prescribe correct usage, evaluate
+This Table describes variation; it does not prescribe correct usage, evaluate
 producers, or identify authors.

@@ -105,7 +105,7 @@ instantiation-realization-use
 - Clinical inference from a sign to a condition is out of scope and routes to
   observation and evidence custody.
 - Classification, versioning, representation, appearance, projected identity,
-  staged change, and template reuse retain their existing or candidate owners.
+  staged change, and template reuse retain their existing canonical owners.
 - The language or runtime senses of type, value, and function retain the
   canonical software entry as their owner; `general-type` never covers them.
 - Lexeme and word-form, as the language-specific case of a general kind and its
@@ -182,7 +182,7 @@ mind-body positions, and specific implementations of any specification.
 - [Perception, Sensation, Appearance, Illusion, and Hallucination](perception-sensation-appearance-illusion-hallucination.md)
 - [Pattern, Regularity, Motif, Template, and Pattern Formation](pattern-regularity-motif-template-pattern-formation.md)
 - [Morpheme, Inflection, Derivation, Compounding, and Word Formation](morpheme-inflection-derivation-compounding-word-formation.md)
-- [Admission brief](../../signals/discover/literature/instantiation-realization-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/instantiation-realization-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 
@@ -202,5 +202,5 @@ mind-body positions, and specific implementations of any specification.
 8. Varela, Thompson, and Rosch, *The Embodied Mind*, MIT Press, 1991.
 
 Philosophical, cognitive, and bibliographic authorities retain their scopes.
-This draft records how a general or latent item has a concrete case; it does
+This Table records how a general or latent item has a concrete case; it does
 not diagnose, catalogue, or settle any metaphysical dispute.

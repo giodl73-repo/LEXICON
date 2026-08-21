@@ -96,7 +96,7 @@ taxonomic branch, and for corporate ancestry claims. **No canonical sense owns
 the bare word**, and that evidence view uses it as a concept rather than as a
 sense. This entry admits no `lineage` sense and neither does
 [Inheritance, Transmission, Succession, and Bequest](inheritance-transmission-succession-bequest.md).
-Where other candidate drafts already use lineage or inheritance inside factor
+Where other canonical Tables already use lineage or inheritance inside factor
 names, those uses are reconciliation inputs for a later fixed-point pass, not
 competing ownership claims. Any use must be disambiguated to a stated sense
 before it enters a factor name here.
@@ -153,7 +153,7 @@ provenance; population-genetic inference is consumed as evidence, not owned.
 - a genealogy is asserted with no proof standard, citations, or confidence;
 - disputed links are pruned to make a clean tree;
 - `lineage` is used as if it were a sense of this entry, or a factor name in
-  another draft is treated as an ownership claim over the bare word;
+  another Table is treated as an ownership claim over the bare word;
 - a population-level descent claim is asserted without a delimitation rule, or
   its inference machinery is presented as a sense of this entry;
 - data-derivation questions are answered with ancestry vocabulary;
@@ -173,7 +173,7 @@ provenance; population-genetic inference is consumed as evidence, not owned.
 - [Sampling, Estimation, and Generalization](sampling-generalization.md)
 - [Adaptation, Fitness, Selection, and Exaptation](adaptation-fitness-selection-exaptation.md)
 - [Privacy, Confidentiality, Secrecy, Anonymity, and Disclosure](privacy-confidentiality-secrecy-anonymity-disclosure.md)
-- [Admission brief](../../signals/discover/literature/descent-kinship-pedigree-genealogy-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/descent-kinship-pedigree-genealogy-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 

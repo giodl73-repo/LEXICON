@@ -194,7 +194,7 @@ and prophecy.
 - [Measurement Quality](measurement-quality.md)
 - [Distribution, Shape, Skewness, Tail, Outlier, and Extreme Value](distribution-shape-skewness-tail-outlier-extreme-value.md)
 - [Tipping Point, Critical Transition, Cascade, Contagion, and Spillover](tipping-point-critical-transition-cascade-contagion-spillover.md)
-- [Admission brief](../../signals/discover/literature/prediction-forecast-backtest-skill-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/prediction-forecast-backtest-skill-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 

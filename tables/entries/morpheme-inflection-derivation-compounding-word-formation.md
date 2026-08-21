@@ -178,7 +178,7 @@ computational morphological analyzers.
 - [Pattern, Regularity, Motif, Template, and Pattern Formation](pattern-regularity-motif-template-pattern-formation.md)
 - [Register, Style, Genre, Variety, and Idiolect](register-style-genre-variety-idiolect.md)
 - [Type, Token, Instantiation, Realization, and Embodiment](type-token-instantiation-realization-embodiment.md)
-- [Admission brief](../../signals/discover/literature/morphology-word-formation-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/morphology-word-formation-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 
@@ -203,6 +203,6 @@ computational morphological analyzers.
 11. Lieber and Stekauer, eds., *The Oxford Handbook of Compounding*, Oxford
     University Press, 2009.
 
-Linguistic and typological authorities retain their scopes. This draft
+Linguistic and typological authorities retain their scopes. This Table
 describes how word forms are built and analyzed; it does not prescribe usage,
 describe any individual language, or settle theoretical disputes in morphology.

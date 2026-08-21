@@ -39,7 +39,7 @@ organization, and metamorphosis, owned by the transformation root together with
 the state and lifecycle entry. Hylomorphic form and geometric morphology are
 routed to owners named above. Linguistic morphology, urban morphology, and
 musical or aesthetic form were never closed by any owner: they were unowned.
-Linguistic morphology now has its own candidate. Urban morphology and musical
+Linguistic morphology now has its own canonical Table. Urban morphology and musical
 or aesthetic form remain open domain-specific residue, recorded here as
 unowned rather than falsely closed, and no universal `form` sense is proposed
 to absorb them.
@@ -169,7 +169,7 @@ of any pattern.
 | Geometry | fixes shape under a transformation family | shows what one-figure equivalence cannot express |
 | Perceptual psychology | explains grouping and figure-ground organization | routes gestalt out instead of re-owning it |
 | Metaphysics of form | distinguishes accidental from substantial change | routes hylomorphic form to the type and token candidate instead of owning it |
-| Linguistic morphology | analyzes word-internal structure | routes to its own candidate rather than being absorbed as recurrence |
+| Linguistic morphology | analyzes word-internal structure | routes to its own Table rather than being absorbed as recurrence |
 
 ## Failure signs
 
@@ -206,7 +206,7 @@ of any pattern.
 - [Type, Token, Instantiation, Realization, and Embodiment](type-token-instantiation-realization-embodiment.md)
 - [Morpheme, Inflection, Derivation, Compounding, and Word Formation](morpheme-inflection-derivation-compounding-word-formation.md)
 - [Metaphor, Metonymy, Symbol, Allegory, and Allusion](metaphor-metonymy-symbol-allegory-allusion.md)
-- [Admission brief](../../signals/discover/literature/pattern-regularity-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/pattern-regularity-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 
@@ -233,5 +233,5 @@ of any pattern.
 12. Serra, *Image Analysis and Mathematical Morphology*, Academic Press, 1982.
 
 Mathematical, biological, folkloristic, computational, and design authorities
-retain their scopes. This draft records recurrence and its checks; it does not
+retain their scopes. This Table records recurrence and its checks; it does not
 establish that any detected regularity is real, causal, or worth reusing.

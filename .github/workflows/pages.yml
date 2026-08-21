@@ -55,10 +55,11 @@ jobs:
           node tools/build_lexicon_contracts.js --check
           node tools/check_candidate_entries.js
           node tools/check_lexicon_candidate_admissions.js
+          node tools/check_lexicon_domain_admissions.js
 
       - name: Render website
         shell: pwsh
-        run: ./tools/render_proof_set.ps1 -Edition sim-68
+        run: ./tools/render_proof_set.ps1 -Edition sim-69
 
       - name: Verify website
         run: node tools/check_lexicon_canonical.js
@@ -69,7 +70,7 @@ jobs:
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: target/proof-set-sim-68
+          path: target/proof-set-sim-69
 
       - name: Deploy website
         id: deployment

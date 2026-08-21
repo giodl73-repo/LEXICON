@@ -168,7 +168,7 @@ and moral judgment of any particular concealment.
 - [Perception, Sensation, Appearance, Illusion, and Hallucination](perception-sensation-appearance-illusion-hallucination.md)
 - [Stance, Tone, Voice, Mood, and Atmosphere](stance-tone-voice-mood-atmosphere.md)
 - [Type, Token, Instantiation, Realization, and Embodiment](type-token-instantiation-realization-embodiment.md)
-- [Admission brief](../../signals/discover/literature/persona-avatar-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/persona-avatar-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 
@@ -196,6 +196,6 @@ and moral judgment of any particular concealment.
     minimization*, version 0.34, 2010.
 
 Sociological, psychological, design, communication, and religious authorities
-retain their scopes. This draft describes projected identity; it does not
+retain their scopes. This Table describes projected identity; it does not
 establish legal identity, authorize identification of a person, or judge the
 propriety of any concealment.

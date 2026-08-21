@@ -226,7 +226,7 @@ certificate, token, or key revocation mechanics.
 - [Organization, Position, Role, Competency, Responsibility, Authority, and Accountability](organization-role-authority.md)
 - [Privacy, Confidentiality, Secrecy, Anonymity, and Disclosure](privacy-confidentiality-secrecy-anonymity-disclosure.md)
 - [Incentive, Alignment, Externality, Moral Hazard, and Adverse Selection](incentive-alignment-externality-moral-hazard-adverse-selection.md)
-- [Admission brief](../../signals/discover/literature/consent-withdrawal-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/consent-withdrawal-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 

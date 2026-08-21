@@ -245,6 +245,9 @@ forward-applied deliberately rather than silently rewriting its evidence.
 ## R5 - First substantial volume
 
 Publish approximately 250 reviewed entries as a coherent reference volume.
+The current canonical scale is 101 Tables, 680 senses, 1,170 factors, and 100
+specialized views. The remaining distance is a planning horizon, not a quota;
+new owners still require demonstrated lookup or composition need.
 Coverage should include foundational structure, quantities and measures,
 systems and change, decisions and controls, information and evidence,
 organizations, and software mechanisms.

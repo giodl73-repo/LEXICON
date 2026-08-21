@@ -110,7 +110,7 @@ collective-action-shortfall-use
 - [Access, Permission, Authorization, and Entitlement](access-permission-authorization-entitlement.md)
 - [Stock, Flow, Accumulation, Balance, and Conservation](stock-flow-balance.md)
 - [Trust, Credibility, Reputation, Legitimacy, and Reliance](trust-credibility-reputation-legitimacy-reliance.md)
-- [Admission brief](../../signals/discover/literature/collective-action-provision-appropriation-candidate-brief-2026-08-20.md)
+- [Editorial record](../../signals/discover/literature/collective-action-provision-appropriation-candidate-brief-2026-08-20.md)
 
 ## Sources and provenance
 

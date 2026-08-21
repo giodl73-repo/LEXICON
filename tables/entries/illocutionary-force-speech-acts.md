@@ -2,11 +2,11 @@
 
 Status: candidate anchor entry
 
-[Admission brief](../../signals/discover/literature/illocutionary-force-speech-acts-candidate-brief-2026-08-20.md)
+[Editorial record](../../signals/discover/literature/illocutionary-force-speech-acts-candidate-brief-2026-08-20.md)
 
 ## Orientation
 
-This candidate identifies what a speaker is doing in uttering content under a
+This Table identifies what a speaker is doing in uttering content under a
 bounded conversational and institutional account. It distinguishes force from
 literal meaning, transport interaction, attitude, and downstream effect.
 

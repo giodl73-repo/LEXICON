@@ -2,11 +2,11 @@
 
 Status: candidate anchor entry
 
-[Admission brief](../../signals/discover/literature/abstract-work-notation-performance-candidate-brief-2026-08-20.md)
+[Editorial record](../../signals/discover/literature/abstract-work-notation-performance-candidate-brief-2026-08-20.md)
 
 ## Orientation
 
-This candidate maps a bounded work/notation/performance analysis useful for
+This Table maps a bounded work/notation/performance analysis useful for
 cataloging and cultural-heritage description. It rejects ownership of aesthetic
 object, aesthetic experience, and interpretation. Medium remains a factor
 unless a future disjoint governing question is demonstrated.
