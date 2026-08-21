@@ -1,6 +1,6 @@
 # Wave 2 Politics, Government, and Law Result
 
-Status: admission and working proof pass; clean-source proof pending commit
+Status: fixed point; clean-source proof pass
 
 ## Outcome
 
@@ -15,11 +15,13 @@ moves from 107 to 113 Tables, 711 to 742 senses, 1,218 to 1,266 factors, and
 - exact roadmap checker: 12 cumulative roadmap Tables and 62 senses pass;
 - `sim-71`: 324 site pages, 24 chapters, 250 indexed entry/view pages, 4,252
   internal links, and zero missing targets;
-- working PDF: 468 pages, 13,279,881 bytes, and zero collisions.
+- clean-source PDF: 468 pages, 13,279,893 bytes, zero collisions, and zero
+  out-of-bounds pages.
 
-Working PDF SHA-256:
-`520260f965649541e8d80f7486932cf4bb409e682e053599e354d91e31bfd1fd`.
-Clean-source status is not claimed until rebuild after commit.
+Clean-source PDF SHA-256:
+`dca86cc3adc6728943f81e0a13952d350b325a088b7f0f7510d6b7e237b9b0f9`.
+It binds to commit `b954f6c875e348687febc4a79dd58049d2377d95`, embeds 15
+fonts, and contains 1,540,236 searchable text characters.
 
 ## Boundary and continuation
 

@@ -30,10 +30,9 @@ The active wave is
 completed wave is
 `context/waves/2026-08-21-editorial-domain-expansion/WAVE.md`.
 
-`sim-71` is the current internally validated working book projection: 113
+The clean-source `sim-71` PDF is the current internally validated book projection: 113
 canonical Tables, 270 pointer-index records, 468 pages, and no detected
-collision or out-of-bounds pages. Clean-source verification follows the batch
-commit. It is worthy of controlled external reader testing, not public R5
+collision or out-of-bounds pages. It is worthy of controlled external reader testing, not public R5
 release. See `context/waves/2026-08-21-funded-domain-gap-roadmap/WAVE-2-POLITICS-LAW-RESULT.md`.
 
 The repaired `sim-67` PDF is a clean-source, internally validated book
