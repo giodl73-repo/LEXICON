@@ -3,6 +3,7 @@
   "manifests": [
     "reference/lexicon-candidate-admissions-v1.json",
     "reference/lexicon-domain-admissions-v1.json",
-    "reference/lexicon-roadmap-wave-1-admissions-v1.json"
+    "reference/lexicon-roadmap-wave-1-admissions-v1.json",
+    "reference/lexicon-roadmap-wave-2-admissions-v1.json"
   ]
 }

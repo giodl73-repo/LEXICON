@@ -245,6 +245,21 @@ factor sensitivity-robustness-ties-and-information-value | sensitivity, robustne
 factor recommendation-rationale-limitations-and-review-state | recommendation, rationale, limitations, and review state
 factor final-selection-authority-implementation-and-reconsideration-trigger | final selection, authority, implementation, and reconsideration trigger
 end-entry
+entry citizenship-nationality-residency-membership-political-status | Citizenship, Nationality, Residency, Membership, and Political Status | governance | candidate | tables/entries/citizenship-nationality-residency-membership-political-status.md | Citizenship is membership in a political community with status, rights, duties, and possible participation. Nationality is a legal bond between a person and a state under an applicable system. Residency records authorized or factual residence under stated criteria. Political membership is inclusion in a polity under a declared account. Political status is a governed position carrying specified incidents.
+sense citizenship | citizenship
+sense nationality | nationality
+sense residency | residency
+sense political-membership | political membership
+sense political-status | political status
+factor person-polity-or-state-territory-jurisdiction-and-time | person, polity or state, territory, jurisdiction, and time
+factor status-type-legal-source-authority-acquisition-recognition-and-evidence | status type, legal source, authority, acquisition, recognition, and evidence
+factor rights-duties-protections-participation-services-and-restrictions | rights, duties, protections, participation, services, and restrictions
+factor residence-place-authorization-duration-continuity-and-domicile-distinction | residence place, authorization, duration, continuity, and domicile distinction
+factor membership-criterion-belonging-stakeholder-relation-and-affectedness | membership criterion, belonging, stakeholder relation, and affectedness
+factor birth-descent-naturalization-registration-change-loss-and-deprivation | birth, descent, naturalization, registration, change, loss, and deprivation
+factor multiple-or-absent-status-external-recognition-challenge-and-review | multiple or absent status, external recognition, challenge, and review
+factor version-uncertainty-limitations-and-provenance | version, uncertainty, limitations, and provenance
+end-entry
 entry claim-evidence | Claim and Evidence | reference | candidate | tables/entries/claim-evidence.md | A claim states what is asserted; evidence records observations, artifacts, or arguments relevant to it; a result reports an evaluated outcome; a limitation bounds interpretation; confidence summarizes support without replacing the evidence. Provenance is mandatory metadata, while an Evidence Table is a specialized view whose lookup task is comparing support and contradiction.
 sense claim | claim
 sense evidence-item | evidence item
@@ -1077,6 +1092,22 @@ factor epistemic-account-standards-alternatives-and-defeaters | epistemic accoun
 factor relational-model-explanation-use-and-transfer | relational model, explanation, use, and transfer
 factor attribution-source-time-context-and-revision | attribution source, time, context, and revision
 end-entry
+entry law-legal-rule-precedent-judgment-remedy-enforcement | Law, Legal Rule, Precedent, Judgment, Remedy, and Enforcement | governance | candidate | tables/entries/law-legal-rule-precedent-judgment-remedy-enforcement.md | Law is a jurisdictional institutional order of recognized legal sources, norms, powers, procedures, and decisions. A legal rule is a source-recognized norm or decisional standard. Precedent is a prior decision treated as bearing on later decisions under a doctrine. A legal judgment is an authorized adjudicative disposition. A remedy is an authorized response addressing a legally cognizable claim or violation. Enforcement makes or seeks to make legal requirements and decisions effective.
+sense law | law
+sense legal-rule | legal rule
+sense precedent | precedent
+sense legal-judgment | legal judgment
+sense legal-remedy | legal remedy
+sense legal-enforcement | legal enforcement
+factor legal-system-jurisdiction-subject-matter-parties-and-effective-time | legal system, jurisdiction, subject matter, parties, and effective time
+factor recognized-source-hierarchy-enactment-or-decision-text-and-version | recognized source, hierarchy, enactment or decision, text, and version
+factor rule-subject-conditions-legal-consequence-exceptions-and-interpretation | rule subject, conditions, legal consequence, exceptions, and interpretation
+factor prior-decision-material-facts-holding-court-relation-and-precedential-weight | prior decision, material facts, holding, court relation, and precedential weight
+factor adjudicator-claim-procedure-evidence-reasons-disposition-and-finality | adjudicator, claim, procedure, evidence, reasons, disposition, and finality
+factor remedy-basis-beneficiary-obligor-form-scope-and-availability | remedy basis, beneficiary, obligor, form, scope, and availability
+factor enforcement-authority-trigger-process-measure-compliance-and-review | enforcement authority, trigger, process, measure, compliance, and review
+factor legality-merit-justice-uncertainty-contestation-and-provenance | legality, merit, justice, uncertainty, contestation, and provenance
+end-entry
 entry learning-memory-attention-reasoning-skill | Learning, Memory, Attention, Reasoning, and Skill | reference | candidate | tables/entries/learning-memory-attention-reasoning-skill.md | Learning is a change in knowledge, understanding, capacity, disposition, or performance attributable to experience, practice, study, or instruction. Memory concerns retention and later availability; attention concerns selective allocation of processing; reasoning connects represented premises or states to a conclusion; skill is a developed capacity for performance under conditions.
 sense learning | learning
 sense memory | memory
@@ -1592,6 +1623,36 @@ factor enforcement-point-and-action | enforcement point and action
 factor exception-scope-approver-reason-controls-and-expiry | exception scope, approver, reason, controls, and expiry
 factor audit-appeal-and-review | audit, appeal, and review
 end-entry
+entry political-power-authority-legitimacy-influence-coercion | Political Power, Authority, Legitimacy, Influence, and Coercion | governance | candidate | tables/entries/political-power-authority-legitimacy-influence-coercion.md | Political power is a capacity to shape political conduct, conditions, agendas, or outcomes. Political authority is a claimed or justified standing to issue and possibly enforce public directives. Legitimacy is descriptive acceptance or normative justification under an explicit account. Influence changes beliefs or conduct without necessarily issuing authoritative directives. Coercion pressures conduct through a threat, force, or constrained alternative.
+sense political-power | political power
+sense political-authority | political authority
+sense political-legitimacy | political legitimacy
+sense political-influence | political influence
+sense political-coercion | political coercion
+factor actor-target-political-field-conduct-or-outcome-and-time | actor, target, political field, conduct or outcome, and time
+factor resources-dependence-agenda-institution-mechanism-and-capacity | resources, dependence, agenda, institution, mechanism, and capacity
+factor authority-source-directive-subject-competence-limits-and-enforcement | authority source, directive, subject, competence, limits, and enforcement
+factor legitimacy-object-descriptive-or-normative-account-grounds-and-audience | legitimacy object, descriptive or normative account, grounds, and audience
+factor influence-channel-content-uptake-resistance-and-effect | influence channel, content, uptake, resistance, and effect
+factor coercer-coercee-demand-threat-or-force-alternatives-and-responsibility-effect | coercer, coercee, demand, threat or force, alternatives, and responsibility effect
+factor legality-justice-effectiveness-acceptance-obligation-and-contestation | legality, justice, effectiveness, acceptance, obligation, and contestation
+factor evidence-counterfactual-uncertainty-and-provenance | evidence, counterfactual, uncertainty, and provenance
+end-entry
+entry political-representation-constituency-mandate-delegation-election | Political Representation, Constituency, Mandate, Delegation, and Election | governance | candidate | tables/entries/political-representation-constituency-mandate-delegation-election.md | Political representation makes persons, interests, claims, or perspectives present in political action through a representative relation. A constituency is the represented body defined by an electoral, territorial, organizational, or claim-making basis. A mandate is asserted authorization or direction for action. Delegation entrusts bounded decision authority or work to another. An election is a governed selection process using votes or another electoral rule.
+sense political-representation | political representation
+sense constituency | constituency
+sense political-mandate | political mandate
+sense political-delegation | political delegation
+sense election | election
+factor representative-represented-party-represented-content-and-time | representative, represented party, represented content, and time
+factor activity-claim-setting-audience-uptake-and-omission | activity, claim, setting, audience, uptake, and omission
+factor constituency-basis-boundary-membership-and-competing-construction | constituency basis, boundary, membership, and competing construction
+factor authorization-mandate-content-interpretation-scope-and-duration | authorization, mandate content, interpretation, scope, and duration
+factor delegator-delegate-entrusted-power-or-task-limits-and-accountability | delegator, delegate, entrusted power or task, limits, and accountability
+factor office-or-option-franchise-candidacy-ballot-aggregation-and-certification | office or option, franchise, candidacy, ballot, aggregation, and certification
+factor descriptive-symbolic-substantive-delegate-trustee-and-claim-making-account | descriptive, symbolic, substantive, delegate, trustee, and claim-making account
+factor jurisdiction-evidence-contestation-uncertainty-and-provenance | jurisdiction, evidence, contestation, uncertainty, and provenance
+end-entry
 entry possession-ownership-property-interest-agreement-contract-exchange-transaction | Possession, Ownership, Property Interest, Agreement, Contract, Exchange, and Transaction | governance | candidate | tables/entries/possession-ownership-property-interest-agreement-contract-exchange-transaction.md | Possession concerns custody or control; ownership is an authority-recognized bundle or status concerning an object or interest; a property interest is a particular right, claim, power, immunity, or encumbrance recognized under a declared system. Agreement records aligned expressions or commitments; contract is an agreement given specified legal or institutional effect; exchange is a reciprocal transfer; transaction is a bounded recorded change among parties, assets, obligations, or statuses.
 sense possession | possession
 sense ownership | ownership
@@ -1694,6 +1755,21 @@ factor iteration | iteration
 factor result-description | result description
 factor viewpoint | viewpoint
 factor contextual-coercion | contextual coercion
+end-entry
+entry public-policy-program-service-regulation-implementation | Public Policy, Program, Service, Regulation, and Implementation | governance | candidate | tables/entries/public-policy-program-service-regulation-implementation.md | Public policy states an authorized public direction, objective, or course. A public program organizes resources and activities to pursue specified public objectives. A public service provides a governed benefit, function, or access to recipients or the public. Regulation uses public instruments to shape conduct or conditions. Implementation translates an authorized policy, law, or program design into operational action and delivery.
+sense public-policy | public policy
+sense public-program | public program
+sense public-service | public service
+sense regulation | regulation
+sense policy-implementation | policy implementation
+factor public-problem-affected-population-jurisdiction-authority-and-time | public problem, affected population, jurisdiction, authority, and time
+factor policy-objective-adopted-direction-instrument-mix-assumptions-and-tradeoffs | policy objective, adopted direction, instrument mix, assumptions, and tradeoffs
+factor program-governance-eligibility-resources-activities-outputs-and-evaluation | program governance, eligibility, resources, activities, outputs, and evaluation
+factor service-provider-recipient-access-quality-continuity-and-accountability | service provider, recipient, access, quality, continuity, and accountability
+factor regulatory-subject-instrument-requirement-incentive-monitoring-and-enforcement | regulatory subject, instrument, requirement, incentive, monitoring, and enforcement
+factor implementers-capacity-coordination-procedure-adaptation-and-delivery | implementers, capacity, coordination, procedure, adaptation, and delivery
+factor adoption-implementation-fidelity-reach-output-outcome-and-unintended-effect | adoption, implementation fidelity, reach, output, outcome, and unintended effect
+factor evidence-equity-uncertainty-version-and-provenance | evidence, equity, uncertainty, version, and provenance
 end-entry
 entry quantity-value-unit-conversion | Quantity Value, Numerical Value, Unit, Dimension, and Conversion | quantities | candidate | tables/entries/quantity-value-unit-conversion.md | A quantity value combines a number with a reference, usually a measurement unit. Numerical value depends on the selected unit; dimension records base-quantity dependence but does not establish quantity kind. Unit conversion re-expresses a value without creating a new measurement, calibration, or physical-validity claim.
 sense quantity-value | quantity value
@@ -1933,6 +2009,21 @@ factor lifecycle-stage-abstraction | lifecycle-stage abstraction
 factor concurrency-and-ordering-semantics | concurrency and ordering semantics
 factor failure-cancellation-retry-and-compensation | failure, cancellation, retry, and compensation
 factor authority-provenance-and-observation-time | authority, provenance, and observation time
+end-entry
+entry state-government-polity-administration-public-authority | State, Government, Polity, Administration, and Public Authority | governance | candidate | tables/entries/state-government-polity-administration-public-authority.md | A political state is a persisting institutional order claiming public authority over a population and territory. Government is the offices and officeholders that direct it for a period. A polity is the organized political community or constitutional order. Public administration carries authorized public functions into operation. A public authority is an institution or office empowered to make or execute public decisions within a jurisdiction.
+sense political-state | political state
+sense government | government
+sense polity | polity
+sense public-administration | public administration
+sense public-authority | public authority
+factor institution-population-territory-jurisdiction-and-time | institution, population, territory, jurisdiction, and time
+factor constitutional-order-sovereignty-claim-recognition-and-continuity | constitutional order, sovereignty claim, recognition, and continuity
+factor offices-officeholders-selection-term-competence-and-responsibility | offices, officeholders, selection, term, competence, and responsibility
+factor political-membership-decision-process-opposition-and-contestation | political membership, decision process, opposition, and contestation
+factor administrative-body-function-capacity-resources-and-procedure | administrative body, function, capacity, resources, and procedure
+factor public-power-authority-source-limits-oversight-and-accountability | public power, authority source, limits, oversight, and accountability
+factor effectiveness-legality-legitimacy-justice-and-public-acceptance | effectiveness, legality, legitimacy, justice, and public acceptance
+factor evidence-version-uncertainty-and-provenance | evidence, version, uncertainty, and provenance
 end-entry
 entry statistical-summary-interval | Mean, Median, Quantile, Variance, Standard Deviation, Standard Error, and Confidence Interval | reference | candidate | tables/entries/statistical-summary-interval.md | Arithmetic and weighted means, median and quantiles, variance and standard deviation, standard error, and confidence intervals answer different descriptive and inferential questions; each retains its data, weighting, denominator, estimator, design, units, and coverage contract.
 sense arithmetic-mean | arithmetic mean

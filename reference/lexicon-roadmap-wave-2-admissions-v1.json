@@ -1,0 +1,15 @@
+{
+  "contract": "lexicon-roadmap-wave-2-admissions-v1",
+  "date": "2026-08-21",
+  "maturity": "candidate",
+  "admission_review": "signals/roles/check/lexicon-roadmap-wave-2-content-admission-roles-check-2026-08-21.md",
+  "literature_review": "signals/discover/literature/lexicon-wave-2-politics-government-law-literature-2026-08-21.md",
+  "entries": [
+    { "id": "state-government-polity-administration-public-authority", "domain": "governance" },
+    { "id": "citizenship-nationality-residency-membership-political-status", "domain": "governance" },
+    { "id": "political-representation-constituency-mandate-delegation-election", "domain": "governance" },
+    { "id": "political-power-authority-legitimacy-influence-coercion", "domain": "governance" },
+    { "id": "law-legal-rule-precedent-judgment-remedy-enforcement", "domain": "governance" },
+    { "id": "public-policy-program-service-regulation-implementation", "domain": "governance" }
+  ]
+}
