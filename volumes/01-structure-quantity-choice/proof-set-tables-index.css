@@ -855,6 +855,7 @@
 
   .dictionary-book__print-table-item .dictionary-book__content h2 {
     border-top: 3px double var(--proof-rule);
+    break-after: avoid-page;
     font-size: 20pt;
     margin-top: 0;
     padding-top: 0.12in;
@@ -867,6 +868,7 @@
 
   .dictionary-book__print-table-item .dictionary-book__content table {
     border-collapse: collapse;
+    break-inside: avoid-page;
     contain: none;
     display: table;
     font-size: 8.4pt;
