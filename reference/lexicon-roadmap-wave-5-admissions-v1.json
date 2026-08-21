@@ -1,0 +1,18 @@
+{
+  "contract": "lexicon-roadmap-wave-5-admissions-v1",
+  "date": "2026-08-21",
+  "maturity": "candidate",
+  "admission_review": "signals/roles/check/lexicon-roadmap-wave-5-content-admission-roles-check-2026-08-21.md",
+  "literature_review": "signals/discover/literature/lexicon-wave-5-language-culture-arts-aesthetics-literature-2026-08-21.md",
+  "entries": [
+    { "id": "phone-phoneme-grapheme-orthography-pronunciation", "domain": "language" },
+    { "id": "lexeme-word-phrase-clause-sentence-utterance", "domain": "language" },
+    { "id": "syntax-grammar-acceptability-grammaticality-usage", "domain": "language" },
+    { "id": "translation-paraphrase-equivalence-adaptation-transcreation", "domain": "language" },
+    { "id": "culture-subculture-heritage-tradition-cultural-practice", "domain": "social" },
+    { "id": "ritual-ceremony-observance-sacred-practice-symbolic-action", "domain": "social" },
+    { "id": "artwork-medium-form-composition-style-genre", "domain": "reference" },
+    { "id": "aesthetic-property-experience-judgment-taste-value", "domain": "reference" },
+    { "id": "creation-authorship-performance-interpretation-reception", "domain": "reference" }
+  ]
+}

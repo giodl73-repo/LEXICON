@@ -55,6 +55,20 @@ factor exaptation-or-co-option-history | exaptation or co-option history
 factor organism-driven-environmental-modification-as-an-input-to-selection-with | organism-driven environmental modification as an input to selection, with
 factor model-data-uncertainty-and-scope-limits | model, data, uncertainty, and scope limits
 end-entry
+entry aesthetic-property-experience-judgment-taste-value | Aesthetic Property, Experience, Judgment, Taste, and Value | reference | candidate | tables/entries/aesthetic-property-experience-judgment-taste-value.md | An aesthetic property is a feature ascribed in aesthetic description or judgment under a declared account. An aesthetic experience is an encounter attended to as aesthetically salient, with perceptual, imaginative, affective, cognitive, embodied, or contextual dimensions. An aesthetic judgment attributes or evaluates aesthetic character under stated criteria and perspective. Taste is a person's or community's patterned disposition and cultivated capacity for aesthetic response or judgment under an account. Aesthetic value is the worth ascribed to an object, event, practice, or experience in aesthetic respects, not a synonym for liking, price, art status, or moral value.
+sense aesthetic-property | aesthetic property
+sense aesthetic-experience | aesthetic experience
+sense aesthetic-judgment | aesthetic judgment
+sense taste | taste
+sense aesthetic-value | aesthetic value
+factor object-or-event-or-practice-work-or-nonwork-status-perceiver-or-evaluator-context-and-time | object/event/practice, work or nonwork status, perceiver/evaluator, context, and time
+factor property-vocabulary-bearer-dependence-base-account-attribution-and-evidence | property vocabulary, bearer, dependence base, account, attribution, and evidence
+factor experience-modality-attention-affect-imagination-cognition-embodiment-and-duration | experience modality, attention, affect, imagination, cognition, embodiment, and duration
+factor judgment-content-polarity-degree-criteria-reasons-comparison-class-and-confidence | judgment content, polarity, degree, criteria, reasons, comparison class, and confidence
+factor taste-disposition-formation-competence-claim-community-norms-variation-and-change | taste disposition, formation, competence claim, community norms, variation, and change
+factor value-bearer-dimension-intrinsic-or-instrumental-relation-aggregation-conflict-and-stakes | value bearer, dimension, intrinsic/instrumental relation, aggregation, conflict, and stakes
+factor cultural-or-historical-perspective-alternatives-disagreement-provenance-and-uncertainty | cultural/historical perspective, alternatives, disagreement, provenance, and uncertainty
+end-entry
 entry amount-concentration-composition | Amount, Concentration, and Composition | science | candidate | tables/entries/amount-concentration-composition.md | Count, amount of substance, concentration, composition, and molar mass answer different quantity questions. Count enumerates specified entities; amount scales count in moles; concentration normalizes a component by volume; composition fractions compare a component with a like-kind total; molar mass bridges mass and amount for a specified material.
 sense entity-count | entity count
 sense amount-of-substance | amount of substance
@@ -96,6 +110,22 @@ factor culture | culture
 factor context | context
 factor and | and
 factor evidence | evidence
+end-entry
+entry artwork-medium-form-composition-style-genre | Artwork, Medium, Form, Composition, Style, and Genre | reference | candidate | tables/entries/artwork-medium-form-composition-style-genre.md | An artwork is an identified work recognized or proposed as art under a declared historical, cultural, institutional, functional, or theoretical account. A medium is the material, technical, sensory, symbolic, or performative means through which a work is made or realized. Form is the organization or configuration through which elements and relations constitute a work. Composition is the particular arrangement and relation of elements within a work or realization. Style is a recognizable manner or pattern of making or appearance attributed at a declared level. Genre is a historically and socially organized category of works or practices defined by conventions, expectations, functions, forms, or lineages.
+sense artwork | artwork
+sense art-medium | art medium
+sense art-form | art form
+sense composition | composition
+sense art-style | art style
+sense art-genre | art genre
+factor candidate-work-work-identity-realization-or-instance-makers-place-time-and-context | candidate work, work identity, realization/instance, makers, place, time, and context
+factor art-status-account-recognizers-institution-or-community-function-and-contestation | art-status account, recognizers, institution/community, function, and contestation
+factor medium-materials-techniques-technologies-senses-notation-and-performance-means | medium materials, techniques, technologies, senses, notation, and performance means
+factor formal-elements-relations-organization-scale-duration-and-spatial-or-temporal-structure | formal elements, relations, organization, scale, duration, and spatial/temporal structure
+factor composition-arrangement-hierarchy-balance-sequence-contrast-and-focal-relations | composition arrangement, hierarchy, balance, sequence, contrast, and focal relations
+factor style-features-attribution-level-comparison-set-periodization-and-evidence | style features, attribution level, comparison set, periodization, and evidence
+factor genre-conventions-audience-expectations-lineage-hybridity-change-and-exceptions | genre conventions, audience expectations, lineage, hybridity, change, and exceptions
+factor source-criteria-perspective-uncertainty-provenance-and-rights-or-access-boundary | source, criteria, perspective, uncertainty, provenance, and rights/access boundary
 end-entry
 entry assurance-assessment-audit-certification | Assurance, Assessment, Audit, Certification, and Accreditation | governance | candidate | tables/entries/assurance-assessment-audit-certification.md | Assurance is a confidence-oriented claim supported for a purpose; assessment evaluates a subject against criteria; audit is a mandate-governed examination; certification is scoped third-party attestation; accreditation recognizes an assessment body's competence for a scope. None is universal proof.
 sense assurance | assurance
@@ -534,6 +564,34 @@ factor price-index-population-basket-scope-and-weights | price-index population,
 factor index-series-reference-periods-and-adjustment-status | index series, reference periods, and adjustment status
 factor cash-flow-timing-sign-horizon-and-terminal-treatment | cash-flow timing, sign, horizon, and terminal treatment
 factor discount-rate-source-nominal-real-alignment-and-sensitivity-range | discount-rate source, nominal-real alignment, and sensitivity range
+end-entry
+entry creation-authorship-performance-interpretation-reception | Creation, Authorship, Performance, Interpretation, and Reception | reference | candidate | tables/entries/creation-authorship-performance-interpretation-reception.md | Creation is the process by which a work, expression, event, or practice is brought about through generative activity. Authorship is attributed responsibility for originating or shaping a work or expression under a declared artistic, scholarly, social, institutional, or legal account. Performance is an embodied, enacted, sounded, or otherwise eventive realization or presentation by performers in a setting. Interpretation is the activity or result of making sense of, explaining, or realizing a work or expression from a standpoint. Reception is the encounter, uptake, response, circulation, and afterlife of a work or performance among audiences and communities.
+sense creation | creation
+sense authorship | authorship
+sense art-performance | art performance
+sense art-interpretation | art interpretation
+sense reception | reception
+factor work-or-expression-or-practice-version-medium-place-time-institutions-and-context | work/expression/practice, version, medium, place, time, institutions, and context
+factor creators-or-contributors-generative-acts-materials-or-tools-constraints-collaboration-and-sequence | creators/contributors, generative acts, materials/tools, constraints, collaboration, and sequence
+factor authorship-account-attributed-responsibility-evidence-credit-authority-dispute-and-legal-distinction | authorship account, attributed responsibility, evidence, credit, authority, dispute, and legal distinction
+factor performance-event-performers-roles-score-or-script-or-tradition-relation-setting-audience-and-variation | performance event, performers, roles, score/script/tradition relation, setting, audience, and variation
+factor interpretation-object-standpoint-method-evidence-alternatives-realization-choices-and-uncertainty | interpretation object, standpoint, method, evidence, alternatives, realization choices, and uncertainty
+factor reception-audience-or-community-access-circulation-response-appropriation-reframing-and-change-over-time | reception audience/community, access, circulation, response, appropriation, reframing, and change over time
+factor source-provenance-rights-or-access-contested-accounts-and-uncertainty | source, provenance, rights/access, contested accounts, and uncertainty
+end-entry
+entry culture-subculture-heritage-tradition-cultural-practice | Culture, Subculture, Heritage, Tradition, and Cultural Practice | social | candidate | tables/entries/culture-subculture-heritage-tradition-cultural-practice.md | Culture is a changing complex of meanings, practices, knowledge, values, forms, and material conditions associated with a society or group under a declared account. A subculture is a situated cultural formation differentiated within or across broader formations, not necessarily subordinate or homogeneous. Heritage is what communities, groups, institutions, or legal regimes recognize, transmit, interpret, and safeguard from the past for present and future significance. Tradition is a pattern represented and transmitted as continuous with a past while remaining open to recreation. A cultural practice is a recurrent or organized way of doing, making, expressing, or participating that carries cultural meaning in context.
+sense culture | culture
+sense subculture | subculture
+sense heritage | heritage
+sense tradition | tradition
+sense cultural-practice | cultural practice
+factor communities-or-groups-or-persons-self-identification-place-time-and-standpoint | communities/groups/persons, self-identification, place, time, and standpoint
+factor meanings-values-knowledge-practices-expressions-objects-spaces-and-institutions | meanings, values, knowledge, practices, expressions, objects, spaces, and institutions
+factor boundaries-internal-diversity-overlap-power-mobility-exchange-and-change | boundaries, internal diversity, overlap, power, mobility, exchange, and change
+factor heritage-recognition-source-community-custodians-transmission-significance-and-safeguarding | heritage recognition, source community, custodians, transmission, significance, and safeguarding
+factor tradition-claim-continuity-revival-invention-variation-and-contested-history | tradition claim, continuity, revival, invention, variation, and contested history
+factor practice-participants-competence-occasion-access-function-and-material-supports | practice participants, competence, occasion, access, function, and material supports
+factor legal-or-institutional-status-source-or-version-consent-uncertainty-and-provenance | legal/institutional status, source/version, consent, uncertainty, and provenance
 end-entry
 entry decomposition-modes-combination-contracts | Decomposition Modes and Combination Contracts | reference | candidate | tables/entries/decomposition-modes-combination-contracts.md | A decomposition mode states how selected factors divide or relate to a subject; a combination contract states how they may be used together. Separate factors do not by themselves establish independence, additivity, causation, completeness, or invertibility.
 sense decomposition-mode | decomposition mode
@@ -1214,6 +1272,22 @@ factor representation-inference-rule-strategy-and-conclusion | representation, i
 factor capacity-performance-transfer-retention-and-adaptation | capacity, performance, transfer, retention, and adaptation
 factor method-evidence-uncertainty-and-alternative-explanation | method, evidence, uncertainty, and alternative explanation
 end-entry
+entry lexeme-word-phrase-clause-sentence-utterance | Lexeme, Word, Phrase, Clause, Sentence, and Utterance | language | candidate | tables/entries/lexeme-word-phrase-clause-sentence-utterance.md | A lexeme is an abstract lexical unit grouping forms under a lexical analysis. A word is a unit identified by declared phonological, morphological, syntactic, orthographic, or conventional criteria. A phrase is a syntactic constituent organized around one or more elements without necessarily containing a predication. A clause is a predicative syntactic unit under an analysis. A sentence is a grammatically or orthographically delimited textual unit. An utterance is a situated act or product of language use by a participant on an occasion.
+sense lexeme | lexeme
+sense word | word
+sense phrase | phrase
+sense clause | clause
+sense sentence | sentence
+sense utterance | utterance
+factor language-or-variety-modality-representation-corpus-context-and-task | language or variety, modality, representation, corpus, context, and task
+factor lexical-identity-forms-senses-lemma-policy-and-analysis | lexical identity, forms, senses, lemma policy, and analysis
+factor wordhood-criteria-boundary-evidence-tokenization-and-exceptions | wordhood criteria, boundary evidence, tokenization, and exceptions
+factor constituent-structure-head-or-dependencies-phrase-type-and-analysis | constituent structure, head/dependencies, phrase type, and analysis
+factor predication-arguments-clause-type-linkage-and-embedding | predication, arguments, clause type, linkage, and embedding
+factor sentence-criteria-punctuation-or-prosody-segmentation-profile-and-document-context | sentence criteria, punctuation/prosody, segmentation profile, and document context
+factor speaker-or-signer-or-writer-addressee-occasion-discourse-context-and-communicative-action | speaker/signer/writer, addressee, occasion, discourse context, and communicative action
+factor annotation-authority-version-ambiguity-alternatives-and-provenance | annotation authority, version, ambiguity, alternatives, and provenance
+end-entry
 entry lexicon-entry-publication | Lexicon Entry Publication | reference | candidate | tables/entries/lexicon-entry-publication.md | Lexicon publication is the governed progression from a research question to a reviewable canonical entry and specialized views. Publication status, editorial maturity, source authority, and external domain authority are related but separate. A document is not published merely because Markdown exists or automated checks pass.
 sense editorial-workflow | editorial workflow
 sense entry-maturity | entry maturity
@@ -1708,6 +1782,20 @@ factor behavioural-and-perceptual-effects-on-the-agent-and-on-observers | behavi
 factor declared-attribution-basis-and-its-disclosure-to-the-audience | declared attribution basis and its disclosure to the audience
 factor duration-reversibility-and-multiplicity-of-figures-per-agent | duration, reversibility, and multiplicity of figures per agent
 end-entry
+entry phone-phoneme-grapheme-orthography-pronunciation | Phone, Phoneme, Grapheme, Orthography, and Pronunciation | language | candidate | tables/entries/phone-phoneme-grapheme-orthography-pronunciation.md | A phone is an observed or described speech sound event or type under a phonetic analysis. A phoneme is a contrastive sound unit posited for a language or variety under a phonological analysis. A grapheme is a contrastive or functional writing unit under a declared orthographic analysis. Orthography is a conventional system and practice for representing language in writing. Pronunciation is a realized or prescribed spoken form of an expression in a language, variety, register, and context.
+sense phone | phone
+sense phoneme | phoneme
+sense grapheme | grapheme
+sense orthography | orthography
+sense pronunciation | pronunciation
+factor language-or-variety-community-expression-context-time-and-task | language or variety, community, expression, context, time, and task
+factor acoustic-or-articulatory-event-transcription-dimensions-method-and-uncertainty | acoustic/articulatory event, transcription, dimensions, method, and uncertainty
+factor contrast-set-distribution-alternation-analysis-and-phonological-evidence | contrast set, distribution, alternation, analysis, and phonological evidence
+factor script-graphemic-unit-code-point-sequence-glyph-realization-and-segmentation-profile | script, graphemic unit, code-point sequence, glyph realization, and segmentation profile
+factor orthographic-convention-authority-version-standardization-and-variation | orthographic convention, authority, version, standardization, and variation
+factor pronunciation-form-speaker-register-prescription-or-observation-and-evidence | pronunciation form, speaker, register, prescription or observation, and evidence
+factor cross-level-mapping-exceptions-provenance-and-uncertainty | cross-level mapping, exceptions, provenance, and uncertainty
+end-entry
 entry physical-constant | Physical Constant | reference | candidate | tables/entries/physical-constant.md | A physical constant is a quantity used in physical theory or unit definition. Some constants have exact numerical values in specified units because a unit system defines them that way; others are experimentally determined and carry uncertainty. A bare number without quantity, unit, status, authority, and version is not a usable reference value.
 sense defining-constant | defining constant
 sense measured-constant | measured constant
@@ -1979,6 +2067,20 @@ factor liability-source-burden-or-sanction-conditions-procedure-and-authority | 
 factor excuse-condition-relevance-scope-evidence-and-residual-responsibility | excuse condition, relevance, scope, evidence, and residual responsibility
 factor luck-coercion-incapacity-ignorance-collective-action-uncertainty-and-provenance | luck, coercion, incapacity, ignorance, collective action, uncertainty, and provenance
 end-entry
+entry ritual-ceremony-observance-sacred-practice-symbolic-action | Ritual, Ceremony, Observance, Sacred Practice, and Symbolic Action | social | candidate | tables/entries/ritual-ceremony-observance-sacred-practice-symbolic-action.md | A ritual is a conventionally patterned sequence of actions, expressions, roles, objects, or settings carrying recognized significance. A ceremony is a formally organized event marking, enacting, or publicly recognizing a transition, status, commitment, memory, or occasion. An observance is the keeping or enactment of a recurring commemorative, religious, civic, or customary requirement or occasion. A sacred practice is an activity understood by participants as oriented to sacred beings, realities, obligations, places, times, or values. A symbolic action is an act whose significance depends materially on what it represents, invokes, or communicates beyond its immediate physical effect.
+sense ritual | ritual
+sense ceremony | ceremony
+sense observance | observance
+sense sacred-practice | sacred practice
+sense symbolic-action | symbolic action
+factor participants-community-roles-authority-occasion-place-time-and-access | participants, community, roles, authority, occasion, place, time, and access
+factor sequence-script-repetition-variation-objects-expressions-and-embodied-actions | sequence, script, repetition, variation, objects, expressions, and embodied actions
+factor recognized-meanings-purposes-transitions-statuses-commitments-and-memories | recognized meanings, purposes, transitions, statuses, commitments, and memories
+factor observance-calendar-recurrence-obligation-exemption-and-institutional-context | observance calendar, recurrence, obligation, exemption, and institutional context
+factor sacred-orientation-participant-account-restrictions-custodianship-and-contestation | sacred orientation, participant account, restrictions, custodianship, and contestation
+factor symbolic-referent-convention-audience-interpretation-and-practical-effects | symbolic referent, convention, audience, interpretation, and practical effects
+factor source-standpoint-documentation-consent-alternatives-uncertainty-and-provenance | source standpoint, documentation consent, alternatives, uncertainty, and provenance
+end-entry
 entry sampling-generalization | Population, Sample, Estimand, Estimate, and Generalization | reference | candidate | tables/entries/sampling-generalization.md | A population is the bounded inference target; a frame operationalizes access; observed and analytic samples record selection and transformation; an estimand is the target quantity, an estimator is the rule, and an estimate is its realized result. Generalization and transport require explicit source-to-target assumptions and evidence.
 sense target-population | target population
 sense sampling-frame | sampling frame
@@ -2220,6 +2322,20 @@ factor conservation-law-invariant-or-accounting-authority | conservation law, in
 factor residual-uncertainty-omissions-and-reconciliation-status | residual, uncertainty, omissions, and reconciliation status
 factor provenance-version-revision-and-supersession | provenance, version, revision, and supersession
 end-entry
+entry syntax-grammar-acceptability-grammaticality-usage | Syntax, Grammar, Acceptability, Grammaticality, and Usage | language | candidate | tables/entries/syntax-grammar-acceptability-grammaticality-usage.md | Syntax is the organization and dependency of linguistic expressions under a structural analysis. Grammar is a broader system or account of patterns and constraints in a language or variety, potentially including morphology, syntax, phonology, and other levels. Acceptability is a speaker's or community's graded response to an expression under elicited or natural conditions. Grammaticality is conformity to a stated grammar or analysis. Usage is attested or conventional language practice in a population, genre, register, setting, and period.
+sense syntax | syntax
+sense grammar | grammar
+sense acceptability | acceptability
+sense grammaticality | grammaticality
+sense usage | usage
+factor language-or-variety-community-modality-expression-context-and-time | language or variety, community, modality, expression, context, and time
+factor syntactic-units-relations-dependencies-constraints-and-analysis | syntactic units, relations, dependencies, constraints, and analysis
+factor grammar-scope-levels-descriptive-or-prescriptive-purpose-and-version | grammar scope, levels, descriptive or prescriptive purpose, and version
+factor acceptability-respondent-task-scale-prompt-order-context-and-variation | acceptability respondent, task, scale, prompt, order, context, and variation
+factor grammaticality-criterion-derivation-or-constraint-result-and-competing-analyses | grammaticality criterion, derivation or constraint result, and competing analyses
+factor usage-corpus-population-register-genre-frequency-distribution-and-change | usage corpus, population, register, genre, frequency, distribution, and change
+factor sampling-annotation-authority-evidence-strength-uncertainty-and-provenance | sampling, annotation, authority, evidence strength, uncertainty, and provenance
+end-entry
 entry system-composition-dependency | System Composition, Architecture, Capability, Interface, and Dependency | systems | candidate | tables/entries/system-composition-dependency.md | A system is a selected whole whose interacting elements together exhibit behavior or meaning. Architecture concerns its fundamental organization and principles in context; an architecture description is a versioned artifact expressing that architecture. System element, component, capability, boundary, environment, interface, dependency, and contextual subsystem roles remain distinct.
 sense system | system
 sense system-element | system element
@@ -2331,6 +2447,20 @@ factor channel-of-outside-effect-and-affected-unit-identification | channel of o
 factor identification-strategy-confounding-homophily-and-simultaneity-handling | identification strategy, confounding, homophily, and simultaneity handling
 factor early-warning-indicator-detection-method-and-false-signal-rate | early-warning indicator, detection method, and false-signal rate
 factor model-data-uncertainty-and-scope-limits | model, data, uncertainty, and scope limits
+end-entry
+entry translation-paraphrase-equivalence-adaptation-transcreation | Translation, Paraphrase, Equivalence, Adaptation, and Transcreation | language | candidate | tables/entries/translation-paraphrase-equivalence-adaptation-transcreation.md | Translation produces an expression in a target language from a source expression under a declared purpose. Paraphrase produces a differently worded expression, usually within one language, intended to preserve selected content or function. Equivalence is a claimed relation of sameness or adequacy along stated dimensions and thresholds. Adaptation transforms an expression or work for a new medium, audience, setting, purpose, or constraint. Transcreation is a purpose-driven creative transformation, often across languages and cultures, prioritizing selected effects or functions over close formal correspondence.
+sense translation | translation
+sense paraphrase | paraphrase
+sense equivalence | equivalence
+sense adaptation | adaptation
+sense transcreation | transcreation
+factor source-work-or-expression-target-expression-languages-modalities-and-versions | source work/expression, target expression, languages, modalities, and versions
+factor purpose-audience-commissioner-context-channel-constraints-and-stakes | purpose, audience, commissioner, context, channel, constraints, and stakes
+factor preserved-content-form-function-tone-effect-references-and-omissions | preserved content, form, function, tone, effect, references, and omissions
+factor transformation-operations-additions-deletions-substitutions-and-reorganization | transformation operations, additions, deletions, substitutions, and reorganization
+factor equivalence-dimensions-criteria-threshold-evaluator-and-evidence | equivalence dimensions, criteria, threshold, evaluator, and evidence
+factor translator-or-adaptor-or-creator-roles-authority-attribution-review-and-responsibility | translator/adaptor/creator roles, authority, attribution, review, and responsibility
+factor cultural-context-alternatives-uncertainty-provenance-and-rights-boundary | cultural context, alternatives, uncertainty, provenance, and rights boundary
 end-entry
 entry trust-credibility-reputation-legitimacy-reliance | Trust, Credibility, Reputation, Legitimacy, and Reliance | governance | candidate | tables/entries/trust-credibility-reputation-legitimacy-reliance.md | Trust is a vulnerability-bearing relation in which a trustor accepts risk based on a positive expectation of a trustee within a domain. Trustworthiness is a property or assessment of whether that trust is apt. Credibility is an audience's current judgment that a source or message is believable. Reputation is a historically accumulated and socially transmitted evaluation. Legitimacy can name either accepted rightfulness or justified rightfulness. Reliance is action or dependence based on expected performance and can occur without trust.
 sense trust | trust

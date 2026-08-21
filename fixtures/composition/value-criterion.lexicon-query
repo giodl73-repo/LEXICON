@@ -1,7 +1,7 @@
 lexicon-composition-query-v2
 query value-contributes-decision-criterion
 problem Which exact value sense and basis must be declared before using it as a decision criterion?
-source d6f163f2e8837c25582a49bd71941c43a18f6de7249bca9ec71a557aada99a48 | c4fdc129701bf4bee822754672d6dd11361c9507beb42f7942346bee4b92d27a
+source 623b532d5670348b2c556360088e97f4df81f08d27be07985971081e3cbf942e | c4fdc129701bf4bee822754672d6dd11361c9507beb42f7942346bee4b92d27a
 context synthetic-intervention-choice | owner=choice-owner,reference-frame=decision-horizon
 policy direction=forward,follow=evaluative-required,stop=stable-identity
 budget depth=1,edges=1,nodes=3,work=9

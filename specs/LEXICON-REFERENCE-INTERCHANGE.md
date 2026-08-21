@@ -19,14 +19,19 @@ contracts from the last reviewed Factorium artifacts plus the explicit
 Lexicon admission manifests. The 2026-08-21 candidate admission adds 37 entry
 records at candidate maturity and 20 noncanonical pointer labels. The domain
 admission adds another 10 candidate-maturity entry records and no pointer
-labels. Neither admission adds a relation. The resulting reference contains
-124 entries, 799 senses, 1,354 factors, and 100 specialized views; assurance
-binds its 124 entries, 100 views, and 11 relations with 235 exact records.
+labels. Five funded roadmap manifests add 32 candidate-maturity entries and no
+pointer labels. None of these admissions adds a relation. The resulting
+reference contains 133 entries, 846 senses, 1,419 factors, and 100 specialized
+views; assurance binds its 133 entries, 100 views, and 11 relations with 244
+exact records.
 
 The immutable admission inputs are:
 
 - `reference/lexicon-candidate-admissions-v1.json`
 - `reference/lexicon-domain-admissions-v1.json`
+- `reference/lexicon-roadmap-wave-1-admissions-v1.json` through
+  `reference/lexicon-roadmap-wave-5-admissions-v1.json`
+- `reference/lexicon-admission-index-v1.json`
 
 ## Legacy imports
 
@@ -45,6 +50,7 @@ projections, and documentation must use Lexicon headers and extensions.
 node tools\build_lexicon_contracts.js --check
 node tools\check_lexicon_candidate_admissions.js
 node tools\check_lexicon_domain_admissions.js
+node tools\check_lexicon_roadmap_admissions.js
 cargo run --quiet -- reference-check reference\lexicon-reference-v4.lexicon .
 cargo run --quiet -- reference-sidecar-check reference\lexicon-reference-v4.lexicon reference\lexicon-relations-v2.lexicon reference\lexicon-assurance-v4.lexicon .
 ```

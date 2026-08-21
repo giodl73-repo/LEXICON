@@ -30,11 +30,11 @@ The active wave is
 completed wave is
 `context/waves/2026-08-21-editorial-domain-expansion/WAVE.md`.
 
-`sim-73` is the current clean-source, internally validated book projection: 124
-canonical Tables, 270 pointer-index records, 504 pages, and no detected
-collision or out-of-bounds pages. It is worthy of controlled external reader
-testing, not public R5 release. See
-`context/waves/2026-08-21-funded-domain-gap-roadmap/WAVE-4-HEALTH-DISABILITY-CARE-RESULT.md`.
+`sim-74` is the current internally validated working book projection: 133
+canonical Tables, 270 pointer-index records, 533 pages, and no detected
+collision or out-of-bounds pages. Clean-source verification follows commit.
+It is worthy of controlled external reader testing, not public R5 release. See
+`context/waves/2026-08-21-funded-domain-gap-roadmap/WAVE-5-LANGUAGE-CULTURE-ARTS-AESTHETICS-RESULT.md`.
 
 The repaired `sim-67` PDF is a clean-source, internally validated book
 projection with full-width canonical Tables, a subordinate pointer index,
@@ -49,17 +49,18 @@ merge admits those families as canonical entries at candidate maturity. This
 does not establish reader demand or domain outcomes.
 
 The current machine-readable owner is
-`reference/lexicon-reference-v4.lexicon`: 124 entries, 799 senses, 1,354 factors,
+`reference/lexicon-reference-v4.lexicon`: 133 entries, 846 senses, 1,419 factors,
 and 100 views. Its eleven relations are
-`reference/lexicon-relations-v2.lexicon`; its 235 exact review bindings are
+`reference/lexicon-relations-v2.lexicon`; its 244 exact review bindings are
 `reference/lexicon-assurance-v4.lexicon`. Eleven current Composition Query
 fixtures use `.lexicon-query`, and the current 270-label pointer registry
 uses `.lexicon`.
 
-`sim-73` is the current Lexicon-native projection. It renders the 124 canonical
+`sim-74` is the current Lexicon-native projection. It renders the 133 canonical
 Tables, 100 specialized views, and 270 noncanonical pointer records while
 using only Lexicon-native active contracts, `LEXICON_` browser globals, and
-`data-lexicon-handoff`. `sim-72` remains the 119-Table formal-reasoning
+`data-lexicon-handoff`. `sim-73` remains the 124-Table health, disability,
+treatment, and care projection, `sim-72` remains the 119-Table formal-reasoning
 projection, `sim-71` remains the 113-Table politics/legal
 projection, `sim-70` remains the 107-Table social-normative
 projection, `sim-69` remains the 101-Table editorial-domain
@@ -1320,7 +1321,7 @@ cargo run --quiet -- packet-check artifacts\factor-v1
 cargo run --quiet -- reference-check reference\lexicon-reference-v4.lexicon .
 cargo run --quiet -- reference-sidecar-check reference\lexicon-reference-v4.lexicon reference\lexicon-relations-v2.lexicon reference\lexicon-assurance-v4.lexicon .
 node tools\build_lexicon_contracts.js --check
-.\tools\render_proof_set.ps1 -Edition sim-73
+.\tools\render_proof_set.ps1 -Edition sim-74
 node tools\check_lexicon_candidate_admissions.js
 node tools\check_lexicon_domain_admissions.js
 node tools\check_lexicon_canonical.js

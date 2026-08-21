@@ -79,9 +79,9 @@ The full contract is recorded in
 
 The canonical machine-readable reference contains:
 
-- **124 entries**;
-- **799 senses**;
-- **1,170 factors**;
+- **133 entries**;
+- **846 senses**;
+- **1,419 factors**;
 - **100 specialized views**;
 - **11 reviewed cross-entry relations**.
 
@@ -95,7 +95,7 @@ controls reviewed so far. It is ready for real-reader testing; it is not a
 claim of completeness across every discipline.
 
 See the [roadmap](ROADMAP.md), [candidate index](signals/discover/candidates/README.md),
-and [latest fixed-point result](context/waves/2026-08-20-residual-fixed-point/LEXICON-RESIDUAL-FIXED-POINT-RESULT.md).
+and [active funded expansion wave](context/waves/2026-08-21-funded-domain-gap-roadmap/WAVE.md).
 
 ## Explore the work
 
@@ -156,16 +156,16 @@ node tools\check_lexicon_domain_admissions.js
 node tools\check_lexicon_roadmap_admissions.js
 node tools\build_lexicon_contracts.js --check
 node tools\check_lexicon_canonical.js
-.\tools\render_proof_set.ps1 -Edition sim-73
-.\tools\render_book_proof_pdf.ps1 -Edition sim-73
+.\tools\render_proof_set.ps1 -Edition sim-74
+.\tools\render_book_proof_pdf.ps1 -Edition sim-74
 ```
 
 For a release-candidate proof, require a clean source tree and then verify the
 PDF metadata, embedded fonts, searchable text, source binding, and page layout:
 
 ```powershell
-.\tools\render_book_proof_pdf.ps1 -Edition sim-73 -RequireCleanSource
-.\tools\check_book_proof_pdf.ps1 -Edition sim-73 -RequireCleanSource
+.\tools\render_book_proof_pdf.ps1 -Edition sim-74 -RequireCleanSource
+.\tools\check_book_proof_pdf.ps1 -Edition sim-74 -RequireCleanSource
 ```
 
 ## Origins

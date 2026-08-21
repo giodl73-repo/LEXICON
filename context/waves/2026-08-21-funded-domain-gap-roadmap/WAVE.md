@@ -22,6 +22,7 @@ pre-authoring hold.
 - [Wave 4 plan](WAVE-4-HEALTH-DISABILITY-CARE-PLAN.md)
 - [Wave 4 result](WAVE-4-HEALTH-DISABILITY-CARE-RESULT.md)
 - [Wave 5 plan](WAVE-5-LANGUAGE-CULTURE-ARTS-AESTHETICS-PLAN.md)
+- [Wave 5 result](WAVE-5-LANGUAGE-CULTURE-ARTS-AESTHETICS-RESULT.md)
 - Final reconciliation result: pending
 
 ## Boundary
