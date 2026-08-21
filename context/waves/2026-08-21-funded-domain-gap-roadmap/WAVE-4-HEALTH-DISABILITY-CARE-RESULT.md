@@ -1,6 +1,6 @@
 # Wave 4 Health, Disability, Treatment, and Care Result
 
-Status: admission and working proof pass; clean-source proof pending commit
+Status: fixed point; admission and clean-source proof pass
 
 ## Outcome
 
@@ -16,10 +16,12 @@ relations, and pointers remain 100, 11, and 270.
 - cumulative roadmap check: 23 Tables and 119 senses pass;
 - `sim-73`: 341 site pages, 26 chapters, 261 indexed entry/view pages, 4,446
   internal links, and zero missing targets;
-- working PDF: 504 pages, 14,217,959 bytes, and zero collisions.
+- clean-source PDF: 504 pages, 14,217,962 bytes, 14 embedded fonts,
+  1,627,651 extracted characters, and zero collision or out-of-bounds pages;
+- source commit: `ad76e2fbc554fd4a20df67a3f14a5944f42c0f9c`, with a clean workspace.
 
-Working PDF SHA-256:
-`7b6fe47163b6fdf35c486be0608de7a4ceebc4d93c0ae5980b7093b4f90e20b7`.
+Clean-source PDF SHA-256:
+`b1caad729f5b97265a8295e3b4c74cbaafcf697dd68171ae6e7d8ab5ed27379f`.
 
 ## Boundary and continuation
 
