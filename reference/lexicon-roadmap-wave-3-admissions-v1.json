@@ -1,0 +1,15 @@
+{
+  "contract": "lexicon-roadmap-wave-3-admissions-v1",
+  "date": "2026-08-21",
+  "maturity": "candidate",
+  "admission_review": "signals/roles/check/lexicon-roadmap-wave-3-content-admission-roles-check-2026-08-21.md",
+  "literature_review": "signals/discover/literature/lexicon-wave-3-formal-reasoning-mathematics-literature-2026-08-21.md",
+  "entries": [
+    { "id": "statement-proposition-premise-conclusion-argument", "domain": "reference" },
+    { "id": "inference-deduction-induction-abduction-analogy", "domain": "reference" },
+    { "id": "validity-soundness-proof-demonstration-refutation", "domain": "reference" },
+    { "id": "consistency-contradiction-satisfiability-completeness", "domain": "reference" },
+    { "id": "number-numeral-quantity-magnitude-measurement", "domain": "quantities" },
+    { "id": "mathematical-set-collection-membership-relation-function-structure", "domain": "reference" }
+  ]
+}

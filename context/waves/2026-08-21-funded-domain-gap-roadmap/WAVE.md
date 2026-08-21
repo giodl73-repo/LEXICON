@@ -18,6 +18,7 @@ pre-authoring hold.
 - [Wave 2 plan](WAVE-2-POLITICS-LAW-PLAN.md)
 - [Wave 2 result](WAVE-2-POLITICS-LAW-RESULT.md)
 - [Wave 3 plan](WAVE-3-FORMAL-REASONING-PLAN.md)
+- [Wave 3 result](WAVE-3-FORMAL-REASONING-RESULT.md)
 - Final reconciliation result: pending
 
 ## Boundary

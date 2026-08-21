@@ -30,10 +30,11 @@ The active wave is
 completed wave is
 `context/waves/2026-08-21-editorial-domain-expansion/WAVE.md`.
 
-The clean-source `sim-71` PDF is the current internally validated book projection: 113
-canonical Tables, 270 pointer-index records, 468 pages, and no detected
-collision or out-of-bounds pages. It is worthy of controlled external reader testing, not public R5
-release. See `context/waves/2026-08-21-funded-domain-gap-roadmap/WAVE-2-POLITICS-LAW-RESULT.md`.
+`sim-72` is the current internally validated working book projection: 119
+canonical Tables, 270 pointer-index records, 487 pages, and no detected
+collision or out-of-bounds pages. Clean-source verification follows commit.
+It is worthy of controlled external reader testing, not public R5 release. See
+`context/waves/2026-08-21-funded-domain-gap-roadmap/WAVE-3-FORMAL-REASONING-RESULT.md`.
 
 The repaired `sim-67` PDF is a clean-source, internally validated book
 projection with full-width canonical Tables, a subordinate pointer index,
@@ -48,17 +49,18 @@ merge admits those families as canonical entries at candidate maturity. This
 does not establish reader demand or domain outcomes.
 
 The current machine-readable owner is
-`reference/lexicon-reference-v4.lexicon`: 113 entries, 742 senses, 1,266 factors,
+`reference/lexicon-reference-v4.lexicon`: 119 entries, 773 senses, 1,314 factors,
 and 100 views. Its eleven relations are
-`reference/lexicon-relations-v2.lexicon`; its 224 exact review bindings are
+`reference/lexicon-relations-v2.lexicon`; its 230 exact review bindings are
 `reference/lexicon-assurance-v4.lexicon`. Eleven current Composition Query
 fixtures use `.lexicon-query`, and the current 270-label pointer registry
 uses `.lexicon`.
 
-`sim-71` is the current Lexicon-native projection. It renders the 113 canonical
+`sim-72` is the current Lexicon-native projection. It renders the 119 canonical
 Tables, 100 specialized views, and 270 noncanonical pointer records while
 using only Lexicon-native active contracts, `LEXICON_` browser globals, and
-`data-lexicon-handoff`. `sim-70` remains the 107-Table social-normative
+`data-lexicon-handoff`. `sim-71` remains the 113-Table politics/legal
+projection, `sim-70` remains the 107-Table social-normative
 projection, `sim-69` remains the 101-Table editorial-domain
 projection, `sim-68` remains the 91-Table candidate-merge
 projection, `sim-67` remains the repaired 54-Table book projection, and
@@ -1317,7 +1319,7 @@ cargo run --quiet -- packet-check artifacts\factor-v1
 cargo run --quiet -- reference-check reference\lexicon-reference-v4.lexicon .
 cargo run --quiet -- reference-sidecar-check reference\lexicon-reference-v4.lexicon reference\lexicon-relations-v2.lexicon reference\lexicon-assurance-v4.lexicon .
 node tools\build_lexicon_contracts.js --check
-.\tools\render_proof_set.ps1 -Edition sim-71
+.\tools\render_proof_set.ps1 -Edition sim-72
 node tools\check_lexicon_candidate_admissions.js
 node tools\check_lexicon_domain_admissions.js
 node tools\check_lexicon_canonical.js

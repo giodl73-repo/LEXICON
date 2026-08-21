@@ -113,7 +113,7 @@ Grow reviewed volumes, contributors, provenance, and cross-references without
 losing canonical entry identity.
 
 The roadmap refines these waves into R0-R8 milestones. It places the
-25-50-entry editorial pilot before interchange freeze, the current 113-entry
+25-50-entry editorial pilot before interchange freeze, the current 119-entry
 usability prototype within the 75-125-entry band, before the approximately 250-entry first substantial
 volume, and the Workbench after the editorial contract is proven. The R5P
 Proof Set release bridge sits between the observed R4 prototype gate and R5

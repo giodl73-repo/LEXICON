@@ -1,5 +1,5 @@
 ﻿param(
-    [ValidateSet("sim-01", "sim-02", "sim-03", "sim-04", "sim-05", "sim-06", "sim-07", "sim-08", "sim-09", "sim-10", "sim-11", "sim-12", "sim-13", "sim-14", "sim-15", "sim-16", "sim-17", "sim-18", "sim-19", "sim-20", "sim-21", "sim-22", "sim-23", "sim-24", "sim-25", "sim-26", "sim-27", "sim-28", "sim-29", "sim-30", "sim-31", "sim-32", "sim-33", "sim-34", "sim-35", "sim-36", "sim-37", "sim-38", "sim-39", "sim-40", "sim-41", "sim-42", "sim-43", "sim-44", "sim-45", "sim-46", "sim-47", "sim-48", "sim-49", "sim-50", "sim-51", "sim-52", "sim-53", "sim-54", "sim-55", "sim-56", "sim-57", "sim-58", "sim-59", "sim-60", "sim-61", "sim-62", "sim-63", "sim-64", "sim-65", "sim-66", "sim-67", "sim-68", "sim-69", "sim-70", "sim-71")]
+    [ValidateSet("sim-01", "sim-02", "sim-03", "sim-04", "sim-05", "sim-06", "sim-07", "sim-08", "sim-09", "sim-10", "sim-11", "sim-12", "sim-13", "sim-14", "sim-15", "sim-16", "sim-17", "sim-18", "sim-19", "sim-20", "sim-21", "sim-22", "sim-23", "sim-24", "sim-25", "sim-26", "sim-27", "sim-28", "sim-29", "sim-30", "sim-31", "sim-32", "sim-33", "sim-34", "sim-35", "sim-36", "sim-37", "sim-38", "sim-39", "sim-40", "sim-41", "sim-42", "sim-43", "sim-44", "sim-45", "sim-46", "sim-47", "sim-48", "sim-49", "sim-50", "sim-51", "sim-52", "sim-53", "sim-54", "sim-55", "sim-56", "sim-57", "sim-58", "sim-59", "sim-60", "sim-61", "sim-62", "sim-63", "sim-64", "sim-65", "sim-66", "sim-67", "sim-68", "sim-69", "sim-70", "sim-71", "sim-72")]
     [string]$Edition = "sim-01",
     [string]$OutputDirectory = ""
 )
@@ -80,6 +80,9 @@ $roadmapWave1Rubric = Join-Path $workspace "volumes\01-structure-quantity-choice
 $roadmapWave2Supplement = Join-Path $workspace "volumes\01-structure-quantity-choice\LEXICON-ROADMAP-WAVE-2-SUPPLEMENT.md"
 $roadmapWave2Tasks = Join-Path $workspace "volumes\01-structure-quantity-choice\LEXICON-ROADMAP-WAVE-2-TASKS.md"
 $roadmapWave2Rubric = Join-Path $workspace "volumes\01-structure-quantity-choice\LEXICON-ROADMAP-WAVE-2-RUBRIC.md"
+$roadmapWave3Supplement = Join-Path $workspace "volumes\01-structure-quantity-choice\LEXICON-ROADMAP-WAVE-3-SUPPLEMENT.md"
+$roadmapWave3Tasks = Join-Path $workspace "volumes\01-structure-quantity-choice\LEXICON-ROADMAP-WAVE-3-TASKS.md"
+$roadmapWave3Rubric = Join-Path $workspace "volumes\01-structure-quantity-choice\LEXICON-ROADMAP-WAVE-3-RUBRIC.md"
 $pointerRegistryV0 = Join-Path $workspace "volumes\01-structure-quantity-choice\proof-set-pointer-registry.factorium"
 $pointerRegistryV1 = Join-Path $workspace "volumes\01-structure-quantity-choice\proof-set-pointer-registry-v1.factorium"
 $pointerRegistryV2 = Join-Path $workspace "volumes\01-structure-quantity-choice\proof-set-pointer-registry-v2.factorium"
@@ -347,6 +350,7 @@ $artifactTitle = switch ($Edition) {
     "sim-69" { "Lexicon Editorial Domain Expansion Simulation 69" }
     "sim-70" { "Lexicon Social and Normative Foundations Simulation 70" }
     "sim-71" { "Lexicon Politics Government and Law Simulation 71" }
+    "sim-72" { "Lexicon Formal Reasoning and Mathematics Simulation 72" }
 }
 
 $tabulaIdentityPreview = $editionNumber -eq 51
@@ -358,7 +362,7 @@ $publicationName = if ($lexiconIdentity) { "Lexicon" } elseif ($formariumIdentit
 $tablesPublicationName = if ($lexiconIdentity) { "Lexicon" } elseif ($formariumIdentity) { "Formarium Tables" } elseif ($tabulaIdentityPreview) { "Tabula Facta" } else { "Factorium Tables" }
 $readerPublicationName = if ($lexiconIdentity) { "Lexicon Reader" } elseif ($formariumIdentity) { "The Formarium Reader" } else { "The Factorium Reader" }
 $repositoryName = if ($lexiconIdentity) { "LEXICON" } elseif ($formariumIdentity) { "FORMARIUM" } else { "FACTORIUM" }
-$readerAdditionalRecordCount = if ($editionNumber -ge 71) { 179 } elseif ($editionNumber -ge 70) { 173 } elseif ($editionNumber -ge 69) { 167 } elseif ($editionNumber -ge 50) { 157 } elseif ($editionNumber -ge 49) { 154 } else { 151 }
+$readerAdditionalRecordCount = if ($editionNumber -ge 72) { 185 } elseif ($editionNumber -ge 71) { 179 } elseif ($editionNumber -ge 70) { 173 } elseif ($editionNumber -ge 69) { 167 } elseif ($editionNumber -ge 50) { 157 } elseif ($editionNumber -ge 49) { 154 } else { 151 }
 $contentLicenseNotice = if ($editionNumber -ge 66) {
     ' · Content &copy; 2026 Gio Della-Libera · <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>'
 }
@@ -956,6 +960,12 @@ if ($Edition -ne "sim-01") {
             [void]$supplementPaths.Add($roadmapWave2Path)
         }
     }
+    if ($editionNumber -ge 72) {
+        $roadmapWave3Paths = Get-WorkspaceMarkdownPathSet $roadmapWave3Supplement
+        foreach ($roadmapWave3Path in $roadmapWave3Paths) {
+            [void]$supplementPaths.Add($roadmapWave3Path)
+        }
+    }
     if ($editionNumber -ge 67) {
         foreach ($rename in @(
             @("tables/entries/factorium-entry-publication.md", "tables/entries/lexicon-entry-publication.md"),
@@ -1057,12 +1067,18 @@ if ($Edition -ne "sim-01") {
                 [void]$taskCoverage.Add($_.Groups[1].Value)
             }
         }
+        if ($editionNumber -ge 72) {
+            $roadmapWave3RubricText = Get-Content -LiteralPath $roadmapWave3Rubric -Raw
+            [regex]::Matches($roadmapWave3RubricText, '`(tables/[^`]+\.md)`') | ForEach-Object {
+                [void]$taskCoverage.Add($_.Groups[1].Value)
+            }
+        }
         $missingTaskCoverage = @($expectedDelta | Where-Object { -not $taskCoverage.Contains($_) })
         $extraTaskCoverage = @($taskCoverage | Where-Object { -not $expectedDelta.Contains($_) })
         if ($missingTaskCoverage.Count -ne 0 -or $extraTaskCoverage.Count -ne 0) {
             throw "Factor Forge task coverage mismatch: missing=$($missingTaskCoverage -join ',') extra=$($extraTaskCoverage -join ',')"
         }
-        $selectionChecks.task_count = if ($editionNumber -ge 71) { 82 } elseif ($editionNumber -ge 70) { 77 } elseif ($editionNumber -ge 69) { 72 } elseif ($editionNumber -ge 68) { 67 } elseif ($editionNumber -ge 50) { 59 } elseif ($editionNumber -ge 49) { 56 } else { 53 }
+        $selectionChecks.task_count = if ($editionNumber -ge 72) { 87 } elseif ($editionNumber -ge 71) { 82 } elseif ($editionNumber -ge 70) { 77 } elseif ($editionNumber -ge 69) { 72 } elseif ($editionNumber -ge 68) { 67 } elseif ($editionNumber -ge 50) { 59 } elseif ($editionNumber -ge 49) { 56 } else { 53 }
         $selectionChecks.task_coverage_records = $taskCoverage.Count
         $selectionChecks.missing_task_coverage_paths = $missingTaskCoverage.Count
         $selectionChecks.extra_task_coverage_paths = $extraTaskCoverage.Count
@@ -1114,6 +1130,11 @@ if ($editionNumber -ge 71) {
     Add-ProofSource $roadmapWave2Supplement
     $selectionDocuments.Add($roadmapWave2Supplement)
     Add-ProofSource $roadmapWave2Tasks
+}
+if ($editionNumber -ge 72) {
+    Add-ProofSource $roadmapWave3Supplement
+    $selectionDocuments.Add($roadmapWave3Supplement)
+    Add-ProofSource $roadmapWave3Tasks
 }
 if ($editionNumber -ge 3) {
     Add-ProofSource $factorForgeTasks
@@ -1509,6 +1530,9 @@ if ($editionNumber -ge 4) {
         if ($editionNumber -ge 71) {
             Get-NumberedSelections $roadmapWave2Supplement
         }
+        if ($editionNumber -ge 72) {
+            Get-NumberedSelections $roadmapWave3Supplement
+        }
     )
     if ($editionNumber -ge 67) {
         $selectionRenames = @{
@@ -1579,7 +1603,7 @@ if ($editionNumber -ge 4) {
     else {
         2
     }
-    $expectedNumberedCount = if ($editionNumber -ge 71) { 240 } elseif ($editionNumber -ge 70) { 234 } elseif ($editionNumber -ge 69) { 228 } elseif ($editionNumber -ge 68) { 218 } elseif ($editionNumber -ge 50) { 181 } elseif ($editionNumber -ge 49) { 178 } else { 175 }
+    $expectedNumberedCount = if ($editionNumber -ge 72) { 246 } elseif ($editionNumber -ge 71) { 240 } elseif ($editionNumber -ge 70) { 234 } elseif ($editionNumber -ge 69) { 228 } elseif ($editionNumber -ge 68) { 218 } elseif ($editionNumber -ge 50) { 181 } elseif ($editionNumber -ge 49) { 178 } else { 175 }
     if ($numberedSelections.Count -ne $expectedNumberedCount -or $guideSelections.Count -ne $expectedGuideCount) {
         throw "Search selection mismatch: numbered=$($numberedSelections.Count) guides=$($guideSelections.Count)"
     }
@@ -2399,6 +2423,9 @@ if ($editionNumber -ge 7) {
     if ($editionNumber -ge 71) {
         $selectedSiteChapters += @(Get-SiteChapterSelections $roadmapWave2Supplement)
     }
+    if ($editionNumber -ge 72) {
+        $selectedSiteChapters += @(Get-SiteChapterSelections $roadmapWave3Supplement)
+    }
     if ($editionNumber -ge 66) {
         foreach ($chapter in $selectedSiteChapters) {
             $chapter.paths = @($chapter.paths | ForEach-Object {
@@ -2453,7 +2480,7 @@ if ($editionNumber -ge 7) {
             $chapterBySearchPath[$chapterRelativePath] = $chapter
         }
     }
-    $expectedSiteChapterCount = if ($editionNumber -ge 71) { 24 } elseif ($editionNumber -ge 70) { 23 } elseif ($editionNumber -ge 69) { 22 } elseif ($editionNumber -ge 68) { 21 } elseif ($editionNumber -ge 50) { 20 } elseif ($editionNumber -ge 49) { 19 } else { 18 }
+    $expectedSiteChapterCount = if ($editionNumber -ge 72) { 25 } elseif ($editionNumber -ge 71) { 24 } elseif ($editionNumber -ge 70) { 23 } elseif ($editionNumber -ge 69) { 22 } elseif ($editionNumber -ge 68) { 21 } elseif ($editionNumber -ge 50) { 20 } elseif ($editionNumber -ge 49) { 19 } else { 18 }
     if ($siteChapters.Count -ne $expectedSiteChapterCount -or $chapterBySearchPath.Count -ne $searchRecords.Count) {
         throw "Site chapter coverage mismatch: chapters=$($siteChapters.Count) records=$($chapterBySearchPath.Count)"
     }
@@ -5814,11 +5841,11 @@ $identityPreviewStyle
         $siteChecks.table_family_contents_semantics = "exact-publication-ownership-only"
     }
     if ($editionNumber -ge 35) {
-        $expectedCanonicalCount = if ($editionNumber -ge 71) { 113 } elseif ($editionNumber -ge 70) { 107 } elseif ($editionNumber -ge 69) { 101 } elseif ($editionNumber -ge 68) { 91 } elseif ($editionNumber -ge 49) { 54 } else { 53 }
+        $expectedCanonicalCount = if ($editionNumber -ge 72) { 119 } elseif ($editionNumber -ge 71) { 113 } elseif ($editionNumber -ge 70) { 107 } elseif ($editionNumber -ge 69) { 101 } elseif ($editionNumber -ge 68) { 91 } elseif ($editionNumber -ge 49) { 54 } else { 53 }
         $expectedOwnedViewCount = if ($editionNumber -ge 50) { 100 } elseif ($editionNumber -ge 49) { 97 } else { 95 }
         if ($tablesIndexCanonicalCount -ne $expectedCanonicalCount -or
             $tablesIndexCuratedCount -ne 27 -or
-            $tablesIndexLetterCount -ne $(if ($editionNumber -ge 70) { 19 } elseif ($editionNumber -ge 69) { 18 } else { 17 }) -or
+            $tablesIndexLetterCount -ne $(if ($editionNumber -ge 72) { 20 } elseif ($editionNumber -ge 70) { 19 } elseif ($editionNumber -ge 69) { 18 } else { 17 }) -or
             $tablesIndexOwnedViewCount -ne $expectedOwnedViewCount) {
             throw "Tables alphabetical index mismatch: canonical=$tablesIndexCanonicalCount curated=$tablesIndexCuratedCount letters=$tablesIndexLetterCount views=$tablesIndexOwnedViewCount"
         }

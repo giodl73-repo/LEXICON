@@ -1,7 +1,7 @@
 lexicon-composition-query-v2
 query causal-scope-qualifies-alternative-outcome
 problem Which causal scope must be checked before treating an observed outcome as an alternative consequence?
-source c9b4e86af6c576c0f03bbe519a255d73ea3f5d03654460301d6c1a527e9a0c1c | c4fdc129701bf4bee822754672d6dd11361c9507beb42f7942346bee4b92d27a
+source 961e19585e7c16742d890119bf23b1309f72e432aa5676928c5b703733f346a8 | c4fdc129701bf4bee822754672d6dd11361c9507beb42f7942346bee4b92d27a
 context synthetic-intervention-choice | population=bounded-service-team,reference-frame=decision-horizon
 policy direction=forward,follow=evaluative-required,stop=stable-identity
 budget depth=1,edges=1,nodes=3,work=9

@@ -388,6 +388,21 @@ factor refusal-dissent-non-response-and-default-treatment | refusal, dissent, no
 factor withdrawal-from-participation-revocation-of-consent-effective-moment | withdrawal from participation, revocation of consent, effective moment,
 factor consequences-remedy-re-consent-review-and-supersession | consequences, remedy, re-consent, review, and supersession
 end-entry
+entry consistency-contradiction-satisfiability-completeness | Consistency, Contradiction, Satisfiability, and Completeness | reference | candidate | tables/entries/consistency-contradiction-satisfiability-completeness.md | Consistency says that a theory or set of formulas does not derive a prohibited pair or every formula under a stated calculus. A contradiction is a formula or jointly asserted content incompatible under a logic. Satisfiability says an interpretation or model makes all formulas in a set true. Completeness is a family of coverage properties: a calculus may derive every semantic consequence, a theory may decide every sentence in a class, or a specification may cover a declared target.
+sense formal-consistency | formal consistency
+sense contradiction | contradiction
+sense satisfiability | satisfiability
+sense semantic-completeness | semantic completeness
+sense theory-completeness | theory completeness
+factor formula-or-theory-set-language-logic-calculus-and-version | formula or theory set, language, logic, calculus, and version
+factor derivability-relation-negation-or-conflict-form-explosion-behavior-and-consistency-criterion | derivability relation, negation or conflict form, explosion behavior, and consistency criterion
+factor interpretations-domain-valuation-satisfaction-relation-and-model-existence | interpretations, domain, valuation, satisfaction relation, and model existence
+factor semantic-consequence-proof-relation-soundness-completeness-direction-and-theorem-scope | semantic consequence, proof relation, soundness, completeness direction, and theorem scope
+factor sentence-class-decision-criterion-independence-incompleteness-and-extension | sentence class, decision criterion, independence, incompleteness, and extension
+factor local-or-global-scope-finite-or-infinite-set-compactness-assumptions-and-metalanguage | local or global scope, finite or infinite set, compactness assumptions, and metalanguage
+factor witness-countermodel-proof-automation-resource-bound-and-unknown-status | witness, countermodel, proof, automation, resource bound, and unknown status
+factor provenance-uncertainty-and-limitations | provenance, uncertainty, and limitations
+end-entry
 entry control-monitoring-response | Objective, Control, Monitoring, and Response | systems | candidate | tables/entries/control-monitoring-response.md | Objectives state desired results; set points reference controlled variables; controllers issue commands; actuators influence processes; monitoring observes; indicators summarize; thresholds classify; alerts communicate; service-level objectives bind scoped indicators to targets and windows; outcomes record wider effects. Target, mechanism, measurement, commitment, and outcome remain distinct.
 sense objective | objective
 sense monitoring | monitoring
@@ -979,6 +994,21 @@ factor principal-ends-ends-attribution-basis-agent-pursued-objective-horizon | p
 factor internalization-monitoring-contract-rule-or-mechanism-instrument | internalization, monitoring, contract, rule, or mechanism instrument
 factor observed-response-gaming-crowding-out-and-revision | observed response, gaming, crowding-out, and revision
 end-entry
+entry inference-deduction-induction-abduction-analogy | Inference, Deduction, Induction, Abduction, and Analogy | reference | candidate | tables/entries/inference-deduction-induction-abduction-analogy.md | Inference is a transition from represented inputs to a conclusion under a rule, policy, or reasoning practice. Deduction claims consequence that preserves truth under a stated logic. Induction extends from observed cases or data toward unobserved cases or generalization. Abduction selects or advances a hypothesis through explanatory considerations. Analogy transfers a candidate relation or conclusion through a structured source-to-target mapping.
+sense inference | inference
+sense deduction | deduction
+sense induction | induction
+sense abduction | abduction
+sense analogical-inference | analogical inference
+factor reasoner-or-system-input-representations-conclusion-context-and-time | reasoner or system, input representations, conclusion, context, and time
+factor inference-rule-or-policy-formal-or-informal-status-direction-and-warrant | inference rule or policy, formal or informal status, direction, and warrant
+factor logic-language-consequence-relation-premises-and-derivation | logic, language, consequence relation, premises, and derivation
+factor population-sample-observations-generalization-target-and-uncertainty | population, sample, observations, generalization target, and uncertainty
+factor phenomenon-candidate-explanations-explanatory-criteria-and-alternatives | phenomenon, candidate explanations, explanatory criteria, and alternatives
+factor source-target-correspondence-invariant-structure-differences-and-transfer | source, target, correspondence, invariant structure, differences, and transfer
+factor monotonicity-defeasibility-background-assumptions-counterexamples-and-revision | monotonicity, defeasibility, background assumptions, counterexamples, and revision
+factor evidence-provenance-limitations-and-confidence | evidence, provenance, limitations, and confidence
+end-entry
 entry information-data-signal-noise | Information, Data, Record, Schema, Signal, and Noise | information | candidate | tables/entries/information-data-signal-noise.md | Information, data, records, schemas, fields, encoding, signals, channels, and noise occupy different layers. Data is representation; records group data under a contract; schemas govern structure and interpretation; fields are schema-relative roles. Shannon measures quantify modeled surprise or dependence rather than meaning.
 sense semantic-information | semantic information
 sense data | data
@@ -1191,6 +1221,22 @@ factor iteration-map-initial-state-and-generated-sequence | iteration map, initi
 factor stopping-rule-tolerance-precision-and-resource-limit | stopping rule, tolerance, precision, and resource limit
 factor convergence-target-criterion-rate-basin-and-proof-basis | convergence target, criterion, rate, basin, and proof basis
 end-entry
+entry mathematical-set-collection-membership-relation-function-structure | Mathematical Set, Collection, Membership, Relation, Function, and Structure | reference | candidate | tables/entries/mathematical-set-collection-membership-relation-function-structure.md | A mathematical set is an object determined or governed by membership under a stated set theory. A collection is a plurality or aggregate presented for a mathematical purpose without automatically carrying sethood. Membership is the formal element-of relation. A relation is a set-like or primitive association among tuples under an account. A mathematical function assigns each admitted input exactly one output. A structure consists of a domain together with distinguished relations, functions, operations, or constants under a signature.
+sense mathematical-set | mathematical set
+sense mathematical-collection | mathematical collection
+sense set-membership | set membership
+sense mathematical-relation | mathematical relation
+sense mathematical-function | mathematical function
+sense mathematical-structure | mathematical structure
+factor formal-theory-language-universe-or-domain-purpose-and-version | formal theory, language, universe or domain, purpose, and version
+factor set-identity-members-construction-extensionality-account-and-size | set identity, members, construction, extensionality account, and size
+factor collection-presentation-plurality-order-multiplicity-and-sethood-commitment | collection presentation, plurality, order, multiplicity, and sethood commitment
+factor membership-relation-element-set-typing-and-notation | membership relation, element, set, typing, and notation
+factor relation-domains-arity-tuples-graph-properties-and-composition | relation domains, arity, tuples, graph, properties, and composition
+factor function-domain-codomain-assignment-totality-single-valuedness-and-image | function domain, codomain, assignment, totality, single-valuedness, and image
+factor structure-signature-carrier-interpretations-homomorphisms-and-invariants | structure signature, carrier, interpretations, homomorphisms, and invariants
+factor foundations-alternatives-paradox-controls-provenance-and-limitations | foundations, alternatives, paradox controls, provenance, and limitations
+end-entry
 entry matter-load-measure | Matter and Load Measure | science | candidate | tables/entries/matter-load-measure.md | Mass, weight, average and local density, pressure, stress, and gravitational field occupy different descriptive levels. Total, field, force, scalar normal loading, and tensor traction-map quantities retain boundary, location, orientation, frame, scale, and model contracts.
 sense mass | mass
 sense weight | weight
@@ -1376,6 +1422,21 @@ factor recurring-conduct-occasion-community-and-custom-continuity | recurring co
 factor participants-activity-materials-competence-purpose-and-practice-standards | participants, activity, materials, competence, purpose, and practice standards
 factor transmission-reception-lineage-interpretation-change-and-tradition-claim | transmission, reception, lineage, interpretation, change, and tradition claim
 factor authority-evidence-variation-uncertainty-and-provenance | authority, evidence, variation, uncertainty, and provenance
+end-entry
+entry number-numeral-quantity-magnitude-measurement | Number, Numeral, Quantity, Magnitude, and Measurement | quantities | candidate | tables/entries/number-numeral-quantity-magnitude-measurement.md | A number is a mathematical object under a declared number system or structural account. A numeral is an expression denoting a number in a notation. A quantity is a property whose instances can be compared quantitatively under a declared kind. Magnitude is the size or ordering aspect of a number, quantity, vector, or other object under a specified comparison. Measurement is an experimental or computational process that produces quantity values attributed to a measurand under a procedure.
+sense number | number
+sense numeral | numeral
+sense quantity | quantity
+sense magnitude | magnitude
+sense measurement | measurement
+factor subject-mathematical-or-empirical-domain-purpose-and-time | subject, mathematical or empirical domain, purpose, and time
+factor number-system-object-identity-structural-position-operations-and-order | number system, object identity, structural position, operations, and order
+factor numeral-system-expression-syntax-representation-base-and-denotation | numeral system, expression, syntax, representation base, and denotation
+factor quantity-kind-bearer-comparability-relation-dimension-and-reference | quantity kind, bearer, comparability relation, dimension, and reference
+factor magnitude-sense-comparison-norm-or-absolute-value-operator-and-scale | magnitude sense, comparison, norm or absolute-value operator, and scale
+factor measurand-method-instrument-or-computation-model-conditions-and-result | measurand, method, instrument or computation, model, conditions, and result
+factor numerical-value-unit-uncertainty-traceability-and-metrological-compatibility | numerical value, unit, uncertainty, traceability, and metrological compatibility
+factor convention-version-provenance-limitations-and-alternatives | convention, version, provenance, limitations, and alternatives
 end-entry
 entry operational-resource-capacity-demand | Operational Resource, Capacity, Demand, and Allocation | operations | candidate | tables/entries/operational-resource-capacity-demand.md | Operational resources provide capability or stock for work and outcomes. Capacity, demand, load, utilization, allocation, reservation, commitment, consumption, and shortage retain exact quantity, quality, time, policy, dependency, and evidence roles.
 sense operational-resource | operational resource
@@ -2025,6 +2086,21 @@ factor public-power-authority-source-limits-oversight-and-accountability | publi
 factor effectiveness-legality-legitimacy-justice-and-public-acceptance | effectiveness, legality, legitimacy, justice, and public acceptance
 factor evidence-version-uncertainty-and-provenance | evidence, version, uncertainty, and provenance
 end-entry
+entry statement-proposition-premise-conclusion-argument | Statement, Proposition, Premise, Conclusion, and Argument | reference | candidate | tables/entries/statement-proposition-premise-conclusion-argument.md | A statement is an assertoric expression or act in a language and context. A proposition is the truth-evaluable content represented under a declared semantic account. A premise is a statement or proposition offered or assumed in support. A conclusion is what an inference or argument presents as following or supported. An argument is an organized set of premises and a conclusion connected by an asserted inferential relation.
+sense statement | statement
+sense proposition | proposition
+sense premise | premise
+sense conclusion | conclusion
+sense argument | argument
+factor expression-or-act-language-speaker-or-author-context-and-time | expression or act, language, speaker or author, context, and time
+factor represented-content-semantic-account-truth-conditions-and-identity-criterion | represented content, semantic account, truth conditions, and identity criterion
+factor premise-set-explicit-or-implicit-status-order-and-assumption-role | premise set, explicit or implicit status, order, and assumption role
+factor conclusion-target-claim-scope-and-qualification | conclusion, target claim, scope, and qualification
+factor inferential-link-argument-form-purpose-audience-and-presentation | inferential link, argument form, purpose, audience, and presentation
+factor assertion-supposition-question-command-explanation-and-persuasion-distinction | assertion, supposition, question, command, explanation, and persuasion distinction
+factor ambiguity-reconstruction-suppressed-material-alternatives-and-challenge | ambiguity, reconstruction, suppressed material, alternatives, and challenge
+factor provenance-uncertainty-and-limitations | provenance, uncertainty, and limitations
+end-entry
 entry statistical-summary-interval | Mean, Median, Quantile, Variance, Standard Deviation, Standard Error, and Confidence Interval | reference | candidate | tables/entries/statistical-summary-interval.md | Arithmetic and weighted means, median and quantiles, variance and standard deviation, standard error, and confidence intervals answer different descriptive and inferential questions; each retains its data, weighting, denominator, estimator, design, units, and coverage contract.
 sense arithmetic-mean | arithmetic mean
 sense weighted-mean | weighted mean
@@ -2216,6 +2292,21 @@ factor context-time-and-persistence-of-the-relation | context, time, and persist
 factor competing-metaphysical-accounts-left-visible | competing metaphysical accounts left visible
 factor excluded-homonym-senses-named-explicitly | excluded homonym senses named explicitly
 factor routing-to-classification-representation-appearance-and-projected-identity | routing to classification, representation, appearance, and projected identity
+end-entry
+entry validity-soundness-proof-demonstration-refutation | Validity, Soundness, Proof, Demonstration, and Refutation | reference | candidate | tables/entries/validity-soundness-proof-demonstration-refutation.md | Validity is consequence preservation under a stated formal semantics or logic. Soundness of an argument combines validity with true premises under an account; soundness of a calculus says derivability preserves semantic validity. A proof is a checkable derivation under declared axioms and rules. A demonstration establishes or exhibits a result under a domain's accepted method. A refutation defeats a claim, argument, derivation, or universal statement through a valid counter-result under a stated standard.
+sense formal-validity | formal validity
+sense soundness | soundness
+sense proof | proof
+sense demonstration | demonstration
+sense refutation | refutation
+factor target-claim-or-formula-premises-or-assumptions-system-and-context | target claim or formula, premises or assumptions, system, and context
+factor formal-language-syntax-semantics-interpretations-and-consequence-relation | formal language, syntax, semantics, interpretations, and consequence relation
+factor axioms-inference-rules-derivation-steps-proof-object-and-checker | axioms, inference rules, derivation steps, proof object, and checker
+factor validity-scope-premise-truth-account-argument-soundness-sense-and-calculus-soundness-sense | validity scope, premise truth account, argument-soundness sense, and calculus-soundness sense
+factor demonstration-method-admissible-evidence-audience-reproducibility-and-result | demonstration method, admissible evidence, audience, reproducibility, and result
+factor refutation-target-counterexample-or-derivation-scope-and-residual-claims | refutation target, counterexample or derivation, scope, and residual claims
+factor constructive-or-nonconstructive-status-automation-trust-base-and-verification | constructive or nonconstructive status, automation, trust base, and verification
+factor version-uncertainty-provenance-and-limitations | version, uncertainty, provenance, and limitations
 end-entry
 entry work-energy-power | Work, Energy, and Power | science | candidate | tables/entries/work-energy-power.md | Work, energy, power, and torque are connected but distinct. Work is scalar transfer along displacement; energy is a system quantity; power is transfer rate; torque is an axial turning effect about a declared reference. Shared dimensions or `N m` notation do not make torque energy.
 sense mechanical-work | mechanical work

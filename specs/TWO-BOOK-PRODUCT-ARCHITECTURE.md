@@ -84,7 +84,8 @@ labels their kinds; ranking does not change authority.
 | `sim-68` | 91-Table candidate canonical merge projection |
 | `sim-69` | 101-Table editorial and domain expansion projection |
 | `sim-70` | 107-Table social and normative foundations projection |
-| `sim-71` | current 113-Table politics, government, and law projection |
+| `sim-71` | 113-Table politics, government, and law projection |
+| `sim-72` | current 119-Table formal reasoning and mathematics projection |
 
 ## Claim boundary
 
