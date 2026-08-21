@@ -1,6 +1,7 @@
 "use strict";
 
 const assert = require("node:assert/strict");
+const crypto = require("node:crypto");
 const fs = require("node:fs");
 const path = require("node:path");
 
@@ -29,6 +30,18 @@ assert.equal(roundTwo.acceptance.owner_success_fraction, protocol.round_two_owne
 assert.equal(roundTwo.acceptance.time_seconds, protocol.round_two_time_seconds);
 assert.equal(roundTwo.acceptance.median_confidence, protocol.round_two_median_confidence);
 assert.equal(roundTwo.results, "pending-external-participants");
+assert.equal(roundTwo.results_template, "reference/lexicon-domain-gap-reader-round-2-results-v1.json");
+assert.equal(
+  crypto.createHash("sha256").update(fs.readFileSync(path.join(root, roundTwo.results_template))).digest("hex"),
+  roundTwo.results_template_sha256,
+  "round-two results template drift",
+);
+assert.equal(roundTwo.analysis.command, "node tools/analyze_lexicon_domain_gap_reader_round_2.js");
+assert.equal(
+  crypto.createHash("sha256").update(fs.readFileSync(path.join(root, roundTwo.analysis.source))).digest("hex"),
+  roundTwo.analysis.source_sha256,
+  "round-two analysis source drift",
+);
 const canonical = records.filter((record) => record.recordClass === "canonical-entry");
 assert.equal(canonical.length, 133);
 const recordByOwner = new Map(canonical.map((record) => [path.basename(record.path, ".md"), record]));

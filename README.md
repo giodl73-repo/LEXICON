@@ -156,6 +156,8 @@ node tools\check_lexicon_domain_admissions.js
 node tools\check_lexicon_roadmap_admissions.js
 node tools\build_lexicon_contracts.js --check
 node tools\check_lexicon_canonical.js
+node tools\check_lexicon_roadmap_ordinary_language.js sim-75
+node tools\analyze_lexicon_domain_gap_reader_round_2.js
 .\tools\render_proof_set.ps1 -Edition sim-75
 .\tools\render_book_proof_pdf.ps1 -Edition sim-75
 ```

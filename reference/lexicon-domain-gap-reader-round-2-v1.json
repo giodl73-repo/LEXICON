@@ -4,6 +4,14 @@
   "status": "frozen-round-two-recruitment-pending",
   "protocol": "reference/lexicon-domain-gap-reader-protocol-v1.json",
   "task_and_acceptable_owner_map": "reference/lexicon-roadmap-ordinary-language-tasks-v1.json",
+  "results_template": "reference/lexicon-domain-gap-reader-round-2-results-v1.json",
+  "results_template_sha256": "dcae7c9dd46a383d5fabfe6d14f393b81eb08492252291e262b56810e7a1049e",
+  "analysis": {
+    "command": "node tools/analyze_lexicon_domain_gap_reader_round_2.js",
+    "source": "tools/analyze_lexicon_domain_gap_reader_round_2.js",
+    "source_sha256": "3a0742619091a5b28cf60884a80f63b422503a8f646b7b12c00c2523810af86e",
+    "repeated_safety_or_advice_misreading_count": 2
+  },
   "proof": {
     "edition": "sim-75",
     "source_commit": "602a7e168991c36c7f5b50f5c6db9d7e08a93bbd",

@@ -1,0 +1,36 @@
+{
+  "contract": "lexicon-domain-gap-reader-round-2-results-v1",
+  "round_two_contract": "reference/lexicon-domain-gap-reader-round-2-v1.json",
+  "status": "recruitment-pending",
+  "participants": [],
+  "attempts": [],
+  "field_contract": {
+    "participant": [
+      "id",
+      "eligible",
+      "authored_or_reviewed_tested_tables",
+      "fresh_round_two_cohort",
+      "professional_reference_user",
+      "domain_familiarity",
+      "proof_format"
+    ],
+    "attempt": [
+      "participant_id",
+      "task_id",
+      "first_selected_owner",
+      "final_selected_owner",
+      "intended_sense_or_unresolved",
+      "time_to_first_plausible_owner_seconds",
+      "total_task_seconds",
+      "search_query_or_index_route",
+      "wrong_owner_selections",
+      "backtracks",
+      "confidence",
+      "missing_or_misleading_terms",
+      "outcome",
+      "protocol_deviation",
+      "safety_or_advice_misreading"
+    ]
+  },
+  "claim_boundary": "Keep the template empty until real eligible participants are observed; record unfavorable, abandoned, timed-out, and deviating attempts."
+}

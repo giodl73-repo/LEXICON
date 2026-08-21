@@ -20,7 +20,7 @@ retained the reviewed 11-relation set, and added no count-driven Table.
 | Existing-owner and seam reconciliation | pass: 32/32 owners |
 | Typed-relation review | pass: retain 11; no unsupported edge added |
 | Deterministic ordinary-language rehearsal | pass: 18/18 primary owners in top 20 |
-| `.roles` review | pass: six roles, 18 findings closed, zero unresolved |
+| `.roles` review | pass: two six-role fixed points, 36 findings closed, zero unresolved |
 | Clean-source book proof | pass: 534 pages, zero collisions or out-of-bounds pages |
 | External round-two readers | pending: 0 of required 8-12 eligible adults |
 
@@ -28,8 +28,10 @@ retained the reviewed 11-relation set, and added no count-driven Table.
 
 `reference/lexicon-domain-gap-reader-round-2-v1.json` binds the external round
 to the clean `sim-75` PDF from commit `602a7e1`, its exact SHA-256, and the
-frozen 18-task acceptable-owner map. Internal rehearsal and author inspection
-must not be substituted for participant observations.
+frozen 18-task acceptable-owner map. It also binds the empty participant and
+attempt schema plus the exact analysis-program digest, so neither scoring nor
+exclusions can drift after observation. Internal rehearsal and author
+inspection must not be substituted for participant observations.
 
 The roadmap is therefore at its internal fixed point. No content, scale,
 reconciliation, relation, role-review, navigation, or proof work is deferred.

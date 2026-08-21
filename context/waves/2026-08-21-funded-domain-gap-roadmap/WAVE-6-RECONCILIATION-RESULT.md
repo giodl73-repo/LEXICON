@@ -24,13 +24,15 @@ and Mathematical Function are reframed as subordinate cross-level routers.
   deterministic search results;
 - visual inspection: all 32 roadmap Table opening pages pass; the automated
   layout check covers every PDF page;
-- roles: six roles, 18 closed findings, no unresolved critical or major issue.
+- roles: two six-role fixed points, 36 closed findings, and no unresolved
+  critical or major issue across reconciliation and round-two analysis.
 - clean-source proof: `sim-75`, source commit `602a7e1`, 534 pages, 15
   embedded fonts, 1,712,401 searchable text characters, zero collision pages,
   and zero out-of-bounds pages; PDF SHA-256
   `0574f89e115578ce30068d551a9b518db1fc0c414021e0f203969d6878e7f893`;
 - round-two packet: the exact proof digest and 18-task acceptable-owner map are
-  frozen in `reference/lexicon-domain-gap-reader-round-2-v1.json`.
+  frozen in `reference/lexicon-domain-gap-reader-round-2-v1.json`; the packet
+  also binds an empty results schema and exact analysis-program digest.
 
 ## Dispositions
 

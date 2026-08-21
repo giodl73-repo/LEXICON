@@ -26,6 +26,7 @@ pre-authoring hold.
 - [Wave 6 plan](WAVE-6-RECONCILIATION-PLAN.md)
 - [Wave 6 result](WAVE-6-RECONCILIATION-RESULT.md)
 - [Internal closeout](LEXICON-FUNDED-DOMAIN-GAP-ROADMAP-CLOSEOUT.md)
+- [Round-two analysis role review](../../../signals/roles/check/lexicon-roadmap-round-2-analysis-roles-check-2026-08-21.md)
 
 ## Boundary
 
