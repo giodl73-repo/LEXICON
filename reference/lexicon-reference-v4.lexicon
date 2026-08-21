@@ -148,6 +148,22 @@ factor scale | scale
 factor coding | coding,
 factor and-admissible-operations | and admissible operations
 end-entry
+entry care-health-service-provider-recipient-pathway-continuity | Care, Health Service, Provider, Recipient, Pathway, and Continuity | science | candidate | tables/entries/care-health-service-provider-recipient-pathway-continuity.md | Care is an attentive, relational, and practical response to health, functioning, support, or comfort needs. A health service is an organized provision intended to promote, assess, maintain, restore, or support health and functioning. A provider is a person, team, organization, or system authorized or recognized to deliver a service. A recipient is the person, family, group, or population receiving or intended to receive it. A care pathway organizes expected steps and transitions for a defined need or population. Continuity is coherent connection of care, information, and relationships over time and settings.
+sense health-care | health care
+sense health-service | health service
+sense care-provider | care provider
+sense care-recipient | care recipient
+sense care-pathway | care pathway
+sense care-continuity | care continuity
+factor recipient-or-population-need-goals-setting-and-time | recipient or population, need, goals, setting, and time
+factor care-relationship-attentiveness-responsibility-support-comfort-and-preferences | care relationship, attentiveness, responsibility, support, comfort, and preferences
+factor service-function-scope-access-eligibility-capacity-quality-and-funding-context | service function, scope, access, eligibility, capacity, quality, and funding context
+factor provider-identity-role-competence-authority-team-and-accountability | provider identity, role, competence, authority, team, and accountability
+factor recipient-agency-consent-communication-supporters-burden-and-experience | recipient agency, consent, communication, supporters, burden, and experience
+factor pathway-entry-steps-transitions-referral-coordination-deviation-and-exit | pathway entry, steps, transitions, referral, coordination, deviation, and exit
+factor relational-informational-and-management-continuity-handoff-and-longitudinal-review | relational, informational, and management continuity, handoff, and longitudinal review
+factor evidence-equity-safety-uncertainty-provenance-and-no-advice-boundary | evidence, equity, safety, uncertainty, provenance, and no-advice boundary
+end-entry
 entry causal-reasoning | Association, Causal Effect, Influence, Mechanism, Intervention, and Attribution | reference | candidate | tables/entries/causal-reasoning.md | Association describes observed dependence; a causal effect compares outcomes under specified alternatives; influence is a contextual contribution claim; a mechanism describes how change is produced; an intervention is an action or assignment; attribution asks what caused one realized outcome. These questions require different evidence and assumptions.
 sense association | association
 sense causal-effect | causal effect
@@ -282,6 +298,21 @@ factor provenance-and-reproduction | provenance and reproduction
 factor reviewer-and-revision | reviewer and revision
 factor measurement-model-procedure-and-system | measurement model, procedure, and system
 factor inference-rule-and-assumptions | inference rule and assumptions
+end-entry
+entry clinical-outcome-response-recovery-remission-quality-of-life | Clinical Outcome, Response, Recovery, Remission, and Quality of Life | science | candidate | tables/entries/clinical-outcome-response-recovery-remission-quality-of-life.md | A clinical outcome describes or reflects how a person feels, functions, or survives over a stated interval. A response is a defined change following an intervention or exposure, without automatically establishing causation. Recovery is a process or state of regained health, functioning, role, or self-directed life under a declared account. Remission is reduction or absence of specified manifestations below a criterion for a stated duration. Quality of life is a person's perception of their position in life relative to culture, values, goals, expectations, standards, and concerns.
+sense clinical-outcome | clinical outcome
+sense treatment-response | treatment response
+sense health-recovery | health recovery
+sense remission | remission
+sense quality-of-life | quality of life
+factor person-or-population-condition-if-relevant-context-interval-and-perspective | person or population, condition if relevant, context, interval, and perspective
+factor outcome-concept-feeling-or-function-or-survival-domain-endpoint-assessment-reporter-and-timing | outcome concept, feeling/function/survival domain, endpoint, assessment, reporter, and timing
+factor baseline-post-intervention-state-response-criterion-magnitude-durability-and-comparator | baseline, post-intervention state, response criterion, magnitude, durability, and comparator
+factor recovery-account-process-or-state-domains-goals-setbacks-supports-and-self-definition | recovery account, process or state, domains, goals, setbacks, supports, and self-definition
+factor remission-manifestations-threshold-duration-partial-or-complete-status-relapse-and-monitoring | remission manifestations, threshold, duration, partial/complete status, relapse, and monitoring
+factor quality-of-life-domains-person-report-culture-values-goals-expectations-and-instrument | quality-of-life domains, person report, culture, values, goals, expectations, and instrument
+factor attribution-clinical-importance-uncertainty-missingness-adverse-outcomes-and-heterogeneity | attribution, clinical importance, uncertainty, missingness, adverse outcomes, and heterogeneity
+factor authority-version-evidence-provenance-and-no-advice-boundary | authority, version, evidence, provenance, and no-advice boundary
 end-entry
 entry clinical-sign-symptom-syndrome-diagnosis-differential-diagnosis-prognosis | Clinical Sign, Symptom, Syndrome, Diagnosis, Differential Diagnosis, and Prognosis | science | candidate | tables/entries/clinical-sign-symptom-syndrome-diagnosis-differential-diagnosis-prognosis.md | This Table maps concepts used in clinical classification and reasoning. It is not medical advice, diagnosis, triage, treatment, or a substitute for a classification authority. Every classification claim requires an authority, version, context, and evidence.
 sense clinical-sign | clinical sign
@@ -798,6 +829,21 @@ factor direction | direction
 factor duration | duration
 factor reference-frame | reference frame
 end-entry
+entry function-impairment-activity-limitation-disability-participation | Function, Impairment, Activity Limitation, Disability, and Participation | science | candidate | tables/entries/function-impairment-activity-limitation-disability-participation.md | Functioning encompasses body functions and structures, activities, and participation in interaction with context. An impairment is a problem or difference in body function or structure under stated criteria. An activity limitation is difficulty executing a task or action. Disability is an umbrella for negative aspects of interaction among a person with a health condition and contextual factors. Participation is involvement in a life situation; a participation restriction is a problem in that involvement.
+sense health-functioning | health functioning
+sense impairment | impairment
+sense activity-limitation | activity limitation
+sense disability | disability
+sense participation | participation
+factor person-health-condition-if-relevant-life-domain-setting-and-time | person, health condition if relevant, life domain, setting, and time
+factor body-function-body-structure-difference-or-problem-criteria-and-severity-qualifier | body function, body structure, difference or problem, criteria, and severity qualifier
+factor task-or-action-capacity-actual-performance-assistance-and-environment | task or action, capacity, actual performance, assistance, and environment
+factor life-situation-involvement-choice-access-role-and-participation-qualifier | life situation, involvement, choice, access, role, and participation qualifier
+factor environmental-facilitators-and-barriers-personal-factors-supports-and-accommodations | environmental facilitators and barriers, personal factors, supports, and accommodations
+factor disability-account-self-identification-classifier-purpose-and-language-preference | disability account, self-identification, classifier, purpose, and language preference
+factor assessment-instrument-reporter-version-evidence-uncertainty-and-change | assessment instrument, reporter, version, evidence, uncertainty, and change
+factor rights-context-limitations-provenance-and-no-diagnosis-boundary | rights context, limitations, provenance, and no-diagnosis boundary
+end-entry
 entry geographic-place-environment-weather-climate-earth-system-environmental-change | Geographic Place, Environment, Weather, Climate, Earth System, and Environmental Change | science | candidate | tables/entries/geographic-place-environment-weather-climate-earth-system-environmental-change.md | A geographic place is a named or identified location/region under a spatial and jurisdictional account. Environment is the relevant surrounding physical, biological, social, and built conditions for a subject and question. Weather is atmospheric state over a relatively short interval. Climate is a statistical description of weather or climate-system state over a declared reference period. Earth system is the coupled planetary system of major physical, chemical, biological, and human-influenced components. Environmental change is a measured or attributed change in environmental state over a stated baseline.
 sense geographic-place | geographic place
 sense environment | environment
@@ -897,6 +943,21 @@ factor prevention-protection-detection-mitigation-response-and-recovery | preven
 factor criteria-noncompensatory-limits-authority-and-residual-risk | criteria, noncompensatory limits, authority, and residual risk
 factor monitoring-incidents-near-misses-changes-and-learning | monitoring, incidents, near misses, changes, and learning
 factor provenance-version-review-limitations-and-unresolved-hazards | provenance, version, review, limitations, and unresolved hazards
+end-entry
+entry health-disease-disorder-condition-well-being | Health, Disease, Disorder, Condition, and Well-Being | science | candidate | tables/entries/health-disease-disorder-condition-well-being.md | Health is a multidimensional state or capacity under a declared biological, functional, experiential, social, or normative account. Disease is a pathological process or state recognized under a medical-scientific account. Disorder is a clinically or classificatorily recognized disturbance under stated criteria. A health condition is a broad status encompassing disease, disorder, injury, pregnancy, aging-related state, or other health-related circumstance under a classification. Well-being is how well a person is doing or experiencing life under an explicit evaluative account.
+sense health | health
+sense disease | disease
+sense disorder | disorder
+sense health-condition | health condition
+sense health-related-well-being | health related well being
+factor person-or-population-health-domain-setting-time-and-perspective | person or population, health domain, setting, time, and perspective
+factor health-account-dimensions-capacities-functioning-experience-and-social-context | health account, dimensions, capacities, functioning, experience, and social context
+factor pathological-process-or-state-mechanism-evidence-course-and-manifestations | pathological process or state, mechanism evidence, course, and manifestations
+factor disorder-criteria-classifier-threshold-impairment-or-distress-relevance-and-exclusions | disorder criteria, classifier, threshold, impairment/distress relevance, and exclusions
+factor condition-type-classification-system-code-or-label-purpose-and-scope | condition type, classification system, code or label, purpose, and scope
+factor well-being-account-reporter-domains-goals-preferences-and-cultural-context | well-being account, reporter, domains, goals, preferences, and cultural context
+factor authority-version-effective-time-assessment-method-evidence-and-uncertainty | authority, version, effective time, assessment method, evidence, and uncertainty
+factor contested-accounts-limitations-provenance-and-no-advice-boundary | contested accounts, limitations, provenance, and no-advice boundary
 end-entry
 entry hohfeldian-incidents-claim-liberty-power-immunity | Hohfeldian Claim, Liberty, Power, Immunity, Duty, No-Claim, Liability, and Disability | governance | candidate | tables/entries/hohfeldian-incidents-claim-liberty-power-immunity.md | This is an analytical mapping of correlatives and opposites associated with Hohfeld. It is not legal advice, a statement of law, or a universal doctrine. It helps distinguish positions that ordinary “right” language can collapse.
 sense hohfeld-claim | hohfeld claim
@@ -1753,6 +1814,21 @@ factor calibration-sharpness-resolution-and-skill-reporting | calibration, sharp
 factor base-rate-rare-event-definition-and-degeneracy-check | base rate, rare-event definition, and degeneracy check
 factor sample-size-dependence-and-accuracy-difference-significance | sample size, dependence, and accuracy-difference significance
 factor limits-regime-change-and-prohibited-generalization | limits, regime change, and prohibited generalization
+end-entry
+entry prevention-intervention-treatment-therapy-rehabilitation | Prevention, Intervention, Treatment, Therapy, and Rehabilitation | science | candidate | tables/entries/prevention-intervention-treatment-therapy-rehabilitation.md | Prevention aims to avert, delay, detect early, or reduce consequences of a health problem under a stated prevention framework. A health intervention is an intentional action intended to affect health, functioning, behavior, exposure, service use, or determinants. Treatment targets a recognized health condition to cure, control, relieve, or reduce its effects. Therapy is a treatment modality delivered through a specified therapeutic method and relationship. Rehabilitation comprises person-centered interventions intended to optimize functioning and reduce disability in interaction with environment.
+sense health-prevention | health prevention
+sense health-intervention | health intervention
+sense treatment | treatment
+sense therapy | therapy
+sense rehabilitation | rehabilitation
+factor intended-recipient-or-population-target-setting-authority-and-time | intended recipient or population, target, setting, authority, and time
+factor prevention-framework-stage-risk-or-condition-basis-and-intended-prevented-outcome | prevention framework, stage, risk or condition basis, and intended prevented outcome
+factor intervention-components-mechanism-delivery-agent-intensity-dose-duration-and-fidelity | intervention components, mechanism, delivery agent, intensity, dose, duration, and fidelity
+factor treatment-indication-goal-alternatives-contraindications-burdens-and-monitoring | treatment indication, goal, alternatives, contraindications, burdens, and monitoring
+factor therapy-modality-therapeutic-relationship-protocol-session-or-course-and-adaptation | therapy modality, therapeutic relationship, protocol, session/course, and adaptation
+factor rehabilitation-goals-functioning-domains-environment-participation-assistive-supports-and-team | rehabilitation goals, functioning domains, environment, participation, assistive supports, and team
+factor efficacy-effectiveness-safety-adherence-access-outcome-and-attribution | efficacy, effectiveness, safety, adherence, access, outcome, and attribution
+factor evidence-consent-uncertainty-version-provenance-and-no-advice-boundary | evidence, consent, uncertainty, version, provenance, and no-advice boundary
 end-entry
 entry privacy-confidentiality-secrecy-anonymity-disclosure | Privacy, Confidentiality, Secrecy, Anonymity, and Disclosure | governance | candidate | tables/entries/privacy-confidentiality-secrecy-anonymity-disclosure.md | Privacy concerns whether person-related collection, use, inference, linkage, retention, disclosure, and transfer are appropriate in a stated context. Confidentiality preserves authorized restrictions on access or disclosure. Secrecy intentionally withholds information from a specified audience. Anonymity concerns whether a person can avoid identification within a relevant set; pseudonymity uses a substitute identifier while retaining bounded continuity. Disclosure is the act of making information available to a recipient or audience.
 sense privacy | privacy

@@ -20,8 +20,8 @@ Lexicon admission manifests. The 2026-08-21 candidate admission adds 37 entry
 records at candidate maturity and 20 noncanonical pointer labels. The domain
 admission adds another 10 candidate-maturity entry records and no pointer
 labels. Neither admission adds a relation. The resulting reference contains
-119 entries, 773 senses, 1,314 factors, and 100 specialized views; assurance
-binds its 119 entries, 100 views, and 11 relations with 230 exact records.
+124 entries, 799 senses, 1,354 factors, and 100 specialized views; assurance
+binds its 124 entries, 100 views, and 11 relations with 235 exact records.
 
 The immutable admission inputs are:
 

@@ -1,0 +1,14 @@
+{
+  "contract": "lexicon-roadmap-wave-4-admissions-v1",
+  "date": "2026-08-21",
+  "maturity": "candidate",
+  "admission_review": "signals/roles/check/lexicon-roadmap-wave-4-content-admission-roles-check-2026-08-21.md",
+  "literature_review": "signals/discover/literature/lexicon-wave-4-health-disability-care-literature-2026-08-21.md",
+  "entries": [
+    { "id": "health-disease-disorder-condition-well-being", "domain": "science" },
+    { "id": "function-impairment-activity-limitation-disability-participation", "domain": "science" },
+    { "id": "prevention-intervention-treatment-therapy-rehabilitation", "domain": "science" },
+    { "id": "care-health-service-provider-recipient-pathway-continuity", "domain": "science" },
+    { "id": "clinical-outcome-response-recovery-remission-quality-of-life", "domain": "science" }
+  ]
+}

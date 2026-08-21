@@ -84,11 +84,11 @@ for (const admission of admissions.entries) {
   }
 }
 
-assert.equal((reference.match(/^entry /gm) || []).length, 119);
-assert.equal((reference.match(/^sense /gm) || []).length, 773);
-assert.equal((reference.match(/^factor /gm) || []).length, 1314);
+assert.equal((reference.match(/^entry /gm) || []).length, 124);
+assert.equal((reference.match(/^sense /gm) || []).length, 799);
+assert.equal((reference.match(/^factor /gm) || []).length, 1354);
 assert.equal((reference.match(/^view /gm) || []).length, 100);
-assert.equal((assurance.match(/^review entry:/gm) || []).length, 119);
+assert.equal((assurance.match(/^review entry:/gm) || []).length, 124);
 
 const pointerAdmissions = JSON.parse(
   read("reference/lexicon-pointer-admissions-v2.json"),
@@ -98,7 +98,7 @@ const pointerRegistry = read(
   "volumes/01-structure-quantity-choice/lexicon-pointer-registry-v2.lexicon",
 );
 assert.equal((pointerRegistry.match(/^pointer /gm) || []).length, 270);
-const site = path.join(root, "target", "proof-set-sim-72");
+const site = path.join(root, "target", "proof-set-sim-73");
 const siteManifest = JSON.parse(fs.readFileSync(path.join(site, "manifest.json")));
 assert.equal(siteManifest.site_checks.pointer_entry_pages, 270);
 for (const pointer of pointerAdmissions.pointers) {
@@ -116,5 +116,5 @@ for (const pointer of pointerAdmissions.pointers) {
 }
 
 console.log(
-  `OK admissions=37 entries=119 senses=773 factors=1314 views=100 pointers=270 reference=${sha256(reference)}`,
+  `OK admissions=37 entries=124 senses=799 factors=1354 views=100 pointers=270 reference=${sha256(reference)}`,
 );

@@ -20,6 +20,7 @@ pre-authoring hold.
 - [Wave 3 plan](WAVE-3-FORMAL-REASONING-PLAN.md)
 - [Wave 3 result](WAVE-3-FORMAL-REASONING-RESULT.md)
 - [Wave 4 plan](WAVE-4-HEALTH-DISABILITY-CARE-PLAN.md)
+- [Wave 4 result](WAVE-4-HEALTH-DISABILITY-CARE-RESULT.md)
 - Final reconciliation result: pending
 
 ## Boundary
