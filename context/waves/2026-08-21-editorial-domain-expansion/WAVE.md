@@ -1,6 +1,6 @@
 # Editorial and Domain Expansion
 
-Status: active
+Status: complete
 
 ## Decision
 
@@ -13,9 +13,9 @@ than treating the former targets as current inventory.
 
 - [Plan](LEXICON-EDITORIAL-DOMAIN-EXPANSION-PLAN.md)
 - [Plan role review](../../../signals/roles/check/lexicon-editorial-domain-expansion-plan-roles-check-2026-08-21.md)
-- Literature review: pending
-- Result: pending
-- Result role review: pending
+- [Literature review](../../../signals/discover/literature/lexicon-domain-anchor-expansion-literature-2026-08-21.md)
+- [Result](LEXICON-EDITORIAL-DOMAIN-EXPANSION-RESULT.md)
+- [Result role review](../../../signals/roles/check/lexicon-editorial-domain-expansion-result-roles-check-2026-08-21.md)
 
 ## Boundary
 

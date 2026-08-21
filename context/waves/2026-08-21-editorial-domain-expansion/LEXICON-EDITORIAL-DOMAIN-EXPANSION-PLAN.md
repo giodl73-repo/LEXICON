@@ -1,6 +1,6 @@
 # Lexicon Editorial and Domain Expansion Plan
 
-Status: active
+Status: complete
 
 ## Reader problem
 
