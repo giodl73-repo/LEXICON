@@ -82,7 +82,8 @@ labels their kinds; ranking does not change authority.
 | `sim-31` | frozen two-book front-door simulation |
 | `sim-67` | repaired 54-Table Lexicon-native book projection |
 | `sim-68` | 91-Table candidate canonical merge projection |
-| `sim-69` | current 101-Table editorial and domain expansion projection |
+| `sim-69` | 101-Table editorial and domain expansion projection |
+| `sim-70` | current 107-Table social and normative foundations projection |
 
 ## Claim boundary
 

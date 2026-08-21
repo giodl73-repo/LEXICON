@@ -30,11 +30,11 @@ The active wave is
 completed wave is
 `context/waves/2026-08-21-editorial-domain-expansion/WAVE.md`.
 
-The clean-source `sim-69` PDF is the current internally validated book
-projection: 101 canonical Tables, 270 pointer-index records, 432 pages, and no
-detected collision or out-of-bounds pages. It is worthy of controlled external
-reader testing, not public R5 release. See
-`context/waves/2026-08-21-editorial-domain-expansion/LEXICON-EDITORIAL-DOMAIN-EXPANSION-RESULT.md`.
+`sim-70` is the current internally validated working book projection: 107
+canonical Tables, 270 pointer-index records, 452 pages, and no detected
+collision or out-of-bounds pages. A clean-source verification follows the Wave
+1 commit. It is worthy of controlled external reader testing, not public R5
+release. See `context/waves/2026-08-21-funded-domain-gap-roadmap/WAVE-1-SOCIAL-NORMATIVE-RESULT.md`.
 
 The repaired `sim-67` PDF is a clean-source, internally validated book
 projection with full-width canonical Tables, a subordinate pointer index,
@@ -49,17 +49,18 @@ merge admits those families as canonical entries at candidate maturity. This
 does not establish reader demand or domain outcomes.
 
 The current machine-readable owner is
-`reference/lexicon-reference-v4.lexicon`: 101 entries, 680 senses, 1,170 factors,
+`reference/lexicon-reference-v4.lexicon`: 107 entries, 711 senses, 1,218 factors,
 and 100 views. Its eleven relations are
-`reference/lexicon-relations-v2.lexicon`; its 212 exact review bindings are
+`reference/lexicon-relations-v2.lexicon`; its 218 exact review bindings are
 `reference/lexicon-assurance-v4.lexicon`. Eleven current Composition Query
 fixtures use `.lexicon-query`, and the current 270-label pointer registry
 uses `.lexicon`.
 
-`sim-69` is the current Lexicon-native projection. It renders the 101 canonical
+`sim-70` is the current Lexicon-native projection. It renders the 107 canonical
 Tables, 100 specialized views, and 270 noncanonical pointer records while
 using only Lexicon-native active contracts, `LEXICON_` browser globals, and
-`data-lexicon-handoff`. `sim-68` remains the 91-Table candidate-merge
+`data-lexicon-handoff`. `sim-69` remains the 101-Table editorial-domain
+projection, `sim-68` remains the 91-Table candidate-merge
 projection, `sim-67` remains the repaired 54-Table book projection, and
 `sim-66` remains the frozen
 Formarium-native projection and `sim-65` the earlier public-identity feedback
@@ -1316,7 +1317,7 @@ cargo run --quiet -- packet-check artifacts\factor-v1
 cargo run --quiet -- reference-check reference\lexicon-reference-v4.lexicon .
 cargo run --quiet -- reference-sidecar-check reference\lexicon-reference-v4.lexicon reference\lexicon-relations-v2.lexicon reference\lexicon-assurance-v4.lexicon .
 node tools\build_lexicon_contracts.js --check
-.\tools\render_proof_set.ps1 -Edition sim-69
+.\tools\render_proof_set.ps1 -Edition sim-70
 node tools\check_lexicon_candidate_admissions.js
 node tools\check_lexicon_domain_admissions.js
 node tools\check_lexicon_canonical.js

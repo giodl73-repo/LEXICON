@@ -1,7 +1,7 @@
 lexicon-composition-query-v2
 query risk-characterizes-alternative-consequence
 problem Which consequence basis must be aligned before using a risk consequence in an alternative outcome?
-source cf27e85ee209aab2d96279cf7772975608f7cb5dbe35850ebd8ba908f7913002 | c4fdc129701bf4bee822754672d6dd11361c9507beb42f7942346bee4b92d27a
+source a5ca421211993efeccabb09f7eaec59d92c141d33ba0dbab6e75af5db38cd2fd | c4fdc129701bf4bee822754672d6dd11361c9507beb42f7942346bee4b92d27a
 context synthetic-intervention-choice | affected-entity=bounded-service-team,reference-frame=decision-horizon
 policy direction=forward,follow=evaluative-required,stop=stable-identity
 budget depth=1,edges=1,nodes=3,work=9

@@ -210,25 +210,42 @@ function promotedEntryRecord(admission) {
   ].join("\n");
 }
 
-const admissionManifest = JSON.parse(
-  read("reference/lexicon-candidate-admissions-v1.json"),
-);
+const admissionIndex = JSON.parse(read("reference/lexicon-admission-index-v1.json"));
 if (
-  admissionManifest.contract !== "lexicon-candidate-admissions-v1" ||
-  admissionManifest.entries.length !== 37
+  admissionIndex.contract !== "lexicon-admission-index-v1" ||
+  !Array.isArray(admissionIndex.manifests) ||
+  admissionIndex.manifests.length < 2 ||
+  new Set(admissionIndex.manifests).size !== admissionIndex.manifests.length
 ) {
-  throw new Error("invalid Lexicon candidate admission manifest");
+  throw new Error("invalid Lexicon admission index");
 }
-const domainAdmissionManifest = JSON.parse(
-  read("reference/lexicon-domain-admissions-v1.json"),
-);
-if (
-  domainAdmissionManifest.contract !== "lexicon-domain-admissions-v1" ||
-  domainAdmissionManifest.entries.length !== 10
-) {
-  throw new Error("invalid Lexicon domain admission manifest");
-}
-const allAdmissionManifests = [admissionManifest, domainAdmissionManifest];
+const allAdmissionManifests = admissionIndex.manifests.map((relative) => {
+  const manifest = JSON.parse(read(relative));
+  if (
+    !/^lexicon-(?:candidate|domain|roadmap-wave-[0-9]+)-admissions-v[0-9]+$/.test(
+      manifest.contract,
+    ) ||
+    !/^\d{4}-\d{2}-\d{2}$/.test(manifest.date) ||
+    manifest.maturity !== "candidate" ||
+    typeof manifest.admission_review !== "string" ||
+    (manifest.literature_review !== undefined &&
+      typeof manifest.literature_review !== "string") ||
+    !Array.isArray(manifest.entries) ||
+    manifest.entries.length === 0
+  ) {
+    throw new Error(`invalid Lexicon admission manifest: ${relative}`);
+  }
+  if (!fs.existsSync(path.join(root, manifest.admission_review))) {
+    throw new Error(`missing admission review: ${manifest.admission_review}`);
+  }
+  if (
+    manifest.literature_review &&
+    !fs.existsSync(path.join(root, manifest.literature_review))
+  ) {
+    throw new Error(`missing literature review: ${manifest.literature_review}`);
+  }
+  return manifest;
+});
 const allAdmissions = allAdmissionManifests.flatMap((manifest) =>
   manifest.entries.map((entry) => ({ ...entry, manifest })),
 );

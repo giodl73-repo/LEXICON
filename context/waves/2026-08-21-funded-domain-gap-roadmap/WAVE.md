@@ -13,7 +13,8 @@ pre-authoring hold.
 
 - [Roadmap](LEXICON-FUNDED-DOMAIN-GAP-ROADMAP.md)
 - [Roadmap role review](../../../signals/roles/check/lexicon-funded-domain-gap-roadmap-roles-check-2026-08-21.md)
-- Execution results: pending by batch
+- [Wave 1 plan](WAVE-1-SOCIAL-NORMATIVE-PLAN.md)
+- [Wave 1 result](WAVE-1-SOCIAL-NORMATIVE-RESULT.md)
 - Final reconciliation result: pending
 
 ## Boundary

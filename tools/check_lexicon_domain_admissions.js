@@ -62,20 +62,20 @@ for (const entry of manifest.entries) {
 }
 
 assert.equal(admittedSenses, 56);
-assert.equal((reference.match(/^entry /gm) || []).length, 101);
-assert.equal((reference.match(/^sense /gm) || []).length, 680);
-assert.equal((reference.match(/^factor /gm) || []).length, 1170);
+assert.equal((reference.match(/^entry /gm) || []).length, 107);
+assert.equal((reference.match(/^sense /gm) || []).length, 711);
+assert.equal((reference.match(/^factor /gm) || []).length, 1218);
 assert.equal((reference.match(/^view /gm) || []).length, 100);
-assert.equal((assurance.match(/^review /gm) || []).length, 212);
+assert.equal((assurance.match(/^review /gm) || []).length, 218);
 
 const siteManifest = JSON.parse(
-  read("target/proof-set-sim-69/manifest.json"),
+  read("target/proof-set-sim-70/manifest.json"),
 );
-assert.equal(siteManifest.selection_checks.canonical_entries, 101);
-assert.equal(siteManifest.site_checks.dictionary_book_print_canonical_tables, 101);
+assert.equal(siteManifest.selection_checks.canonical_entries, 107);
+assert.equal(siteManifest.site_checks.dictionary_book_print_canonical_tables, 107);
 assert.equal(siteManifest.site_checks.pointer_entry_pages, 270);
 assert.equal(siteManifest.site_checks.missing_local_targets, 0);
 
 console.log(
-  `OK domain_admissions=10 senses=56 entries=101 total_senses=680 factors=1170 views=100 assurance=212`,
+  `OK domain_admissions=10 senses=56 entries=107 total_senses=711 factors=1218 views=100 assurance=218`,
 );

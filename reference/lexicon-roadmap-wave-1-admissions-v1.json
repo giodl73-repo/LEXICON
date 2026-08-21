@@ -1,0 +1,15 @@
+{
+  "contract": "lexicon-roadmap-wave-1-admissions-v1",
+  "date": "2026-08-21",
+  "maturity": "candidate",
+  "admission_review": "signals/roles/check/lexicon-roadmap-wave-1-content-admission-roles-check-2026-08-21.md",
+  "literature_review": "signals/discover/literature/lexicon-wave-1-social-normative-foundations-literature-2026-08-21.md",
+  "entries": [
+    { "id": "person-individual-social-actor-group-community-society", "domain": "social" },
+    { "id": "norm-convention-custom-practice-tradition", "domain": "social" },
+    { "id": "good-benefit-welfare-harm-flourishing", "domain": "reference" },
+    { "id": "equality-equity-fairness-justice-desert", "domain": "governance" },
+    { "id": "responsibility-answerability-blame-liability-excuse", "domain": "governance" },
+    { "id": "cooperation-solidarity-reciprocity-conflict-reconciliation", "domain": "social" }
+  ]
+}

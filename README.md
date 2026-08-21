@@ -79,8 +79,8 @@ The full contract is recorded in
 
 The canonical machine-readable reference contains:
 
-- **101 entries**;
-- **680 senses**;
+- **107 entries**;
+- **711 senses**;
 - **1,170 factors**;
 - **100 specialized views**;
 - **11 reviewed cross-entry relations**.
@@ -153,18 +153,19 @@ Useful validation commands:
 node tools\check_candidate_entries.js
 node tools\check_lexicon_candidate_admissions.js
 node tools\check_lexicon_domain_admissions.js
+node tools\check_lexicon_roadmap_admissions.js
 node tools\build_lexicon_contracts.js --check
 node tools\check_lexicon_canonical.js
-.\tools\render_proof_set.ps1 -Edition sim-69
-.\tools\render_book_proof_pdf.ps1 -Edition sim-69
+.\tools\render_proof_set.ps1 -Edition sim-70
+.\tools\render_book_proof_pdf.ps1 -Edition sim-70
 ```
 
 For a release-candidate proof, require a clean source tree and then verify the
 PDF metadata, embedded fonts, searchable text, source binding, and page layout:
 
 ```powershell
-.\tools\render_book_proof_pdf.ps1 -Edition sim-69 -RequireCleanSource
-.\tools\check_book_proof_pdf.ps1 -Edition sim-69 -RequireCleanSource
+.\tools\render_book_proof_pdf.ps1 -Edition sim-70 -RequireCleanSource
+.\tools\check_book_proof_pdf.ps1 -Edition sim-70 -RequireCleanSource
 ```
 
 ## Origins

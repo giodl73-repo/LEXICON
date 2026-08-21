@@ -1,7 +1,7 @@
 lexicon-composition-query-v2
 query decision-bridge-five-relation-closure
 problem Which evidence, causal, consequence, value, and constraint concepts must remain joined and unresolved when evaluating an intervention choice?
-source cf27e85ee209aab2d96279cf7772975608f7cb5dbe35850ebd8ba908f7913002 | c4fdc129701bf4bee822754672d6dd11361c9507beb42f7942346bee4b92d27a
+source a5ca421211993efeccabb09f7eaec59d92c141d33ba0dbab6e75af5db38cd2fd | c4fdc129701bf4bee822754672d6dd11361c9507beb42f7942346bee4b92d27a
 context synthetic-intervention-choice | authority=choice-owner,reference-frame=decision-horizon
 policy direction=forward,follow=evaluative-required,stop=stable-identity
 budget depth=1,edges=5,nodes=10,work=35

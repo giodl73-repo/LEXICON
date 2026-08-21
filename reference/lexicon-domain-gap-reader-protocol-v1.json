@@ -1,0 +1,17 @@
+{
+  "contract": "lexicon-domain-gap-reader-protocol-v1",
+  "date": "2026-08-21",
+  "status": "frozen-round-one-recruitment-pending",
+  "source": "volumes/01-structure-quantity-choice/LEXICON-DOMAIN-GAP-READER-PROTOCOL.md",
+  "baseline_edition": "sim-69",
+  "participant_target_min": 8,
+  "participant_target_max": 12,
+  "task_count": 18,
+  "task_timeout_seconds": 300,
+  "round_one_gap_min_participants": 3,
+  "round_one_gap_min_fraction": 0.30,
+  "round_two_owner_success_fraction": 0.80,
+  "round_two_time_seconds": 180,
+  "round_two_median_confidence": 4,
+  "results": "pending-external-participants"
+}
