@@ -5,7 +5,7 @@ Status: complete; fixed-point pass
 ## Result
 
 The `sim-67` book proof is repaired and reproducibly bound to clean source
-commit `8510683e2a1b419911544cfd68448ad215308c52`. The print projection now gives
+commit `fadc0ca1671efdd2ba3db87945cf55f8b7319a5c`. The print projection now gives
 the 54 canonical Tables a full-width body and places the 250 navigation
 pointers in a separate two-column index. It includes proof status, use
 guidance, edition inventory, running furniture, page numbers, provenance, and
@@ -14,9 +14,9 @@ a colophon.
 The PDF is
 `target/proof-set-sim-67/Lexicon-book-proof-sim-67.pdf`:
 
-- 235 pages and 7,702,925 bytes;
+- 235 pages and 7,702,938 bytes;
 - SHA-256
-  `3de66ee8ff84dfc064aef78a65e340df1a3474858e6be94cf9d2f09491b1de60`;
+  `b55ba1329d92986001bd8e8fbe0d0fef3ce3254fd71f336587121661689cad5f`;
 - rendered by Chrome `151.0.7922.172` from a clean workspace;
 - 15 embedded fonts with Unicode mappings and 818,144 extracted characters;
 - zero detected text-collision pages and zero out-of-bounds text pages.
