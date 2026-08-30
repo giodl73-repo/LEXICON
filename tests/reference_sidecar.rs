@@ -110,7 +110,7 @@ fn assurance_detects_a_stale_source_digest() {
     let text = fs::read_to_string("reference/formarium-assurance-v3.formarium")
         .unwrap()
         .replacen(
-            "07646556467096218227ebb6d6a6c40a78659d8aeffe8a877842345811c7ed1e",
+            "d81b73ec7a87b7ea98bf93e73efa13653e66d90b2718f20f5f41759e9bbf14ee",
             "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
             1,
         );

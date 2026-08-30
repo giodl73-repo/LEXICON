@@ -116,6 +116,14 @@ Read `CONTEXT.md`, `PRODUCT_PLAN.md`, `ROADMAP.md`, and
 `context/waves/PHASES.md`. Work is organized into small waves and pulses with
 explicit validation.
 
+## PITFALL doctrine
+
+Formarium's reusable reference-doctrine memory is indexed at
+[`.pitfall/PITFALL.md`](.pitfall/PITFALL.md). It keeps authority splits,
+over-generalized factorizations, synthetic-evidence overclaims, rename custody,
+software displacement, and public-name/local-path confusion visible before
+publication, research, or Workbench claims expand.
+
 ## Reference specifications
 
 - [Factor Table Entry Format V0](specs/FACTOR-TABLE-ENTRY.md)
