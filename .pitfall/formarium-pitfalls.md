@@ -102,7 +102,7 @@ before claims broaden.
 
 ## FRM-PF-06: Public Name And Local Path Split Confuses Onboarding
 
-**Status:** OPEN
+**Status:** MITIGATED
 
 **Pattern:** A user follows Formarium/LEXICON-facing docs while the local checkout
 and some historical artifacts still use `factorium`, then edits the wrong file,
@@ -122,5 +122,8 @@ safe edit path together before any quickstart, simulation, or customer preview
 claim.
 
 **Evidence:** `AGENTS.md`, `CONTEXT.md`, `README.md`,
-`context/waves/2026-08-19-formarium-canonical/WAVE.md`, and
-`context/waves/2026-08-13-factorium-vision/PROOF-SET-INTERNAL-FIXED-POINT-AUDIT.md`.
+`docs/IDENTITY-AND-CHECKOUT.md`, `docs/pitfall-boundaries.v1.json`,
+`context/waves/2026-08-19-formarium-canonical/WAVE.md`,
+`context/waves/2026-08-19-formarium-canonical/FORMARIUM-PITFALL-DOCTRINE-RESULT.md`,
+`context/waves/2026-08-13-factorium-vision/PROOF-SET-INTERNAL-FIXED-POINT-AUDIT.md`,
+and `tests/check-identity-boundary.ps1`.

@@ -53,3 +53,9 @@ artifact, and a closure condition.
 4. Stakeholders review practical lookup, implementability, and consumption.
 
 A fixed point requires no unresolved critical or major actionable finding.
+
+## PITFALL Gates
+
+| Gate | Required roles | Blocks |
+|---|---|---|
+| LEXICON/Formarium onboarding identity | Product Owner, Reference Architecture Editor, Reference Lexicographer, Schema Implementer, Benchmark Consumer, Research Integrity & Provenance, Evidence & Claims Editor | Onboarding, quickstarts, simulations, customer previews, or portfolio handoffs that mention only one of public repo `LEXICON`, active product `Formarium`, local checkout `repos/knowledge-systems/factorium`, or frozen historical `Factorium` imports before asking a user to edit, validate, or cite the repo. |

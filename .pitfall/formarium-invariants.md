@@ -87,3 +87,22 @@ when identities, links, or admitted relations drift.
 `reference/formarium-relations-v1.formarium`,
 `reference/formarium-assurance-v3.formarium`, and the README validation
 commands.
+
+## FRM-I-06: Public Name, Product Name, Local Path, And Historical Imports Stay Separate
+
+**Status:** MITIGATED
+
+**Claim:** Public repository references use `LEXICON`; active product and
+contract references use Formarium; the local `factorium` checkout is a
+historical path; frozen Factorium artifacts remain historical imports only.
+
+**Why it matters:** A contributor can otherwise edit the wrong artifact, cite
+an obsolete identity, or treat a frozen import as the current product surface.
+
+**Enforcement:** Onboarding, AGENTS routing, README identity notes, the boundary
+manifest, role gate, and retained identity-boundary test keep the four naming
+surfaces visible together.
+
+**Evidence:** `AGENTS.md`, `README.md`, `docs/IDENTITY-AND-CHECKOUT.md`,
+`docs/pitfall-boundaries.v1.json`, `.roles/ROLE.md`, and
+`tests/check-identity-boundary.ps1`.

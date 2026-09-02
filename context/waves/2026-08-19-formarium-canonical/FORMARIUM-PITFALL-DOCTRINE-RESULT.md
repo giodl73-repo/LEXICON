@@ -24,10 +24,12 @@ imports.
   while active contracts use Formarium names.
 - `FRM-PF-05` is mitigated: software, Compose, search, renderers, and Workbench
   remain auxiliary to the books and Factor Tables.
-- `FRM-PF-06` remains open: the public Formarium/LEXICON identity and local
-  `factorium` checkout path can still confuse onboarding unless each new pass
-  states the active public name, local path, historical imports, and safe edit
-  surface together.
+- `FRM-PF-06` is mitigated: `docs/IDENTITY-AND-CHECKOUT.md`, README,
+  AGENTS, the role gate, and the retained identity-boundary test now state the
+  public repo `LEXICON`, active product `Formarium`, local checkout
+  `repos/knowledge-systems/factorium`, and frozen historical `Factorium`
+  imports together before onboarding, simulation, preview, or portfolio
+  handoff work.
 - PITFALL validation exposed stale source-digest bindings across 42 current
   entries and views. The first failing artifact was
   `entry:amount-concentration-composition`, whose source currently hashes to
@@ -44,9 +46,12 @@ factorization, evidence, controls, leakage, and method discipline; Editorial
 roles hold claims, numeracy, lookup, architecture, and taxonomy boundaries;
 Assurance roles hold provenance, mappings, equations, domains, and
 cross-paradigm loss; Stakeholders hold implementation, benchmark consumption,
-reader value, and product cost. No new role is required by this doctrine pass,
-but `FRM-PF-06` should be cited during onboarding and portfolio reports until
-the public-name/local-path split disappears from normal work.
+reader value, and product cost. No new role is required by this doctrine pass.
+The new PITFALL gate in `.roles/ROLE.md` requires Product Owner, Reference
+Architecture Editor, Reference Lexicographer, Schema Implementer, Benchmark
+Consumer, Research Integrity & Provenance, and Evidence & Claims Editor review
+before onboarding or portfolio handoffs can omit the four-surface identity
+boundary.
 
 ## Tracker integration
 

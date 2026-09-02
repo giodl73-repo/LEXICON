@@ -1,0 +1,33 @@
+{
+  "schema": "pitfall-boundaries.v1",
+  "repo": "LEXICON",
+  "product": "Formarium",
+  "local_path": "repos/knowledge-systems/factorium",
+  "updated": "2026-09-02",
+  "boundaries": [
+    {
+      "id": "FRM-PB-01",
+      "pitfalls": ["FRM-PF-06"],
+      "name": "public-name-local-path-and-historical-imports-stay-explicit",
+      "rule": "Public repo references use LEXICON, active product and current contracts use Formarium, the local checkout may still be repos/knowledge-systems/factorium, and frozen Factorium artifacts remain historical imports only. Onboarding, simulation, preview, and portfolio handoff docs must present those four surfaces together before asking a user to edit, validate, or cite this repo.",
+      "required_reviewers": [
+        "Product Owner",
+        "Reference Architecture Editor",
+        "Reference Lexicographer",
+        "Schema Implementer",
+        "Benchmark Consumer",
+        "Research Integrity & Provenance",
+        "Evidence & Claims Editor"
+      ],
+      "required_evidence": [
+        "AGENTS.md",
+        "CONTEXT.md",
+        "README.md",
+        "docs/IDENTITY-AND-CHECKOUT.md",
+        "context/waves/2026-08-19-formarium-canonical/WAVE.md",
+        "context/waves/2026-08-19-formarium-canonical/FORMARIUM-PITFALL-DOCTRINE-RESULT.md",
+        "tests/check-identity-boundary.ps1"
+      ]
+    }
+  ]
+}

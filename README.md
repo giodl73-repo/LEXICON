@@ -36,6 +36,16 @@ The project, publication, CLI, and current machine-readable contract all use
 `formarium-*` identifiers. Frozen `.factorium` artifacts remain readable only
 as historical imports; they are not templates or defaults for new work.
 
+Public GitHub and portfolio references use `LEXICON`. This local checkout may
+still live at `repos/knowledge-systems/factorium`; that path is historical and
+is not the active product name. New onboarding, quickstarts, simulations,
+customer previews, and portfolio handoffs should state the public repo
+`LEXICON`, active product `Formarium`, local checkout path, and frozen
+historical `Factorium` imports together before asking a user to edit, validate,
+or cite the repo. Do not infer active schema, command, publication, or
+customer-preview targets from the local folder name. See
+[`docs/IDENTITY-AND-CHECKOUT.md`](docs/IDENTITY-AND-CHECKOUT.md).
+
 Read the [grand vision](VISION.md), the active [roadmap](ROADMAP.md), the draft
 [Factor Table entry format](specs/FACTOR-TABLE-ENTRY.md), the specialized
 [Formula Table format](specs/FORMULA-TABLE-ENTRY.md), and the first

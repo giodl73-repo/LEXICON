@@ -7,6 +7,13 @@ Use Formarium names for all new files, schemas, commands, and publication
 surfaces. Treat `.factorium` artifacts and `factorium-*` headers as frozen
 historical imports only.
 
+Public GitHub and portfolio references use `LEXICON`, active product work uses
+`Formarium`, historical `Factorium` imports remain frozen, and the local
+checkout may still be `repos/knowledge-systems/factorium`. Read
+`docs/IDENTITY-AND-CHECKOUT.md` before onboarding, quickstarts, simulations,
+customer previews, or portfolio handoffs so the public repo name, active
+product name, local path, and historical imports are stated together.
+
 Read `.roles/ROLE.md` before changing Factor Tables, reference architecture,
 schemas, corpora, splits, benchmarks, claims, or release artifacts. Record plan
 and result reviews in the active wave.
