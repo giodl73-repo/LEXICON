@@ -16,7 +16,7 @@ jobs:
     name: Current native content and custody gates
     runs-on: ubuntu-latest
     env:
-      CARGO_TARGET_DIR: ${{ runner.temp }}/lexicon-content-target
+      CARGO_TARGET_DIR: ${{ github.workspace }}/target/cargo-content
     steps:
       - uses: actions/checkout@v4
         with:
@@ -44,7 +44,7 @@ jobs:
     name: Inspector source, browser and pinned-book qualification
     runs-on: ubuntu-latest
     env:
-      CARGO_TARGET_DIR: ${{ runner.temp }}/lexicon-inspector-target
+      CARGO_TARGET_DIR: ${{ github.workspace }}/target/cargo-inspector
     steps:
       - uses: actions/checkout@v4
         with:
