@@ -36,6 +36,13 @@ changed('bad-relation-header',lambda r:r.update(relations='invalid-relations\nen
 changed('crlf-document',lambda r:r.update(reference=r['reference'].replace('\n','\r\n')))
 changed('bom-document',lambda r:r.update(reference='\ufeff'+r['reference']))
 changed('missing-final-lf',lambda r:r.update(reference=r['reference'].rstrip('\n')))
+for field,original in [('depth',1),('edges',1),('nodes',2),('work',9)]:
+ for name,number in [('u32-max','4294967295'),('over-u32','4294967296')]:
+  changed('query-budget-'+field+'-'+name,lambda r,f=field,o=original,n=number:r.update(query=r['query'].replace(f'{f}={o}',f'{f}={n}')))
+for name,number in [('u32-max','4294967295'),('over-u32','4294967296')]:
+ changed('query-node-'+name,lambda r,n=number:r.update(query=r['query'].replace(' | required | 0 | seed |',' | required | '+n+' | seed |')))
+for name,number in [('u64-max','18446744073709551615'),('u64-overflow','18446744073709551616'),('plus-over-u32','+4294967296'),('zero-over-u32','04294967296')]:
+ changed('query-budget-'+name,lambda r,n=number:r.update(query=r['query'].replace('work=9','work='+n)))
 changed('unknown-field',lambda r:r.update(extra=True))
 changed('over-document',lambda r:r.update(reference=' '*524289))
 changed('unicode-markup',lambda r:r.update(reference=r['reference'].replace('Sample Entry','Café 🌿 <img src=x onerror=alert(1)>')),base='reference-only')

@@ -7,6 +7,11 @@
 [Read the vision](VISION.md) ·
 [Contribute](CONTRIBUTING.md)
 
+[Inspect supplied interchange in Rust/WebAssembly](https://giodl73-repo.github.io/LEXICON/inspector/)
+— an auxiliary preview for reference, relations and declared query text, with
+original/canonical downloads. It checks grammar and declared source hashes;
+Markdown, review assurance, semantic truth and book-release approval remain separate.
+
 Lexicon is an encyclopedia of ways to decompose problems.
 
 A dictionary helps you choose a meaning. A thesaurus helps you choose a word.

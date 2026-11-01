@@ -11,6 +11,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 OUTPUT = ROOT / "target/pages/LEXICON/inspector"
+OWNER = ROOT / "target/inspector-stage-owned.txt"
 BUDGET = 5_000_000
 RUNTIME = ["index.html", "app.js", "style.css", "worker.js", "examples.json",
            "runtime-build.json", "pkg/lexicon_inspector.js", "pkg/lexicon_inspector_bg.wasm"]
@@ -50,13 +51,16 @@ def reset_output():
         if ancestor.exists() and linked(ancestor):
             raise ValueError("Linked staging path refused")
     if OUTPUT.exists():
-        if (OUTPUT / ".stage-owned").read_text() != "lexicon-inspector-stage-v1\n":
+        marker = OWNER if OWNER.exists() else OUTPUT / ".stage-owned"
+        if marker.is_symlink() or marker.read_text() != "lexicon-inspector-stage-v1\n":
             raise ValueError("Refusing to replace an unowned output")
         if any(linked(path) for path in OUTPUT.rglob("*")):
             raise ValueError("Linked staging output refused")
         shutil.rmtree(OUTPUT)
     OUTPUT.mkdir(parents=True)
-    (OUTPUT / ".stage-owned").write_text("lexicon-inspector-stage-v1\n", encoding="ascii")
+    if OWNER.is_symlink():
+        raise ValueError("Linked private owner marker refused")
+    OWNER.write_text("lexicon-inspector-stage-v1\n", encoding="ascii")
 
 
 def put(name, data):

@@ -121,7 +121,8 @@ for (const [key, label, optional] of [
     cancelRead(doc); discardResult();
     doc.text = doc.text.replace(/^\uFEFF/, '').replace(/\r\n?/g, '\n');
     doc.area.value = doc.text; metadata(doc);
-    status.textContent = 'LF editing copy created and BOM removed. Original retained; Rust must validate again.';
+    status.textContent = 'LF editing copy created and BOM removed. ' +
+      (doc.original ? 'Imported original retained. ' : '') + 'Rust must validate again.';
   }));
   field.append(fileLabel, file, textLabel, doc.area, doc.meta, actions);
   $('documents').append(field); documents.set(key, doc); metadata(doc);
@@ -215,6 +216,10 @@ try {
   if (!response.ok) throw new Error('examples unavailable');
   examples = await response.json();
   document.querySelectorAll('[data-example]').forEach(element => { element.disabled = false; });
+  if (revision === 0 && [...documents.values()].every(doc => doc.text === '')) {
+    setDocument(documents.get('reference'), examples['reference-only'].reference, undefined);
+    if (ready) status.textContent = 'Authored reference example loaded. Inspect it or supply your own documents.';
+  }
 } catch {
   error.textContent = 'Authored examples could not load. Your own documents can still be inspected.';
 } finally { clearTimeout(sampleTimer); }

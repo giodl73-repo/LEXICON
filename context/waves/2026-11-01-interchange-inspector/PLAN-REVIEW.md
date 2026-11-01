@@ -64,3 +64,34 @@ the live edition and exact source; do not render current candidate content into
 an older edition label. Build and verify pinned sim-67 separately, then add only
 the inspector and narrowly scoped navigation. Retain the current-corpus strict
 readiness failure. Source/legal qualification alone does not approve deployment.
+
+## Preview release gate classification
+
+The role review in GATE-OWNERSHIP.md applies the original auxiliary scope:
+existing native parser/source APIs over supplied strings and an unchanged public
+book. It does not require or grant R5/current-content acceptance. The full native
+and custody audit stays nonzero in PRs and on main. The preview requires its own
+45 native checks, strict lint, all browser/source/legal checks, protected Git
+blobs, every preserved book byte and exact downloaded/live artifact custody.
+
+AI-simulated Product Owner and Reference Architecture Editor approve book-first
+README discovery with no changes to any of the 528 existing book files. Research
+Integrity & Provenance approves separate current-content and preview results and
+requires a post-download complete-file verifier; uploads must include CI receipts
+while public staging excludes hidden files that the Pages tar action omits.
+Evidence & Claims Editor requires retaining Windows 84/3 versus Linux 82/5 and
+unproven cross-directory binary identity. No failed content/control test is
+changed, ignored or converted to approval. Default-branch deployment may proceed
+only after the scoped preview gates pass; live verification remains mandatory.
+
+## Portable numeric finding
+
+Schema Implementer review found query budgets/node depths parsed as usize in the
+unchanged core, producing different admission on 64-bit hosts and wasm32. The
+adapter now rejects values over u32::MAX on every host with a labelled
+LEXICON-PORTABLE diagnostic and disclosed limits. No value is repaired or
+truncated and no native grammar is changed. Seven consumer tests and 62
+native/WASM cases cover each budget at/over the boundary, node depth, u64 maximum
+and overflow, plus/leading-zero forms. Evidence & Claims Editor requires the
+adapter boundary in UI, reports and build docs. Native core/founding/reference
+Git blobs remain protected. Fresh hosted and live verification is required.

@@ -66,7 +66,6 @@ def main():
         dest = OUTPUT / name
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_bytes(data)
-    (OUTPUT / ".nojekyll").write_bytes(b"")
     receipt = {"schema": "lexicon.published-book-custody.v1", "edition": baseline["edition"],
                "source_commit": baseline["source_commit"], "files_matched": len(files),
                "baseline_sha256": sha(baseline_bytes), "manifest_sha256": sha(manifest_bytes),

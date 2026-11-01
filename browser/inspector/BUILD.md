@@ -5,8 +5,8 @@ portfolio checkout is `repos/knowledge-systems/factorium`; frozen Formarium and
 Factorium imports retain their original paths and contracts.
 
 The portable source ZIP contains all first-party source and compile-time
-includes needed to build the inspector and run its six consumer tests and
-48-response browser qualification corpus. It is not the full reference
+includes needed to build the inspector and run its seven consumer tests and
+62-response browser qualification corpus. It is not the full reference
 repository. Use the UI's exact-commit full-repository archive for the books,
 Tables, historical artifacts and complete native corpus/workspace tests.
 The included current reference is consumer test input, not a book release.
@@ -34,7 +34,7 @@ proof binds compile-time source/includes and generated artifact hashes; staging
 rejects changed source or artifacts until rebuilt.
 
 `python -B browser/inspector/verify-source.py` extracts the source ZIP outside
-Git and repeats all six consumer tests, 48 native/WASM responses and fourteen
+Git and repeats all seven consumer tests, 62 native/WASM responses and fourteen
 browser checks. It compares every original/rebuilt native request and response
 and records both WASM hashes. Cross-directory binary reproducibility remains
 unproven: compiler remapping removes literal local paths, but the WASM name and
@@ -76,3 +76,17 @@ book manifest currently identifies **sim-67** at source
 `0526d86ff5629abbda26affb9bf8666e7bee7088`; the failed newer workflow's sim-69
 target is not evidence of publication. Hosted delivery must preserve the live
 edition and separately qualify its source, render and navigation.
+
+
+The reusable inspector build runs 35 shared-library, three authored custody and
+seven consumer tests, strict lint, the fourteen browser checks and source-archive
+replay. It then verifies all 528 pinned published book files and the complete
+combined artifact. The Pages deployment job verifies that downloaded artifact
+again against its exact source commit before upload. Public staging contains no
+hidden marker files; private build-owner markers remain outside the static tree.
+The repository README supplies book-first discovery without modifying book files.
+
+Current native content/control failures continue in their own strict PR/main
+workflow. See the repository wave's GATE-OWNERSHIP.md for the distinction between
+an auxiliary preview and current-content/R5 approval. Complete source lives in
+the exact-commit repository archive linked from the UI.

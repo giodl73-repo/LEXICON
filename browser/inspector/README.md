@@ -44,8 +44,8 @@ retired readers/workers cannot overwrite newer inputs or results. Restart retain
 inputs. Current-input, original, exact request, native report and canonical
 downloads state which bytes they contain.
 
-Six native consumer tests, strict host/wasm Clippy and fourteen local Chromium
-checks pass, including 48 exact native/WASM responses, own inputs, imports and
+Seven native consumer tests, strict host/wasm Clippy and fourteen local Chromium
+checks pass, including 62 exact native/WASM responses, own inputs, imports and
 exports, byte bounds, deadlines/recovery, stale completions and mobile keyboard
 use. Static source/lockfiles, a portable build/test ZIP, exact-commit full-repo
 archive, WASM/bindings, build provenance, existing licenses and verbatim notices
@@ -55,4 +55,14 @@ See [BUILD.md](BUILD.md) for portable archive scope and rebuild commands.
 Hosted and publication qualification remain pending. The main
 native audit has 84 passing tests and three content/snapshot failures, retained
 as required-success gates. The strict custody audit remains nonzero/not-ready.
+The first hosted Linux audit adds two founding-control snapshot failures
+(82 pass, five fail): HRR-64 transfer reports 456/512 instead of the frozen
+452/512 Windows result, which also changes the dependent role-bakeoff digest.
+Those results are preserved without changing controls or frozen expectations.
 See the wave's integration and plan-review records; no gate is waived or hidden.
+
+The portable adapter labels a maximum of 4,294,967,295 for query budgets and
+node depths on both native and WASM. The native grammar itself still uses
+pointer-sized integers. This guard admits the common wasm32 subset without
+silently changing supplied numbers; invalid syntax still belongs to the native
+parser. The original source remains unchanged.

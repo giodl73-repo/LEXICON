@@ -19,6 +19,34 @@ struct Request {
     query: String,
 }
 
+// The unchanged query grammar uses usize. Admit the same numeric subset on
+// native hosts and wasm32 without changing, repairing or re-parsing its grammar.
+fn portable_query_numbers(text: &str) -> Result<(), String> {
+    fn check(value: &str) -> Result<(), String> {
+        if value
+            .parse::<u64>()
+            .is_ok_and(|number| number > u64::from(u32::MAX))
+        {
+            return Err("LEXICON-PORTABLE query budgets and node depths must be at most 4294967295; this is an adapter admission limit".into());
+        }
+        Ok(())
+    }
+    for line in text.lines() {
+        if let Some(budget) = line.strip_prefix("budget ") {
+            for pair in budget.split(',') {
+                if let Some((_, value)) = pair.split_once('=') {
+                    check(value)?;
+                }
+            }
+        } else if let Some(node) = line.strip_prefix("node ") {
+            if let Some(depth) = node.split(" | ").nth(2) {
+                check(depth)?;
+            }
+        }
+    }
+    Ok(())
+}
+
 fn evaluate(text: &str) -> Result<Value, String> {
     if text.len() > MAX_REQUEST {
         return Err("LEXICON-INPUT envelope exceeds 2 MiB UTF-8".into());
@@ -46,6 +74,7 @@ fn evaluate(text: &str) -> Result<Value, String> {
         let relations = relation
             .as_ref()
             .ok_or("LEXICON-QUERY a relation document is required for query source checks")?;
+        portable_query_numbers(&req.query)?;
         let parsed =
             CompositionQuery::parse(&req.query).map_err(|e| format!("LEXICON-QUERY {e}"))?;
         parsed
@@ -61,6 +90,7 @@ fn evaluate(text: &str) -> Result<Value, String> {
         "relations":relation.as_ref().map(|r|json!({"sha256":r.sha256(),"canonical_text":r.canonical_text(),"count":r.relations().len()})),
         "query":query.as_ref().map(|q|json!({"id":q.id(),"declared_state":q.state(),"sha256":q.sha256(),"canonical_text":q.canonical_text(),"node_count":q.node_count(),"edge_count":q.edge_count(),"source_checks":"passed"})),
         "checks":{"reference_grammar":"passed","relation_grammar":if relation.is_some(){"passed"}else{"not_requested"},"query_grammar_and_declared_sources":if query.is_some(){"passed"}else{"not_requested"},"workspace_files_markdown_and_review_assurance":"not_performed"},
+        "adapter_limits":{"document_utf8_bytes":524288,"envelope_utf8_bytes":MAX_REQUEST,"query_budget_and_depth_max":u32::MAX,"scope":"portable adapter admission; not a change to native grammar"},
         "boundary":"Supplied interchange structure and declared query source checks only. No filesystem lookup, Markdown source verification, assurance approval, automatic graph construction, semantic truth, reader-outcome evidence, or R4/R5/R6 readiness. Paths are inert text. Books and canonical Tables remain authoritative."}),
     )
 }
@@ -159,5 +189,38 @@ mod tests {
             r["checks"]["workspace_files_markdown_and_review_assurance"],
             "not_performed"
         );
+    }
+
+    #[test]
+    fn query_numbers_have_the_same_portable_admission_on_all_hosts() {
+        for (field, original) in [("depth", 1), ("edges", 1), ("nodes", 2), ("work", 9)] {
+            for (number, admitted) in [("4294967295", true), ("4294967296", false)] {
+                let mut req = request("declared-query");
+                req["query"] = json!(req["query"]
+                    .as_str()
+                    .unwrap()
+                    .replace(&format!("{field}={original}"), &format!("{field}={number}")));
+                let r = result(req);
+                assert_eq!(r["ok"], admitted, "{field}={number}: {r}");
+                if !admitted {
+                    assert!(r["diagnostic"]["message"]
+                        .as_str()
+                        .unwrap()
+                        .starts_with("LEXICON-PORTABLE"));
+                }
+            }
+        }
+        for value in [
+            "4294967296",
+            "+4294967296",
+            "04294967296",
+            "18446744073709551615",
+        ] {
+            assert!(portable_query_numbers(&format!(
+                "node entry:sample | required | {value} | seed | none\n"
+            ))
+            .is_err());
+        }
+        assert!(portable_query_numbers("budget work=not-a-number\n").is_ok());
     }
 }

@@ -60,8 +60,8 @@ def main():
     wasm = "pkg/lexicon_inspector_bg.wasm"
     receipt = {"schema": "lexicon.portable-source-rebuild.v1", "source_commit": source["commit"],
                "source_dirty": source["dirty"], "source_zip_sha256": sha((SITE / "source.zip").read_bytes()),
-               "source_files": len(source["source_files"]), "consumer_tests_passed": 6,
-               "browser_tests_passed": results["stats"]["expected"], "native_wasm_responses": 48,
+               "source_files": len(source["source_files"]), "consumer_tests_passed": 7,
+               "browser_tests_passed": results["stats"]["expected"],
                "original_wasm_sha256": sha((SITE / wasm).read_bytes()),
                "rebuilt_wasm_sha256": sha((rebuilt / wasm).read_bytes()),
                "scope": "Portable source archive rebuild; not current book or hosted publication approval"}
@@ -71,6 +71,7 @@ def main():
     if original_cases != rebuilt_cases:
         raise ValueError("Portable source rebuild changed native inputs or canonical responses")
     receipt["all_native_inputs_and_responses_identical"] = True
+    receipt["native_wasm_responses"] = len(original_cases)
     receipt["cross_directory_binary_reproducibility"] = "proven" if receipt["wasm_byte_identical"] else "not_established"
     (cache / "source-rebuild.json").write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
     shutil.copyfile(extracted / "browser/inspector/.cache/browser-results.json", cache / "source-rebuild-browser.json")
