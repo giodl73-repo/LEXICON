@@ -1,0 +1,47 @@
+# Pulse 03: source/legal delivery and published-edition custody
+
+Status: implementation and local qualification; hosted verification pending.
+
+The public helper is staged through a runtime allowlist under the actual
+`/LEXICON/inspector/` prefix. Native-case and scratch-request payloads stay
+outside that tree. Separate static routes expose Rust source/locks, a complete
+portable build/test ZIP, an exact-commit full-repository archive link, compiled
+WASM/bindings, build provenance, file hashes and existing software/content
+scopes. Twenty-seven resolved Cargo dependencies, including build-time macros,
+retain verbatim notices. Thirteen pinned Rust 1.95.0 library notice files retain
+their original byte hashes and licenses. The complete helper is below 5 MB.
+
+The source ZIP is extracted outside Git to repeat all six consumer tests,
+fourteen browser checks and 48 exact native/WASM responses. This detects missing
+compile-time includes and test inputs. Compiler workspace/Cargo-home paths are
+remapped to remove literal local paths. Independent directory builds still
+produced different code/name sections despite identical data sections and
+passing behavior. Cross-directory binary identity is therefore **not proven**;
+both hashes and failed comparisons are retained. No Cargo disambiguator override
+or validator change is introduced to force equality. Qualification compares
+every original/rebuilt native input/response and later requires the exact
+hosted artifact to match deployment, rather than claiming cross-host identity.
+
+Live-manifest inspection corrected the publication baseline: **sim-67**, source
+`0526d86ff5629abbda26affb9bf8666e7bee7088`, Pandoc 3.9. The current failed
+workflow's sim-69 target was never evidence that sim-69 was live. The captured
+manifest's legacy `site_file_count: 270` is also not a full inventory: its
+aggregate binds 523 files, and the actual tree has 528. Proof/search/index hashes
+and independently fetched book/dictionary pages complete the baseline.
+
+The clean pinned source is rendered separately. With Pandoc 3.9 and LF output,
+all 523 aggregate files, the proof/search/index and dictionary match live
+hashes. The Windows book page differs by whitespace and is correctly rejected
+by the strict 528-file stager. No mismatching book files are copied. A new
+read-only PR workflow will repeat the checks on Linux, preserve evidence and
+run the current native/custody gates independently. It has no deployment token,
+Pages environment or deployment step. Existing book/workspace review failures
+are not waived by auxiliary success.
+
+AI-simulated result review: Research Integrity & Provenance passes explicit
+source scopes, upstream notices and retained negative comparisons; Evidence &
+Claims Editor passes the corrected live-edition/census boundary and unproven
+cross-directory identity. Reference Architecture Editor keeps the hosted
+528-file book comparison and any future navigation/manifest overlay open.
+Schema Implementer keeps clean-source, hosted source-ZIP replay and live
+artifact proof open. Current book review custody remains red.

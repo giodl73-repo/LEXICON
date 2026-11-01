@@ -17,7 +17,7 @@ npm --prefix browser/inspector run test:pages
 python -B browser/inspector/serve-check.py
 ```
 
-Open http://127.0.0.1:4188/. The draft provides separate reference, optional
+Open http://127.0.0.1:4188/LEXICON/inspector/. The draft provides separate reference, optional
 relations and optional query editors, UTF-8 file imports and two small authored
 examples. Rust receives a JSON envelope containing the three document strings.
 Each document is capped at 512 KiB UTF-8; the envelope at 2 MiB. Native canonical
@@ -44,10 +44,15 @@ retired readers/workers cannot overwrite newer inputs or results. Restart retain
 inputs. Current-input, original, exact request, native report and canonical
 downloads state which bytes they contain.
 
-Six native consumer tests, strict host/wasm Clippy and eleven local Chromium
+Six native consumer tests, strict host/wasm Clippy and fourteen local Chromium
 checks pass, including 48 exact native/WASM responses, own inputs, imports and
 exports, byte bounds, deadlines/recovery, stale completions and mobile keyboard
-use. Deployment and complete source/legal custody remain pending. The main
+use. Static source/lockfiles, a portable build/test ZIP, exact-commit full-repo
+archive, WASM/bindings, build provenance, existing licenses and verbatim notices
+are accessible independently of the worker. The complete helper is under its
+5 MB budget; private native-case/scratch files are excluded from staging.
+See [BUILD.md](BUILD.md) for portable archive scope and rebuild commands.
+Hosted and publication qualification remain pending. The main
 native audit has 84 passing tests and three content/snapshot failures, retained
 as required-success gates. The strict custody audit remains nonzero/not-ready.
 See the wave's integration and plan-review records; no gate is waived or hidden.

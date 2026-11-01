@@ -33,7 +33,18 @@
     <div id="exports" class="actions" aria-label="Validated result downloads"></div>
     <details><summary>Full native JSON report</summary><pre id="report"></pre></details>
   </section>
-  <footer><p>Local qualification build. Full source/legal delivery and hosted qualification are pending. <a href="https://github.com/giodl73-repo/LEXICON">LEXICON source</a>.</p></footer>
+  <footer>
+    <h2>Source, build and downloads</h2>
+    <p>These routes work independently of the Rust worker. Compiled WebAssembly is separate from editable Rust source.</p>
+    <ul>
+      <li><a href="./source/index.html">Read Rust core, adapter and lockfiles</a></li>
+      <li><a href="./source.zip" download>Portable inspector source ZIP</a> · <a href="https://github.com/giodl73-repo/LEXICON/archive/{{SOURCE_COMMIT}}.zip">Complete repository ZIP at this commit</a></li>
+      <li><a href="./pkg/lexicon_inspector_bg.wasm" download>Compiled WebAssembly</a> · <a href="./pkg/lexicon_inspector.js" download>JavaScript bindings</a></li>
+      <li><a href="./BUILD.md">Reproducible build instructions</a> · <a href="./provenance.json">Build provenance</a> · <a href="./inventory.json">File hashes</a></li>
+      <li><a href="./LICENSE">Software license scope</a> · <a href="./LICENSE-CONTENT.md">Content license scope</a> · <a href="./licenses/index.html">Dependency and Rust notices</a></li>
+    </ul>
+    <p>Draft in qualification. Source delivery does not confer book review, semantic or publication approval. <a href="https://github.com/giodl73-repo/LEXICON">LEXICON repository</a>.</p>
+  </footer>
 </main>
 </body>
 </html>

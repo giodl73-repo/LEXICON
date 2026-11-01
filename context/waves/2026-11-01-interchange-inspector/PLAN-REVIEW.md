@@ -41,3 +41,26 @@ Research Integrity & Provenance: require current-input/request/native-report and
 canonical exports, revision fencing, bounded file/startup/compute waits, and
 fault-injection plus mobile/keyboard proof before UI acceptance. Full source,
 legal and hosted publication custody remain separate open gates.
+
+## Source and publication custody plan
+
+AI-simulated Research Integrity & Provenance and Schema Implementer review:
+pass for an explicit runtime staging allowlist, independently accessible Rust
+source/lockfiles, reproducible portable-source ZIP and exact-commit full-repo
+archive link. The source subset must include every compile-time include and
+the current reference used only by the consumer tests; it must rebuild and
+replay the complete consumer qualification. Label its scope rather than calling
+it the full repository. Enforce a 5 MB helper budget including notices/source.
+Collect the actual WASM Cargo dependency closure and preserve upstream notices
+verbatim, including pinned Rust 1.95.0 library notices. Keep existing mixed
+software/content grants and historical grants intact. Release staging must
+reject dirty source; preview staging must say it is dirty.
+
+Reference Architecture Editor and Evidence & Claims Editor: finding, major,
+publication. The live manifest was fetched on 2026-11-01 and proves **sim-67**,
+not sim-69, at `0526d86ff5629abbda26affb9bf8666e7bee7088`. Current failed
+workflow targets sim-69, which is not evidence that it was published. Preserve
+the live edition and exact source; do not render current candidate content into
+an older edition label. Build and verify pinned sim-67 separately, then add only
+the inspector and narrowly scoped navigation. Retain the current-corpus strict
+readiness failure. Source/legal qualification alone does not approve deployment.

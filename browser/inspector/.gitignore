@@ -3,3 +3,5 @@
 /.cache/
 /test-results/
 /.proof/
+__pycache__/
+*.pyc

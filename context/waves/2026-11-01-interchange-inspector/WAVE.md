@@ -24,3 +24,7 @@ Factorium/Formarium imports remain unchanged. New helper contracts use Lexicon.
 See [pulse 01](pulses/pulse-01.md), [plan review](PLAN-REVIEW.md), and
 [integration and baseline audit](INTEGRATION.md). The funded domain roadmap
 continues separately with its external-reader boundary intact.
+
+[Pulse 02](pulses/pulse-02.md) qualifies local multi-document interaction.
+[Pulse 03](pulses/pulse-03.md) adds source/legal staging and exact published-book
+preservation checks; its hosted qualification and deployment gates remain open.

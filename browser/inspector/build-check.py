@@ -2,6 +2,14 @@
 import hashlib,json,os,shutil,subprocess
 from pathlib import Path
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1]
+# Stable compiler paths make source-ZIP and checkout builds comparable without
+# changing any supplied interchange, parser logic or approval metadata.
+flags=os.environ.get('CARGO_ENCODED_RUSTFLAGS')
+flags=flags.split('\x1f') if flags is not None else os.environ.get('RUSTFLAGS','').split()
+for original,replacement in [(ROOT,'/lexicon'),(Path(os.environ.get('CARGO_HOME',Path.home()/'.cargo')),'/cargo')]:
+ for spelling in sorted({str(original.resolve()),original.resolve().as_posix()}):
+  flags.extend(['--remap-path-prefix',spelling+'='+replacement])
+os.environ['CARGO_ENCODED_RUSTFLAGS']='\x1f'.join(flags)
 def capture(*args):return subprocess.check_output(args,cwd=ROOT).decode('utf-8').strip()
 def run(*args):subprocess.run(args,cwd=ROOT,check=True)
 if capture('wasm-bindgen','--version')!='wasm-bindgen 0.2.127':raise ValueError('Use bindings 0.2.127')
@@ -38,4 +46,9 @@ sample=json.dumps(examples['declared-query'],indent=2);case('crlf-envelope',samp
 for source in (HERE/'web').iterdir():
  if source.is_file():shutil.copyfile(source,out/source.name)
 (out/'examples.json').write_text(json.dumps(examples,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='')
+inputs=sorted({*list((ROOT/'src').rglob('*')),*list((ROOT/'fixtures/schemas').rglob('*')),*list((HERE/'src').rglob('*')),*[ROOT/name for name in ['Cargo.toml','Cargo.lock','LICENSE','tools/verify_packet.py','tools/verify_role_packet.py','reference/lexicon-reference-v4.lexicon','browser/inspector/Cargo.toml','browser/inspector/Cargo.lock']]})
+pins=lambda p:{'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}
+runtime={'schema':'lexicon.inspector-runtime-build.v1','rust':capture('rustc','+1.95.0','--version'),'bindings':capture('wasm-bindgen','--version'),'path_remapping':{'workspace':'/lexicon','cargo_home':'/cargo'},'compile_inputs':{p.relative_to(ROOT).as_posix():pins(p) for p in inputs if p.is_file()},'runtime_files':{name:pins(out/name) for name in ['pkg/lexicon_inspector.js','pkg/lexicon_inspector_bg.wasm','examples.json']},'native_wasm_cases':len(cases)}
+(out/'runtime-build.json').write_text(json.dumps(runtime,indent=2)+'\n',encoding='utf-8',newline='')
+run('python','-B','browser/inspector/stage.py','--preview')
 wasm=out/'pkg/lexicon_inspector_bg.wasm';print(json.dumps({'draft_only':True,'cases':len(cases),'wasm_bytes':wasm.stat().st_size,'wasm_sha256':hashlib.sha256(wasm.read_bytes()).hexdigest()}))

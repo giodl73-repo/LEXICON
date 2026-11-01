@@ -1,0 +1,1687 @@
+{
+  "artifact": "proof-set-sim-67",
+  "edition": "sim-67",
+  "status": "internally validated projection; not reader-outcome evidence",
+  "source_commit": "0526d86ff5629abbda26affb9bf8666e7bee7088",
+  "workspace_dirty_at_render": false,
+  "pandoc": "pandoc 3.9",
+  "source_count": 227,
+  "excluded_moderator_files": [
+    "USABILITY-PROTOCOL.md",
+    "READER-PACKET.md",
+    "EVALUATOR-RUBRIC.md",
+    "OBSERVATIONS.md",
+    "FACTOR-FORGE-SIM-RUBRIC.md"
+  ],
+  "sources": [
+    {
+      "path": "volumes/01-structure-quantity-choice/PROOF-SET-SIM-QUICKSTART.md",
+      "sha256": "5eb02e80cabc25acb13a688f7298cb43c57a6ab121d622820cd2a5eea7ecc046"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/VOLUME.md",
+      "sha256": "2d2e08a2fb11d7036cd13767ce85b161d34fe781bc08b3d53ce0a61983f6a527"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/FACTOR-FORGE-SIM-SUPPLEMENT.md",
+      "sha256": "18f8f728be4e9b65444272c31423fde74ba8ba4404838acd5758c85ae1a9bb2a"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/GPC-09-V1-SIM-SUPPLEMENT.md",
+      "sha256": "e5be2222f80daa532dc3062bf631077ad629a67e0f941b1ef7d38ccdc486ac65"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/GPC-09-V1-SIM-TASKS.md",
+      "sha256": "fdcf2872761fa1e7a319e5c7b009010e02e08220ab408b6723915dbca444633a"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/V2-ROLLING-SIM-SUPPLEMENT.md",
+      "sha256": "99be63d5f5b3a6c01bb10e19c3e1759aad8e400d6ba6393aeeccc4b1c89982e7"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/V2-ROLLING-SIM-TASKS.md",
+      "sha256": "ba95bc9ee645f03e67529c53201e9c471c2c4a782ade23036f5a05763091d54d"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/FACTOR-FORGE-SIM-TASKS.md",
+      "sha256": "38fb742806c71355519361e17bbb9921db0a4480f4bb51812d0af903d0eb45e6"
+    },
+    {
+      "path": "tables/context-profiles/newtonian-mechanics.md",
+      "sha256": "4b8122413e05b8c69537e19ad2114d9ca89bfaf953b33d932a4142ea367883c6"
+    },
+    {
+      "path": "tables/context-profiles/governed-organization.md",
+      "sha256": "2c1651e35a91c0892fa55f63f69df15a178768eb748273a64e92bedee49bc569"
+    },
+    {
+      "path": "tables/context-profiles/versioned-software-system.md",
+      "sha256": "37158161ec7a43c0cc04506e6bf03c15c757292732503a61d15614e0bd9b83bd"
+    },
+    {
+      "path": "guides/system-dependency-composition-worksheet.md",
+      "sha256": "37e02aca6372c200a344f584b5591302b6f35d3fad1760a21920f19e55ab52d8"
+    },
+    {
+      "path": "guides/latency-evidence-composition-worksheet.md",
+      "sha256": "c053e0d25f394cc85ff27475c19903bd9ba212b37c1c23124120788dae54fd20"
+    },
+    {
+      "path": "guides/alert-feedback-composition-worksheet.md",
+      "sha256": "d7ce620ccceaab2ec8a35cb690ec8c2afc015fb7c94f687309b0ecd05dd5f1fc"
+    },
+    {
+      "path": "guides/dependency-exclusion-conflict-worksheet.md",
+      "sha256": "8fea383dbd037df1d251918c02663e9ca858100c562742b969e6defd91fb201c"
+    },
+    {
+      "path": "guides/delegated-compliance-frontier-worksheet.md",
+      "sha256": "cf6c3378d5c1340105b83c1dd6d764e9908669aba300f3e305f35309ff4197c1"
+    },
+    {
+      "path": "guides/evidence-informed-intervention-choice.md",
+      "sha256": "2b5724150b02e326aac14499ae4ad915f7c766b6f8691bfc2da4ea3a1cbfdf34"
+    },
+    {
+      "path": "specs/DECISION-EVIDENCE-READING-ROUTE.md",
+      "sha256": "0ae3d39998fbd13f9f3517c00f86e42b855bcda6deef066638a87c9271404ebf"
+    },
+    {
+      "path": "specs/DECISION-BRIDGE-COMBINED-CLOSURE.md",
+      "sha256": "1c9a56118216859a8767c33fc04c9b2186a1c9b422d4bc93e0ca5fcae62964a3"
+    },
+    {
+      "path": "specs/COMPOSITION-LAB.md",
+      "sha256": "6e524bf7ed983b6cfdc186ce96cab066e12d5c7aac686e38725394ea5ffb84f4"
+    },
+    {
+      "path": "specs/COMPOSITION-READING-ROUTE.md",
+      "sha256": "04e6deecd331f1bf4223a11498e5ab8a4b1485c6173d30e221112680a5c90b85"
+    },
+    {
+      "path": "specs/COMPOSITION-FACTOR-FOCUS.md",
+      "sha256": "a2e452be93cc3f6ced66db09c2de27bfd60208569bd36531e73add9243aaacfe"
+    },
+    {
+      "path": "specs/COMPOSITION-PALETTE.md",
+      "sha256": "b9d73982b2fbb3edc80df1948f68cc12b6b863e1c146edbdee2f011d99bd4d09"
+    },
+    {
+      "path": "specs/COMPOSITION-READER-VIEWS.md",
+      "sha256": "01058c0ed343ed7ca7167b988acfa615699f8d54b21ae64741f834036673ae56"
+    },
+    {
+      "path": "specs/COMPOSITION-CLOSURE-MAP.md",
+      "sha256": "05a809caef94f57d8ce9add454d16824879107725d3e542f71d0f102bfc0eebe"
+    },
+    {
+      "path": "specs/COMPOSITION-AUTHORED-STARTERS.md",
+      "sha256": "ae94a2993a369dde18e7b3d14e3525908f80121a3a23ab9a71a9c493b789e267"
+    },
+    {
+      "path": "specs/COMPOSITION-QUERY-PLAN.md",
+      "sha256": "d3e730a37107b6b29cd04ed3bd12db41b4b0f7ccc78cfaea831a774eb16ea346"
+    },
+    {
+      "path": "specs/COMPOSITION-WORK-BUDGET.md",
+      "sha256": "2e0043b2e7c00a28900e3895d2d240131f0447a50020d5cffeb0d0f098d0cd6c"
+    },
+    {
+      "path": "specs/COMPOSITION-RESULT-RECONCILIATION.md",
+      "sha256": "c3402883782dc0e1824ebde87bb9679d69e08a486f68b2452b2169ed8a10330b"
+    },
+    {
+      "path": "specs/COMPOSITION-EXPLICIT-CONTINUATIONS.md",
+      "sha256": "e56ed41fbe2935210740dedcf817ec57a0161a507c28e503df68fcce0f8699d3"
+    },
+    {
+      "path": "specs/COMPOSITION-RERUN-COMPARISON.md",
+      "sha256": "33d9f48ef2eb602e5bb522f1fb513803ee50b534c59638568e9821571b7af790"
+    },
+    {
+      "path": "specs/COMPOSITION-GUIDE-SKELETON.md",
+      "sha256": "ca34ef785e6c55c57b0840d851d5e781983cb964bb9f83246c22ad967241613b"
+    },
+    {
+      "path": "specs/COMPOSITION-EVALUATION-RECORD.md",
+      "sha256": "68d08cb43480de6d32fc0e155d025697f28f916fc57082a15fb3fa0f8bc5bddc"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/BOOK-ONE-SIM-QUICKSTART.md",
+      "sha256": "9ad45dc4d575e137a2ee283d722b9b6376fac2be5d41d5950b927be08d7f1222"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/BOOK-ONE-SIM-TASKS.md",
+      "sha256": "bba48d476adfcd13d3e492b378b65f4f30ff903da032bf3bbb30629e187aefda"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/BOOK-ONE-PREVIEW-FEEDBACK-TEMPLATE.md",
+      "sha256": "2cb93120eebebe8d68e55e8b3dad6770e161854404f9c475241d7769cbd0e3ef"
+    },
+    {
+      "path": "tables/LEXICON-CATALOG.md",
+      "sha256": "bd3357b72b987d50e301e1a6dfa373f6ae13887f12bdd36ef0015de78669153d"
+    },
+    {
+      "path": "guides/INDEX.md",
+      "sha256": "5a74d85b19bd3f58f30a443188beb6727687c7770e9c6e4d2458f393816f3ef0"
+    },
+    {
+      "path": "VISION.md",
+      "sha256": "77387d0632f1cd1ff4261eaba350cc711914ae1c9e58ec9c8b2f59e168eb8ec7"
+    },
+    {
+      "path": "tables/foundations/REFERENCE-TABLE-FAMILIES.md",
+      "sha256": "e8fe16b7ec36defba513946adddee3312162df43ac9bb9300ed3094372250953"
+    },
+    {
+      "path": "tables/foundations/ROOT-TABLE.md",
+      "sha256": "93f8a25650c93e11f44ce3ea5308fcf5fb9fa7c51839ec11e5b18fba5a32bff1"
+    },
+    {
+      "path": "tables/foundations/FACTOR-ROLES.md",
+      "sha256": "cf69d64fe3a29f320cd6ec6ff9433c93501aff969b80bec2f82edeb9d9fe6e32"
+    },
+    {
+      "path": "tables/LEXICON-UNRESOLVED.md",
+      "sha256": "5314ffcd7e776724a882df2f92030329230778813ba207a3665bd9d63bb63a2e"
+    },
+    {
+      "path": "tables/roots/agency.md",
+      "sha256": "43349d554ab96000ed98e20741abf35ce007bbb1e767c86f0fe924f86b7afe6c"
+    },
+    {
+      "path": "tables/roots/boundary.md",
+      "sha256": "abb4940eeecb0e6afc26acb03ea79c1cc0df99f03b9027410e802e2ab1df4617"
+    },
+    {
+      "path": "tables/roots/constraint.md",
+      "sha256": "a6078af4e1bb29770637ec83d52412c881271a1f7c988b3c939525385728f370"
+    },
+    {
+      "path": "tables/roots/context.md",
+      "sha256": "1c414d6086fad99d3c067192e555af0c9aee7b76ecb4cef661e4b507b80e787d"
+    },
+    {
+      "path": "tables/roots/identity.md",
+      "sha256": "7b7a3e0b938124b9851e1e4583a5630f74ad5b874144ad059577ef27fcebf8ac"
+    },
+    {
+      "path": "tables/roots/measure.md",
+      "sha256": "77123bef1524d74f38487985ef30832c0ca7fa24f0dc9b9cbbf19cc7e99bc22e"
+    },
+    {
+      "path": "tables/roots/possibility.md",
+      "sha256": "48e52668fc4c8f9dd2bd86388d946d71202f011798e3fa93db14d2b0c83f0c51"
+    },
+    {
+      "path": "tables/roots/purpose.md",
+      "sha256": "4acb10337ca4ca141214362dbf668ee8e332c94c17a77632ee311956a0e8e93f"
+    },
+    {
+      "path": "tables/roots/relation.md",
+      "sha256": "45136bd0a1def40ee702dcc618083108215be0f075a2fd007b4fb5bb54dd5a34"
+    },
+    {
+      "path": "tables/roots/state.md",
+      "sha256": "d822f3e385c8fd750e2f50be6c97a7df0a5154c2c1d6d635db84bb050c2f05b5"
+    },
+    {
+      "path": "tables/roots/time.md",
+      "sha256": "0982c8c3ecf060e412824636ef90a504d2680e51a8f5d62c678455f512e83339"
+    },
+    {
+      "path": "tables/roots/transformation.md",
+      "sha256": "a317abf4eba0389a339dd1f5850b2ea742cb39cd8dbfae7b8703eed0fd98630c"
+    },
+    {
+      "path": "tables/roles/capability.md",
+      "sha256": "5e843c415e17ba6832b1232609e39cfb8de8d90c38ffa8801e5f3712231347c4"
+    },
+    {
+      "path": "tables/roles/component.md",
+      "sha256": "6f15e9e317759eba5398286a631d21c520e54dd0c0b7d35dc0e577de468f8307"
+    },
+    {
+      "path": "tables/roles/derived-view.md",
+      "sha256": "cdcbfd7ea99f9b4c1c45bd9e6c74edbb742faac5382199dc5200c961eea0d674"
+    },
+    {
+      "path": "tables/roles/pivot.md",
+      "sha256": "cd44f4c2504215992ba10d395ca5e8cf39484d2e492d7316f77d5758e724d944"
+    },
+    {
+      "path": "tables/roles/policy.md",
+      "sha256": "61dad310e12f338b3fbac50486d88710389de1876cb46d135d62b53ca64feb93"
+    },
+    {
+      "path": "tables/roles/variant.md",
+      "sha256": "8185479f0da8b0fe59fde70a5524304c8df5256096c9ce24b11753ec05058a0a"
+    },
+    {
+      "path": "tables/entries/identity-naming-classification-versioning.md",
+      "sha256": "96f27687018b0b1763c4c5b58e0f7d4487be7214b2bd46d41d40427db5373d23"
+    },
+    {
+      "path": "tables/entries/state-event-transition-process-lifecycle.md",
+      "sha256": "68bd7efe1421388284d19485a6d4ad4dfdf9239c3b720b64cecfd6b6671f8069"
+    },
+    {
+      "path": "tables/entries/policy-rule-constraint-decision-exception.md",
+      "sha256": "fa1aea8679606f5fa0a0ad16aec1d8f0af2916fe33aa68e87726fb65c98c80bd"
+    },
+    {
+      "path": "tables/entries/lexicon-entry-publication.md",
+      "sha256": "0d537fc45726d39ec7541a699a3556db4ec19fbdfac6f29226fb0f3e9f33acc4"
+    },
+    {
+      "path": "tables/entries/factorization-quality.md",
+      "sha256": "2e2412a548170c0538bf5a3a4d0851c171a1ea3644234b9230cca537cf5a43b1"
+    },
+    {
+      "path": "tables/entries/claim-evidence.md",
+      "sha256": "d81b73ec7a87b7ea98bf93e73efa13653e66d90b2718f20f5f41759e9bbf14ee"
+    },
+    {
+      "path": "tables/mappings/version-scheme-semantics.md",
+      "sha256": "672ab657de83d23976a8cc21ec5630db9206be381399f06839361eb808b0cfa1"
+    },
+    {
+      "path": "tables/transitions/generic-lifecycle.md",
+      "sha256": "cc9d9e226d4e19fbf8ef41d7a1918135d1804989a02a66d7f5a1b179a6e86f8a"
+    },
+    {
+      "path": "tables/decisions/policy-decision.md",
+      "sha256": "fb2b966b2464bac55c65ccdd5efc6c1d60a72832d91f1b22f328b86c58cf9471"
+    },
+    {
+      "path": "tables/constraints/policy-constraints.md",
+      "sha256": "39dd91d7c528bc1f026ca6ab09582be31ecab3797f05db05914861ea4c136a05"
+    },
+    {
+      "path": "tables/procedures/lexicon-entry-publication.md",
+      "sha256": "59b6719e3594a38568ee880a844ad5cfd8c07716b95d4f601993d4ff408c790f"
+    },
+    {
+      "path": "tables/diagnostics/factorization-failures.md",
+      "sha256": "b716862f440a77efe6ad356ee2dc03509fccd4f7c244f2a0917e4579f09a1071"
+    },
+    {
+      "path": "tables/scales/lexicon-editorial-maturity.md",
+      "sha256": "377cfb8e3fd2f1e25d536f0c64994b3429c32426e6744cb95de95e30d933c25f"
+    },
+    {
+      "path": "tables/evidence/founding-factor-evidence.md",
+      "sha256": "5035c9f0050dd84a69ea6a5109dddaa8144e7f74964f89bea10efb840eae6767"
+    },
+    {
+      "path": "tables/mappings/factor-role-mechanisms.md",
+      "sha256": "32f0dfddbcb9c6d7ca884a993a0b780ce670d9f7c0463cd75a06fd5535e3d015"
+    },
+    {
+      "path": "tables/entries/force.md",
+      "sha256": "47a88b2d8f955447024d15ca460e1c6c2d4497d9340c8b332701fe3f42568133"
+    },
+    {
+      "path": "tables/entries/geometric-measure.md",
+      "sha256": "2ee67950d20aca55eb31506c3319e6d499f6947a249c3d98da703d03bf9fc272"
+    },
+    {
+      "path": "tables/entries/motion-measure.md",
+      "sha256": "f6bd5e48f9d74d0ef90ab72cb0aea5fe764d6a67b6c010d144ea2ed36d627a79"
+    },
+    {
+      "path": "tables/entries/matter-load-measure.md",
+      "sha256": "7189c1ed6f82c7a2ae984cf17afe176d92f17b63c790e6ef0f975a068b4dba88"
+    },
+    {
+      "path": "tables/entries/work-energy-power.md",
+      "sha256": "6124aeba45614ee70142e5eaae9a8579ff786acd2259c21904ac3f58d46c837f"
+    },
+    {
+      "path": "tables/entries/comparative-quantity.md",
+      "sha256": "5074dbbe7b2d3d9ef40c2739fde634c022bf76d9e49cbf59a018d23ff3eff306"
+    },
+    {
+      "path": "tables/entries/probability-risk-uncertainty.md",
+      "sha256": "a0abba00e0223e313c59ee8b5d6aeb61f163c6ef896b36f857377fbf3b5eef34"
+    },
+    {
+      "path": "tables/entries/thermal-quantity.md",
+      "sha256": "1ca19f21dba0ddf3f05204b7970eacbab853fed3dd18e9d06beffb0cc30d3b2a"
+    },
+    {
+      "path": "tables/entries/amount-concentration-composition.md",
+      "sha256": "ab9ca3b109a4225ac80cbaf8141fcaa77b003f81aaff8129b060df8012b7c820"
+    },
+    {
+      "path": "tables/entries/periodic-wave-quantity.md",
+      "sha256": "4d384b3b2454cb405a2ba613834a6bda78219aa30430e898f042eba821c5212c"
+    },
+    {
+      "path": "tables/entries/electrical-quantity.md",
+      "sha256": "29a6c78f1ff2a1f999b5d913b241fa2dee96929929ebcc14446122835d240635"
+    },
+    {
+      "path": "tables/entries/physical-constant.md",
+      "sha256": "c57fecaea4fa3ec26f725519d33a7a9204c40940c53293e658e907347554bf8a"
+    },
+    {
+      "path": "tables/formulas/force.md",
+      "sha256": "c144d4e35a1cad1b8fa74720200a9de3c5ddfd4fdfc973727be7fd32fe4029c4"
+    },
+    {
+      "path": "tables/formulas/common-geometric-measures.md",
+      "sha256": "1dbed0d94062b1b25ffc9365d640c05da69a05a5127a64c96d042066701e951f"
+    },
+    {
+      "path": "tables/formulas/pythagorean-trigonometric-identity.md",
+      "sha256": "a6f5839085d7e7ccfe5178ae1b5c0a3756b200219c35c9e531064789e5f2b15a"
+    },
+    {
+      "path": "tables/formulas/kinematics-motion-measures.md",
+      "sha256": "733e24eee5be1c71d7ba62dace527a9f2a47eb3f1b92d6acfec201f0ae40676d"
+    },
+    {
+      "path": "tables/formulas/density.md",
+      "sha256": "40eaab57e61eace75f25aaa46ed8ea9b74d3e38ba496e57fdf994d0afd502706"
+    },
+    {
+      "path": "tables/formulas/matter-load-measures.md",
+      "sha256": "7722a7db77261097581973870fee15364b1b681e56baae02e71d9d4b6c9b318f"
+    },
+    {
+      "path": "tables/formulas/general-accounting-balance.md",
+      "sha256": "81239c90227164f87c97a4ddd6e3ea430aa36eb10d4a0e38471444980efd7470"
+    },
+    {
+      "path": "tables/formulas/mechanical-work-energy-power.md",
+      "sha256": "f06d0c6b80b9efbe1c060bdbbbc4b54650d6996babf46d752171ecc1c0bd5166"
+    },
+    {
+      "path": "tables/formulas/comparative-quantities.md",
+      "sha256": "c15d15d6d9ec3640074182f06bc9477d27e978c24f6c0292f6df28ce645ae4ef"
+    },
+    {
+      "path": "tables/formulas/arithmetic-mean.md",
+      "sha256": "5653d5017e1e8e582cda7748f023fa873d6cb869afcc53c1652c4ec640da9f97"
+    },
+    {
+      "path": "tables/formulas/probability-range.md",
+      "sha256": "b81c2f27738bcc50ed61322c4397799d62e1889218e0c0ae0f8a0fa6e5fe359b"
+    },
+    {
+      "path": "tables/formulas/probability-risk-uncertainty.md",
+      "sha256": "cf93eb9524ea8c6d2ecc4f575f556d65b65d9f0c1ad892087d2cb62834701d61"
+    },
+    {
+      "path": "tables/formulas/thermal-quantities.md",
+      "sha256": "b48f90609386bdfa9a23faba90e3605380fb6772db188d2fe20b1d54e3f889c6"
+    },
+    {
+      "path": "tables/mappings/temperature-scales.md",
+      "sha256": "56278ae55bd76b8f5b4e2b4cf39c462f36f1b2def56099badb50aee7a69021b5"
+    },
+    {
+      "path": "tables/formulas/amount-concentration-composition.md",
+      "sha256": "89f24d019f53bd42954745aa2addc11713022746f2aa238b1c695454fd71895f"
+    },
+    {
+      "path": "tables/formulas/periodic-wave-quantities.md",
+      "sha256": "e2fea16604bac5c6b52cb033b2c1a0abf7ed2552a58dc4b72874159c27fbf711"
+    },
+    {
+      "path": "tables/formulas/electrical-quantities.md",
+      "sha256": "b2d588cdcecda5f811980c5f463a3915fca1df331635e2af34e120d1fc1f983a"
+    },
+    {
+      "path": "tables/formulas/ohms-law.md",
+      "sha256": "c769f01ab822fec69f0cf04adb35821ec4da2d6663191f9c78d589d57fec154d"
+    },
+    {
+      "path": "tables/formulas/newtons-method.md",
+      "sha256": "f60320d18bc8cedf200f527da208b9beeff91194a7ae862f90adbc34e9ef7253"
+    },
+    {
+      "path": "tables/values/si-defining-constants.md",
+      "sha256": "943b548cb9a328bf99947d49616a9478edb410203cccf3468dbc8e335afe8f70"
+    },
+    {
+      "path": "tables/entries/information-data-signal-noise.md",
+      "sha256": "ae89685a2399cab91cfb518df382eda101f604f7e2ae6abbc38c61ce9fc222d6"
+    },
+    {
+      "path": "tables/formulas/information-signal-measures.md",
+      "sha256": "b004d6634ef4d8a2a12e12e4905719aff0639714ded87bd77bee90cfbb1836cc"
+    },
+    {
+      "path": "tables/entries/cost-price-value-return.md",
+      "sha256": "727f1f80f6ad9a091fed43ba6fc9af88f1468e19752600308c4856d51b5d0024"
+    },
+    {
+      "path": "tables/formulas/cost-value-return.md",
+      "sha256": "3b3b30f0bfda6be3ddff7467019f5c6a40a6d14e82379cbcb985174fd20d5483"
+    },
+    {
+      "path": "tables/composites/access-control-request.md",
+      "sha256": "ebf275235faa23829bc2660e31dcbb9b753e01d1c1ce8ca8f2398291038fc8db"
+    },
+    {
+      "path": "tables/primes/authentication-assurance.md",
+      "sha256": "cb97f2ae085367f3974bdfe1312a02ceb2bbfda73d975883c952bb79a1215bc5"
+    },
+    {
+      "path": "tables/primes/authorization-policy.md",
+      "sha256": "1ef8cd2d470978c913251e60215ba82cd08b8f9e46576f03b10ace3e0e89de9b"
+    },
+    {
+      "path": "tables/primes/enforcement-point.md",
+      "sha256": "ca85fe4b59c1de47092c0c879dcd0c66b7f64400189148009c6c8b0f57ae9377"
+    },
+    {
+      "path": "tables/primes/protected-object.md",
+      "sha256": "f2ec0ea26a554b634917bad95f5696e819736c9c0a3e63b712d070480e336e70"
+    },
+    {
+      "path": "tables/primes/request-context.md",
+      "sha256": "af3a5d982b0c28e8995089f50646be2bcacb4628384886ea3bcd82ddfff493a3"
+    },
+    {
+      "path": "tables/primes/requested-action.md",
+      "sha256": "928a71ddaf8c557ac3bf085f3dfdb0c5255d7176f33f0842e6cc845efc357658"
+    },
+    {
+      "path": "tables/primes/subject-identity.md",
+      "sha256": "ab5dbea972a0c14390b1e647b295c681b39bca44624b4a9cc01519c156160b58"
+    },
+    {
+      "path": "tables/primes/subject-object-relationship.md",
+      "sha256": "d4bcca320896dac4e5e7a250daff8147a47371c971823fab1d40fb5422cada0e"
+    },
+    {
+      "path": "guides/rust-access-control-evaluation.md",
+      "sha256": "fd648ac87c9b94908eb6b909a9c5ffe002907975c4e5e11c5e623300ef084223"
+    },
+    {
+      "path": "guides/aqueous-solution-amount-concentration.md",
+      "sha256": "4a8fbfae0e6188c330154879879a24bfbd2e86e1b4dfccd44796e261197e3bb5"
+    },
+    {
+      "path": "guides/bounded-question-composition-book-one.md",
+      "sha256": "407a64aedc0db959a23b969ccd6f08554379db62215566ad9006069ad083afde"
+    },
+    {
+      "path": "tables/entries/system-composition-dependency.md",
+      "sha256": "12b95dc1a30060188efd2ff28f4bb95bbdd24b439e2cec3037f844ab3c29aaca"
+    },
+    {
+      "path": "tables/constraints/system-composition-integrity.md",
+      "sha256": "c63df33dbc42eb6ff2ec00f4e8c7ecefdbc76c8fa32537e8c0c66b3e5b9e44f2"
+    },
+    {
+      "path": "tables/entries/organization-role-authority.md",
+      "sha256": "dbada3a7a14142338a9cd2675044266ca5b93ebe4c1907973b200fac8a990879"
+    },
+    {
+      "path": "tables/mappings/organizational-assignment-semantics.md",
+      "sha256": "1977e3470b9768703335d30f3f5187c03b5e3d339f120e55466653c790409dbf"
+    },
+    {
+      "path": "tables/entries/governance-obligation-compliance.md",
+      "sha256": "3179d581bcd9c2238cd9639e707d4fabaffe5cd812350896b934eb86e4eb4608"
+    },
+    {
+      "path": "tables/mappings/governance-compliance-mechanisms.md",
+      "sha256": "92bbdc0a4e4f1eeb7c67cdd066970bcac293b3d7aec26b84ac87ee870d952397"
+    },
+    {
+      "path": "tables/evidence/observation-inference-chain.md",
+      "sha256": "07da28b795295d0cfa80d62352101c37caf1d92f0039e78c77be8fd41f2fc2f8"
+    },
+    {
+      "path": "tables/entries/control-monitoring-response.md",
+      "sha256": "08a95e875c26df8df0b1299aa3e9b95a8b9f392030515ee1c9f58e97b871d157"
+    },
+    {
+      "path": "tables/diagnostics/control-response-failures.md",
+      "sha256": "cbd051efcb778031f372d66c4c8d884304cf520101f0fb1e4fa1b522e4ee2983"
+    },
+    {
+      "path": "tables/entries/software-type-value-function.md",
+      "sha256": "ed231b92c5554cbe19ca84d78b1e6e9c3f8376563742ea9e7da1ab5a8ff8a2f9"
+    },
+    {
+      "path": "tables/mappings/software-program-constructs.md",
+      "sha256": "bab6773bdeed5f72666bd1d588898a4c25d14de2495bdfa3775b098ce8d27cc5"
+    },
+    {
+      "path": "tables/entries/software-module-service-resource.md",
+      "sha256": "6b840934488e3eff3a629a4d6f50785a5f33bf6e0fb271d3e07c5d9192d7b67a"
+    },
+    {
+      "path": "tables/mappings/software-architecture-mechanisms.md",
+      "sha256": "141201292881a18a50071c4e65b79396f338cdd16693cecdd6636817a5473e93"
+    },
+    {
+      "path": "tables/entries/software-transaction-message-contract.md",
+      "sha256": "bcde5ccff9b4ab7740319b456d5fcf5afea887b633c5cda803948e80680aebc2"
+    },
+    {
+      "path": "tables/mappings/software-interaction-mechanisms.md",
+      "sha256": "0fef0bd9586abebc9dd6da5d2060baa7bb98f55f1067e666185839c84a4b8b78"
+    },
+    {
+      "path": "tables/entries/coordinated-work.md",
+      "sha256": "1065d54956bf47b6d790719c036f34fe2022ac92d469ff06202cfd8e4846366d"
+    },
+    {
+      "path": "tables/diagnostics/coordinated-work-failures.md",
+      "sha256": "abb30b9edfbf4ca2daa739c4a785a8fe75c4533f061483d3cec0b5232227246c"
+    },
+    {
+      "path": "tables/entries/causal-reasoning.md",
+      "sha256": "665a33d595e85644f1c4df9b7968617cf26a15fa41c46b448e38cb84540f0383"
+    },
+    {
+      "path": "tables/evidence/causal-claim-evidence.md",
+      "sha256": "d8154c9972f828cf58ddf6221ea1a5f658ef2a150dc826b94dd477736eb538da"
+    },
+    {
+      "path": "tables/entries/sampling-generalization.md",
+      "sha256": "47d957a6622ce4bc4780efc4ee7508571cd4332e4ccbe9ce095783a98ab9d4ac"
+    },
+    {
+      "path": "tables/diagnostics/sampling-generalization-failures.md",
+      "sha256": "6e41185bf45b3f393c8c8ec2ed5585669d498f232a7881fa8a97958f62c23b24"
+    },
+    {
+      "path": "tables/entries/measurement-quality.md",
+      "sha256": "6344ad77f80ace55cc6e720dd74665d9d4e64210d581a6bdac08ff05b204ca94"
+    },
+    {
+      "path": "tables/diagnostics/measurement-quality-failures.md",
+      "sha256": "af3e9c5684a183afd31fc47f6a27a62d9ec2f2efad969621999fa776707e313c"
+    },
+    {
+      "path": "tables/entries/statistical-summary-interval.md",
+      "sha256": "8f76dcb5d30275e100395f4f5c35efdfadffc16ddd8dbf8f342a7859ef45548c"
+    },
+    {
+      "path": "tables/diagnostics/statistical-summary-interval-failures.md",
+      "sha256": "f2aaf7b523d279fcfc1dfd200e9a439f837d86e682a94783193cb6fed42f6384"
+    },
+    {
+      "path": "tables/entries/mathematical-relation-solving.md",
+      "sha256": "1768e46fe7aea40e8e72357b3fb00ce17a3f70dc8afbc4fbc0b578987aac86c6"
+    },
+    {
+      "path": "tables/diagnostics/mathematical-relation-solving-failures.md",
+      "sha256": "e02fbcfbc0bc64ee9e11ff30c861fb06c9221ad753e054e9b4c74794c1fad265"
+    },
+    {
+      "path": "tables/entries/geometric-reference-structure.md",
+      "sha256": "8e50e6cb14401b89840c1b01440c8c716634d8a04f7eb9978b90225d1e6e3994"
+    },
+    {
+      "path": "tables/diagnostics/geometric-reference-structure-failures.md",
+      "sha256": "f09073ae109d42999335ea29de7d655f67b6c3b465e98146017a97dac3756ff6"
+    },
+    {
+      "path": "tables/entries/quantity-value-unit-conversion.md",
+      "sha256": "67f8c37a2117750679caccee56584d626f1df002fca0eba78067349b72e58146"
+    },
+    {
+      "path": "tables/mappings/unit-conversion.md",
+      "sha256": "65528fc58dcfab8e17c5be7109a91da6cd741ca2ddfca2f0bbd8721b6fff1e61"
+    },
+    {
+      "path": "tables/entries/chemical-substance-classification.md",
+      "sha256": "1c4dc1b19c13e800aefe05ec840a221cec72b6caa48645f7334a11dacef48f50"
+    },
+    {
+      "path": "tables/diagnostics/chemical-substance-classification-failures.md",
+      "sha256": "09c579b0bb020e4c5df81d2cf78b708cdb59c89a8331fc76e139a1a82c4c81a1"
+    },
+    {
+      "path": "tables/entries/chemical-reaction-stoichiometry-equilibrium.md",
+      "sha256": "a8edf0fa6487b5c15d7f331ae695b6b235c4bf4b877a5bbca0da90e1729316b1"
+    },
+    {
+      "path": "tables/formulas/chemical-reaction-relations.md",
+      "sha256": "12bb9ee5df6f5eb0317c8a56927bb75f54b445fea12828d6c73ff88d5268f116"
+    },
+    {
+      "path": "tables/diagnostics/chemical-reaction-failures.md",
+      "sha256": "68fd4fc4c97bce173461472991e9130daa7c468c1608a1f9d3f8d7385e9d5254"
+    },
+    {
+      "path": "tables/entries/thermodynamic-system-state-phase.md",
+      "sha256": "1e76b4ad09cfc80b91a593bccc1961c80ea95e1d1487c355178289b1f4bca1e4"
+    },
+    {
+      "path": "tables/diagnostics/thermodynamic-system-state-phase-failures.md",
+      "sha256": "f9f20bcdbd20772ae758739581ed025b1d47c4cac72aad78c1fd78d61a51d978"
+    },
+    {
+      "path": "tables/diagnostics/oscillation-spectrum-dispersion-failures.md",
+      "sha256": "825af7127b3ee6b2df4630fddc4e18d0274af0f5ba49ee0e6e48a4fb87fae1a9"
+    },
+    {
+      "path": "tables/diagnostics/electrical-field-material-impedance-failures.md",
+      "sha256": "e085ad71b90dcf3e33c39d8ca6b238410668ef4bc93ca8328c50eccd93abb06b"
+    },
+    {
+      "path": "tables/diagnostics/information-encoding-channel-failures.md",
+      "sha256": "47d2c6a439e769b9bfc64e10b268c196473e510a72c7724873bcc223789ea71f"
+    },
+    {
+      "path": "tables/entries/stock-flow-balance.md",
+      "sha256": "4f967d2328a40d9472c1259eb2736c12630dd01ce1742f82edd8c6a460186a62"
+    },
+    {
+      "path": "tables/diagnostics/stock-flow-balance-failures.md",
+      "sha256": "8d39caab3bc967fb8ec4984e198987cb1d069463d241d49e46668c9b0ff6d685"
+    },
+    {
+      "path": "tables/diagnostics/economic-basis-inflation-npv-failures.md",
+      "sha256": "60cc72c52b7ac90018a2e69725fa84bda844a13a57f4fa71116a4d81951b877d"
+    },
+    {
+      "path": "tables/entries/choice-alternative-selection.md",
+      "sha256": "16cbb3e9e022fd2eb70091409792b6c783c55422672211e0099d6f8727d631d1"
+    },
+    {
+      "path": "tables/decisions/alternative-selection.md",
+      "sha256": "2c2fda3dbe56b92f643fdd1f0f8e87284b865f5eabefc52c3939ac58423b1171"
+    },
+    {
+      "path": "tables/entries/model-representation-simulation.md",
+      "sha256": "d38edad571065334f88dd9a46742d982e7dd34c02bdd45ce9d21ff914e00a9fb"
+    },
+    {
+      "path": "tables/diagnostics/model-simulation-failures.md",
+      "sha256": "2ed6e8e064f5b867389e6545c140c6855050de392c5173e30e018ca246cd4e85"
+    },
+    {
+      "path": "tables/entries/requirement-specification-verification-validation.md",
+      "sha256": "5a6ecc2e8f33f477915fa3d65bc2ca3281273f69507953068969b39668357f7d"
+    },
+    {
+      "path": "tables/evidence/requirement-verification-validation.md",
+      "sha256": "beb07698db77070c4b177076231f7731a06bdb47a85ddbb296158284de6c6973"
+    },
+    {
+      "path": "tables/entries/dependability-reliability-availability-resilience.md",
+      "sha256": "f0ab012cf673d8c2a98e3ad0d80a6744c754c06e4989eb33747a6890b245f60c"
+    },
+    {
+      "path": "tables/diagnostics/dependability-failures.md",
+      "sha256": "7aa64d702ca66f723d5fd0de7de5b4123f8f9e7f608434366e775c6ac34b847d"
+    },
+    {
+      "path": "tables/entries/temporal-organization.md",
+      "sha256": "0025729e4af7949f65edc6767c48757029da2262ca7c8d7358e0d27ecc3fe67d"
+    },
+    {
+      "path": "tables/mappings/temporal-representation.md",
+      "sha256": "32b33788e7002370458735b1fdba51f72045c7b1811e7bbc7b386786c9da7483"
+    },
+    {
+      "path": "tables/mappings/data-structure.md",
+      "sha256": "419222e65c911683e1a39acfd0c60ae65c71d764d6da7a4d388ff1c03c8caac7"
+    },
+    {
+      "path": "tables/entries/access-permission-authorization-entitlement.md",
+      "sha256": "f5cb6f5e41d7fa9a7cf850d46a3a56b74aceeda7b5029a0043f5cd8448362741"
+    },
+    {
+      "path": "tables/constraints/access-authorization-integrity.md",
+      "sha256": "fb1d0a2462e73319dc02c25f6675d43c88794d643482373833c1eab6082b9214"
+    },
+    {
+      "path": "tables/procedures/planned-work.md",
+      "sha256": "7eb4f7774e0729d6a19f3a0065eb7963555408400dcee9aa982f492128eace42"
+    },
+    {
+      "path": "tables/entries/assurance-assessment-audit-certification.md",
+      "sha256": "688de7ecc15a80f98c742273818889ec46c8dc3843424423d147873a4b62104a"
+    },
+    {
+      "path": "tables/evidence/assurance-conformity.md",
+      "sha256": "a5a0742ab725c170b29e083ef611cf62c5145810ce1b5d5b871efc100d99154d"
+    },
+    {
+      "path": "tables/entries/decomposition-modes-combination-contracts.md",
+      "sha256": "410542535a1679a40e47cc15e83daf1c7a47bda7d21006f3e1f9161b69183cff"
+    },
+    {
+      "path": "tables/constraints/factor-interaction-integrity.md",
+      "sha256": "8be65dcda0f0862e007b3bd6d12a879c9936928ae965c32f502fc2ad81cb876d"
+    },
+    {
+      "path": "tables/procedures/contribution-reconciliation.md",
+      "sha256": "f6551ee926dbd26b51e07b55670b59de76af3b840e088e06fc50d5f8abad58ff"
+    },
+    {
+      "path": "tables/mappings/hierarchy-granularity.md",
+      "sha256": "9e818e5bd83b28535d9f9c9d9526aed81e3ab0279e1b22dd8b3953dce3fdb933"
+    },
+    {
+      "path": "tables/transitions/ordered-path.md",
+      "sha256": "75f181a53ccb68a2c8d822400acea93e7366a67085a00e97ef01a5e8629116a0"
+    },
+    {
+      "path": "tables/evidence/mechanism-path.md",
+      "sha256": "25e3cfa1386e99fcd9f2c9fefbb98621326eb4384389660bc74fc1c75490c996"
+    },
+    {
+      "path": "tables/diagnostics/uncertainty-source-failures.md",
+      "sha256": "0f26d2ffce81729eca315a5dd896646a07dd9f3b4d2f55d6928ad699172d49d6"
+    },
+    {
+      "path": "tables/mappings/perspective-projection.md",
+      "sha256": "d25ec3c2001799ea7f71c488095b2a69e8440f8c9a9ca8bc263c753cae335395"
+    },
+    {
+      "path": "tables/mappings/basis-transformation.md",
+      "sha256": "1cde5a50f3ee552226d05a2257ef04484b34b86177dd5f50044c241a4e4a90a6"
+    },
+    {
+      "path": "tables/evidence/factor-status-completeness.md",
+      "sha256": "7b258af8cde80a3c3391573e6c2cf653b7c010d1a4e7ebbd6a557a93d80fc80c"
+    },
+    {
+      "path": "tables/entries/evaluation-measure-scale-criterion.md",
+      "sha256": "c885cb8b672f7091419f35bebb151d7be446a139a962de9ecf68aabb0e60efd3"
+    },
+    {
+      "path": "tables/mappings/evaluation-comparison-frame.md",
+      "sha256": "0153cee8ba547b4391793fe23e7386d06ad3b41b16a596cdbe99d8466851ee5c"
+    },
+    {
+      "path": "tables/mappings/evaluation-scale-ranking.md",
+      "sha256": "39d89dbba350508c0357bc9dfca785499681a57750872c6e5d343eb54e4f43cb"
+    },
+    {
+      "path": "tables/decisions/criterion-preference-priority.md",
+      "sha256": "4d6e0c392d645bd1fa4ffd6cfa23998614398e157841960662dd7b66818f2230"
+    },
+    {
+      "path": "tables/constraints/evaluation-threshold-acceptance.md",
+      "sha256": "e8946fadcc5fa252ce2bd7fb1bc39af9aec02f6ad59e198116e6ee0202b6ee84"
+    },
+    {
+      "path": "tables/procedures/evaluation-aggregation.md",
+      "sha256": "6834b30f02cc8a73ce3c4ed817762b45b2fdd8ddb044ec573e45a9034131efac"
+    },
+    {
+      "path": "tables/diagnostics/evaluation-sensitivity.md",
+      "sha256": "5245412c5c77cb9273f16006051ac7b9ff9a6273521d786f549187e6ff771233"
+    },
+    {
+      "path": "tables/evidence/evaluation-applicability.md",
+      "sha256": "592c67d1b90dedacc27474c503057b32ddbc659a0354b73883e43555e85c5ef6"
+    },
+    {
+      "path": "tables/procedures/evaluation-review-disposition.md",
+      "sha256": "7b4f95967d055ed4a5a83063f63b8b004c1d2d9a3e62f332e16985a2ea172280"
+    },
+    {
+      "path": "tables/entries/scenario-assumption-condition-case.md",
+      "sha256": "11fca6c5ef873dff90185fc97dee2845dcd49455dc3feb022b631099673e8351"
+    },
+    {
+      "path": "tables/mappings/scenario-comparison.md",
+      "sha256": "87a7979ca6d2efb9d6d87bd44055c99c6f4be74a4ee6fc6daf6ddbe62c764be4"
+    },
+    {
+      "path": "tables/evidence/scenario-applicability.md",
+      "sha256": "4d89f9da3f7abdc809a4060f2efcf273fe27e3af71f95e8114c484ebc903f318"
+    },
+    {
+      "path": "tables/decisions/tradeoff-dominance-conflict.md",
+      "sha256": "a874bd204ced0b5e39f6577ee05d721bfcac34106f492ff5dcdc2bd74b440e9b"
+    },
+    {
+      "path": "tables/constraints/feasibility-sufficiency.md",
+      "sha256": "17fa36e0c65f78f01d74576264591f764fd0b0a773870b69f7a2b01ac8da9973"
+    },
+    {
+      "path": "tables/entries/operational-resource-capacity-demand.md",
+      "sha256": "bb30c951916babc8eb6e975ee8f9af951298f861b39385d792608483523844be"
+    },
+    {
+      "path": "tables/procedures/resource-allocation.md",
+      "sha256": "30172bad28a7c704311f9c59a35ccc3e1b1865ea4b0b8d9759df6a669662cc61"
+    },
+    {
+      "path": "tables/diagnostics/dependency-critical-path.md",
+      "sha256": "3c4048b69020927b70528fe4d187ac2a09df58a3e7a75786b1e67cf40f8258ca"
+    },
+    {
+      "path": "tables/mappings/compatibility-substitution.md",
+      "sha256": "65249de3635b850bf3a6518e33daf8b6a7c8ea1309832794ad53f05816a26932"
+    },
+    {
+      "path": "tables/entries/interaction-request-response-correlation.md",
+      "sha256": "6f3ff09837e8835d4699df6f5a74b63ddd059622f20b17fbb8f584c57ac2a342"
+    },
+    {
+      "path": "tables/mappings/semantic-participant-roles.md",
+      "sha256": "43cf9b59fb67e3930e033eabfacbe1f76f053e530bf22426a5057c349efdde39"
+    },
+    {
+      "path": "tables/constraints/agreement-commitment-integrity.md",
+      "sha256": "d6ffa062f022359243fe6a116d7d781606ad8889a54b28c5efe88dffe37a0527"
+    },
+    {
+      "path": "tables/procedures/queue-service-order.md",
+      "sha256": "b5511e8e8558086a4cb92fb56c9b06ebee1e829287433c41e7d9b8c5277ea913"
+    },
+    {
+      "path": "tables/entries/spatial-operating-context.md",
+      "sha256": "efa82df4e3e2bda0b83894f4b55e85bb41f914c8abd5b20cc5fba4c74f1f1699"
+    },
+    {
+      "path": "tables/entries/hazard-exposure-harm-safety.md",
+      "sha256": "117b3a71b8c71017669182e9ddc654c0f4335cf87de48b6f9b4b7b5a4657158b"
+    },
+    {
+      "path": "tables/procedures/risk-treatment-response.md",
+      "sha256": "5bf70046163d4cac4e88cbb7d8dd74654d6c9a9a4f4c321d0b8a957a7d16e992"
+    },
+    {
+      "path": "tables/evidence/change-lineage.md",
+      "sha256": "253f0a845fed3d973a7decc2c6fd7777676affd644e67da60c7034155abe7575"
+    },
+    {
+      "path": "tables/diagnostics/operating-condition-failures.md",
+      "sha256": "4496e085db3c5593f0437da8069f6922db0277d07d8f22f40cf6ebe2b096d714"
+    },
+    {
+      "path": "tables/entries/meaning-reference-interpretation-use.md",
+      "sha256": "468943514db6e3d2ebae28ea523a134d18534ca7701a9e241d24751ef05c56d2"
+    },
+    {
+      "path": "tables/evidence/epistemic-standing-inquiry-warrant.md",
+      "sha256": "aed94db35f972fdad5585a6f0139ab2276c88fdbf8e29b028ac942973d340ba1"
+    },
+    {
+      "path": "tables/evidence/source-performance-research-custody.md",
+      "sha256": "d31cbf09f634829a15c139e48913ec6d693d414b0bc5d70847c2fbf109c5f09f"
+    },
+    {
+      "path": "tables/mappings/optimization-problem-structure.md",
+      "sha256": "9610188879bc97bedbb6cc985c9fac1303c6bd0c138f4d7dc77343368553ceb1"
+    },
+    {
+      "path": "tables/procedures/prototype-test-iteration.md",
+      "sha256": "bf15fdcc0abb981cf3816e7953d92d16de427c782cb4949240265ca14bd5f780"
+    },
+    {
+      "path": "tables/evidence/contribution-credit-priority-legacy.md",
+      "sha256": "0b4f04029b672ebade057298670e638cad2415250f973ad91621c686f8a4afab"
+    }
+  ],
+  "selection_checks": {
+    "mode": "exact current canonical delta from base volume paths",
+    "canonical_entries": 54,
+    "canonical_views": 100,
+    "delta_entries": 34,
+    "delta_views": 69,
+    "delta_records": 103,
+    "combined_projection_records": 181,
+    "missing_delta_paths": 0,
+    "extra_delta_paths": 0,
+    "task_count": 59,
+    "task_coverage_records": 103,
+    "missing_task_coverage_paths": 0,
+    "extra_task_coverage_paths": 0,
+    "book_one_candidate_path": "volumes/01-structure-quantity-choice/book-one-sim-candidate-v0.factorium",
+    "book_one_candidate_sha256": "39d8ec48aa4f540b85cfbf4aa7db0a65cb152df731a82ab71083580d44055601",
+    "book_one_spine_records": 24,
+    "book_one_specialized_depth_records": 157,
+    "book_one_route_strategies": 4
+  },
+  "search_checks": {
+    "numbered_records": 181,
+    "application_guides": 10,
+    "indexed_records": 191,
+    "indexed_domains": 14,
+    "duplicate_paths": 0,
+    "missing_rendered_targets": 0,
+    "result_limit": 20,
+    "execution": "static in-browser; no server or alternate content authority",
+    "result_views": [
+      "families",
+      "records"
+    ],
+    "default_result_view": "families",
+    "ownership_groups": 91,
+    "specialized_view_owners": 100,
+    "family_semantics": "exact-publication-ownership-only",
+    "navigation_cue_phrases": [
+      "size",
+      "how big",
+      "how large"
+    ],
+    "navigation_cue_target": "tables/entries/geometric-measure.md",
+    "navigation_cue_semantics": "conditional-route-not-synonym-or-classification",
+    "lookup_alias_phrases": [
+      "electric power",
+      "field of force",
+      "force field",
+      "frame of reference",
+      "organisation"
+    ],
+    "lookup_alias_routes": 7,
+    "lookup_alias_targets": [
+      "tables/entries/electrical-quantity.md",
+      "tables/entries/geometric-reference-structure.md",
+      "tables/entries/matter-load-measure.md",
+      "tables/entries/organization-role-authority.md"
+    ],
+    "lookup_alias_semantics": "language-route-to-existing-owner-not-equivalence-or-closure",
+    "scale_chooser_query": "scale",
+    "scale_chooser_routes": 3,
+    "scale_chooser_targets": [
+      "tables/entries/evaluation-measure-scale-criterion.md",
+      "tables/entries/quantity-value-unit-conversion.md",
+      "tables/entries/geometric-reference-structure.md"
+    ],
+    "scale_chooser_semantics": "explicit-meaning-choice-not-classification-or-equivalence"
+  },
+  "search_assets": [
+    {
+      "path": "volumes/01-structure-quantity-choice/proof-set-search.css",
+      "sha256": "6f2b56963f4d39931dcdeff0cdf41eba4c0ad3c05804a316b7de2b311fe93b51"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/proof-set-search-families.js",
+      "sha256": "e8c0524ad8942c2a5a555207fb9881c736a048bc2dfb056b9f9d03cb55eb53f3"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/proof-set-search-families.css",
+      "sha256": "78d571b934c6eb5f501314f8bdf342d7f7302a50545b4861d134f2fffcc373ca"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/proof-set-search-cue.css",
+      "sha256": "d468ac79ef84ded53f3dedc51374eb26a5110ff5311b06b9dfc89ed2a29a18fe"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/proof-set-search-cue.js",
+      "sha256": "2f6b26d6eabea915fcb71f874c8b2d1b0afcb136bf2cb0353b709daca3868809"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/proof-set-lookup-aliases.css",
+      "sha256": "77e2f4d29ea8ceee76f960408e2dab417d19a4f998b731b155d7708fa9bc9092"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/proof-set-lookup-aliases.js",
+      "sha256": "65903ee31f1e2ac09cc82aa8728e8203d3fc52aeeb667dc6246305ad40cc1560"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/proof-set-scale-chooser.css",
+      "sha256": "02665d1a9342d5a757486fb60abe7a76cadd7d1db91d8e4c834b1f4402e76910"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/proof-set-scale-chooser.js",
+      "sha256": "6971ca9ebc5cdd8cc4684faea2850a0239e8d71a458eb2ab37b84197baf7c7fa"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/proof-set-reader.css",
+      "sha256": "704516ec195c890c03751cebad036d8dcaadd34184c6c888cad37c87ca9bbc4a"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/proof-set-reader.js",
+      "sha256": "0bcfd9fe0f1d56baa263dcf9ea49dbc3d5509a2fc48e5a2d60b0f34a727279b0"
+    }
+  ],
+  "reader_checks": {
+    "profiles": [
+      "compact",
+      "abbreviated",
+      "book",
+      "full"
+    ],
+    "default_profile": "book",
+    "detail_levels": [
+      "summary",
+      "core",
+      "full"
+    ],
+    "metadata_levels": [
+      "minimal",
+      "essential",
+      "full"
+    ],
+    "density_levels": [
+      "tight",
+      "comfortable"
+    ],
+    "context_qualifier_modes": [
+      "folded",
+      "explicit"
+    ],
+    "default_context_qualifiers": "folded",
+    "indexed_sources": 227,
+    "indexed_records": 191,
+    "per_entry_full_override": true,
+    "deep_link_reveal": true
+  },
+  "context_checks": {
+    "profiles": 3,
+    "bindings": 16,
+    "selected_binding_paths": 16,
+    "missing_profile_ids": 0,
+    "unselected_binding_paths": 0,
+    "duplicate_bindings": 0,
+    "canonical_interchange_changed": false
+  },
+  "context_assets": [
+    {
+      "path": "volumes/01-structure-quantity-choice/proof-set-context.css",
+      "sha256": "e9a9902905a63c6fcd735c839805d235a406fe8edf49440a622d536f8ae17ea1"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/proof-set-context.js",
+      "sha256": "1634ff71dce2d02ad9e03ba76e846f6756db2b0ffb183c190e67e6b63f0d1d76"
+    },
+    {
+      "path": "volumes/01-structure-quantity-choice/CONTEXT-PROFILE-SIM-BINDINGS.md",
+      "sha256": "4880eccf1557ce4dc6b223d6e3fd0eb2d7e53ca2a28ecc56f003d710963ea7ac"
+    }
+  ],
+  "site_checks": {
+    "home_pages": 1,
+    "chapter_pages": 20,
+    "chapter_subsections": 63,
+    "source_pages": 227,
+    "indexed_entry_pages": 191,
+    "supporting_source_pages": 36,
+    "unique_page_names": 227,
+    "local_links": 20554,
+    "missing_local_targets": 0,
+    "previous_next_sequence_records": 191,
+    "first_journey_targets": 0,
+    "problem_led_targets": 0,
+    "composition_trace_targets": 0,
+    "canonical_content_authority": "repository Markdown and reference metadata",
+    "execution": "multi-page static files; no server",
+    "identity": "67d7dfc88513717e9eacfc180efe57a9b86bf2405c80876a73c6f458f209c942",
+    "candidate_start_targets": 0,
+    "product_books": 2,
+    "tables_start_targets": 2,
+    "reader_start_targets": 2,
+    "product_authority": "Lexicon canonical; Reader and Factor Guides are linked projections",
+    "pointer_index_pages": 1,
+    "pointer_entry_pages": 250,
+    "pointer_distinct_occurrences": 2681,
+    "pointer_owner_bindings": 2118,
+    "pointer_authority_change": false,
+    "pointer_relation_inference": false,
+    "pointer_search_integration": false,
+    "intent_router_targets": 3,
+    "intent_router_jobs": [
+      "know-term",
+      "have-question",
+      "learn-or-explore"
+    ],
+    "intent_router_authority_change": false,
+    "intent_router_search_change": false,
+    "handoff_note_pages": 503,
+    "handoff_note_excluded_pages": [
+      "book.html"
+    ],
+    "handoff_note_fields": [
+      "question",
+      "current-page",
+      "unresolved",
+      "next-source"
+    ],
+    "handoff_note_actions": [
+      "copy",
+      "print",
+      "clear"
+    ],
+    "handoff_note_storage": "none",
+    "handoff_note_network": "none",
+    "handoff_note_verification": "none",
+    "handoff_note_authority_change": false,
+    "dual_lookup_pages": 0,
+    "dual_lookup_retired_from_home": true,
+    "table_navigator_pages": 181,
+    "table_canonical_entry_pages": 54,
+    "table_specialized_view_pages": 100,
+    "table_curated_record_pages": 27,
+    "table_owner_links": 100,
+    "table_contrast_routes": 47,
+    "table_cross_reference_routes": 68,
+    "table_authored_connections": 423,
+    "table_connection_preview_links": 368,
+    "table_connection_semantics": "authored-untyped-navigation-only",
+    "search_result_views": [
+      "families",
+      "records"
+    ],
+    "search_default_result_view": "families",
+    "search_ownership_groups": 91,
+    "search_specialized_view_owners": 100,
+    "search_family_semantics": "exact-publication-ownership-only",
+    "table_family_contents_panels": 52,
+    "table_family_contents_links": 100,
+    "table_family_contents_open": 47,
+    "table_family_contents_folded": 5,
+    "table_family_contents_semantics": "exact-publication-ownership-only",
+    "tables_index_pages": 1,
+    "tables_index_canonical_families": 54,
+    "tables_index_curated_records": 27,
+    "tables_index_letters": 17,
+    "tables_index_owned_views": 100,
+    "tables_index_guides": 0,
+    "tables_index_reader_records": 0,
+    "tables_index_order": "normalized-selected-title",
+    "tables_index_semantics": "alphabetical-presentation-only",
+    "tables_index_pointer_entries": 250,
+    "dictionary_sequence_pages": 304,
+    "dictionary_sequence_canonical_entries": 54,
+    "dictionary_sequence_pointer_entries": 250,
+    "dictionary_sequence_previous_links": 303,
+    "dictionary_sequence_next_links": 303,
+    "dictionary_sequence_finish_links": 1,
+    "dictionary_index_letters": 22,
+    "dictionary_order": "normalized-title-then-href",
+    "dictionary_stream_pages": 1,
+    "dictionary_stream_records": 304,
+    "dictionary_stream_batch_size": 4,
+    "dictionary_book_pages": 1,
+    "dictionary_book_records": 304,
+    "dictionary_book_columns": 2,
+    "dictionary_book_screen_flow": "bounded-horizontal-pages",
+    "dictionary_book_mobile_flow": "single-column-vertical",
+    "dictionary_book_print_flow": "two-column-paged",
+    "dictionary_book_supplements": 183.0,
+    "dictionary_book_specialized_sections": 41,
+    "dictionary_book_reference_delta_sections": 34,
+    "dictionary_book_cross_reference_sections": 54,
+    "dictionary_book_sources_provenance_sections": 54,
+    "reader_route_pages": 1,
+    "reader_route_records": 24,
+    "reader_route_parts": 5,
+    "reader_route_part_sizes": [
+      6,
+      6,
+      5,
+      4,
+      3
+    ],
+    "reader_route_guides": 0,
+    "reader_route_support_records": 0,
+    "reader_route_order": "exact-frozen-manifest",
+    "reader_route_semantics": "editorial-teaching-sequence-only",
+    "reader_route_additional_records": 157,
+    "reader_sequence_panels": 24,
+    "reader_sequence_contents_links": 24,
+    "reader_sequence_previous_links": 23,
+    "reader_sequence_next_links": 23,
+    "reader_sequence_nonmember_panels": 0,
+    "reader_sequence_state": "none",
+    "reader_sequence_semantics": "editorial-teaching-order-only",
+    "reader_primary_start_links": 1,
+    "reader_optional_quickstart_links": 1,
+    "reader_primary_start_position": 1,
+    "reader_primary_start_path": "tables/roots/purpose.md",
+    "reader_primary_start_state": "none",
+    "reader_sequence_finish_links": 1,
+    "reader_sequence_finish_position": 24,
+    "reader_sequence_finish_target": "reader.html#reader-route-after-heading",
+    "reader_sequence_finish_state": "none",
+    "composition_lab_pages": 1,
+    "composition_factor_focus_records": 12,
+    "composition_palette_groups": 6,
+    "composition_view_profiles": 4,
+    "composition_closure_map_pages": 1,
+    "composition_starter_cards": 5,
+    "composition_query_plan_pages": 1,
+    "composition_work_budget_controls": 1,
+    "composition_reconciliation_pages": 1,
+    "composition_continuation_pages": 1,
+    "composition_continuation_actions": 3,
+    "composition_rerun_comparison_pages": 1,
+    "composition_rerun_comparison_retained": 1,
+    "composition_guide_skeleton_pages": 1,
+    "composition_guide_missing_work_records": 8,
+    "composition_evaluation_record_pages": 1,
+    "composition_evaluation_outcomes": 3
+  },
+  "site_assets": [
+    {
+      "path": "assets/composition-continuations.js",
+      "sha256": "f17ffda4537580cde1f7e20b81135dd474df4d254617e52a6fb39f600795aba4",
+      "bytes": 17164
+    },
+    {
+      "path": "assets/composition-evaluation.js",
+      "sha256": "84c0df30a14ec22f9833cbf7d0f5b6986295143a0d753c6820b46c5c878776a7",
+      "bytes": 22011
+    },
+    {
+      "path": "assets/composition-guide.js",
+      "sha256": "65a1f9f438e94347bc259ad56720ca208e0463ae9fdb4bc8826465eceabe913e",
+      "bytes": 23687
+    },
+    {
+      "path": "assets/composition-lab.js",
+      "sha256": "beddc8040f2e1864146525213313171c1c5a2a63145fd07fac471bbd31b8a27e",
+      "bytes": 27297
+    },
+    {
+      "path": "assets/composition-map.js",
+      "sha256": "e3f3593bed24cb1cd88172f22e1c884aa322e1afbbbab47dabd61eb332ab2cc6",
+      "bytes": 31142
+    },
+    {
+      "path": "assets/composition-palette.js",
+      "sha256": "f83fc8308b94cd69c11f7f90cba9d247e095cc6326900d3ee27b45b96d051f1d",
+      "bytes": 11802
+    },
+    {
+      "path": "assets/composition-query-plan.js",
+      "sha256": "49b3fa39d31ee0e13256fba0db460a60db627d921cbd65a608b0fe481d6f22a4",
+      "bytes": 17199
+    },
+    {
+      "path": "assets/composition-reading.js",
+      "sha256": "d18414705b9d81e6c9ffe0eee9836578e6968f9cd6cde73e34fe577f68bb2fb8",
+      "bytes": 8711
+    },
+    {
+      "path": "assets/composition-reconciliation.js",
+      "sha256": "892d87a8792fc31ded7fdccddb33e218ae7a55aed3e7c77f677b07f2604e6c56",
+      "bytes": 22182
+    },
+    {
+      "path": "assets/composition-rerun-comparison.js",
+      "sha256": "8ad0a06b836e7056f5203fe91ca607687d66b5c5836899907531b4f10143ef48",
+      "bytes": 37951
+    },
+    {
+      "path": "assets/composition-starters.js",
+      "sha256": "25489f1e9fd863bcbd15669bdf673bed6ea1f2b4dc4638d622b79a497588692e",
+      "bytes": 7271
+    },
+    {
+      "path": "assets/composition-views.js",
+      "sha256": "235d97585a882147075a642f625b2e8a72315260f517ee6e13df06f3ec1df49f",
+      "bytes": 10194
+    },
+    {
+      "path": "assets/context.js",
+      "sha256": "ebb971dd5bd18ffc600b95939b13958d86453d1ea52323945dd30f8e96d8508d",
+      "bytes": 3743
+    },
+    {
+      "path": "assets/dictionary-stream.js",
+      "sha256": "17bc7179f24ce1ae7105ac34a7f552eb25b543d4de13db09b5eb044394013cf1",
+      "bytes": 9352
+    },
+    {
+      "path": "assets/dual-lookup.js",
+      "sha256": "8ab6750f424df1c4b06ad60f626713f421fcd81caff798c555ff5cd0fc63979a",
+      "bytes": 3743
+    },
+    {
+      "path": "assets/handoff.js",
+      "sha256": "58687a321c9cab47dcf8ef64912f38b277928ec0e4c6f139a4da9f1860ce5391",
+      "bytes": 2622
+    },
+    {
+      "path": "assets/pointers.js",
+      "sha256": "870413cb99ab13d803936775450b104746a61b3dfdfd74f4053e1c16d3f08f14",
+      "bytes": 2324
+    },
+    {
+      "path": "assets/reader.js",
+      "sha256": "01118b47fb4bd606e226b5d8f459890946958ff1872475d913c8858656682957",
+      "bytes": 12521
+    },
+    {
+      "path": "assets/search.js",
+      "sha256": "22dfa31667da2d3d8f8d9e95bfed5ea089dafb498d6907b7272203fcc89eb159",
+      "bytes": 18850
+    },
+    {
+      "path": "assets/site-data.js",
+      "sha256": "9297eb6700f6c6341f7ab96db4a821a8ab8747ffdb8160918a2b3811f114d402",
+      "bytes": 1086496
+    },
+    {
+      "path": "assets/site.css",
+      "sha256": "b0d1784f9f285796769fa99b1e10a5a67fdb89ad144816fa0d0c1d1ef95ed581",
+      "bytes": 104742
+    }
+  ],
+  "composition_checks": {
+    "mode": "read-only exact trace inspection; no discovery or graph mutation",
+    "trace_count": 6,
+    "worksheet_targets": 6,
+    "unique_trace_ids": 6,
+    "states": {
+      "complete": 2,
+      "incomplete": 2,
+      "contradictory": 1,
+      "truncated": 1
+    },
+    "records": [
+      {
+        "id": "system-dependency-interface",
+        "state": "complete",
+        "seeds": 1,
+        "nodes": 3,
+        "edges": 1,
+        "frontiers": 0,
+        "conflicts": 0,
+        "checks": 1,
+        "projections": 3,
+        "work": 9,
+        "sha256": null
+      },
+      {
+        "id": "latency-observation-inference",
+        "state": "complete",
+        "seeds": 1,
+        "nodes": 3,
+        "edges": 1,
+        "frontiers": 0,
+        "conflicts": 0,
+        "checks": 1,
+        "projections": 3,
+        "work": 9,
+        "sha256": null
+      },
+      {
+        "id": "alert-outcome-feedback",
+        "state": "incomplete",
+        "seeds": 1,
+        "nodes": 3,
+        "edges": 1,
+        "frontiers": 0,
+        "conflicts": 0,
+        "checks": 1,
+        "projections": 3,
+        "work": 9,
+        "sha256": null
+      },
+      {
+        "id": "dependency-exclusion-conflict",
+        "state": "contradictory",
+        "seeds": 1,
+        "nodes": 3,
+        "edges": 1,
+        "frontiers": 0,
+        "conflicts": 1,
+        "checks": 1,
+        "projections": 3,
+        "work": 10,
+        "sha256": null
+      },
+      {
+        "id": "delegated-compliance-frontier",
+        "state": "truncated",
+        "seeds": 2,
+        "nodes": 4,
+        "edges": 1,
+        "frontiers": 1,
+        "conflicts": 0,
+        "checks": 1,
+        "projections": 4,
+        "work": 13,
+        "sha256": null
+      },
+      {
+        "id": "decision-bridge-five-relation-closure",
+        "state": "incomplete",
+        "seeds": 5,
+        "nodes": 10,
+        "edges": 5,
+        "frontiers": 0,
+        "conflicts": 0,
+        "checks": 5,
+        "projections": 10,
+        "work": 35,
+        "sha256": null
+      }
+    ]
+  },
+  "rendering_checks": {
+    "internal_fragment_links": 3111,
+    "missing_fragment_targets": 0,
+    "filesystem_dependent_links": 0,
+    "repository_source_links": 98
+  },
+  "output": {
+    "path": "proof-set-sim-67.html",
+    "sha256": "008e5d15e69deea176e9fa78014ffb479d0e87c5025fce0dd08ee6fce11a1c32",
+    "bytes": 3348674,
+    "search_index_path": "search-index.json",
+    "search_index_sha256": "681be8371ebab88e2b9037155f9121319228d1a8adeafb6f849bd97c3e0a0130",
+    "site_index_path": "index.html",
+    "site_index_sha256": "3b0c4765e5a23a2ec85d8fda01c19d84efa2ca3f9773c7dca8fc8e81990a93b4",
+    "site_identity": "67d7dfc88513717e9eacfc180efe57a9b86bf2405c80876a73c6f458f209c942",
+    "site_file_count": 270
+  },
+  "composition_lab_checks": {
+    "mode": "local bounded closure over explicit reviewed relation allowlist",
+    "canonical_relation_records": 11,
+    "relation_records": 6,
+    "allowlist_path": "volumes/01-structure-quantity-choice/lexicon-composition-lab-relations.lexicon",
+    "allowlist_sha256": "96c8d26023fda72ddb5a67a05c73fb28b9a187fe3f91154b2bf453e5433694b8",
+    "seed_artifacts": 12,
+    "scope_views": 6,
+    "automatic_relation_discovery": false,
+    "natural_language_semantic_selection": false,
+    "check_outcomes": "unresolved-only",
+    "persistence": "none",
+    "specification": "specs/COMPOSITION-LAB.md",
+    "work_accounting": "canonical-record-count",
+    "work_enforcement": "hard-cap",
+    "work_range": "3-64"
+  },
+  "composition_reading_checks": {
+    "mode": "deterministic admitted-closure reading projection",
+    "artifact_bindings": 18,
+    "endpoint_bindings": 12,
+    "scope_bindings": 6,
+    "projection_scope": "admitted graph nodes only",
+    "ordering": "start, continue, evaluate; then title, destination, artifact",
+    "deduplication": "local destination with all artifact bindings retained",
+    "authority": "existing book pages",
+    "persistence": "none",
+    "specification": "specs/COMPOSITION-READING-ROUTE.md"
+  },
+  "composition_factor_focus_checks": {
+    "factor_focus_records": 12,
+    "anchor_pages": 6,
+    "scope_focus_records": 0,
+    "target_behavior": "CSS :target; JavaScript not required",
+    "source_handoff": "existing Root factorization heading",
+    "canonical_source_mutation": false,
+    "specification": "specs/COMPOSITION-FACTOR-FOCUS.md"
+  },
+  "composition_palette_checks": {
+    "concept_groups": 6,
+    "concept_controls": 12,
+    "relation_readiness_records": 6,
+    "readiness_inputs": "explicit seeds, selected relation allowlist, direction",
+    "natural_language_semantic_selection": false,
+    "automatic_selection": false,
+    "disabled_relations": 0,
+    "persistence": "none",
+    "specification": "specs/COMPOSITION-PALETTE.md"
+  },
+  "composition_view_checks": {
+    "profiles": [
+      "compact",
+      "abbreviated",
+      "book",
+      "full"
+    ],
+    "default_profile": "book",
+    "shared_preference_key": "factorium-reader-profile",
+    "profile_inputs_to_closure": 0,
+    "hidden_query_controls": 0,
+    "exact_metadata_retained": true,
+    "query_storage": "none",
+    "result_storage": "none",
+    "preference_storage": "profile name only",
+    "specification": "specs/COMPOSITION-READER-VIEWS.md"
+  },
+  "composition_closure_map_checks": {
+    "projection_input": "identified composition result",
+    "identity": "inherits local result SHA-256",
+    "unique_node_records": true,
+    "semantic_edges": "admitted typed traversals only",
+    "scope_connectors": "non-semantic evaluation ownership",
+    "svg_alternative": "complete HTML records",
+    "removed_stage_records": 0,
+    "storage": "none",
+    "specification": "specs/COMPOSITION-CLOSURE-MAP.md"
+  },
+  "composition_starter_checks": {
+    "starters": 5,
+    "source": "five exact reviewed composition traces",
+    "relation_derivation": "admitted edges plus exact budget-frontier relation IDs",
+    "prose_semantic_selection": false,
+    "auto_run": false,
+    "url_state": "fixed authored starter ID only",
+    "query_storage": "none",
+    "specification": "specs/COMPOSITION-AUTHORED-STARTERS.md"
+  },
+  "composition_query_plan_checks": {
+    "projection_input": "visible explicit controls plus digest-bound payloads",
+    "control_states": [
+      "control-complete",
+      "needs-explicit-controls"
+    ],
+    "result_alignment": [
+      "not-run",
+      "matches-displayed-result",
+      "controls-changed"
+    ],
+    "closure_execution": false,
+    "result_prediction": false,
+    "plan_identity": "none",
+    "problem_semantic_selection": false,
+    "storage": "none",
+    "specification": "specs/COMPOSITION-QUERY-PLAN.md"
+  },
+  "composition_reconciliation_checks": {
+    "projection_input": "identified local result plus digest-bound payloads",
+    "relation_decisions": [
+      "admitted",
+      "stopped",
+      "capacity-limited",
+      "predecessor-unreached"
+    ],
+    "exclusion_decisions": [
+      "conflict",
+      "inactive"
+    ],
+    "budget_ledgers": [
+      "depth",
+      "edges",
+      "nodes",
+      "work"
+    ],
+    "partition": "exhaustive and disjoint over selected controls",
+    "identity": "inherits local result SHA-256",
+    "closure_execution": false,
+    "semantic_evaluation": false,
+    "storage": "none",
+    "specification": "specs/COMPOSITION-RESULT-RECONCILIATION.md"
+  },
+  "composition_continuation_checks": {
+    "projection_input": "identified local result plus digest-bound payloads",
+    "action_kinds": [
+      "raise-budget",
+      "add-seed",
+      "remove-exclusion"
+    ],
+    "target_controls": [
+      "depth",
+      "edges",
+      "nodes",
+      "work",
+      "seeds",
+      "exclusions"
+    ],
+    "application": "one explicit control edit per activation",
+    "stale_precondition": "exact before-value",
+    "auto_run": false,
+    "result_prediction": false,
+    "identity": "inherits local result SHA-256",
+    "storage": "none",
+    "specification": "specs/COMPOSITION-EXPLICIT-CONTINUATIONS.md"
+  },
+  "composition_rerun_comparison_checks": {
+    "projection_input": "previous and current identified local results plus exact applied continuation actions",
+    "action_dispositions": [
+      "present-in-executed-request",
+      "superseded-before-run"
+    ],
+    "request_change_sources": [
+      "continuation-action",
+      "additional-control-edit"
+    ],
+    "result_dimensions": [
+      "state",
+      "work",
+      "nodes",
+      "relations",
+      "exclusions",
+      "checks"
+    ],
+    "retention": "one pending source and one consumed comparison in page memory",
+    "auto_run": false,
+    "causal_attribution": false,
+    "comparison_identity": "none; inherits previous and current result SHA-256",
+    "storage": "none",
+    "specification": "specs/COMPOSITION-RERUN-COMPARISON.md"
+  },
+  "composition_guide_skeleton_checks": {
+    "schema": "factorium-composition-guide-skeleton-v0",
+    "projection_input": "identified local result plus digest-bound lab and reading payloads",
+    "placement": "after closure map and before canonical reading route",
+    "required_missing_work_records": 8,
+    "check_outcomes": "unresolved-only",
+    "profiles": [
+      "compact",
+      "abbreviated",
+      "book",
+      "full"
+    ],
+    "default_profile": "book",
+    "identity": "inherits local result SHA-256",
+    "canonical_guide": false,
+    "recommendation": false,
+    "storage": "none",
+    "specification": "specs/COMPOSITION-GUIDE-SKELETON.md"
+  },
+  "composition_evaluation_record_checks": {
+    "schema": "factorium-composition-evaluation-record-v0",
+    "projection_input": "identified local result plus explicit user-declared check records",
+    "outcomes": [
+      "pass",
+      "fail",
+      "unresolved"
+    ],
+    "evidence_status": "user-declared-unverified",
+    "placement": "after Factor Guide Skeleton and before canonical reading route",
+    "identity": "separate SHA-256 over canonical evaluation JSON; bound to result SHA-256",
+    "base_result_mutation": false,
+    "outcome_scoring": false,
+    "retrieval": false,
+    "storage": "none",
+    "specification": "specs/COMPOSITION-EVALUATION-RECORD.md"
+  }
+}
