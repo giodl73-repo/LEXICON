@@ -8,8 +8,9 @@ Work is organized into small waves and pulses.
 
 ## Auxiliary implementation and qualification
 
-- `2026-11-01-interchange-inspector` — draft local consumer; native/content and
-  publication findings remain open. This does not replace the funded roadmap's
+- `2026-11-01-interchange-inspector` — published auxiliary Rust/WASM preview,
+  with source/artifact/live custody and unchanged public books. Current content/
+  control findings remain separate. This does not replace the funded roadmap's
   external-reader boundary or admit R6 construction software.
 
 ## Completed waves

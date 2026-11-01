@@ -12,10 +12,15 @@ evidence and one tested Lexicon domain.
 
 ## Operating model
 
-Auxiliary implementation is tracked in
-`context/waves/2026-11-01-interchange-inspector/WAVE.md`. It is a draft inspector
-of supplied interchange, not an R4/R5/R6 release or new reference authority.
-Its native/content and publication qualification findings remain open.
+The auxiliary [Rust/WebAssembly inspector preview](https://giodl73-repo.github.io/LEXICON/inspector/)
+is tracked in `context/waves/2026-11-01-interchange-inspector/WAVE.md`. It checks
+supplied interchange, not R4/R5/R6 readiness or a new reference authority. Its
+initial release preserved all 528 public sim-67 files and passed exact artifact
+and live browser checks. `RELEASE.md` records that initial receipt; the Pages
+workflow and deployed provenance identify subsequent revisions. Gate ownership
+is explicit in the wave: current content/control findings remain open. The full
+Windows audit is 84 pass/3 fail; Linux is 82 pass/5 fail, including the additional
+frozen HRR/bakeoff expectations. No failed control or approval hash was changed.
 
 - `AGENTS.md` is the startup router.
 - `VISION.md` is the canonical grand vision.

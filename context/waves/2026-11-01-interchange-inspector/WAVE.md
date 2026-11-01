@@ -1,6 +1,7 @@
 # Auxiliary interchange inspector
 
-Status: draft implementation/qualification; no deployment or readiness claim.
+Status: auxiliary preview published. See RELEASE.md for the initial exact
+default-branch/live receipt; no global content or R4/R5/R6 readiness is claimed.
 
 Reader problem: a reference author or implementer currently needs the native CLI
 to check a supplied interchange corpus and the source identities of a declared
@@ -27,4 +28,7 @@ continues separately with its external-reader boundary intact.
 
 [Pulse 02](pulses/pulse-02.md) qualifies local multi-document interaction.
 [Pulse 03](pulses/pulse-03.md) adds source/legal staging and exact published-book
-preservation checks; its hosted qualification and deployment gates remain open.
+preservation checks. [Pulse 04](pulses/pulse-04.md) defines scoped preview
+publication and the independent current-content/control gates.
+[Initial release receipt](RELEASE.md) records implementation/build/live acceptance
+for the auxiliary task. Every later default-branch deployment repeats its gates.

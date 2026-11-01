@@ -1,8 +1,9 @@
-# Draft interchange inspector
+# Interchange inspector preview
 
-Auxiliary consumer of existing Lexicon Rust parsers. This is a local prototype,
-not a deployed site, R6 Workbench, book release or semantic/review approval.
-Books and canonical Tables retain authority. Inputs and paths remain local/inert.
+The [published auxiliary preview](https://giodl73-repo.github.io/LEXICON/inspector/)
+uses existing Lexicon Rust parsers. It is not an R6 Workbench, a new book release
+or semantic/review approval. Books and canonical Tables retain authority. Inputs
+and paths remain local/inert.
 
 Use Rust 1.95.0 with wasm32-unknown-unknown and wasm-bindgen-cli 0.2.127, Python,
 Node 22 and installed Chromium:
@@ -52,8 +53,9 @@ archive, WASM/bindings, build provenance, existing licenses and verbatim notices
 are accessible independently of the worker. The complete helper is under its
 5 MB budget; private native-case/scratch files are excluded from staging.
 See [BUILD.md](BUILD.md) for portable archive scope and rebuild commands.
-Hosted and publication qualification remain pending. The main
-native audit has 84 passing tests and three content/snapshot failures, retained
+The initial default-branch deployment and fresh live checks pass; see the
+wave release record and deployed provenance for exact source/artifact custody.
+The Windows native audit has 84 passing tests and three content/snapshot failures, retained
 as required-success gates. The strict custody audit remains nonzero/not-ready.
 The first hosted Linux audit adds two founding-control snapshot failures
 (82 pass, five fail): HRR-64 transfer reports 456/512 instead of the frozen
