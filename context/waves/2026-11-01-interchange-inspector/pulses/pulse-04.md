@@ -43,3 +43,16 @@ cross-platform controls; Research Integrity & Provenance requires complete
 artifact/download/live verification; Evidence & Claims Editor retains declared
 query state, unperformed assurance and the open current-content audit. This is
 not a global fixed point, current-corpus release or R4/R5/R6 approval.
+
+
+Hosted run 41352113999 at 5407255 passes the complete preview gate, including
+45 native checks, fourteen browser cases, 62 native/WASM responses, independent
+portable-source replay and every one of the 528 preserved book files. The full
+current-content job remains red with 82/5 and now correctly propagates the test
+exit status through its log pipeline.
+
+The final interaction audit removed HTML maxlength, which could silently
+truncate pasted text. Oversized paste/drop is rejected as a whole with prior
+input retained; manually edited text still receives native UTF-8 admission.
+The existing byte-limit browser case now proves this rejection and absence of
+maxlength. Fresh preview qualification is required for the final source head.

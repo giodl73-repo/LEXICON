@@ -71,6 +71,14 @@ test('bad UTF-8, file size and UTF-8/envelope limits preserve recoverable input'
     await expect(page.locator('#error')).toContainText(diagnostic);
     expect(await page.locator('#reference').inputValue()).toBe(reference);
   }
+  await expect(page.locator('#reference')).not.toHaveAttribute('maxlength');
+  const paste = await page.locator('#reference').evaluate(element => {
+    const transfer = new DataTransfer(); transfer.setData('text/plain', 'x'.repeat(524289));
+    return element.dispatchEvent(new ClipboardEvent('paste', {clipboardData: transfer, cancelable: true, bubbles: true}));
+  });
+  expect(paste).toBe(false);
+  await expect(page.locator('#error')).toContainText('paste exceeds 512 KiB');
+  expect(await page.locator('#reference').inputValue()).toBe(reference);
   await page.locator('#reference').fill('🌿'.repeat(150000));
   await page.locator('#run').click(); await expect(page.locator('#error')).toContainText('512 KiB of UTF-8');
   await page.locator('#reference').fill('\u0001'.repeat(400000));

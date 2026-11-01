@@ -106,7 +106,17 @@ for (const [key, label, optional] of [
   const textLabel = document.createElement('label'); textLabel.htmlFor = key;
   textLabel.textContent = `${label} text`;
   doc.area = document.createElement('textarea'); doc.area.id = key; doc.area.spellcheck = false;
-  doc.area.maxLength = LIMIT; doc.area.setAttribute('aria-describedby', `${key}-meta`);
+  // maxlength would silently truncate a paste. Reject oversized paste/drop
+  // operations as a whole; edited input still passes native byte admission.
+  doc.area.setAttribute('aria-describedby', `${key}-meta`);
+  for (const eventType of ['paste', 'drop']) doc.area.addEventListener(eventType, event => {
+    const text = (event.clipboardData || event.dataTransfer)?.getData('text/plain') || '';
+    if (text.length > LIMIT || encoder.encode(text).length > LIMIT) {
+      event.preventDefault(); cancelRead(doc); discardResult(); metadata(doc);
+      error.textContent = `${doc.label}: ${eventType} exceeds 512 KiB of UTF-8. Previous input retained.`;
+      status.textContent = 'Oversized edit rejected without truncating input.';
+    }
+  });
   doc.area.addEventListener('input', () => {
     cancelRead(doc); discardResult(); doc.text = doc.area.value;
     metadata(doc); status.textContent = 'Input edited. Inspect again.';
