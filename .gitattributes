@@ -1,4 +1,4 @@
-﻿artifacts/factor-v1/** text eol=lf
+artifacts/factor-v1/** text eol=lf
 artifacts/factor-role-v1/** text eol=lf
 fixtures/composition/*.factorium-query text eol=lf
 fixtures/composition/*.formarium-query text eol=lf
@@ -13,3 +13,6 @@ tables/**/*.md text eol=lf
 volumes/**/*.factorium text eol=lf
 volumes/**/*.formarium text eol=lf
 volumes/**/*.lexicon text eol=lf
+
+fixtures/relations/*.factorium text eol=lf
+fixtures/relations-invalid/*.factorium text eol=lf
