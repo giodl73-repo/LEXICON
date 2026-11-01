@@ -56,3 +56,13 @@ truncate pasted text. Oversized paste/drop is rejected as a whole with prior
 input retained; manually edited text still receives native UTF-8 admission.
 The existing byte-limit browser case now proves this rejection and absence of
 maxlength. Fresh preview qualification is required for the final source head.
+
+
+The release-documentation build at 8bf0ea4 (run 41355349483) passed the original
+browser suite, then the extracted-source replay passed its behavioral assertions
+but Chromium's Page.captureScreenshot operation failed. Deployment was correctly
+skipped; the initial verified b623150 site remained live. Screenshot collection
+now retries only that specific protocol operation up to three times after two
+compositor frames, annotating each retry in the report. All behavior assertions,
+required screenshot outputs and zero whole-test retries remain unchanged; any
+persistent capture failure still fails qualification. The failed log is retained.

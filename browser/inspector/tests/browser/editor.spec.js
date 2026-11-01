@@ -19,6 +19,21 @@ async function saved(page, label) {
   return readFile(await (await pending).path());
 }
 
+async function capture(page, path, info) {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      await page.screenshot({path, fullPage: true, animations: 'disabled'});
+      return;
+    } catch (error) {
+      if (attempt === 2 || !String(error).includes('Page.captureScreenshot')) throw error;
+      info.annotations.push({type: 'screenshot-protocol-retry', description: `${path}: ${String(error)}`});
+      // Only retry this Chromium capture operation, after two compositor frames.
+      // Behavioral assertions and whole-test retries remain unchanged.
+      await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+    }
+  }
+}
+
 test('three documents export exact current/request/native/canonical bytes', async ({page}) => {
   await open(page);
   await page.getByRole('button', {name: 'Load declared query example', exact: true}).click();
@@ -152,7 +167,7 @@ test('worker crash is recoverable and retired worker results stay fenced', async
   await expect(page.locator('#run')).toBeEnabled(); expect((await inspect(page)).ok).toBe(false);
 });
 
-test('mobile keyboard flow renders paths as inert text without overflow', async ({page}) => {
+test('mobile keyboard flow renders paths as inert text without overflow', async ({page}, info) => {
   await page.setViewportSize({width: 390, height: 844}); await open(page);
   const sample = page.getByRole('button', {name: 'Load declared query example', exact: true});
   await sample.focus(); await page.keyboard.press('Enter');
@@ -160,7 +175,7 @@ test('mobile keyboard flow renders paths as inert text without overflow', async 
   await expect(page.locator('#summary')).toContainText('declared state: complete');
   expect(await page.locator('#report a').count()).toBe(0);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-  await page.screenshot({path: '.cache/editor-mobile.png', fullPage: true});
+  await capture(page, '.cache/editor-mobile.png', info);
   await page.setViewportSize({width: 1280, height: 900});
-  await page.screenshot({path: '.cache/editor-desktop.png', fullPage: true});
+  await capture(page, '.cache/editor-desktop.png', info);
 });
