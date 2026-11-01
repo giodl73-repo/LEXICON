@@ -96,4 +96,3 @@ jobs:
             browser/inspector/.cache
           if-no-files-found: error
           include-hidden-files: true
-
