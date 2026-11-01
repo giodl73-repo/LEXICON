@@ -38,3 +38,22 @@ deadlines/fences/accessibility, full source/legal custody and publication
 qualification remain open. The complete native baseline retains 80 passing and
 four failing content/snapshot tests after checkout-byte correction. No review
 hash, canonical content, frozen packet or native production source was altered.
+
+## Custody diagnostic continuation
+
+The read-only `tools/check_review_custody.py` now retains authoritative native
+check output and all 56 source-digest mismatches in `../custody-audit.json`.
+See `../CUSTODY-QUALIFICATION.md` for source-history limits and result review.
+The obsolete census assertions are corrected to 133 entries and 244 bindings.
+Three authored workspace tests add positive native library/CLI validation and
+negative source-text, CRLF, missing-review and pending-marker controls.
+
+Validation: strict all-target native Clippy and formatting pass; complete
+native tests report 84 passing and three failing, none ignored. The three
+content/workspace success requirements remain red and unchanged. The strict
+custody command returns 1 with `ready: false`; all 244 bindings are enumerated,
+188 match current bytes and 56 mismatch (21 CRLF matches). Root native source,
+Cargo manifests, reference, Tables, specs, fixtures and artifacts remain exact
+public-entry Git blobs. Browser prototype evidence is unchanged and is not
+recast as release proof. This diagnostic slice is ready to commit; the broader
+qualification and book content findings remain open.

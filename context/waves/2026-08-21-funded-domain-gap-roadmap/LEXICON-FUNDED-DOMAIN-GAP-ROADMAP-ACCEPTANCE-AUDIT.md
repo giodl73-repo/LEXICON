@@ -1,6 +1,16 @@
 # Lexicon Funded Domain-Gap Roadmap Acceptance Audit
 
-Status: all internal requirements proven; external reader-result requirement open
+Status: dated internal acceptance record; current review-custody qualification open;
+external reader-result requirement open
+
+2026-11-01 qualification: the current native sidecar check rejects stale review
+hashes. Of 244 bindings, 56 differ from current raw source bytes; 21 match CRLF
+variants and 35 were not recovered from available Git history or tested encoding
+variants. The historical rows below are retained as dated claims, not renewed
+certification. In particular, the no-stale-hash and no-major-finding rows cannot
+be used as current release approval. See
+`../2026-11-01-interchange-inspector/CUSTODY-QUALIFICATION.md` and the strict
+`tools/check_review_custody.py` command. No approval hashes were refreshed.
 
 ## Program-acceptance audit
 

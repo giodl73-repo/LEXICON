@@ -16,3 +16,15 @@ listed definitions were read. This is scope/prototype review, not release approv
 
 The prototype may proceed to verification. Major qualification/publication
 findings remain open. No fixed point, R4/R5/R6 readiness or live release is claimed.
+
+## Custody diagnostic pulse plan
+
+AI-simulated Schema Implementer, Research Integrity & Provenance, and Evidence
+& Claims Editor review: pass for a read-only diagnostic and an authored test
+workspace. Keep the native validators authoritative. Report every source digest
+mismatch; transport-equivalent bytes do not renew approval. Add positive and
+mutation tests using explicitly synthetic review records, without replacing the
+committed-content gates or changing their expected success to expected failure.
+Correct the independently verified obsolete reference census assertion only.
+The current assurance gate remains red until reviewed-source custody is repaired
+in a separately reviewed content change. This pulse cannot authorize publication.

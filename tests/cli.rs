@@ -165,7 +165,7 @@ fn reference_check_validates_canonical_corpus_and_projections() {
         .unwrap();
     assert!(output.status.success());
     let stdout = String::from_utf8(output.stdout).unwrap();
-    assert!(stdout.contains("entries=101\n"));
+    assert!(stdout.contains("entries=133\n"));
     assert!(stdout.contains("views=100\n"));
     assert!(stdout.contains("reference_sha256="));
 }
@@ -185,8 +185,8 @@ fn reference_sidecar_check_validates_relations_and_reviews() {
     assert!(output.status.success());
     let stdout = String::from_utf8(output.stdout).unwrap();
     assert!(stdout.contains("relation_records=11\n"));
-    assert!(stdout.contains("review_bindings=212\n"));
-    assert!(stdout.contains("entry_review_bindings=101\n"));
+    assert!(stdout.contains("review_bindings=244\n"));
+    assert!(stdout.contains("entry_review_bindings=133\n"));
     assert!(stdout.contains("view_review_bindings=100\n"));
     assert!(stdout.contains("relation_review_bindings=11\n"));
     assert!(stdout.contains("prototype_checks=7\n"));
