@@ -23,3 +23,18 @@ Required validation: identity boundary script; unchanged protected Git blobs;
 complete native audit with failures retained; native consumer tests and strict
 host/wasm lint/build; browser native/WASM parity; existing contract checks and
 publication qualification. No failing baseline gate may be reported as green.
+
+## Local prototype outcome
+
+Six consumer tests and strict host/wasm Clippy pass. Linked WASM is 321,555 bytes,
+SHA-256 `c9d4ddafb876e36fd0408a858cc1c9bf826368fc1bbffe286e1eb6942f578307`.
+Two local Chromium tests pass: all 48 native/WASM responses match exactly, and
+the worker accepts own input with explicit unperformed-check reporting. Cases
+include the full current reference, 32 identity variants, changed query sources,
+canonical transport, malformed/unknown input and resource limits.
+
+This is a local draft. Robust multi-document UI/import/export, independent
+deadlines/fences/accessibility, full source/legal custody and publication
+qualification remain open. The complete native baseline retains 80 passing and
+four failing content/snapshot tests after checkout-byte correction. No review
+hash, canonical content, frozen packet or native production source was altered.

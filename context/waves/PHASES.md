@@ -6,6 +6,12 @@ Work is organized into small waves and pulses.
 
 - `2026-08-21-funded-domain-gap-roadmap`
 
+## Auxiliary implementation and qualification
+
+- `2026-11-01-interchange-inspector` — draft local consumer; native/content and
+  publication findings remain open. This does not replace the funded roadmap's
+  external-reader boundary or admit R6 construction software.
+
 ## Completed waves
 
 - `2026-08-21-editorial-domain-expansion`

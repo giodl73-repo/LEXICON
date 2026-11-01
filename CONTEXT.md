@@ -12,6 +12,11 @@ evidence and one tested Lexicon domain.
 
 ## Operating model
 
+Auxiliary implementation is tracked in
+`context/waves/2026-11-01-interchange-inspector/WAVE.md`. It is a draft inspector
+of supplied interchange, not an R4/R5/R6 release or new reference authority.
+Its native/content and publication qualification findings remain open.
+
 - `AGENTS.md` is the startup router.
 - `VISION.md` is the canonical grand vision.
 - `README.md` explains the project.
