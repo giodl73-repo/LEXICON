@@ -1,5 +1,5 @@
 """Build a local draft inspector and exact native/WASM verification cases."""
-import hashlib,json,os,subprocess
+import hashlib,json,os,shutil,subprocess
 from pathlib import Path
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1]
 def capture(*args):return subprocess.check_output(args,cwd=ROOT).decode('utf-8').strip()
@@ -35,8 +35,7 @@ case('current-reference-only',json.dumps({'reference':(ROOT/'reference/lexicon-r
 case('invalid-json','{broken');case('over-envelope',' '*(2097152+1))
 sample=json.dumps(examples['declared-query'],indent=2);case('crlf-envelope',sample.replace('\n','\r\n'))
 (out/'native-cases.json').write_text(json.dumps(cases,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-(out/'worker.js').write_text("import init,{inspect} from './pkg/lexicon_inspector.js';try{await init();postMessage({type:'ready'});}catch{postMessage({type:'error'});}onmessage=({data})=>{try{postMessage({type:'result',canonical:inspect(data)});}catch{postMessage({type:'error'});}};",encoding='utf-8')
-(out/'index.html').write_text('''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lexicon inspector · local draft</title><body><h1>Lexicon interchange inspector · local draft</h1><p>Auxiliary parser/source checks only. No Markdown/review assurance or publication approval. Full UI and release qualification remain pending.</p><label for="request">JSON envelope with reference, optional relations and query strings</label><textarea id="request" rows="18" style="width:95%"></textarea><button id="run" disabled>Inspect supplied text</button><p id="status" role="status">Loading Rust…</p><pre id="report" style="white-space:pre-wrap;overflow-wrap:anywhere"></pre><script type="module">
-const request=document.getElementById('request'),run=document.getElementById('run'),status=document.getElementById('status'),report=document.getElementById('report');const worker=new Worker('./worker.js',{type:'module'});worker.onmessage=({data})=>{if(data.type==='ready'){run.disabled=false;status.textContent='Rust ready.';}else if(data.type==='result'){report.textContent=data.canonical;status.textContent='Inspection returned.';}else status.textContent='Rust unavailable.';};run.onclick=()=>{report.textContent='';worker.postMessage(request.value);};request.oninput=()=>report.textContent='';
-</script></body></html>''',encoding='utf-8')
+for source in (HERE/'web').iterdir():
+ if source.is_file():shutil.copyfile(source,out/source.name)
+(out/'examples.json').write_text(json.dumps(examples,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='')
 wasm=out/'pkg/lexicon_inspector_bg.wasm';print(json.dumps({'draft_only':True,'cases':len(cases),'wasm_bytes':wasm.stat().st_size,'wasm_sha256':hashlib.sha256(wasm.read_bytes()).hexdigest()}))

@@ -28,3 +28,16 @@ committed-content gates or changing their expected success to expected failure.
 Correct the independently verified obsolete reference census assertion only.
 The current assurance gate remains red until reviewed-source custody is repaired
 in a separately reviewed content change. This pulse cannot authorize publication.
+
+## Multi-document UI plan
+
+AI-simulated Schema Implementer and Evidence & Claims Editor: pass for an
+explicit three-document editor with unchanged Rust validation. Imported UTF-8
+bytes, including BOM/CRLF, must remain independently downloadable; textarea
+display normalization must not silently change submitted input. An explicit LF
+editing-copy action may change transport only, invalidate prior results, and
+retain original bytes. No JavaScript parser or source-hash repair is permitted.
+Research Integrity & Provenance: require current-input/request/native-report and
+canonical exports, revision fencing, bounded file/startup/compute waits, and
+fault-injection plus mobile/keyboard proof before UI acceptance. Full source,
+legal and hosted publication custody remain separate open gates.

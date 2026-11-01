@@ -1,0 +1,67 @@
+{
+  "schema": "lexicon.inspector-ui-verification.v1",
+  "scope": "local draft interaction only; not hosted or publication approval",
+  "native_consumer_tests": 6,
+  "browser_checks_passed": 11,
+  "browser_retries": 0,
+  "browser_skipped": 0,
+  "exact_native_wasm_cases": 48,
+  "native_content_checks": {
+    "passed": 84,
+    "failed": 3,
+    "ignored": 0,
+    "ready": false
+  },
+  "runtime_files": {
+    "index.html": {
+      "bytes": 2317,
+      "sha256": "a51071b785da35d8772911897d66f094b9d1dd891594727bdf472709a069876e"
+    },
+    "style.css": {
+      "bytes": 1688,
+      "sha256": "1412f791cf8843b91ec98d489c90bb64c514b9308208c71ffb069f530424e1e2"
+    },
+    "app.js": {
+      "bytes": 11717,
+      "sha256": "6206036c3c767a54803d2f460da71847419d3464bd698e304c1756834cd67c0f"
+    },
+    "worker.js": {
+      "bytes": 377,
+      "sha256": "1ecbd0bbf19f2e77b8733f94ac76281764cd8cfb4a0a572eea83fd03f8f948ec"
+    },
+    "examples.json": {
+      "bytes": 1485,
+      "sha256": "103ff88eb266aa2970804f510f3618faec238ee6462b3739f508c4e0162ef73d"
+    },
+    "pkg/lexicon_inspector.js": {
+      "bytes": 6797,
+      "sha256": "18c6fac7198c98be77c89850047416473ef34398b4278b9c4cde0f9a4b6b4f39"
+    },
+    "pkg/lexicon_inspector_bg.wasm": {
+      "bytes": 321555,
+      "sha256": "c9d4ddafb876e36fd0408a858cc1c9bf826368fc1bbffe286e1eb6942f578307"
+    }
+  },
+  "authored_examples_only": true,
+  "browser_result": {
+    "bytes": 13735,
+    "sha256": "debc92432d012bc76b82a58d93910a7b18029f6097077b2aff5c56fe2513b125"
+  },
+  "screenshots": {
+    "editor-mobile.png": {
+      "bytes": 132917,
+      "sha256": "ed5583571f09311a02a0056522085d102a8f5912d7fab99eae73ae8f537dbb94"
+    },
+    "editor-desktop.png": {
+      "bytes": 151580,
+      "sha256": "5198543ce1cc826c3ff533b75339222039c17fd65b648a21e732eff5eb2069d5"
+    }
+  },
+  "native_source_and_reference_unchanged": true,
+  "open_gates": [
+    "Current book review-source custody and frozen/current workspace failures",
+    "Complete source/legal delivery",
+    "Publication gates/order and existing published edition custody",
+    "Clean hosted and live artifact/browser verification"
+  ]
+}

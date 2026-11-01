@@ -17,10 +17,11 @@ npm --prefix browser/inspector run test:pages
 python -B browser/inspector/serve-check.py
 ```
 
-Open http://127.0.0.1:4188/. The draft accepts a JSON envelope whose `reference`,
-optional `relations` and optional `query` fields contain raw document strings.
+Open http://127.0.0.1:4188/. The draft provides separate reference, optional
+relations and optional query editors, UTF-8 file imports and two small authored
+examples. Rust receives a JSON envelope containing the three document strings.
 Each document is capped at 512 KiB UTF-8; the envelope at 2 MiB. Native canonical
-transport is enforced without repairing LF/BOM/order failures in JavaScript.
+transport is enforced without silently repairing LF/BOM/order failures.
 Queries require a supplied relations document and pass native declared-source
 checks. Empty optional fields are reported as not requested. The result retains
 the exact request, native canonical texts/digests, declared query state and
@@ -32,9 +33,21 @@ not embedded in the WASM binary. Authored examples are software demonstrations,
 not canonical Tables or reader evidence. Software uses the existing MIT scope;
 reference/documentation content retains LICENSE-CONTENT.md. Neither scope changes.
 
-Six native tests, strict host/wasm Clippy and two local Chromium checks pass,
-including 48 exact native/WASM responses and an own-input worker task. Full UI,
-file recovery/export/accessibility/deadline tests and deployment/source/legal
-custody remain pending. The main native audit has 80 passing tests and four
-pre-existing content/snapshot failures after correcting checkout line endings.
+Imported originals are retained as exact UTF-8 bytes, separately from current
+editor text and validated canonical exports. Textarea display normalization does
+not change imported payloads. Editing uses textarea LF text; the explicit LF-copy
+action removes BOM/CR transport while preserving the original download. It does
+not reorder records, repair grammar or renew declared query source hashes.
+Every edit/import/example invalidates prior reports and canonical downloads.
+File reads, worker startup and computation have separate 5/12/10-second limits;
+retired readers/workers cannot overwrite newer inputs or results. Restart retains
+inputs. Current-input, original, exact request, native report and canonical
+downloads state which bytes they contain.
+
+Six native consumer tests, strict host/wasm Clippy and eleven local Chromium
+checks pass, including 48 exact native/WASM responses, own inputs, imports and
+exports, byte bounds, deadlines/recovery, stale completions and mobile keyboard
+use. Deployment and complete source/legal custody remain pending. The main
+native audit has 84 passing tests and three content/snapshot failures, retained
+as required-success gates. The strict custody audit remains nonzero/not-ready.
 See the wave's integration and plan-review records; no gate is waived or hidden.

@@ -1,0 +1,13 @@
+:root{font-family:system-ui,sans-serif;color:#202b33;background:#f8f7f1;color-scheme:light}
+*{box-sizing:border-box}body{margin:0}main{max-width:72rem;margin:auto;padding:1.5rem}
+h1{font-size:2.2rem;line-height:1.15}h1 small{font-size:1rem;font-weight:normal}
+p{line-height:1.55;max-width:85ch}a{color:#185775}button,a,input,textarea{touch-action:manipulation}
+button{font:inherit;border:1px solid #677c83;border-radius:.35rem;padding:.65rem .85rem;background:#fff;color:#152b35;cursor:pointer}
+button:disabled{opacity:.55;cursor:default}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #ab4d00;outline-offset:3px}
+.actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:.9rem 0}.boundary{border-left:4px solid #ac6e29;padding:.65rem 1rem;background:#fff7e9}
+fieldset{min-width:0;margin:1.3rem 0;padding:1rem;border:1px solid #99aaa9;border-radius:.5rem;background:#fff}
+legend{font-weight:650;padding:0 .5rem}label{display:block;margin:.7rem 0 .35rem}input[type=file]{max-width:100%;font:inherit}
+textarea{width:100%;min-height:12rem;resize:vertical;font:.9rem/1.5 ui-monospace,monospace;padding:.7rem;border:1px solid #657a83;border-radius:.3rem;tab-size:2}
+.metadata{font-size:.9rem;overflow-wrap:anywhere}#error{color:#943019;font-weight:600}#result{border-top:2px solid #879c99;padding-top:.5rem;margin-top:1.5rem}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font:.85rem/1.5 ui-monospace,monospace}footer{margin-top:2rem;border-top:1px solid #abb8b3;font-size:.9rem}
+@media(max-width:480px){main{padding:1rem}h1{font-size:1.7rem}fieldset{padding:.75rem}.actions button{flex:1 1 11rem}textarea{font-size:1rem}}

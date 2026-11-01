@@ -16,3 +16,4 @@ volumes/**/*.lexicon text eol=lf
 
 fixtures/relations/*.factorium text eol=lf
 fixtures/relations-invalid/*.factorium text eol=lf
+browser/inspector/web/** text eol=lf

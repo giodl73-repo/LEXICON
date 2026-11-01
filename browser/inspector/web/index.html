@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lexicon interchange inspector · draft</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+<main>
+  <nav aria-label="Reference"><a href="../">Return to the Lexicon books</a></nav>
+  <h1>Interchange inspector <small>draft</small></h1>
+  <p>Inspect your reference, relations and declared query using Lexicon’s Rust parsers, running locally in WebAssembly.</p>
+  <p class="boundary">This checks supplied structure and declared query source hashes. It does not read source paths, check Markdown or review assurance, establish semantic truth, or approve a book release. The books and canonical Tables remain authoritative.</p>
+  <p>Files stay in this browser. Each document is limited to 512 KiB of UTF-8; the request envelope is limited to 2 MiB. Native canonical transport requires LF, no BOM, canonical ordering and a final LF.</p>
+  <div class="actions" aria-label="Authored software examples">
+    <button type="button" data-example="reference-only" disabled>Load reference example</button>
+    <button type="button" data-example="declared-query" disabled>Load declared query example</button>
+    <button type="button" id="clear">Clear inputs</button>
+  </div>
+  <p>Examples are authored software fixtures, not new canonical Tables or reader evidence.</p>
+  <div id="documents"></div>
+  <div class="actions">
+    <button type="button" id="run" disabled>Inspect supplied documents</button>
+    <button type="button" id="restart">Restart Rust worker</button>
+  </div>
+  <p id="status" role="status" aria-live="polite">Starting Rust…</p>
+  <p id="error" role="alert"></p>
+  <section id="result" aria-label="Inspection result" aria-busy="false">
+    <h2>Result</h2>
+    <p id="summary">No current result.</p>
+    <div id="exports" class="actions" aria-label="Validated result downloads"></div>
+    <details><summary>Full native JSON report</summary><pre id="report"></pre></details>
+  </section>
+  <footer><p>Local qualification build. Full source/legal delivery and hosted qualification are pending. <a href="https://github.com/giodl73-repo/LEXICON">LEXICON source</a>.</p></footer>
+</main>
+</body>
+</html>
