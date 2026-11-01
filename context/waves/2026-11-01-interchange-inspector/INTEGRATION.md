@@ -34,3 +34,10 @@ before deploying the auxiliary inspector. This does not authorize an R5 edition.
 
 These are retained findings, not waived gates. Keep draft work separate from
 TRACKER pointers and live-release records until qualification is complete.
+
+After materializing canonical LF bytes for 22 affected checkout files, the frozen
+packet and relation-fixture targets pass (seven tests), with no Git blob changes.
+The complete audit now passes 80 tests and retains four failures in CLI and
+reference_sidecar. The frozen packet identity remains exactly
+70190b6e53e8482b37a036f0945b095ac92235bb78333c27f42455c2b27010a9.
+The public Pages log confirms the missing sim-75 manifest failure.
