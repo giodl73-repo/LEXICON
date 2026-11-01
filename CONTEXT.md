@@ -12,6 +12,11 @@ evidence and one tested Lexicon domain.
 
 ## Operating model
 
+Auxiliary implementation is tracked in
+`context/waves/2026-11-01-interchange-inspector/WAVE.md`. It is a draft inspector
+of supplied interchange, not an R4/R5/R6 release or new reference authority.
+Its native/content and publication qualification findings remain open.
+
 - `AGENTS.md` is the startup router.
 - `VISION.md` is the canonical grand vision.
 - `README.md` explains the project.
@@ -24,6 +29,15 @@ evidence and one tested Lexicon domain.
   controls.
 
 ## Current wave
+
+Current-checkout qualification on 2026-11-01 found review-custody drift:
+56 of 244 source bindings differ from their declared raw-byte hashes (21
+match CRLF variants; 35 match neither the tested transport variants nor
+available Git history). The current native sidecar gate fails closed. Run
+`python tools/check_review_custody.py --lexicon-binary <built lexicon>` for
+a read-only JSON report and a nonzero readiness result. The dated proof
+claims below do not certify this checkout's review custody. No review hash
+or Table has been changed to resolve this finding; publication remains pending.
 
 The active wave is
 `context/waves/2026-08-21-funded-domain-gap-roadmap/WAVE.md`. The latest

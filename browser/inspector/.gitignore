@@ -1,0 +1,7 @@
+/target/
+/node_modules/
+/.cache/
+/test-results/
+/.proof/
+__pycache__/
+*.pyc

@@ -7,6 +7,11 @@
 [Read the vision](VISION.md) ·
 [Contribute](CONTRIBUTING.md)
 
+[Inspect supplied interchange in Rust/WebAssembly](https://giodl73-repo.github.io/LEXICON/inspector/)
+— an auxiliary preview for reference, relations and declared query text, with
+original/canonical downloads. It checks grammar and declared source hashes;
+Markdown, review assurance, semantic truth and book-release approval remain separate.
+
 Lexicon is an encyclopedia of ways to decompose problems.
 
 A dictionary helps you choose a meaning. A thesaurus helps you choose a word.
@@ -196,3 +201,12 @@ Lexicon uses split licensing:
 Versions previously distributed under the MIT License remain available under
 that license; this change governs content distributed from this version
 forward.
+
+## Checkout identity
+
+Public repository **LEXICON**, product **Lexicon**, historical local checkout
+`repos/knowledge-systems/factorium`, and frozen **Formarium** / **Factorium**
+imports are distinct surfaces. Do not infer active schema, command, publication,
+or customer-preview targets from the local folder name. Read the
+[identity boundary](docs/IDENTITY-AND-CHECKOUT.md) and
+[doctrine index](.pitfall/PITFALL.md) before onboarding or portfolio handoff.

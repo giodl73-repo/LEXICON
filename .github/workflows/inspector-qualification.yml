@@ -1,0 +1,51 @@
+name: Qualify Lexicon inspector draft
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: inspector-qualification-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  current-content:
+    name: Current native content and custody gates
+    runs-on: ubuntu-latest
+    env:
+      CARGO_TARGET_DIR: ${{ github.workspace }}/target/cargo-content
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Install pinned Rust
+        run: rustup toolchain install 1.95.0 --profile minimal --component clippy
+      - name: Run all required native tests without hiding content failures
+        shell: bash
+        run: |
+          mkdir -p target
+          cargo +1.95.0 test --locked --no-fail-fast 2>&1 | tee target/content-native.log
+      - name: Strict current review custody
+        if: always() && !cancelled()
+        run: python -B tools/check_review_custody.py --lexicon-binary "${CARGO_TARGET_DIR}/debug/lexicon" > target/content-custody.json
+      - name: Preserve content gate evidence
+        if: always() && !cancelled()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lexicon-current-content-gates
+          path: |
+            target/content-native.log
+            target/content-custody.json
+          if-no-files-found: error
+
+  inspector-and-preserved-book:
+    if: github.event_name != 'push'
+    uses: ./.github/workflows/inspector-build.yml
+
+# Full current-content failures remain visible. The reusable preview build
+# admits no current-content release or R5/R6 approval; see GATE-OWNERSHIP.md.

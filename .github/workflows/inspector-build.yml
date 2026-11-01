@@ -1,0 +1,98 @@
+name: Build Lexicon inspector and preserved book
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Inspector source, browser and pinned-book qualification
+    runs-on: ubuntu-latest
+    env:
+      CARGO_TARGET_DIR: ${{ github.workspace }}/target/cargo-inspector
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned Rust and bindings
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          rustup toolchain install 1.95.0 --profile minimal --component clippy --target wasm32-unknown-unknown
+          archive="wasm-bindgen-0.2.127-x86_64-unknown-linux-musl.tar.gz"
+          install_dir="${RUNNER_TEMP}/wasm-bindgen-0.2.127"
+          gh release download 0.2.127 --repo wasm-bindgen/wasm-bindgen --pattern "${archive}" --dir "${RUNNER_TEMP}"
+          echo "61d4a7dc85acfa0d2354ccc0b8361928c7e52a746d17f28ebaa795ed3dc1614a  ${RUNNER_TEMP}/${archive}" | sha256sum --check
+          mkdir -p "${install_dir}"
+          tar --extract --gzip --file "${RUNNER_TEMP}/${archive}" --directory "${install_dir}" --strip-components=1
+          echo "${install_dir}" >> "${GITHUB_PATH}"
+      - name: Protect native/reference/founding source
+        run: git diff --exit-code 4c7b174035d04e2c085eb24e6be7add3502a81b0 HEAD -- src Cargo.toml Cargo.lock reference tables specs artifacts fixtures
+      - name: Check retained identity boundary
+        shell: pwsh
+        run: ./tests/check-identity-boundary.ps1
+      - name: Qualify native consumer and lint
+        run: |
+          cargo +1.95.0 test --locked --lib
+          cargo +1.95.0 test --locked --test review_custody
+          cargo +1.95.0 clippy --locked --all-targets -- -D warnings
+          cargo +1.95.0 test --locked --manifest-path browser/inspector/Cargo.toml
+          cargo +1.95.0 clippy --locked --manifest-path browser/inspector/Cargo.toml --all-features --all-targets -- -D warnings
+          cargo +1.95.0 clippy --locked --manifest-path browser/inspector/Cargo.toml --lib --features wasm --target wasm32-unknown-unknown -- -D warnings
+      - name: Install browser QA
+        run: |
+          npm --prefix browser/inspector ci
+          npm --prefix browser/inspector exec -- playwright install --with-deps chromium
+      - name: Build and require clean-source staging
+        run: |
+          python -B browser/inspector/build-check.py
+          python -B browser/inspector/stage.py
+      - name: Test exact staged inspector under project prefix
+        run: npm --prefix browser/inspector run test:pages
+      - name: Independently rebuild downloaded portable source
+        run: python -B browser/inspector/verify-source.py
+      - name: Check out the published book source independently
+        uses: actions/checkout@v4
+        with:
+          ref: 0526d86ff5629abbda26affb9bf8666e7bee7088
+          path: target/published-source
+      - name: Install the published renderer version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          archive="pandoc-3.9-linux-amd64.tar.gz"
+          install_dir="${RUNNER_TEMP}/pandoc-3.9"
+          gh release download 3.9 --repo jgm/pandoc --pattern "${archive}" --dir "${RUNNER_TEMP}"
+          echo "872a10c7ec29d5278831d855b11bd4ade0df4d5ec9a089a3197bc63a37eb4003  ${RUNNER_TEMP}/${archive}" | sha256sum --check
+          mkdir -p "${install_dir}"
+          tar --extract --gzip --file "${RUNNER_TEMP}/${archive}" --directory "${install_dir}" --strip-components=1
+          echo "${install_dir}/bin" >> "${GITHUB_PATH}"
+      - name: Render and verify the actual published edition
+        shell: pwsh
+        run: ./target/published-source/tools/render_proof_set.ps1 -Edition sim-67
+      - name: Preserve all published book bytes
+        run: |
+          node target/published-source/tools/check_lexicon_canonical.js
+          python -B browser/inspector/stage-book.py
+      - name: Verify complete publication artifact
+        run: python -B browser/inspector/verify-site.py --expected-commit "$(git rev-parse HEAD)"
+      - name: Preserve qualification evidence
+        if: always() && !cancelled()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lexicon-inspector-qualification
+          path: |
+            target/pages/LEXICON
+            target/inspector-preview/native-cases.json
+            browser/inspector/.cache
+          if-no-files-found: error
+          include-hidden-files: true

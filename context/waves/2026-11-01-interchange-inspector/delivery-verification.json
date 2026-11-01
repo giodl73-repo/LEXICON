@@ -1,0 +1,58 @@
+{
+  "schema": "lexicon.inspector-delivery-verification.v1",
+  "checked_at_utc": "2026-11-01T20:57:34.577432+00:00",
+  "scope": "local dirty-source qualification; not hosted or deployed",
+  "browser_cases": 14,
+  "retries": 0,
+  "native_consumer_tests": 6,
+  "native_wasm_responses": 48,
+  "strict_native_host_and_wasm_clippy": "pass",
+  "main_native_audit": {
+    "passed": 84,
+    "failed": 3,
+    "ignored": 0,
+    "current_book_ready": false
+  },
+  "inventory": {
+    "bytes": 16455,
+    "sha256": "05221448d662039e5c736299a61303e277ad0b6105c703c8d82fa4e1dd3f1114"
+  },
+  "helper_files": 103,
+  "helper_bytes": 1862442,
+  "wasm": {
+    "bytes": 321363,
+    "sha256": "7dcb7f8e88d461ffb0c249fe680e053f3cca004cebafdda20a1f768e5823a5fc"
+  },
+  "dependencies": 27,
+  "rust_notice_files": 13,
+  "source_rebuild": {
+    "schema": "lexicon.portable-source-rebuild.v1",
+    "source_commit": "a2add4528bc798d2a72ddd96938e1476b5d2f9f1",
+    "source_dirty": true,
+    "source_zip_sha256": "694ccaa7d7dfa1bf31ec0f3559e3296560737903ae0e4ab02bc9dfefc5e37d7d",
+    "source_files": 64,
+    "consumer_tests_passed": 6,
+    "browser_tests_passed": 14,
+    "native_wasm_responses": 48,
+    "original_wasm_sha256": "7dcb7f8e88d461ffb0c249fe680e053f3cca004cebafdda20a1f768e5823a5fc",
+    "rebuilt_wasm_sha256": "9139fd4d1435a64dec6cf0ba38a7b528141a35bbf05f14112a4cd88e5f293d55",
+    "scope": "Portable source archive rebuild; not current book or hosted publication approval",
+    "wasm_byte_identical": false,
+    "all_native_inputs_and_responses_identical": true,
+    "cross_directory_binary_reproducibility": "not_established"
+  },
+  "published_book": {
+    "edition": "sim-67",
+    "source_commit": "0526d86ff5629abbda26affb9bf8666e7bee7088",
+    "complete_files": 528,
+    "aggregate_files": 523,
+    "windows_stage": "rejected book.html whitespace difference; no files copied",
+    "hosted_linux": "pending"
+  },
+  "open_gates": [
+    "Clean-source and Linux hosted qualification",
+    "Published book complete 528-file exact match and bounded navigation/manifest integration",
+    "Explicit content-versus-auxiliary gate classification; current corpus custody stays red",
+    "Default-branch tested artifact and exact live file/browser verification"
+  ]
+}

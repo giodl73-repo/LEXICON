@@ -1,0 +1,642 @@
+{
+  "schema": "lexicon.review-custody-audit.v1",
+  "ready": false,
+  "native_binary_sha256": "e74f73d296caf344526979948a5eb86f5f3bd2aef1e8deb2c6db75dd1d1e0949",
+  "input_sha256": {
+    "reference/lexicon-reference-v4.lexicon": "38831a85d09812e8f045ce18800fe145f41c68984000675347c4835bcb38d6da",
+    "reference/lexicon-relations-v2.lexicon": "c4fdc129701bf4bee822754672d6dd11361c9507beb42f7942346bee4b92d27a",
+    "reference/lexicon-assurance-v4.lexicon": "afd2372e718c9bb30770aecb1d2cf9e0ed5a3fa89d7de303686e7890afe7eb3b"
+  },
+  "native_checks": [
+    {
+      "arguments": [
+        "reference-check",
+        "reference/lexicon-reference-v4.lexicon",
+        "."
+      ],
+      "exit_code": 0,
+      "stdout": "reference=reference/lexicon-reference-v4.lexicon\nentries=133\naliases=6\nsenses=846\nfactors=1419\nviews=100\nunresolved_view_owners=0\nreference_sha256=38831a85d09812e8f045ce18800fe145f41c68984000675347c4835bcb38d6da\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "reference-sidecar-check",
+        "reference/lexicon-reference-v4.lexicon",
+        "reference/lexicon-relations-v2.lexicon",
+        "reference/lexicon-assurance-v4.lexicon",
+        "."
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "lexicon: reference/lexicon-assurance-v4.lexicon: stale review for `entry:amount-concentration-composition`: source digest ab9ca3b109a4225ac80cbaf8141fcaa77b003f81aaff8129b060df8012b7c820 != b5e1bf736b16e9f1c758a9b0cc767736467dc69825aca4b7e33583efc2e682c1\n"
+    }
+  ],
+  "boundary": "Native checks are authoritative. Diagnostics confer no review, semantic, reader-outcome or publication approval. No files changed.",
+  "diagnostics": {
+    "source_bindings": 244,
+    "source_digest_mismatches": [
+      {
+        "artifact": "entry:amount-concentration-composition",
+        "source": "tables/entries/amount-concentration-composition.md",
+        "expected_sha256": "b5e1bf736b16e9f1c758a9b0cc767736467dc69825aca4b7e33583efc2e682c1",
+        "observed_sha256": "ab9ca3b109a4225ac80cbaf8141fcaa77b003f81aaff8129b060df8012b7c820",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/FRACTION-MOLAR-MASS-COMPOSITION-BASIS-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "entry:comparative-quantity",
+        "source": "tables/entries/comparative-quantity.md",
+        "expected_sha256": "8e23f6bc4c527ded91f4a2cc116f28bae39d1bb3f424b37f1a459128d44c8661",
+        "observed_sha256": "5074dbbe7b2d3d9ef40c2739fde634c022bf76d9e49cbf59a018d23ff3eff306",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/FRACTION-MOLAR-MASS-COMPOSITION-BASIS-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "entry:cost-price-value-return",
+        "source": "tables/entries/cost-price-value-return.md",
+        "expected_sha256": "c7d2c4bb13e2c8e45e406aec5ef55e4e886949eaba124874f4aeb23b18c668dd",
+        "observed_sha256": "727f1f80f6ad9a091fed43ba6fc9af88f1468e19752600308c4856d51b5d0024",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/ECONOMIC-BASIS-INFLATION-NPV-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "entry:electrical-quantity",
+        "source": "tables/entries/electrical-quantity.md",
+        "expected_sha256": "fdfea5fa5d55e2b6d9ff6efee35c3e01d9ba1c0e63b22e302fa04c1e7143ba74",
+        "observed_sha256": "29a6c78f1ff2a1f999b5d913b241fa2dee96929929ebcc14446122835d240635",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/ELECTRICAL-FIELD-MATERIAL-IMPEDANCE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "entry:factorization-quality",
+        "source": "tables/entries/factorization-quality.md",
+        "expected_sha256": "27978512e24b810b79b2c6ba60325d805dec1c1f4807493dc29e7832de6a13e0",
+        "observed_sha256": "2e2412a548170c0538bf5a3a4d0851c171a1ea3644234b9230cca537cf5a43b1",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/FACTOR-FORGE-PORTFOLIO-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "entry:force",
+        "source": "tables/entries/force.md",
+        "expected_sha256": "7984c00f7107d52208e5c9eb871c2120fc5179eb67b62a85f87ee082b3b6d4dd",
+        "observed_sha256": "47a88b2d8f955447024d15ca460e1c6c2d4497d9340c8b332701fe3f42568133",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/F38-F50-CONTENT-CAMPAIGN-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-16"
+      },
+      {
+        "artifact": "entry:geometric-measure",
+        "source": "tables/entries/geometric-measure.md",
+        "expected_sha256": "262f68a3c30d61dd9e2c2083ab4642457d91755b9b65dfe5277c707bb49265d8",
+        "observed_sha256": "2ee67950d20aca55eb31506c3319e6d499f6947a249c3d98da703d03bf9fc272",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/GEOMETRIC-REFERENCE-STRUCTURE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "entry:governance-obligation-compliance",
+        "source": "tables/entries/governance-obligation-compliance.md",
+        "expected_sha256": "db21234cdf29a264e3ff97903e900ca24edbbf0a216103a573cf41895386ef7f",
+        "observed_sha256": "3179d581bcd9c2238cd9639e707d4fabaffe5cd812350896b934eb86e4eb4608",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/GOVERNANCE-LEDGER-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "entry:identity-naming-classification-versioning",
+        "source": "tables/entries/identity-naming-classification-versioning.md",
+        "expected_sha256": "428f5351852ada67d3a15ad1c6d13b82e1cf2bef150c9269776342ea3f2eb960",
+        "observed_sha256": "96f27687018b0b1763c4c5b58e0f7d4487be7214b2bd46d41d40427db5373d23",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "signals/roles/check/gpc-09-boundary-custody-admission-roles-check-2026-08-18.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-18"
+      },
+      {
+        "artifact": "entry:information-data-signal-noise",
+        "source": "tables/entries/information-data-signal-noise.md",
+        "expected_sha256": "c99e29968c12435b88e602c2aef6ce7d33d8024a01506275c4fb2c3f6e5f11b5",
+        "observed_sha256": "ae89685a2399cab91cfb518df382eda101f604f7e2ae6abbc38c61ce9fc222d6",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/F38-F50-CONTENT-CAMPAIGN-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-16"
+      },
+      {
+        "artifact": "entry:matter-load-measure",
+        "source": "tables/entries/matter-load-measure.md",
+        "expected_sha256": "1f5eb203a3a03440c3c952493cc440c3af4c9b1e878b08924e4545cf923b5482",
+        "observed_sha256": "7189c1ed6f82c7a2ae984cf17afe176d92f17b63c790e6ef0f975a068b4dba88",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/MOMENTUM-TORQUE-STRESS-FIELD-DENSITY-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "entry:physical-constant",
+        "source": "tables/entries/physical-constant.md",
+        "expected_sha256": "d9d66056e0ce216ba6de9ec5d007b62d568d718b6301f04766f533335139081f",
+        "observed_sha256": "c57fecaea4fa3ec26f725519d33a7a9204c40940c53293e658e907347554bf8a",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/FACTOR-FORGE-PORTFOLIO-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "entry:policy-rule-constraint-decision-exception",
+        "source": "tables/entries/policy-rule-constraint-decision-exception.md",
+        "expected_sha256": "639339b380e0a4b6ad37ee7ef7aecd20400d1ea45e90ad966c3adf9718c24977",
+        "observed_sha256": "fa1aea8679606f5fa0a0ad16aec1d8f0af2916fe33aa68e87726fb65c98c80bd",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/F38-F50-CONTENT-CAMPAIGN-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-16"
+      },
+      {
+        "artifact": "entry:probability-risk-uncertainty",
+        "source": "tables/entries/probability-risk-uncertainty.md",
+        "expected_sha256": "7702916b84e7d33acb06a4ec0bf020ef9d97c958839abb34db9b4198b97b336f",
+        "observed_sha256": "a0abba00e0223e313c59ee8b5d6aeb61f163c6ef896b36f857377fbf3b5eef34",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/PROBABILITY-LIKELIHOOD-FUNCTION-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "entry:software-module-service-resource",
+        "source": "tables/entries/software-module-service-resource.md",
+        "expected_sha256": "d00125bbe6a13e92296ecb4dbaf3111d7ba08527d9b2d7144b02898cb0b56016",
+        "observed_sha256": "6b840934488e3eff3a629a4d6f50785a5f33bf6e0fb271d3e07c5d9192d7b67a",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/SOFTWARE-MECHANISM-BRIDGE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "entry:software-type-value-function",
+        "source": "tables/entries/software-type-value-function.md",
+        "expected_sha256": "42ff277d2aabb90df4996718179eba02a4151c7037b47c15d38a578720806d82",
+        "observed_sha256": "ed231b92c5554cbe19ca84d78b1e6e9c3f8376563742ea9e7da1ab5a8ff8a2f9",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/SOFTWARE-MECHANISM-BRIDGE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "entry:state-event-transition-process-lifecycle",
+        "source": "tables/entries/state-event-transition-process-lifecycle.md",
+        "expected_sha256": "3b246217728bb926906ac9b290fa5b50bccff4b4184de765a378cf0ccfbe035d",
+        "observed_sha256": "68bd7efe1421388284d19485a6d4ad4dfdf9239c3b720b64cecfd6b6671f8069",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/COORDINATED-WORK-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "entry:thermal-quantity",
+        "source": "tables/entries/thermal-quantity.md",
+        "expected_sha256": "2510007a9fc21fa32a96c51863f80d8bdf1365bb8ddbbe1920839b33acaccf18",
+        "observed_sha256": "1ca19f21dba0ddf3f05204b7970eacbab853fed3dd18e9d06beffb0cc30d3b2a",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/THERMODYNAMIC-SYSTEM-STATE-PHASE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "entry:work-energy-power",
+        "source": "tables/entries/work-energy-power.md",
+        "expected_sha256": "469467e7f72833d2ced55a01d87ccda94ba3110c09a046a90c78c870bad9e203",
+        "observed_sha256": "6124aeba45614ee70142e5eaae9a8579ff786acd2259c21904ac3f58d46c837f",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/MOMENTUM-TORQUE-STRESS-FIELD-DENSITY-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:constraint-policy-constraints",
+        "source": "tables/constraints/policy-constraints.md",
+        "expected_sha256": "ea3b46c3f573862e6b015fa862b3554de8af91fe85d8205910839fbb5f4c5af1",
+        "observed_sha256": "39dd91d7c528bc1f026ca6ab09582be31ecab3797f05db05914861ea4c136a05",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/F38-F50-CONTENT-CAMPAIGN-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-16"
+      },
+      {
+        "artifact": "view:constraint-system-composition-integrity",
+        "source": "tables/constraints/system-composition-integrity.md",
+        "expected_sha256": "2b4188f727415977716cb1b4f6137da175d53ee754467bfd7dd900c461a0a1ab",
+        "observed_sha256": "c63df33dbc42eb6ff2ec00f4e8c7ecefdbc76c8fa32537e8c0c66b3e5b9e44f2",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/SYSTEM-ARCHITECTURE-DESCRIPTION-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-16"
+      },
+      {
+        "artifact": "view:decision-policy-decision",
+        "source": "tables/decisions/policy-decision.md",
+        "expected_sha256": "f27ca418e628443e5ab4bda45c5a79b25931da08be85bb7e6d77d1b7321465f7",
+        "observed_sha256": "fb2b966b2464bac55c65ccdd5efc6c1d60a72832d91f1b22f328b86c58cf9471",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/STRUCTURAL-ANCHORS-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:diagnostic-control-response-failures",
+        "source": "tables/diagnostics/control-response-failures.md",
+        "expected_sha256": "4088fcde8cf06186bcdeb4483415108c6018869825c5a9ca82d5775b0e67cdf5",
+        "observed_sha256": "cbd051efcb778031f372d66c4c8d884304cf520101f0fb1e4fa1b522e4ee2983",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/CONTROL-TARGET-ACTUATION-SERVICE-OBJECTIVE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:diagnostic-factorization-failures",
+        "source": "tables/diagnostics/factorization-failures.md",
+        "expected_sha256": "275bc4301d9b19314016ba19222df136ac7cc24f5bd82e374ed133f9733a6495",
+        "observed_sha256": "b716862f440a77efe6ad356ee2dc03509fccd4f7c244f2a0917e4579f09a1071",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/REMAINING-FAMILIES-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:evidence-founding-factor-evidence",
+        "source": "tables/evidence/founding-factor-evidence.md",
+        "expected_sha256": "6314905c0d750c49278e67aa386073b6fb566b06294a66dbce0496d2e5552b47",
+        "observed_sha256": "5035c9f0050dd84a69ea6a5109dddaa8144e7f74964f89bea10efb840eae6767",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/REMAINING-FAMILIES-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:evidence-observation-inference-chain",
+        "source": "tables/evidence/observation-inference-chain.md",
+        "expected_sha256": "d3c71683ab9153f9382cea28b3c378047b68fb8bda79b9d08a01da3acda699ed",
+        "observed_sha256": "07da28b795295d0cfa80d62352101c37caf1d92f0039e78c77be8fd41f2fc2f8",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/OBSERVATION-INFERENCE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:formula-amount-concentration-composition",
+        "source": "tables/formulas/amount-concentration-composition.md",
+        "expected_sha256": "82cd97abc5ca7d572d4612bee18dc7d09f43bdf80421ab867b7a11ff2084e5f7",
+        "observed_sha256": "89f24d019f53bd42954745aa2addc11713022746f2aa238b1c695454fd71895f",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/FRACTION-MOLAR-MASS-COMPOSITION-BASIS-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-arithmetic-mean",
+        "source": "tables/formulas/arithmetic-mean.md",
+        "expected_sha256": "479ab98d0dc209fc8d82eb02f3932596980f8ca6fb3949b89540330041bb937c",
+        "observed_sha256": "5653d5017e1e8e582cda7748f023fa873d6cb869afcc53c1652c4ec640da9f97",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/STATISTICAL-SUMMARY-INTERVAL-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-common-geometric-measures",
+        "source": "tables/formulas/common-geometric-measures.md",
+        "expected_sha256": "a712832f399484a224ea6ab6f1d9414dc5b6d9a36456a43377f5c950b035fc4b",
+        "observed_sha256": "1dbed0d94062b1b25ffc9365d640c05da69a05a5127a64c96d042066701e951f",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/GEOMETRIC-MEASURE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:formula-comparative-quantities",
+        "source": "tables/formulas/comparative-quantities.md",
+        "expected_sha256": "74fd351de0008215837ff6f795adca2d9b0c3f55ee0e9a5cc1e400eddbbce84c",
+        "observed_sha256": "c15d15d6d9ec3640074182f06bc9477d27e978c24f6c0292f6df28ce645ae4ef",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/FRACTION-MOLAR-MASS-COMPOSITION-BASIS-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-cost-value-return",
+        "source": "tables/formulas/cost-value-return.md",
+        "expected_sha256": "3223ffbc995fd5a0cf27d801ea34636239b56ee803b86b99136b079fe01d89f1",
+        "observed_sha256": "3b3b30f0bfda6be3ddff7467019f5c6a40a6d14e82379cbcb985174fd20d5483",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/ECONOMIC-BASIS-INFLATION-NPV-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-density",
+        "source": "tables/formulas/density.md",
+        "expected_sha256": "540bf211443c99a08c3759a724638345871f5a94eb424f40969e16fe270ae2b0",
+        "observed_sha256": "40eaab57e61eace75f25aaa46ed8ea9b74d3e38ba496e57fdf994d0afd502706",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/MOMENTUM-TORQUE-STRESS-FIELD-DENSITY-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-electrical-quantities",
+        "source": "tables/formulas/electrical-quantities.md",
+        "expected_sha256": "d07188c5aad93cbe15db7a2ed0e0ffbf8ccb337595e3a29737b3182a457f44d4",
+        "observed_sha256": "b2d588cdcecda5f811980c5f463a3915fca1df331635e2af34e120d1fc1f983a",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/ELECTRICAL-FIELD-MATERIAL-IMPEDANCE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-force",
+        "source": "tables/formulas/force.md",
+        "expected_sha256": "3330c1a5d3c4248fdf24a1217b043dd5a50a1a57032455bfdbf75bf02c973dbc",
+        "observed_sha256": "c144d4e35a1cad1b8fa74720200a9de3c5ddfd4fdfc973727be7fd32fe4029c4",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/MOMENTUM-TORQUE-STRESS-FIELD-DENSITY-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-general-accounting-balance",
+        "source": "tables/formulas/general-accounting-balance.md",
+        "expected_sha256": "dc9186dd6c306a35b5a10c11ffe0342c4ef5f8e341441a3dc1870c07094fe766",
+        "observed_sha256": "81239c90227164f87c97a4ddd6e3ea430aa36eb10d4a0e38471444980efd7470",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/STOCK-FLOW-BALANCE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-information-signal-measures",
+        "source": "tables/formulas/information-signal-measures.md",
+        "expected_sha256": "5aeb5a451d9780b9c1861b340434f674771c15eb9454e8ade854288f629dc365",
+        "observed_sha256": "b004d6634ef4d8a2a12e12e4905719aff0639714ded87bd77bee90cfbb1836cc",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/INFORMATION-ENCODING-CHANNEL-CAPACITY-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-kinematics-motion-measures",
+        "source": "tables/formulas/kinematics-motion-measures.md",
+        "expected_sha256": "ddc58aeb05c297cd3ecea0c1c0c18ac6f159e9b41502be65ce8f33de0aef95c2",
+        "observed_sha256": "733e24eee5be1c71d7ba62dace527a9f2a47eb3f1b92d6acfec201f0ae40676d",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/MOMENTUM-TORQUE-STRESS-FIELD-DENSITY-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-matter-load-measures",
+        "source": "tables/formulas/matter-load-measures.md",
+        "expected_sha256": "776da058b2cce28f3c7cdfc4bce521722e0da965793c3afd324cc0c6f3142a99",
+        "observed_sha256": "7722a7db77261097581973870fee15364b1b681e56baae02e71d9d4b6c9b318f",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/MOMENTUM-TORQUE-STRESS-FIELD-DENSITY-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-mechanical-work-energy-power",
+        "source": "tables/formulas/mechanical-work-energy-power.md",
+        "expected_sha256": "0e75178de7f97a2297075a15f81b70bba4c822134305430ab7dcac69a7078b73",
+        "observed_sha256": "f06d0c6b80b9efbe1c060bdbbbc4b54650d6996babf46d752171ecc1c0bd5166",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/MOMENTUM-TORQUE-STRESS-FIELD-DENSITY-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-newtons-method",
+        "source": "tables/formulas/newtons-method.md",
+        "expected_sha256": "e257ded1edf85a8600e9c8247726d967ff6fcbbcdfa554a4bc2c312572ddbd09",
+        "observed_sha256": "f60320d18bc8cedf200f527da208b9beeff91194a7ae862f90adbc34e9ef7253",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/MATHEMATICAL-RELATION-SOLVING-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-ohms-law",
+        "source": "tables/formulas/ohms-law.md",
+        "expected_sha256": "1c422d0b5c59d39b15d165a608db00695af483e7ff388a452ea5aed60c0a927b",
+        "observed_sha256": "c769f01ab822fec69f0cf04adb35821ec4da2d6663191f9c78d589d57fec154d",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/FORMULA-PILOTS-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:formula-periodic-wave-quantities",
+        "source": "tables/formulas/periodic-wave-quantities.md",
+        "expected_sha256": "43e9f529426ea0bad079de5f15842c38e6b2d041c88900a49d840623e157c2e8",
+        "observed_sha256": "e2fea16604bac5c6b52cb033b2c1a0abf7ed2552a58dc4b72874159c27fbf711",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/OSCILLATION-SPECTRUM-DISPERSION-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-probability-range",
+        "source": "tables/formulas/probability-range.md",
+        "expected_sha256": "ef600d46badf42b3f4489e5c0d2bf0714e007821e1f8b4e45265a134ebab9530",
+        "observed_sha256": "b81c2f27738bcc50ed61322c4397799d62e1889218e0c0ae0f8a0fa6e5fe359b",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/MEASUREMENT-QUALITY-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-probability-risk-uncertainty",
+        "source": "tables/formulas/probability-risk-uncertainty.md",
+        "expected_sha256": "77ffe40cd9230494dcee35f8f8a4b95537b23d92aaf20898bbd187bc90afbda6",
+        "observed_sha256": "cf93eb9524ea8c6d2ecc4f575f556d65b65d9f0c1ad892087d2cb62834701d61",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/PROBABILITY-LIKELIHOOD-FUNCTION-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-pythagorean-trigonometric-identity",
+        "source": "tables/formulas/pythagorean-trigonometric-identity.md",
+        "expected_sha256": "840e798f6e837fde87f9bc9d353b44a8f9511f15a0a4934ef603c8ce34c9a1f9",
+        "observed_sha256": "a6f5839085d7e7ccfe5178ae1b5c0a3756b200219c35c9e531064789e5f2b15a",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/GEOMETRIC-REFERENCE-STRUCTURE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:formula-thermal-quantities",
+        "source": "tables/formulas/thermal-quantities.md",
+        "expected_sha256": "e821e7caa5f685415ac69a101c6d4b05869b2cdc9b8ed1a5ca816cafbe335940",
+        "observed_sha256": "b48f90609386bdfa9a23faba90e3605380fb6772db188d2fe20b1d54e3f889c6",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/THERMAL-QUANTITY-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:mapping-factor-role-mechanisms",
+        "source": "tables/mappings/factor-role-mechanisms.md",
+        "expected_sha256": "aab8bab10c79c650da8951d794b06f5fd1a4f0b924a786252c9d7738b572e99c",
+        "observed_sha256": "32f0dfddbcb9c6d7ca884a993a0b780ce670d9f7c0463cd75a06fd5535e3d015",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/FACTOR-ROLE-MAPPING-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:mapping-governance-compliance-mechanisms",
+        "source": "tables/mappings/governance-compliance-mechanisms.md",
+        "expected_sha256": "2cc5f76ddbd97cff7af579fb16c45ce33c90bfb8bc3c888631e47286e2c03828",
+        "observed_sha256": "92bbdc0a4e4f1eeb7c67cdd066970bcac293b3d7aec26b84ac87ee870d952397",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/GOVERNANCE-LEDGER-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:mapping-organizational-assignment-semantics",
+        "source": "tables/mappings/organizational-assignment-semantics.md",
+        "expected_sha256": "ed986ec0b93958465d6fce7b492d33ad779650eb2775397ad5e64a18e5bc4ed6",
+        "observed_sha256": "1977e3470b9768703335d30f3f5187c03b5e3d339f120e55466653c790409dbf",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/F38-F50-CONTENT-CAMPAIGN-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-16"
+      },
+      {
+        "artifact": "view:mapping-software-architecture-mechanisms",
+        "source": "tables/mappings/software-architecture-mechanisms.md",
+        "expected_sha256": "1c81933541bbb8b9644ba6d18e0ea9419aa56009e4febfcb91419579d4febd4b",
+        "observed_sha256": "141201292881a18a50071c4e65b79396f338cdd16693cecdd6636817a5473e93",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/SOFTWARE-MECHANISM-BRIDGE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:mapping-software-interaction-mechanisms",
+        "source": "tables/mappings/software-interaction-mechanisms.md",
+        "expected_sha256": "44771419a9574d6d376d38ded9f817e56ee02ca72adcb5231c2649cc5c594685",
+        "observed_sha256": "0fef0bd9586abebc9dd6da5d2060baa7bb98f55f1067e666185839c84a4b8b78",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/SOFTWARE-MECHANISM-BRIDGE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:mapping-software-program-constructs",
+        "source": "tables/mappings/software-program-constructs.md",
+        "expected_sha256": "49d553fab4903b94fc8c97e9deef642ec0793d25294e1c6f1b0a8caaadf7e6cd",
+        "observed_sha256": "bab6773bdeed5f72666bd1d588898a4c25d14de2495bdfa3775b098ce8d27cc5",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/SOFTWARE-MECHANISM-BRIDGE-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:mapping-temperature-scales",
+        "source": "tables/mappings/temperature-scales.md",
+        "expected_sha256": "ff7e105f1c71bc5d21bf2b3d6d868d538e93478a867f98552729b4b733768052",
+        "observed_sha256": "56278ae55bd76b8f5b4e2b4cf39c462f36f1b2def56099badb50aee7a69021b5",
+        "transport_matches": [],
+        "review": "context/waves/2026-08-13-factorium-vision/QUANTITY-VALUE-UNIT-CONVERSION-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-15"
+      },
+      {
+        "artifact": "view:mapping-version-scheme-semantics",
+        "source": "tables/mappings/version-scheme-semantics.md",
+        "expected_sha256": "fd108b5c9d9df9d08c856b8093d861ebf6d51921e599c45171653bd11da43f65",
+        "observed_sha256": "672ab657de83d23976a8cc21ec5630db9206be381399f06839361eb808b0cfa1",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/STRUCTURAL-ANCHORS-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:reference-value-si-defining-constants",
+        "source": "tables/values/si-defining-constants.md",
+        "expected_sha256": "51599c404176960d3ff31d039518499faf4c4ab4a5a825c86ba21cc487979789",
+        "observed_sha256": "943b548cb9a328bf99947d49616a9478edb410203cccf3468dbc8e335afe8f70",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/REMAINING-FAMILIES-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      },
+      {
+        "artifact": "view:transition-generic-lifecycle",
+        "source": "tables/transitions/generic-lifecycle.md",
+        "expected_sha256": "088c961df96f98be5b49e93595a4c7504e95c5159907d69b18df1d29f719b9ab",
+        "observed_sha256": "cc9d9e226d4e19fbf8ef41d7a1918135d1804989a02a66d7f5a1b179a6e86f8a",
+        "transport_matches": [
+          "crlf"
+        ],
+        "review": "context/waves/2026-08-13-factorium-vision/STRUCTURAL-ANCHORS-ROLE-REVIEW.md",
+        "declared_status": "fixed-point",
+        "declared_date": "2026-08-14"
+      }
+    ]
+  }
+}

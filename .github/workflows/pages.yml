@@ -1,77 +1,44 @@
-﻿name: Deploy Lexicon website
+name: Deploy Lexicon books and auxiliary inspector
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
+  build:
+    uses: ./.github/workflows/inspector-build.yml
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
         with:
-          node-version: 22
-
-      - name: Install Pandoc
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PANDOC_VERSION: "3.9"
-          PANDOC_SHA256: "872a10c7ec29d5278831d855b11bd4ade0df4d5ec9a089a3197bc63a37eb4003"
-        run: |
-          archive="pandoc-${PANDOC_VERSION}-linux-amd64.tar.gz"
-          install_dir="${RUNNER_TEMP}/pandoc"
-          gh release download "${PANDOC_VERSION}" \
-            --repo jgm/pandoc \
-            --pattern "${archive}" \
-            --dir "${RUNNER_TEMP}"
-          echo "${PANDOC_SHA256}  ${RUNNER_TEMP}/${archive}" | sha256sum --check
-          mkdir -p "${install_dir}"
-          tar --extract --gzip \
-            --file "${RUNNER_TEMP}/${archive}" \
-            --directory "${install_dir}" \
-            --strip-components=1
-          echo "${install_dir}/bin" >> "${GITHUB_PATH}"
-
-      - name: Verify Lexicon contracts
-        run: |
-          node tools/build_lexicon_contracts.js --check
-          node tools/check_candidate_entries.js
-          node tools/check_lexicon_candidate_admissions.js
-          node tools/check_lexicon_domain_admissions.js
-
-      - name: Render website
-        shell: pwsh
-        run: ./tools/render_proof_set.ps1 -Edition sim-69
-
-      - name: Verify website
-        run: node tools/check_lexicon_canonical.js
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload website
-        uses: actions/upload-pages-artifact@v4
+          ref: ${{ github.sha }}
+      - uses: actions/download-artifact@v4
         with:
-          path: target/proof-set-sim-69
-
-      - name: Deploy website
+          name: lexicon-inspector-qualification
+          path: .
+      - name: Verify the exact downloaded artifact and source commit
+        run: python -B browser/inspector/verify-site.py --expected-commit "${{ github.sha }}"
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: target/pages/LEXICON
+      - name: Deploy the tested artifact
         id: deployment
         uses: actions/deploy-pages@v4

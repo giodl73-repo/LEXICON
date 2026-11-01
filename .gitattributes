@@ -1,4 +1,4 @@
-﻿artifacts/factor-v1/** text eol=lf
+artifacts/factor-v1/** text eol=lf
 artifacts/factor-role-v1/** text eol=lf
 fixtures/composition/*.factorium-query text eol=lf
 fixtures/composition/*.formarium-query text eol=lf
@@ -13,3 +13,19 @@ tables/**/*.md text eol=lf
 volumes/**/*.factorium text eol=lf
 volumes/**/*.formarium text eol=lf
 volumes/**/*.lexicon text eol=lf
+
+fixtures/relations/*.factorium text eol=lf
+fixtures/relations-invalid/*.factorium text eol=lf
+browser/inspector/** text eol=lf
+browser/inspector/legal/rust/COPYRIGHT-library.html -text -whitespace
+browser/inspector/legal/rust/licenses/** -text -whitespace
+src/** text eol=lf
+Cargo.toml text eol=lf
+Cargo.lock text eol=lf
+fixtures/schemas/** text eol=lf
+tools/verify_packet.py text eol=lf
+tools/verify_role_packet.py text eol=lf
+LICENSE text eol=lf
+LICENSE-CONTENT.md text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
